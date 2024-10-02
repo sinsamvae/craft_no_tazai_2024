@@ -1,0 +1,134 @@
+{
+  "_fv": 66,
+  "_type": "config",
+  "definition": {
+    "pools": [
+      {
+        "category": "random_race",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "gives random race when you join world",
+            "vardisplay": "random_race",
+            "varname": "random_race",
+            "enablecomment": true,
+            "stringlist": []
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10.0,
+            "textDefault": "",
+            "comment": "change the amount of tp you get when level up",
+            "vardisplay": "Tp_Gain",
+            "varname": "Tp_Amount",
+            "enablecomment": true,
+            "stringlist": []
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10.0,
+            "textDefault": "",
+            "comment": "this changes the amount of xp you get from mobs",
+            "vardisplay": "Xp_Gain",
+            "varname": "Xp_Amount",
+            "enablecomment": true,
+            "stringlist": []
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.05,
+            "textDefault": "",
+            "comment": "this change the amount you get from mana regen",
+            "vardisplay": "mana_regen",
+            "varname": "mana_regen",
+            "enablecomment": true,
+            "stringlist": []
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.09,
+            "textDefault": "",
+            "comment": "this is for first forms/skills that drain mana",
+            "vardisplay": "mana_drain_one",
+            "varname": "mana_drain_one",
+            "enablecomment": true,
+            "stringlist": []
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.09,
+            "textDefault": "",
+            "comment": "this is for second forms/skills that drain mana",
+            "vardisplay": "mana_drain_two",
+            "varname": "mana_drain_two",
+            "enablecomment": false,
+            "stringlist": []
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.09,
+            "textDefault": "",
+            "comment": "this is for third forms/skills that drain mana",
+            "vardisplay": "mana_drain_three",
+            "varname": "mana_drain_three",
+            "enablecomment": false,
+            "stringlist": []
+          }
+        ]
+      }
+    ],
+    "file": "Craft no taizai",
+    "configType": 0
+  }
+}

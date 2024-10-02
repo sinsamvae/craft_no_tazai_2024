@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "craft_no_taizai:block/bluebricks",
+    "particle": "craft_no_taizai:block/bluebricks"
+  },
+  "render_type": "solid"
+}

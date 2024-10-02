@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "craft_no_taizai:block/chaos_ground",
+    "up": "craft_no_taizai:block/chaos_ground",
+    "north": "craft_no_taizai:block/chaos_ground",
+    "east": "craft_no_taizai:block/chaos_ground",
+    "south": "craft_no_taizai:block/chaos_ground",
+    "west": "craft_no_taizai:block/chaos_ground",
+    "particle": "craft_no_taizai:block/chaos_ground"
+  },
+  "render_type": "solid"
+}

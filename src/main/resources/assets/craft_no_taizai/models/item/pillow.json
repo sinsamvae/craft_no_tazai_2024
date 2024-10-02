@@ -1,0 +1,14 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "craft_no_taizai:item/king_pillow"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "craft_no_taizai:item/pillow_0"
+    }
+  ]
+}

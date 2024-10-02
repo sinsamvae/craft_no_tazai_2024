@@ -1,0 +1,28 @@
+{
+  "_fv": 66,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.FIRE"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "CUSTOM:cruelsunflyingtick"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 5.0,
+    "knockback": 5,
+    "entityModel": "ModelCrazy_Prominence",
+    "customModelTexture": "crazy_prominence.png",
+    "onHitsBlock": {
+      "name": "CrazyProminenceProjectileHitsBlock"
+    },
+    "onHitsPlayer": {
+      "name": "CrazyProminenceProjectileHitsPlayer"
+    },
+    "onFlyingTick": {
+      "name": "CrazyProminenceWhileProjectileFlyingTick"
+    }
+  }
+}

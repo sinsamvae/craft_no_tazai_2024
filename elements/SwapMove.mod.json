@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "R",
+    "keyBindingName": "Swap Move",
+    "keyBindingCategoryKey": "craftnotaizai",
+    "onKeyPressed": {
+      "name": "SwapMoveOnKeyPressed"
+    }
+  }
+}

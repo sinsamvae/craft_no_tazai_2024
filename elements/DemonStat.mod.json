@@ -1,0 +1,460 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "tab.png",
+          "use1Xscale": false,
+          "x": 299,
+          "y": 91
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "tab.png",
+          "use1Xscale": false,
+          "x": 299,
+          "y": 70
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "orvmenu.png",
+          "use1Xscale": false,
+          "x": 111,
+          "y": 27
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lostvayne.png",
+          "use1Xscale": true,
+          "x": -27,
+          "y": -31
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_race_demon",
+          "text": {
+            "fixedValue": "",
+            "name": "RaceVar"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 121,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_xp",
+          "text": {
+            "fixedValue": "",
+            "name": "GetXP"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 233,
+          "y": 52
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_level",
+          "text": {
+            "fixedValue": "",
+            "name": "GetLevel"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 233,
+          "y": 39
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_manavar",
+          "text": {
+            "fixedValue": "",
+            "name": "Manavar"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 135,
+          "y": 164
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_strvar",
+          "text": {
+            "fixedValue": "",
+            "name": "Strvar"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 134,
+          "y": 105
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_dexvar",
+          "text": {
+            "fixedValue": "",
+            "name": "Hpvar"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 134,
+          "y": 124
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_tpdev",
+          "text": {
+            "fixedValue": "",
+            "name": "TP"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 232,
+          "y": 64
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_demon",
+          "image": "demon.png",
+          "hoveredImage": "",
+          "displayCondition": {
+            "name": "Demonimage"
+          },
+          "x": 244,
+          "y": 144
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_fairy2",
+          "image": "fairy2.png",
+          "hoveredImage": "",
+          "displayCondition": {
+            "name": "Fairyimage"
+          },
+          "x": 245,
+          "y": 145
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_human",
+          "image": "human.png",
+          "hoveredImage": "",
+          "displayCondition": {
+            "name": "Humanimage"
+          },
+          "x": 244,
+          "y": 144
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_var",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicVar"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 121,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_displayname",
+          "text": {
+            "fixedValue": "",
+            "name": "Displayname"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 120,
+          "y": 46
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "image_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Gaintimage"
+          },
+          "x": 245,
+          "y": 144
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_uc_var",
+          "text": {
+            "fixedValue": "",
+            "name": "UCVar"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 188,
+          "y": 192
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_statplusbutton",
+          "image": "statplusbutton.png",
+          "hoveredImage": "statplusbuttonoutline.png",
+          "onClick": {
+            "name": "TPStr"
+          },
+          "x": 120,
+          "y": 103
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_statplusbutton1",
+          "image": "statplusbutton.png",
+          "hoveredImage": "statplusbuttonoutline.png",
+          "onClick": {
+            "name": "TPHp"
+          },
+          "x": 120,
+          "y": 122
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_statplusbutton2",
+          "image": "statplusbutton.png",
+          "hoveredImage": "statplusbuttonoutline.png",
+          "onClick": {
+            "name": "Tpmana"
+          },
+          "x": 120,
+          "y": 162
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_statplusbutton3",
+          "image": "statplusbutton.png",
+          "hoveredImage": "statplusbuttonoutline.png",
+          "onClick": {
+            "name": "TpSwitchAmount"
+          },
+          "x": 174,
+          "y": 190
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_agility_var",
+          "text": {
+            "fixedValue": "",
+            "name": "AgilityVar"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 134,
+          "y": 144
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_statplusbutton4",
+          "image": "statplusbutton.png",
+          "hoveredImage": "statplusbuttonoutline.png",
+          "onClick": {
+            "name": "TPAgility"
+          },
+          "x": 120,
+          "y": 142
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_storybook2",
+          "image": "storybook2.png",
+          "hoveredImage": "storybookhover.png",
+          "onClick": {
+            "name": "Story"
+          },
+          "x": 301,
+          "y": 72
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_magicorb",
+          "image": "magicorb.png",
+          "hoveredImage": "magicorbover.png",
+          "onClick": {
+            "name": "OpenMagicMenu"
+          },
+          "x": 302,
+          "y": 93
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_skills",
+          "text": {
+            "fixedValue": "Magic"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 300,
+          "y": 95
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_story",
+          "text": {
+            "fixedValue": "Story"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 300,
+          "y": 71
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_overarrow2",
+          "image": "overarrow2.png",
+          "hoveredImage": "overarrow2hover.png",
+          "onClick": {
+            "name": "PowerDecrease"
+          },
+          "x": 274,
+          "y": 16
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_overarrow",
+          "image": "overarrow.png",
+          "hoveredImage": "overarrowhover.png",
+          "onClick": {
+            "name": "PowerIncrease"
+          },
+          "x": 131,
+          "y": 16
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_power_percentage",
+          "text": {
+            "fixedValue": "",
+            "name": "PowerPercentage"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 150,
+          "y": 20
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_manapower",
+          "text": {
+            "fixedValue": "",
+            "name": "Manapower"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 135,
+          "y": 175
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 1,
+      "sy": 1,
+      "ox": 1,
+      "oy": 1,
+      "snapOnGrid": false
+    }
+  }
+}

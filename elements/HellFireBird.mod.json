@@ -1,0 +1,28 @@
+{
+  "_fv": 66,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.FIRE"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 5.0,
+    "knockback": 5,
+    "entityModel": "ModelHellFire5",
+    "customModelTexture": "hell_fire_bird.png",
+    "onHitsBlock": {
+      "name": "CruelSunProjectileHitsBlock"
+    },
+    "onHitsEntity": {
+      "name": "CruelSunProjectileHitsLivingEntity"
+    },
+    "onFlyingTick": {
+      "name": "HellFireBirdWhileProjectileFlyingTick"
+    }
+  }
+}

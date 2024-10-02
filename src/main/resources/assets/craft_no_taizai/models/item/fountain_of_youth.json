@@ -1,0 +1,7 @@
+{
+  "parent": "craft_no_taizai:custom/fountainofyouth",
+  "textures": {
+    "0": "craft_no_taizai:block/yhwachblood",
+    "particle": "craft_no_taizai:item/fountainofyouth"
+  }
+}

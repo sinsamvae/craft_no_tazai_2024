@@ -1,0 +1,10 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "craft_no_taizai:block/wood1",
+    "bottom": "craft_no_taizai:block/wood1",
+    "top": "craft_no_taizai:block/wood1",
+    "side": "craft_no_taizai:block/wood1"
+  },
+  "render_type": "solid"
+}

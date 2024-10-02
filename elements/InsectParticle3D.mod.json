@@ -1,0 +1,21 @@
+{
+  "_fv": 66,
+  "_type": "particlemodel",
+  "definition": {
+    "particle": "BreakableBugParticles",
+    "model": "Modelinsect",
+    "rendertype": "Cutout",
+    "modelScale": {
+      "fixedValue": 0.1
+    },
+    "modelRotationX": {
+      "fixedValue": 180.0
+    },
+    "modelRotationY": {
+      "fixedValue": 0.0
+    },
+    "modelRotationZ": {
+      "fixedValue": 0.0
+    }
+  }
+}

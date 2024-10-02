@@ -1,0 +1,145 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "black.png",
+          "use1Xscale": false,
+          "x": -313,
+          "y": -254
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_answer_horn_of_cernunnos",
+          "text": {
+            "fixedValue": "",
+            "name": "AnswerHornOfCernunnos"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 152,
+          "y": 109
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ShowHornOfCernunnos"
+          },
+          "scale": 30,
+          "rotationX": 0,
+          "followMouseMovement": false,
+          "x": 55,
+          "y": 125
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_button_1",
+          "image": "button_1.png",
+          "hoveredImage": "button_1_hover.png",
+          "onClick": {
+            "name": "HornOfCernunnosAnswerOneButton"
+          },
+          "x": 134,
+          "y": 105
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_who_are_you",
+          "text": {
+            "fixedValue": "Who Are You?"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "HornOfCernunnos4"
+          },
+          "x": 181,
+          "y": 65
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_well_shall_give_you_mission",
+          "text": {
+            "fixedValue": "Well shall give you mission."
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "HornOfCernunnosReturn"
+          },
+          "x": 181,
+          "y": 65
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_at_present_hes_known_by_this_n",
+          "text": {
+            "fixedValue": "At present, he's known by this name"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "HornOfCernunnosReturn2"
+          },
+          "x": 181,
+          "y": 65
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_seven_deadly_sins_dragon_sin_me",
+          "text": {
+            "fixedValue": "Seven Deadly Sins Dragon Sin, Meliodas"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "HornOfCernunnosReturn2"
+          },
+          "x": 181,
+          "y": 77
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

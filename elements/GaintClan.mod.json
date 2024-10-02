@@ -1,0 +1,202 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "orvmenu.png",
+          "use1Xscale": false,
+          "x": 106,
+          "y": 16
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_stats",
+          "text": {
+            "fixedValue": "Stats"
+          },
+          "color": {
+            "value": -26368,
+            "falpha": 0.0
+          },
+          "x": 129,
+          "y": 87
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_30_health",
+          "text": {
+            "fixedValue": "- Health: 25 to 35"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 130,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_50_strength",
+          "text": {
+            "fixedValue": "- Strength: 45 to 60"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 129,
+          "y": 111
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_40_spirit",
+          "text": {
+            "fixedValue": "- Spirit: 45 to 60"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 130,
+          "y": 124
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_15_magic_damage",
+          "text": {
+            "fixedValue": "- Magic Damage: 0 to 5"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 130,
+          "y": 139
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magic",
+          "text": {
+            "fixedValue": "Magic"
+          },
+          "color": {
+            "value": -26368,
+            "falpha": 0.0
+          },
+          "x": 131,
+          "y": 153
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_random_200_to_500",
+          "text": {
+            "fixedValue": "Random: 150 to 350"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 130,
+          "y": 170
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "image_1.png",
+          "use1Xscale": false,
+          "x": 118,
+          "y": 42
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gaintbar.png",
+          "use1Xscale": true,
+          "x": 172,
+          "y": 36
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "giant.png",
+          "use1Xscale": false,
+          "x": 190,
+          "y": 37
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_overarrow",
+          "image": "overarrow.png",
+          "hoveredImage": "overarrowhover.png",
+          "onClick": {
+            "name": "BackButton3"
+          },
+          "x": 91,
+          "y": 106
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_overarrow2",
+          "image": "overarrow2.png",
+          "hoveredImage": "overarrow2hover.png",
+          "onClick": {
+            "name": "NextButton4"
+          },
+          "x": 301,
+          "y": 106
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_select",
+          "image": "select.png",
+          "hoveredImage": "selecthover.png",
+          "onClick": {
+            "name": "SelectGaint"
+          },
+          "x": 180,
+          "y": 202
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 30,
+      "sy": 30,
+      "ox": 30,
+      "oy": 30,
+      "snapOnGrid": false
+    }
+  }
+}

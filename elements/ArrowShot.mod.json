@@ -1,0 +1,21 @@
+{
+  "_fv": 66,
+  "_type": "particlemodel",
+  "definition": {
+    "particle": "ArrowShotParticle",
+    "model": "ModelArrowShot",
+    "rendertype": "Glowing",
+    "modelScale": {
+      "fixedValue": 1.5
+    },
+    "modelRotationX": {
+      "fixedValue": 50.0
+    },
+    "modelRotationY": {
+      "fixedValue": 155.0
+    },
+    "modelRotationZ": {
+      "fixedValue": 0.0
+    }
+  }
+}

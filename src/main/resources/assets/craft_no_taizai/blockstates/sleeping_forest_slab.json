@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "craft_no_taizai:block/sleeping_forest_slab"
+    },
+    "type=top": {
+      "model": "craft_no_taizai:block/sleeping_forest_slab_top"
+    },
+    "type=double": {
+      "model": "craft_no_taizai:block/sleeping_forest_slab_full"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "craft_no_taizai:block/chaos_dimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "craft_no_taizai:block/chaos_dimension_portal_ns"
+    }
+  }
+}

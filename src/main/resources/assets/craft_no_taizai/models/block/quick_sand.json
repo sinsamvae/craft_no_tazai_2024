@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "craft_no_taizai:block/quicksand",
+    "up": "craft_no_taizai:block/quicksand",
+    "north": "craft_no_taizai:block/quicksand",
+    "east": "craft_no_taizai:block/quicksand",
+    "south": "craft_no_taizai:block/quicksand",
+    "west": "craft_no_taizai:block/quicksand",
+    "particle": "craft_no_taizai:block/quicksand"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "craft_no_taizai:block/sleepingforestlog",
+    "up": "craft_no_taizai:block/sleepingforestlog",
+    "north": "craft_no_taizai:block/sleepingforestlog",
+    "east": "craft_no_taizai:block/sleepingforestlog",
+    "south": "craft_no_taizai:block/sleepingforestlog",
+    "west": "craft_no_taizai:block/sleepingforestlog",
+    "particle": "craft_no_taizai:block/sleepingforestlog"
+  },
+  "render_type": "solid"
+}

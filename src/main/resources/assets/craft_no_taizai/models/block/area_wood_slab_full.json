@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "craft_no_taizai:block/13530476-cover_xl",
+    "bottom": "craft_no_taizai:block/13530476-cover_xl",
+    "top": "craft_no_taizai:block/13530476-cover_xl",
+    "side": "craft_no_taizai:block/13530476-cover_xl"
+  },
+  "render_type": "solid"
+}

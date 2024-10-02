@@ -1,0 +1,6 @@
+{
+  "parent": "craft_no_taizai:displaysettings/holy_staff_courechouse.item",
+  "textures": {
+    "layer0": "craft_no_taizai:item/triple-staff"
+  }
+}

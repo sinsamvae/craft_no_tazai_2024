@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "craft_no_taizai:block/minecraft-bricks",
+    "up": "craft_no_taizai:block/minecraft-bricks",
+    "north": "craft_no_taizai:block/minecraft-bricks",
+    "east": "craft_no_taizai:block/minecraft-bricks",
+    "south": "craft_no_taizai:block/minecraft-bricks",
+    "west": "craft_no_taizai:block/minecraft-bricks",
+    "particle": "craft_no_taizai:block/minecraft-bricks"
+  },
+  "render_type": "solid"
+}

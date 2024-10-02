@@ -1,0 +1,75 @@
+{
+  "_fv": 66,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_r_cool_down_var",
+          "text": {
+            "fixedValue": "",
+            "name": "RCoolDownVar"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "RCoolDownText"
+          },
+          "anchorPoint": "CENTER",
+          "x": 180,
+          "y": 119
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_ability_display",
+          "text": {
+            "fixedValue": "",
+            "name": "AbilityDisplay"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 2,
+          "y": 206
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_skill_cd",
+          "text": {
+            "fixedValue": "",
+            "name": "SkillCD"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CoolDownReturn"
+          },
+          "anchorPoint": "CENTER",
+          "x": 180,
+          "y": 119
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "craft_no_taizai:custom/sequence",
+  "textures": {
+    "0": "craft_no_taizai:block/sequence",
+    "particle": "craft_no_taizai:item/sequence"
+  }
+}

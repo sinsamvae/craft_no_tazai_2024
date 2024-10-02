@@ -1,0 +1,21 @@
+{
+  "_fv": 66,
+  "_type": "particlemodel",
+  "definition": {
+    "particle": "IncreaseParticle",
+    "model": "ModelIncrease",
+    "rendertype": "Cutout",
+    "modelScale": {
+      "fixedValue": 1.3
+    },
+    "modelRotationX": {
+      "fixedValue": 0.0
+    },
+    "modelRotationY": {
+      "fixedValue": 90.0
+    },
+    "modelRotationZ": {
+      "fixedValue": 90.0
+    }
+  }
+}

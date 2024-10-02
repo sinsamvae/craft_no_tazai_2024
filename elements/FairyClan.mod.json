@@ -1,0 +1,202 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "orvmenu.png",
+          "use1Xscale": false,
+          "x": 106,
+          "y": 16
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_stats",
+          "text": {
+            "fixedValue": "Stats"
+          },
+          "color": {
+            "value": -16711732,
+            "falpha": 0.0
+          },
+          "x": 137,
+          "y": 86
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_30_health",
+          "text": {
+            "fixedValue": "- Health: 10 to 25"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 130,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_50_strength",
+          "text": {
+            "fixedValue": "- Strength: 0 to 10"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 129,
+          "y": 110
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_40_spirit",
+          "text": {
+            "fixedValue": "- Spirit: 25 to 40"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 128,
+          "y": 124
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_15_magic_damage",
+          "text": {
+            "fixedValue": "-  Magic Damage: 5 to 20"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 130,
+          "y": 139
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magic",
+          "text": {
+            "fixedValue": "Magic"
+          },
+          "color": {
+            "value": -16711732,
+            "falpha": 0.0
+          },
+          "x": 131,
+          "y": 153
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_random_200_to_500",
+          "text": {
+            "fixedValue": "Random: 500 to 800"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 130,
+          "y": 166
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fairy.png",
+          "use1Xscale": true,
+          "x": 129,
+          "y": 52
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fairybar.png",
+          "use1Xscale": true,
+          "x": 174,
+          "y": 39
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fairy-clan.png",
+          "use1Xscale": true,
+          "x": 187,
+          "y": 45
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_overarrow",
+          "image": "overarrow.png",
+          "hoveredImage": "overarrowhover.png",
+          "onClick": {
+            "name": "BackButton2"
+          },
+          "x": 91,
+          "y": 106
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_overarrow2",
+          "image": "overarrow2.png",
+          "hoveredImage": "overarrow2hover.png",
+          "onClick": {
+            "name": "NextButton3"
+          },
+          "x": 301,
+          "y": 106
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_select",
+          "image": "select.png",
+          "hoveredImage": "selecthover.png",
+          "onClick": {
+            "name": "SelectFairy"
+          },
+          "x": 181,
+          "y": 202
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 50,
+      "sy": 50,
+      "ox": 80,
+      "oy": 80,
+      "snapOnGrid": false
+    }
+  }
+}

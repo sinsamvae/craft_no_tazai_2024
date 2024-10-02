@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "craft_no_taizai:block/13530476-cover_xl",
+    "up": "craft_no_taizai:block/13530476-cover_xl",
+    "north": "craft_no_taizai:block/13530476-cover_xl",
+    "east": "craft_no_taizai:block/13530476-cover_xl",
+    "south": "craft_no_taizai:block/13530476-cover_xl",
+    "west": "craft_no_taizai:block/13530476-cover_xl",
+    "particle": "craft_no_taizai:block/13530476-cover_xl"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,87 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "PollenGarden",
+  "texture_size": [
+    128,
+    128
+  ],
+  "elements": [
+    {
+      "from": [
+        -12,
+        0,
+        -11
+      ],
+      "to": [
+        28,
+        32,
+        29
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          16,
+          9
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            5.25,
+            8,
+            9.25
+          ],
+          "texture": "#2"
+        },
+        "east": {
+          "uv": [
+            8,
+            5.25,
+            12,
+            9.25
+          ],
+          "texture": "#2"
+        },
+        "south": {
+          "uv": [
+            8,
+            9.25,
+            12,
+            13.25
+          ],
+          "texture": "#2"
+        },
+        "west": {
+          "uv": [
+            8,
+            5.25,
+            12,
+            9.25
+          ],
+          "texture": "#2"
+        },
+        "up": {
+          "uv": [
+            8,
+            5.25,
+            4,
+            1.25
+          ],
+          "texture": "#2"
+        },
+        "down": {
+          "uv": [
+            12,
+            1.25,
+            8,
+            5.25
+          ],
+          "texture": "#2"
+        }
+      }
+    }
+  ]
+}

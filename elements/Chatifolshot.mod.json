@@ -1,0 +1,31 @@
+{
+  "_fv": 66,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.AIR"
+    },
+    "showParticles": true,
+    "actionSound": {
+      "value": ""
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 5.0,
+    "knockback": 5,
+    "entityModel": "Modelchastifolshot",
+    "customModelTexture": "fossilization.png",
+    "onHitsBlock": {
+      "name": "ChatifolshotWhileProjectileFlyingTick"
+    },
+    "onHitsPlayer": {
+      "name": "ChatifolshotWhileProjectileFlyingTick"
+    },
+    "onHitsEntity": {
+      "name": "ChatifolshotWhileProjectileFlyingTick"
+    },
+    "onFlyingTick": {
+      "name": "ChatifolshotWhileProjectileFlyingTick"
+    }
+  }
+}

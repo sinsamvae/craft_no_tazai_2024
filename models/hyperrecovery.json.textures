@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "hyperrecovery"
+      },
+      "name": "default"
+    },
+    "empty_orb": {
+      "map": {
+        "1": "empty_orb"
+      },
+      "name": "empty_orb"
+    },
+    "lume": {
+      "map": {
+        "1": "lume_orb"
+      },
+      "name": "lume"
+    }
+  }
+}

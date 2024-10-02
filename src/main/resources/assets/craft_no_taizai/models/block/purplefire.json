@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "craft_no_taizai:block/purplefire",
+    "particle": "craft_no_taizai:block/purplefire"
+  },
+  "render_type": "translucent"
+}

@@ -1,0 +1,202 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "orvmenu.png",
+          "use1Xscale": false,
+          "x": 106,
+          "y": 16
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_stats",
+          "text": {
+            "fixedValue": "Stats"
+          },
+          "color": {
+            "value": -65485,
+            "falpha": 0.0
+          },
+          "x": 133,
+          "y": 84
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_30_health",
+          "text": {
+            "fixedValue": "- Health: 15 to 30"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 130,
+          "y": 95
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_50_strength",
+          "text": {
+            "fixedValue": "- Strength: 15 to 35"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 129,
+          "y": 109
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_40_spirit",
+          "text": {
+            "fixedValue": "- Spirit: 15 to 25"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 130,
+          "y": 124
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_15_magic_damage",
+          "text": {
+            "fixedValue": "- Magic Damage: 0 to 10"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 130,
+          "y": 139
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magic",
+          "text": {
+            "fixedValue": "Magic"
+          },
+          "color": {
+            "value": -65485,
+            "falpha": 0.0
+          },
+          "x": 131,
+          "y": 153
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_random_200_to_500",
+          "text": {
+            "fixedValue": "Random: 100 to 300"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 130,
+          "y": 166
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "deadly-sins-retribution-tier-list-12-removebg-preview.png",
+          "use1Xscale": true,
+          "x": 124,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "humanbar.png",
+          "use1Xscale": true,
+          "x": 171,
+          "y": 34
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "13903025e1f60ee6711c42900368b533da068b25da39a3ee5e6b4b0d3255bfef95601890afd80709da39a3ee5e6b4b0d3255bfef95601890afd80709c58f8eb180a04ede88a426bcd54c2e35.png",
+          "use1Xscale": true,
+          "x": 194,
+          "y": 40
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_overarrow",
+          "image": "overarrow.png",
+          "hoveredImage": "overarrowhover.png",
+          "onClick": {
+            "name": "BackButton"
+          },
+          "x": 91,
+          "y": 106
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_overarrow2",
+          "image": "overarrow2.png",
+          "hoveredImage": "overarrow2hover.png",
+          "onClick": {
+            "name": "NextButton2"
+          },
+          "x": 301,
+          "y": 106
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_select",
+          "image": "select.png",
+          "hoveredImage": "selecthover.png",
+          "onClick": {
+            "name": "SelectHuman"
+          },
+          "x": 179,
+          "y": 203
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 30,
+      "sy": 30,
+      "ox": 30,
+      "oy": 30,
+      "snapOnGrid": false
+    }
+  }
+}

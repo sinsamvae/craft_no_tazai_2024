@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "craft_no_taizai:block/pookiebearore",
+    "up": "craft_no_taizai:block/pookiebearore",
+    "north": "craft_no_taizai:block/pookiebearore",
+    "east": "craft_no_taizai:block/pookiebearore",
+    "south": "craft_no_taizai:block/pookiebearore",
+    "west": "craft_no_taizai:block/pookiebearore",
+    "particle": "craft_no_taizai:block/pookiebearore"
+  },
+  "render_type": "solid"
+}

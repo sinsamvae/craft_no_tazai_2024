@@ -1,0 +1,82 @@
+{
+  "fullconter": {
+    "sounds": [
+      {
+        "name": "craft_no_taizai:undefined",
+        "stream": false
+      }
+    ]
+  },
+  "fullcounter_audio": {
+    "sounds": [
+      {
+        "name": "craft_no_taizai:undefined",
+        "stream": false
+      }
+    ]
+  },
+  "revengecounter": {
+    "sounds": [
+      {
+        "name": "craft_no_taizai:revengecounter",
+        "stream": false
+      }
+    ]
+  },
+  "unsheathed": {
+    "sounds": [
+      {
+        "name": "craft_no_taizai:sword_unsheathed_sound_effect_-_high_quality",
+        "stream": false
+      }
+    ]
+  },
+  "intosheath": {
+    "sounds": [
+      {
+        "name": "craft_no_taizai:mysterious_sword_into_sheath_sound_effect",
+        "stream": false
+      }
+    ]
+  },
+  "fast": {
+    "sounds": [
+      {
+        "name": "craft_no_taizai:movefast",
+        "stream": false
+      }
+    ]
+  },
+  "swish": {
+    "sounds": [
+      {
+        "name": "craft_no_taizai:fast_swish___sound_effect",
+        "stream": false
+      }
+    ]
+  },
+  "gravity": {
+    "sounds": [
+      {
+        "name": "craft_no_taizai:bleach-preview-spiritual-pressure-effect-hd",
+        "stream": false
+      }
+    ]
+  },
+  "cruelsunflyingtick": {
+    "sounds": [
+      {
+        "name": "craft_no_taizai:cruelsunflyingtick",
+        "stream": false
+      }
+    ]
+  },
+  "cruelsunhit": {
+    "sounds": [
+      {
+        "name": "craft_no_taizai:cruelsunhit",
+        "stream": false
+      }
+    ]
+  }
+}

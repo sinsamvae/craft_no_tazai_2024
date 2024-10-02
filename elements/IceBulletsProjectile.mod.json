@@ -1,0 +1,28 @@
+{
+  "_fv": 66,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.ICE"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 0.0,
+    "damage": 0.0,
+    "knockback": 0,
+    "entityModel": "ModelKiller_iceberg",
+    "customModelTexture": "icelance.png",
+    "onHitsBlock": {
+      "name": "IceBulletsProjectileHitsBlock"
+    },
+    "onHitsEntity": {
+      "name": "IceBulletsProjectileHitsLivingEntity"
+    },
+    "onFlyingTick": {
+      "name": "IceBulletsWhileProjectileFlyingTick"
+    }
+  }
+}

@@ -1,0 +1,2518 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_magicorb",
+          "image": "magicorb.png",
+          "hoveredImage": "magicorbover.png",
+          "onClick": {
+            "name": "OpenMagicMenu"
+          },
+          "x": 364,
+          "y": 71
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_scroll",
+          "image": "scroll.png",
+          "hoveredImage": "scrollhover.png",
+          "onClick": {
+            "name": "OpenStatsOnKeyPressed"
+          },
+          "x": 363,
+          "y": 99
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_stats",
+          "text": {
+            "fixedValue": "Stats"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 361,
+          "y": 103
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_skills",
+          "text": {
+            "fixedValue": "Magic"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 361,
+          "y": 74
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "tab.png",
+          "use1Xscale": false,
+          "x": 360,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "tab.png",
+          "use1Xscale": false,
+          "x": 360,
+          "y": 97
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_startbutton",
+          "image": "startbutton.png",
+          "hoveredImage": "hoverstart.png",
+          "onClick": {
+            "name": "Storyvar"
+          },
+          "x": 187,
+          "y": 164
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "story2.png",
+          "use1Xscale": false,
+          "x": 61,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "story2_00000.png",
+          "use1Xscale": false,
+          "x": 61,
+          "y": 37
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_this_is_a_tale_of_ancient_times",
+          "text": {
+            "fixedValue": "This is a tale of ancient times and an era before the"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story1"
+          },
+          "x": 72,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_human_and_nonhuman_worlds_were",
+          "text": {
+            "fixedValue": "human and non-human worlds were forever divided."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story1"
+          },
+          "x": 72,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_when_the_holy_knights_defended_t",
+          "text": {
+            "fixedValue": "When the Holy Knights defended the realm wielding"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story1"
+          },
+          "x": 72,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_their_magical_powers_they_were",
+          "text": {
+            "fixedValue": "their magical powers they were feared and highly"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story1"
+          },
+          "x": 71,
+          "y": 91
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_respected_but_among_them_a_grou",
+          "text": {
+            "fixedValue": "respected. But among them a group emerged that betrayed"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story1"
+          },
+          "x": 71,
+          "y": 103
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_this_is_a_tale_of_ancient_times1",
+          "text": {
+            "fixedValue": "betrayed the kingdom and became mortal enemies to all"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story1"
+          },
+          "x": 71,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_holy_knights_they_were_known_t",
+          "text": {
+            "fixedValue": "Holy Knights"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story1"
+          },
+          "x": 71,
+          "y": 129
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_this_is_a_tale_of_ancient_times2",
+          "text": {
+            "fixedValue": "They were known throughout"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story1"
+          },
+          "x": 135,
+          "y": 129
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_the_land_as_the_seven_deadly_sin",
+          "text": {
+            "fixedValue": "The land as the Seven Deadly Sins"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story1"
+          },
+          "x": 126,
+          "y": 146
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_twigo",
+          "text": {
+            "fixedValue": "Defeat Twigo"
+          },
+          "color": {
+            "value": -13369345,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story2"
+          },
+          "x": 71,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_the_seven_deadly_sins",
+          "text": {
+            "fixedValue": "EP1: The Seven Deadly Sins"
+          },
+          "color": {
+            "value": -16737895,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story2"
+          },
+          "x": 73,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_youve_met_elizabeth_young_girl",
+          "text": {
+            "fixedValue": "You've met elizabeth, young girl who is looking for the"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story2"
+          },
+          "x": 71,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_seven_deadly_sins",
+          "text": {
+            "fixedValue": "seven deadly sins an holy knight attacks named twigo"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story2"
+          },
+          "x": 72,
+          "y": 77
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep2_the_sin_in_the_sleeping_fore",
+          "text": {
+            "fixedValue": "EP2-3 The Sin in the Sleeping Forest"
+          },
+          "color": {
+            "value": -16737895,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Start2"
+          },
+          "x": 72,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_go_to_the_sleeping_forest_biome",
+          "text": {
+            "fixedValue": "Go To the Sleeping Forest Biome"
+          },
+          "color": {
+            "value": -13369345,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Start2"
+          },
+          "x": 71,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_after_the_fight_with_twigo",
+          "text": {
+            "fixedValue": "After the fight with Twigo, You set out to find"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Start2"
+          },
+          "x": 73,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_the_other_memebers_of_the_seven",
+          "text": {
+            "fixedValue": "The other memebers of the seven deadly sins"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Start2"
+          },
+          "x": 72,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep4_a_little_girls_dream",
+          "text": {
+            "fixedValue": "EP4: A Little Girl's Dream"
+          },
+          "color": {
+            "value": -16737895,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story3"
+          },
+          "x": 72,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_dinae_joins_the_mission_to_free",
+          "text": {
+            "fixedValue": "Dinae joins the mission to free Ban From the "
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story3"
+          },
+          "x": 73,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_baste_dungeon_but_the_group_is",
+          "text": {
+            "fixedValue": "Baste Dungeon, but the group is assailed by an enemy"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story3"
+          },
+          "x": 74,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_set_on_crushing_the_whole_town_a",
+          "text": {
+            "fixedValue": "set on crushing the whole town and the seven deadly sin"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story3"
+          },
+          "x": 73,
+          "y": 91
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_gilthunder",
+          "text": {
+            "fixedValue": "Defeat GilThunder In Sleeping Forest"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story3"
+          },
+          "x": 71,
+          "y": 105
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep5",
+          "text": {
+            "fixedValue": "EP:5 Even If You Die"
+          },
+          "color": {
+            "value": -16737895,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story4"
+          },
+          "x": 72,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_golgiu_tries_to_seize_the_sword",
+          "text": {
+            "fixedValue": "Golgiu tries to seize the sword"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story4"
+          },
+          "x": 70,
+          "y": 72
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defect",
+          "text": {
+            "fixedValue": "Defect Golgius"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story4"
+          },
+          "x": 71,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep5_part_2_even_if_you_should_d",
+          "text": {
+            "fixedValue": "EP5 Part 2: Even if You Should Die"
+          },
+          "color": {
+            "value": -16737895,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story5"
+          },
+          "x": 72,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_the_sound_of_a_mysterious_bell",
+          "text": {
+            "fixedValue": "The sound of a mysterious bell drives the group to fight"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story5"
+          },
+          "x": 69,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_each_other",
+          "text": {
+            "fixedValue": "each other"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story5"
+          },
+          "x": 71,
+          "y": 77
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_diane",
+          "text": {
+            "fixedValue": "Defeat Diane"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story5"
+          },
+          "x": 71,
+          "y": 90
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_6_part_1the_poem_of_beginnin",
+          "text": {
+            "fixedValue": "EP 6 Part 1:The Poem Of Beginning"
+          },
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story6"
+          },
+          "x": 72,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_must_fight_the_holy_knights_frie",
+          "text": {
+            "fixedValue": "Must fight the holy knights Friesia and Ruin "
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story6"
+          },
+          "x": 70,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proceed_to_the_dungeon",
+          "text": {
+            "fixedValue": "proceed to the dungeon"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story6"
+          },
+          "x": 70,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_ruin",
+          "text": {
+            "fixedValue": "Defeat Ruin"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story6"
+          },
+          "x": 71,
+          "y": 90
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_6_part_2",
+          "text": {
+            "fixedValue": "EP 6 Part 2:The Poem Of Beginning"
+          },
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story7"
+          },
+          "x": 74,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_must_fight_the_holy_knights_frie1",
+          "text": {
+            "fixedValue": "Must fight the holy knights Friesia and Ruin "
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story7"
+          },
+          "x": 70,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proceed_to_the_dungeon1",
+          "text": {
+            "fixedValue": "proceed to the dungeon"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story7"
+          },
+          "x": 70,
+          "y": 77
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "Defeat Friesia"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story7"
+          },
+          "x": 72,
+          "y": 91
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_7_part_1a_touching_reunion",
+          "text": {
+            "fixedValue": "EP 7 Part 1:A Touching Reunion"
+          },
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story8"
+          },
+          "x": 73,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty1",
+          "text": {
+            "fixedValue": "You go out seeking a clue to the location of the"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story8"
+          },
+          "x": 71,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_grizzlys_sins_of_sloth",
+          "text": {
+            "fixedValue": "Grizzly's Sins of Sloth"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story8"
+          },
+          "x": 69,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_locate_capital_of_the_dead",
+          "text": {
+            "fixedValue": "Locate Capital of the Dead"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story8"
+          },
+          "x": 71,
+          "y": 92
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_8the_fearsome_pursuer",
+          "text": {
+            "fixedValue": "EP 8:The Fearsome Pursuer"
+          },
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story9"
+          },
+          "x": 71,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_holy_knight_guila_follows_you_to",
+          "text": {
+            "fixedValue": "Holy Knight Guila follows you to the"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story9"
+          },
+          "x": 70,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_capital_of_the_dead",
+          "text": {
+            "fixedValue": "Capital of the Dead"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story9"
+          },
+          "x": 70,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_guila",
+          "text": {
+            "fixedValue": "Defeat Guila"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story9"
+          },
+          "x": 72,
+          "y": 92
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_10",
+          "text": {
+            "fixedValue": "EP 9:The Vaizel Fighting Festival"
+          },
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story10"
+          },
+          "x": 71,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_upon_learning_the_fighting_festi",
+          "text": {
+            "fixedValue": "Upon learning the fighting festival's grand prize,"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story10"
+          },
+          "x": 70,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_gideon_you_decide_to_participat",
+          "text": {
+            "fixedValue": "Gideon, you decide to participate, as do Holy Knights"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story10"
+          },
+          "x": 70,
+          "y": 77
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_howzer_and_griamore",
+          "text": {
+            "fixedValue": "Howzer and Griamore"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story10"
+          },
+          "x": 71,
+          "y": 90
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defect_all_vaizel_fighting_festi",
+          "text": {
+            "fixedValue": "Defect All Vaizel Fighting Festival Particlipate"
+          },
+          "color": {
+            "value": -13369345,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story10"
+          },
+          "x": 70,
+          "y": 104
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty2",
+          "text": {
+            "fixedValue": "EP 10:The Vaizel Fighting Festival Round 1"
+          },
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story11"
+          },
+          "x": 71,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_roun_1",
+          "text": {
+            "fixedValue": "First round challanger taizoo appears"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story11"
+          },
+          "x": 68,
+          "y": 72
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_taizoo",
+          "text": {
+            "fixedValue": "Defeat Taizoo"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story11"
+          },
+          "x": 70,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty3",
+          "text": {
+            "fixedValue": "EP 10:The Vaizel Fighting Festival Round 2"
+          },
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story12"
+          },
+          "x": 71,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_next_challanger_griamore_appears",
+          "text": {
+            "fixedValue": "Second round challanger Griamore appears"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story12"
+          },
+          "x": 69,
+          "y": 72
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_griamore",
+          "text": {
+            "fixedValue": "Defeat Griamore"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story12"
+          },
+          "x": 71,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_10the_vaizel_fighting_festiv",
+          "text": {
+            "fixedValue": "EP 10:The Vaizel Fighting Festival Round 3"
+          },
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story13"
+          },
+          "x": 71,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_thrid_round",
+          "text": {
+            "fixedValue": "Third round challanger howzer appears"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story13"
+          },
+          "x": 70,
+          "y": 74
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_howzer",
+          "text": {
+            "fixedValue": "Defeat Howzer"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story13"
+          },
+          "x": 70,
+          "y": 90
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_10the_vaizel_fighting_festiv1",
+          "text": {
+            "fixedValue": "EP 10:The Vaizel Fighting Festival Round 4"
+          },
+          "color": {
+            "value": -16737895,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story14"
+          },
+          "x": 72,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_four_round_challanger_cainbarzad",
+          "text": {
+            "fixedValue": "four round challanger cainbarzad appears"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story14"
+          },
+          "x": 70,
+          "y": 73
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_cain_barzad",
+          "text": {
+            "fixedValue": "Defeat Cain Barzad"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story14"
+          },
+          "x": 70,
+          "y": 92
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_10the_vaizel_fighting_festiv2",
+          "text": {
+            "fixedValue": "EP 11:The Vaizel Fighting Festival Round 5"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story15"
+          },
+          "x": 71,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_fith_round_challanger_ban_appear",
+          "text": {
+            "fixedValue": "fith round challanger ban appears"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story15"
+          },
+          "x": 71,
+          "y": 64
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defect_ban",
+          "text": {
+            "fixedValue": "Defect Ban"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story15"
+          },
+          "x": 70,
+          "y": 92
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_11",
+          "text": {
+            "fixedValue": "EP 11: Bloodcurdling Canon"
+          },
+          "color": {
+            "value": -16737895,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story16"
+          },
+          "x": 72,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_during_the_last_match_of_the_fes",
+          "text": {
+            "fixedValue": "During the last match of the festival, the vanue breaks"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story16"
+          },
+          "x": 70,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_out_in_pandemonium_when_a_group",
+          "text": {
+            "fixedValue": "out in pandemonium when a group of Holy Knights attacks"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story16"
+          },
+          "x": 70,
+          "y": 77
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_what_have_they_come_for",
+          "text": {
+            "fixedValue": "What have they come for?"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story16"
+          },
+          "x": 71,
+          "y": 91
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defect_jericho",
+          "text": {
+            "fixedValue": "Defect Jericho"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story16"
+          },
+          "x": 71,
+          "y": 105
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_12_bloodcurdling_canon_part",
+          "text": {
+            "fixedValue": "EP 12: Bloodcurdling Canon Part 2"
+          },
+          "color": {
+            "value": -16737895,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story17"
+          },
+          "x": 72,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_during_the_last_match_of_the_fes1",
+          "text": {
+            "fixedValue": "During the last match of the festival, the vanue breaks"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story17"
+          },
+          "x": 70,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_out_in_pandemonium_when_a_group1",
+          "text": {
+            "fixedValue": "out in pandemonium when a group of Holy Knights attacks"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story17"
+          },
+          "x": 70,
+          "y": 83
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_what_have_they_come_for1",
+          "text": {
+            "fixedValue": "What have they come for?"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story17"
+          },
+          "x": 71,
+          "y": 91
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defect1",
+          "text": {
+            "fixedValue": "Defeat Guila"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story17"
+          },
+          "x": 70,
+          "y": 104
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_12_bloodcurdling_canon_part1",
+          "text": {
+            "fixedValue": "EP 12: Bloodcurdling Canon Part 3"
+          },
+          "color": {
+            "value": -16737895,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story18"
+          },
+          "x": 71,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_during_the_last_match_of_the_fes2",
+          "text": {
+            "fixedValue": "During the last match of the festival, the vanue breaks"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story18"
+          },
+          "x": 71,
+          "y": 64
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_out_in_pandemonium_when_a_group2",
+          "text": {
+            "fixedValue": "out in pandemonium when a group of Holy Knights attacks"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story18"
+          },
+          "x": 69,
+          "y": 77
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_what_have_they_come_for2",
+          "text": {
+            "fixedValue": "What have they come for?"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story18"
+          },
+          "x": 71,
+          "y": 95
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defect_armord_helbram",
+          "text": {
+            "fixedValue": "Defect Armord Helbram"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story18"
+          },
+          "x": 69,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_1415_unholy_knight",
+          "text": {
+            "fixedValue": "EP 13-14: Unholy Knight"
+          },
+          "color": {
+            "value": -16737895,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story19"
+          },
+          "x": 71,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_new_search_for_the_remaining",
+          "text": {
+            "fixedValue": "New search for the remaining seven deadly sins."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story19"
+          },
+          "x": 71,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_the_holy_knight_helbram_dispatch",
+          "text": {
+            "fixedValue": "The Holy Knight Helbram dispatches assassins to crush"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story19"
+          },
+          "x": 70,
+          "y": 76
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_the_armor_giant",
+          "text": {
+            "fixedValue": "The Armor Giant."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story19"
+          },
+          "x": 72,
+          "y": 91
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_armor_giant",
+          "text": {
+            "fixedValue": "Defeat Armor Giant."
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story19"
+          },
+          "x": 71,
+          "y": 105
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_1617the_first_sacrifice",
+          "text": {
+            "fixedValue": "EP 15-16:The First Sacrifice"
+          },
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story20"
+          },
+          "x": 72,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_when_elizabeth_is_kidnapped",
+          "text": {
+            "fixedValue": "When Elizabeth is kidnapped you launch an attack on the"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story20"
+          },
+          "x": 70,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_capital",
+          "text": {
+            "fixedValue": "capital."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story20"
+          },
+          "x": 69,
+          "y": 81
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defect_15_royale_gurard",
+          "text": {
+            "fixedValue": "Defect 10 Holy Knights"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story20"
+          },
+          "x": 71,
+          "y": 105
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_roylekillcount",
+          "text": {
+            "fixedValue": "",
+            "name": "Roylekillcount"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story20"
+          },
+          "x": 70,
+          "y": 120
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_18_even_if_it_costs_me_my_li",
+          "text": {
+            "fixedValue": "EP 17: Even If It Costs Me My Life"
+          },
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story21"
+          },
+          "x": 72,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_diane_has_a_brush_with_dealth_wh",
+          "text": {
+            "fixedValue": "Diane has a brush with dealth while protecting Zeal."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story21"
+          },
+          "x": 71,
+          "y": 64
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_howzer_and_guila_are_forced_into",
+          "text": {
+            "fixedValue": "Howzer and Guila are forced into a struggle against "
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story21"
+          },
+          "x": 71,
+          "y": 79
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_formidable_magical_powers",
+          "text": {
+            "fixedValue": "formidable magical powers."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story21"
+          },
+          "x": 72,
+          "y": 92
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defect_dreyfus",
+          "text": {
+            "fixedValue": "Defect Dreyfus"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story21"
+          },
+          "x": 69,
+          "y": 108
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep",
+          "text": {
+            "fixedValue": "EP 18-19: The Fairy King Waits In Vain"
+          },
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story22"
+          },
+          "x": 72,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_king_recalls_how_he_met_diane_70",
+          "text": {
+            "fixedValue": "King recalls how he met Diane 700 years ago and the sad"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story22"
+          },
+          "x": 69,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_evvent_that_occurred_between_him",
+          "text": {
+            "fixedValue": "event that occurred between him and Helbram. What"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story22"
+          },
+          "x": 70,
+          "y": 79
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_promise_did_these_once_good_frie",
+          "text": {
+            "fixedValue": "promise did these once good friends make?"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story22"
+          },
+          "x": 71,
+          "y": 94
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defect_helbram",
+          "text": {
+            "fixedValue": "Defect Helbram"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story22"
+          },
+          "x": 70,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_23_the_courage_charm",
+          "text": {
+            "fixedValue": "EP 20: THe Courage Charm"
+          },
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story23"
+          },
+          "x": 71,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_in_order_to_take_elizabeth_back",
+          "text": {
+            "fixedValue": "In order to take Elizabeth back, Meliodas teams up with"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story23"
+          },
+          "x": 70,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_arthur_to_fight_a_fierce_battle",
+          "text": {
+            "fixedValue": "Arthur to fight a fierce battle against Hendrickson"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story23"
+          },
+          "x": 69,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_and_gilthunder",
+          "text": {
+            "fixedValue": "and Gilthunder."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story23"
+          },
+          "x": 71,
+          "y": 97
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_hendrickson_and_gilthunde",
+          "text": {
+            "fixedValue": "Defeat Hendrickson and Gilthunder."
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story23"
+          },
+          "x": 70,
+          "y": 112
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_21",
+          "text": {
+            "fixedValue": "EP 21: The Looming Threat"
+          },
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story24"
+          },
+          "x": 72,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_the_appearance_of_merlin_crushes",
+          "text": {
+            "fixedValue": "The appearance of Merlin crushes Vivian's ambitions"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story24"
+          },
+          "x": 70,
+          "y": 64
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_meliodas_is_reunited_with_elizab",
+          "text": {
+            "fixedValue": "Meliodas is reunited with Elizabeth; Ban learns he"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story24"
+          },
+          "x": 70,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_kill_someone_in_order_to_resurre",
+          "text": {
+            "fixedValue": "kill someone in order to resurrect Elaine."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story24"
+          },
+          "x": 69,
+          "y": 95
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_corrupted_jericho",
+          "text": {
+            "fixedValue": "Defeat Corrupted Jericho"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story24"
+          },
+          "x": 70,
+          "y": 113
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_what_i_can_do_for_you",
+          "text": {
+            "fixedValue": "EP 22: What I Can Do For You"
+          },
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story25"
+          },
+          "x": 72,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_meliodas_loses_elizabeth_again",
+          "text": {
+            "fixedValue": "Meliodas loses Elizabeth again; Ban confronts the person"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story25"
+          },
+          "x": 65,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_he_has_to_kill_in_order_to_save",
+          "text": {
+            "fixedValue": "he has to kill in order to save Elaine"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story25"
+          },
+          "x": 67,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_diane_and_company_battle_the_new",
+          "text": {
+            "fixedValue": "Diane and company battle the New Generation."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story25"
+          },
+          "x": 73,
+          "y": 93
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_ban_and_helbram",
+          "text": {
+            "fixedValue": "Defeat Ban And Helbram"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story25"
+          },
+          "x": 72,
+          "y": 111
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_22_what_i_can_do_for_you",
+          "text": {
+            "fixedValue": "EP 22: What I Can Do For You"
+          },
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story26"
+          },
+          "x": 73,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_meliodas_loses_elizabeth_again1",
+          "text": {
+            "fixedValue": "Meliodas loses Elizabeth again; Ban confronts the person"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story26"
+          },
+          "x": 66,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_he_has_to_kill_in_order_to_save1",
+          "text": {
+            "fixedValue": "he has to kill in order to save Elaine"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story26"
+          },
+          "x": 68,
+          "y": 77
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_diane_and_company_battle_the_new1",
+          "text": {
+            "fixedValue": "Diane and company battle the New Generation."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story26"
+          },
+          "x": 71,
+          "y": 94
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_ban_and_helbram1",
+          "text": {
+            "fixedValue": "Defeat Ban And Helbram"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story26"
+          },
+          "x": 70,
+          "y": 110
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_23_descent_into_despair",
+          "text": {
+            "fixedValue": "EP 23: Descent Into Despair"
+          },
+          "color": {
+            "value": -16737895,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story27"
+          },
+          "x": 72,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_discoveries_that_give_him_the_ul",
+          "text": {
+            "fixedValue": "discoveries that give him the ultimate Demon power."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story27"
+          },
+          "x": 70,
+          "y": 85
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_bloodred_form_hendrickso",
+          "text": {
+            "fixedValue": "Defeat Blood-Red Form Hendrickson"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story27"
+          },
+          "x": 69,
+          "y": 115
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_chased_by_the_seven_deadly_sins",
+          "text": {
+            "fixedValue": "Chased by the Seven Deadly Sins, Hendrickson makes two"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story27"
+          },
+          "x": 70,
+          "y": 65
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep24_the_heroes",
+          "text": {
+            "fixedValue": "EP:24 The Heroes"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story28"
+          },
+          "x": 72,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_when_it_seems_the_seven_deadly_s",
+          "text": {
+            "fixedValue": "When it seems the Seven Deadly Sins"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story28"
+          },
+          "x": 69,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_will_be_defeated_by_hendrickson",
+          "text": {
+            "fixedValue": "will be defeated by"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story28"
+          },
+          "x": 256,
+          "y": 64
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_hendricksons_overwhelming_power",
+          "text": {
+            "fixedValue": "Hendrickson's overwhelming power, Elizabeth's."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story28"
+          },
+          "x": 69,
+          "y": 79
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_power_returns",
+          "text": {
+            "fixedValue": "power returns."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story28"
+          },
+          "x": 71,
+          "y": 99
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_gray_demon",
+          "text": {
+            "fixedValue": "Defeat Gray Demon Hendrickson"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story28"
+          },
+          "x": 72,
+          "y": 110
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_the_end",
+          "text": {
+            "fixedValue": "The End"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story29"
+          },
+          "x": 72,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_thank_you_guys_some_much_for_pla",
+          "text": {
+            "fixedValue": "Thank You Guys some much for playing the mod"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story29"
+          },
+          "x": 72,
+          "y": 65
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_season_2_will_be_added_in_soon",
+          "text": {
+            "fixedValue": "season 2 will be added in soon"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story29"
+          },
+          "x": 69,
+          "y": 84
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

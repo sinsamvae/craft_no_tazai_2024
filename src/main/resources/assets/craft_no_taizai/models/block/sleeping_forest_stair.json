@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "craft_no_taizai:block/sleepingforestlog",
+    "bottom": "craft_no_taizai:block/sleepingforestlog",
+    "top": "craft_no_taizai:block/sleepingforestlog",
+    "side": "craft_no_taizai:block/sleepingforestlog"
+  },
+  "render_type": "solid"
+}

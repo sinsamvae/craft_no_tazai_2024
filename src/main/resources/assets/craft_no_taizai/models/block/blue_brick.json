@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "craft_no_taizai:block/bluebricks",
+    "up": "craft_no_taizai:block/bluebricks",
+    "north": "craft_no_taizai:block/bluebricks",
+    "east": "craft_no_taizai:block/bluebricks",
+    "south": "craft_no_taizai:block/bluebricks",
+    "west": "craft_no_taizai:block/bluebricks",
+    "particle": "craft_no_taizai:block/bluebricks"
+  },
+  "render_type": "solid"
+}

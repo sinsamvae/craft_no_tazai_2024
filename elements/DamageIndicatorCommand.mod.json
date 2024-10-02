@@ -1,0 +1,10 @@
+{
+  "_fv": 66,
+  "_type": "command",
+  "definition": {
+    "commandName": "damage_indicator",
+    "type": "STANDARD",
+    "permissionLevel": "No requirement",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"304\" y=\"105\"><next><block type=\"entity\"><field name=\"name\">name</field><field name=\"type\">players</field><statement name=\"args\"><block type=\"logic\"><field name=\"name\">name</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">DamageIndicator</field></block></statement></block></statement></block></next></block></xml>"
+  }
+}

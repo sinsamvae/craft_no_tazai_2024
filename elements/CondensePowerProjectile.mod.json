@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.FLOWING_WATER"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": ""
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 5.0,
+    "knockback": 5,
+    "entityModel": "Modelwater",
+    "customModelTexture": "water.png",
+    "onHitsEntity": {
+      "name": "CondensePowerProjectileProjectileHitsLivingEntity"
+    },
+    "onFlyingTick": {
+      "name": "CondensePowerWhileProjectileFlyingTick"
+    }
+  }
+}

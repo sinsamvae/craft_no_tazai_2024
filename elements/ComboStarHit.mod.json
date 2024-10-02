@@ -1,0 +1,78 @@
+{
+  "_fv": 66,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_combo_star_var",
+          "text": {
+            "fixedValue": "",
+            "name": "ComboStarVar"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "DisplayComboStarHit"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 59,
+          "y": 224
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_lost_vayne_var",
+          "text": {
+            "fixedValue": "",
+            "name": "LostVayneVar"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "LostVayneOverlay"
+          },
+          "anchorPoint": "CENTER",
+          "x": 59,
+          "y": 224
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_rhitta_count",
+          "text": {
+            "fixedValue": "",
+            "name": "RhittaCount"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "RhittaReturn"
+          },
+          "anchorPoint": "CENTER",
+          "x": 59,
+          "y": 224
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

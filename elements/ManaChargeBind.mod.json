@@ -1,0 +1,15 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "RCONTROL",
+    "keyBindingName": "Mana Charge",
+    "keyBindingCategoryKey": "craftnotaizai",
+    "onKeyPressed": {
+      "name": "ManaChargeBindOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "ManaChargeBindOnKeyReleased"
+    }
+  }
+}

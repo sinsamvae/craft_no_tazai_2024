@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "craft_no_taizai:block/13530476-cover_xl",
+    "particle": "craft_no_taizai:block/13530476-cover_xl"
+  },
+  "render_type": "solid"
+}
