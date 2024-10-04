@@ -49,13 +49,6 @@ public class TeleportationKeyBindProcedure {
 											: 0),
 									_ent.getYRot(), _ent.getXRot());
 					}
-					{
-						double _setval = 30;
-						entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.rCoolDown = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
 				} else {
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(

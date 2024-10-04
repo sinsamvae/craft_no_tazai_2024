@@ -7,6 +7,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.EditBox;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.Minecraft;
 
@@ -23,6 +24,8 @@ public class TeleportationGuiScreen extends AbstractContainerScreen<Teleportatio
 	private final Player entity;
 	EditBox X;
 	EditBox Z;
+	EditBox Y;
+	Button button_teleport;
 
 	public TeleportationGuiScreen(TeleportationGuiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -43,6 +46,7 @@ public class TeleportationGuiScreen extends AbstractContainerScreen<Teleportatio
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		X.render(guiGraphics, mouseX, mouseY, partialTicks);
 		Z.render(guiGraphics, mouseX, mouseY, partialTicks);
+		Y.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
@@ -65,6 +69,8 @@ public class TeleportationGuiScreen extends AbstractContainerScreen<Teleportatio
 			return X.keyPressed(key, b, c);
 		if (Z.isFocused())
 			return Z.keyPressed(key, b, c);
+		if (Y.isFocused())
+			return Y.keyPressed(key, b, c);
 		return super.keyPressed(key, b, c);
 	}
 
@@ -73,15 +79,18 @@ public class TeleportationGuiScreen extends AbstractContainerScreen<Teleportatio
 		super.containerTick();
 		X.tick();
 		Z.tick();
+		Y.tick();
 	}
 
 	@Override
 	public void resize(Minecraft minecraft, int width, int height) {
 		String XValue = X.getValue();
 		String ZValue = Z.getValue();
+		String YValue = Y.getValue();
 		super.resize(minecraft, width, height);
 		X.setValue(XValue);
 		Z.setValue(ZValue);
+		Y.setValue(YValue);
 	}
 
 	@Override
@@ -99,5 +108,13 @@ public class TeleportationGuiScreen extends AbstractContainerScreen<Teleportatio
 		Z.setMaxLength(32767);
 		guistate.put("text:Z", Z);
 		this.addWidget(this.Z);
+		Y = new EditBox(this.font, this.leftPos + 29, this.topPos + 122, 118, 18, Component.translatable("gui.craft_no_taizai.teleportation_gui.Y"));
+		Y.setMaxLength(32767);
+		guistate.put("text:Y", Y);
+		this.addWidget(this.Y);
+		button_teleport = Button.builder(Component.translatable("gui.craft_no_taizai.teleportation_gui.button_teleport"), e -> {
+		}).bounds(this.leftPos + 54, this.topPos + 21, 67, 20).build();
+		guistate.put("button:button_teleport", button_teleport);
+		this.addRenderableWidget(button_teleport);
 	}
 }

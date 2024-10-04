@@ -62,6 +62,7 @@ import net.mcreator.craftnotaizai.item.NeedleItem;
 import net.mcreator.craftnotaizai.item.MuramoArmorItem;
 import net.mcreator.craftnotaizai.item.MugAleItem;
 import net.mcreator.craftnotaizai.item.MinimumTabletsItem;
+import net.mcreator.craftnotaizai.item.MidTierSoulsItem;
 import net.mcreator.craftnotaizai.item.MerlinOutfitItem;
 import net.mcreator.craftnotaizai.item.MeliodasoutfitItem;
 import net.mcreator.craftnotaizai.item.MeliodasdanaforarmorItem;
@@ -69,6 +70,7 @@ import net.mcreator.craftnotaizai.item.ManpuunoGekirinItem;
 import net.mcreator.craftnotaizai.item.MagicScrollItem;
 import net.mcreator.craftnotaizai.item.LuminosityItem;
 import net.mcreator.craftnotaizai.item.LumeOrbItem;
+import net.mcreator.craftnotaizai.item.LowTierSoulsItem;
 import net.mcreator.craftnotaizai.item.LostvayneItem;
 import net.mcreator.craftnotaizai.item.LongAxeItem;
 import net.mcreator.craftnotaizai.item.LizSwordItem;
@@ -91,6 +93,7 @@ import net.mcreator.craftnotaizai.item.HugoArmorItem;
 import net.mcreator.craftnotaizai.item.HowzerArmorOutfitItem;
 import net.mcreator.craftnotaizai.item.HowzerArmorItem;
 import net.mcreator.craftnotaizai.item.HolyTreeShardItem;
+import net.mcreator.craftnotaizai.item.HighTierSoulsItem;
 import net.mcreator.craftnotaizai.item.HendriksonswordItem;
 import net.mcreator.craftnotaizai.item.HendricksonArmorItem;
 import net.mcreator.craftnotaizai.item.HellblazeOmegaItem;
@@ -568,6 +571,13 @@ public class CraftNoTaizaiModItems {
 	public static final RegistryObject<Item> BOAR_HAT_OUTFIT_LEGGINGS = REGISTRY.register("boar_hat_outfit_leggings", () -> new BoarHatOutfitItem.Leggings());
 	public static final RegistryObject<Item> HELL_GATE_RED_DEMONS_SPAWN_EGG = REGISTRY.register("hell_gate_red_demons_spawn_egg", () -> new ForgeSpawnEggItem(CraftNoTaizaiModEntities.HELL_GATE_RED_DEMONS, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> JUMANJU_ENTITY_SPAWN_EGG = REGISTRY.register("jumanju_entity_spawn_egg", () -> new ForgeSpawnEggItem(CraftNoTaizaiModEntities.JUMANJU_ENTITY, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> COCOON_OF_DARKNESS_SPAWN_EGG = REGISTRY.register("cocoon_of_darkness_spawn_egg", () -> new ForgeSpawnEggItem(CraftNoTaizaiModEntities.COCOON_OF_DARKNESS, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> LOW_TIER_SOULS = REGISTRY.register("low_tier_souls", () -> new LowTierSoulsItem());
+	public static final RegistryObject<Item> MID_TIER_SOULS = REGISTRY.register("mid_tier_souls", () -> new MidTierSoulsItem());
+	public static final RegistryObject<Item> HIGH_TIER_SOULS = REGISTRY.register("high_tier_souls", () -> new HighTierSoulsItem());
+	public static final RegistryObject<Item> GERHEADE_SPAWN_EGG = REGISTRY.register("gerheade_spawn_egg", () -> new ForgeSpawnEggItem(CraftNoTaizaiModEntities.GERHEADE, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> SERVANT_SPAWN_EGG = REGISTRY.register("servant_spawn_egg", () -> new ForgeSpawnEggItem(CraftNoTaizaiModEntities.SERVANT, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> MARMAS_SPAWN_EGG = REGISTRY.register("marmas_spawn_egg", () -> new ForgeSpawnEggItem(CraftNoTaizaiModEntities.MARMAS, -1, -1, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

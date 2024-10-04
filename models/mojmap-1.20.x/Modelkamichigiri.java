@@ -1,4 +1,4 @@
-// Made with Blockbench 4.10.4
+// Made with Blockbench 4.11.1
 // Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
@@ -17,11 +17,10 @@ public class Modelkamichigiri<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 
-		PartDefinition bone = partdefinition
-				.addOrReplaceChild("bone",
-						CubeListBuilder.create().texOffs(0, 7).addBox(0.0F, -3.5F, -1.0F, 0.0F, 7.0F, 5.0F,
-								new CubeDeformation(0.0F)),
-						PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, 0.0F, 0.0F, 1.5708F));
+		PartDefinition bone = partdefinition.addOrReplaceChild("bone",
+				CubeListBuilder.create().texOffs(0, 7).addBox(0.0F, -3.5F, -1.0F, 0.0F, 7.0F, 5.0F,
+						new CubeDeformation(0.0F)),
+				PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, 0.0F, -1.5708F, -3.1416F));
 
 		PartDefinition cube_r1 = bone
 				.addOrReplaceChild("cube_r1",

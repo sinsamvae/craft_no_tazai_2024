@@ -96,8 +96,6 @@ public class CraftNoTaizaiModVariables {
 			clone.Demon_Clan = original.Demon_Clan;
 			clone.ManaAttack = original.ManaAttack;
 			clone.Full_Counter_Use = original.Full_Counter_Use;
-			clone.switchmove = original.switchmove;
-			clone.selectmove = original.selectmove;
 			clone.PlayerFirstJoins = original.PlayerFirstJoins;
 			clone.Race = original.Race;
 			clone.Human_Clan = original.Human_Clan;
@@ -297,6 +295,7 @@ public class CraftNoTaizaiModVariables {
 			clone.JubakuEnsaZ = original.JubakuEnsaZ;
 			clone.JubakuEnsaTick = original.JubakuEnsaTick;
 			clone.JubakuEnsa = original.JubakuEnsa;
+			clone.God = original.God;
 			if (!event.isWasDeath()) {
 				clone.jumbvar = original.jumbvar;
 				clone.Gloxinia = original.Gloxinia;
@@ -530,8 +529,6 @@ public class CraftNoTaizaiModVariables {
 		public double Demon_Clan = 0;
 		public double ManaAttack = 0;
 		public boolean Full_Counter_Use = false;
-		public double switchmove = 0;
-		public String selectmove = "\"\"";
 		public double PlayerFirstJoins = 0;
 		public String Race = "\"\"";
 		public double Human_Clan = 0;
@@ -733,6 +730,7 @@ public class CraftNoTaizaiModVariables {
 		public double JubakuEnsaZ = 0;
 		public double JubakuEnsaTick = 0;
 		public boolean JubakuEnsa = false;
+		public boolean God = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -753,8 +751,6 @@ public class CraftNoTaizaiModVariables {
 			nbt.putDouble("Demon_Clan", Demon_Clan);
 			nbt.putDouble("ManaAttack", ManaAttack);
 			nbt.putBoolean("Full_Counter_Use", Full_Counter_Use);
-			nbt.putDouble("switchmove", switchmove);
-			nbt.putString("selectmove", selectmove);
 			nbt.putDouble("PlayerFirstJoins", PlayerFirstJoins);
 			nbt.putString("Race", Race);
 			nbt.putDouble("Human_Clan", Human_Clan);
@@ -956,6 +952,7 @@ public class CraftNoTaizaiModVariables {
 			nbt.putDouble("JubakuEnsaZ", JubakuEnsaZ);
 			nbt.putDouble("JubakuEnsaTick", JubakuEnsaTick);
 			nbt.putBoolean("JubakuEnsa", JubakuEnsa);
+			nbt.putBoolean("God", God);
 			return nbt;
 		}
 
@@ -973,8 +970,6 @@ public class CraftNoTaizaiModVariables {
 			Demon_Clan = nbt.getDouble("Demon_Clan");
 			ManaAttack = nbt.getDouble("ManaAttack");
 			Full_Counter_Use = nbt.getBoolean("Full_Counter_Use");
-			switchmove = nbt.getDouble("switchmove");
-			selectmove = nbt.getString("selectmove");
 			PlayerFirstJoins = nbt.getDouble("PlayerFirstJoins");
 			Race = nbt.getString("Race");
 			Human_Clan = nbt.getDouble("Human_Clan");
@@ -1176,6 +1171,7 @@ public class CraftNoTaizaiModVariables {
 			JubakuEnsaZ = nbt.getDouble("JubakuEnsaZ");
 			JubakuEnsaTick = nbt.getDouble("JubakuEnsaTick");
 			JubakuEnsa = nbt.getBoolean("JubakuEnsa");
+			God = nbt.getBoolean("God");
 		}
 	}
 
@@ -1221,8 +1217,6 @@ public class CraftNoTaizaiModVariables {
 					variables.Demon_Clan = message.data.Demon_Clan;
 					variables.ManaAttack = message.data.ManaAttack;
 					variables.Full_Counter_Use = message.data.Full_Counter_Use;
-					variables.switchmove = message.data.switchmove;
-					variables.selectmove = message.data.selectmove;
 					variables.PlayerFirstJoins = message.data.PlayerFirstJoins;
 					variables.Race = message.data.Race;
 					variables.Human_Clan = message.data.Human_Clan;
@@ -1424,6 +1418,7 @@ public class CraftNoTaizaiModVariables {
 					variables.JubakuEnsaZ = message.data.JubakuEnsaZ;
 					variables.JubakuEnsaTick = message.data.JubakuEnsaTick;
 					variables.JubakuEnsa = message.data.JubakuEnsa;
+					variables.God = message.data.God;
 				}
 			});
 			context.setPacketHandled(true);

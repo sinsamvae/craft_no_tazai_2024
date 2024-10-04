@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.effect.MobEffect;
 
+import net.mcreator.craftnotaizai.potion.VenomToxicyPotionMobEffect;
 import net.mcreator.craftnotaizai.potion.PurgatoryFlameMobEffect;
 import net.mcreator.craftnotaizai.potion.PowerAmplifyEffectMobEffect;
 import net.mcreator.craftnotaizai.potion.PhysicalhuntMobEffect;
@@ -46,4 +47,5 @@ public class CraftNoTaizaiModMobEffects {
 	public static final RegistryObject<MobEffect> NECROSIS = REGISTRY.register("necrosis", () -> new NecrosisMobEffect());
 	public static final RegistryObject<MobEffect> BLACK_OUT_EFFECT = REGISTRY.register("black_out_effect", () -> new BlackOutEffectMobEffect());
 	public static final RegistryObject<MobEffect> JUBAKU_ENSA_EFFECT = REGISTRY.register("jubaku_ensa_effect", () -> new JubakuEnsaEffectMobEffect());
+	public static final RegistryObject<MobEffect> VENOM_TOXICY_POTION = REGISTRY.register("venom_toxicy_potion", () -> new VenomToxicyPotionMobEffect());
 }

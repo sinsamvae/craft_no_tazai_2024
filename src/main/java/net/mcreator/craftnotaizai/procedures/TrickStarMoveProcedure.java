@@ -61,6 +61,9 @@ public class TrickStarMoveProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			Targetx = entity.getX();
+			Targety = entity.getY();
+			Targetz = entity.getZ();
 			{
 				Entity _ent = entity;
 				_ent.teleportTo(((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).TrickStarX),
@@ -73,9 +76,9 @@ public class TrickStarMoveProcedure {
 			}
 			{
 				Entity _ent = entity_target;
-				_ent.teleportTo((entity.getPersistentData().getDouble("MobX")), (entity.getPersistentData().getDouble("MobY")), (entity.getPersistentData().getDouble("MobZ")));
+				_ent.teleportTo(Targetx, Targety, Targetz);
 				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport((entity.getPersistentData().getDouble("MobX")), (entity.getPersistentData().getDouble("MobY")), (entity.getPersistentData().getDouble("MobZ")), _ent.getYRot(), _ent.getXRot());
+					_serverPlayer.connection.teleport(Targetx, Targety, Targetz, _ent.getYRot(), _ent.getXRot());
 			}
 		}
 		if (target && entity_target instanceof Player) {
@@ -100,6 +103,9 @@ public class TrickStarMoveProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			Targetx = entity.getX();
+			Targety = entity.getY();
+			Targetz = entity.getZ();
 			{
 				Entity _ent = entity;
 				_ent.teleportTo(((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).TrickStarX),
@@ -112,13 +118,9 @@ public class TrickStarMoveProcedure {
 			}
 			{
 				Entity _ent = entity_target;
-				_ent.teleportTo(((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).TrickStarVX),
-						((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).TrickStarVY),
-						((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).TrickStarVZ));
+				_ent.teleportTo(Targetx, Targety, Targetz);
 				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport(((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).TrickStarVX),
-							((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).TrickStarVY),
-							((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).TrickStarVZ), _ent.getYRot(), _ent.getXRot());
+					_serverPlayer.connection.teleport(Targetx, Targety, Targetz, _ent.getYRot(), _ent.getXRot());
 			}
 		}
 	}

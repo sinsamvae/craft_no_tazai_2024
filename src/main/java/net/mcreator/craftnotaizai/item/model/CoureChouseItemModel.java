@@ -9,12 +9,12 @@ import net.mcreator.craftnotaizai.item.CoureChouseItem;
 public class CoureChouseItemModel extends GeoModel<CoureChouseItem> {
 	@Override
 	public ResourceLocation getAnimationResource(CoureChouseItem animatable) {
-		return new ResourceLocation("craft_no_taizai", "animations/holy_staff_courechouse.animation.json");
+		return new ResourceLocation("craft_no_taizai", "animations/triple-staff.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(CoureChouseItem animatable) {
-		return new ResourceLocation("craft_no_taizai", "geo/holy_staff_courechouse.geo.json");
+		return new ResourceLocation("craft_no_taizai", "geo/triple-staff.geo.json");
 	}
 
 	@Override

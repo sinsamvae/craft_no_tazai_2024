@@ -27,9 +27,6 @@
       "value": -52225,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:SpawnEggs"
-    },
     "creativeTabs": [],
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -102,8 +99,8 @@
     "stepSound": {
       "value": ""
     },
-    "onRightClickedOn": {
-      "name": "HornofCernunnosRightClickedOnEntity"
+    "raidCelebrationSound": {
+      "value": ""
     },
     "hasAI": true,
     "aiBase": "(none)",

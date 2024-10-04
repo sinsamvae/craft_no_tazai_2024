@@ -15,7 +15,7 @@ public class UseMagicOnKeyPressedProcedure {
 		GravityManipulationKeybindProcedure.execute(entity);
 		GodSpeedProcedure.execute(world, x, y, z, entity);
 		AuraBurstKeybindProcedure.execute(world, entity);
-		HiveMindPressProcedure.execute(world, x, y, z, entity);
+		HiveMindPressProcedure.execute();
 		UseMagicPressed2Procedure.execute(world, x, y, z, entity);
 		UseMagicPressed3Procedure.execute(world, x, y, z, entity);
 		DemonModeOnOnKeyPressedProcedure.execute(entity);

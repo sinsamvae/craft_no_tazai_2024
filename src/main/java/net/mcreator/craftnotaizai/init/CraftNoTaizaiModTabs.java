@@ -133,7 +133,6 @@ public class CraftNoTaizaiModTabs {
 				tabData.accept(CraftNoTaizaiModItems.LOSTVAYNE.get());
 				tabData.accept(CraftNoTaizaiModItems.TWIN_BOW_HERRITT.get());
 				tabData.accept(CraftNoTaizaiModItems.HEAT_FORK.get());
-				tabData.accept(CraftNoTaizaiModItems.COURE_CHOUSE.get());
 			})
 
 					.build());
@@ -263,6 +262,9 @@ public class CraftNoTaizaiModTabs {
 				tabData.accept(CraftNoTaizaiModItems.MUG_ALE.get());
 				tabData.accept(CraftNoTaizaiModItems.GLOW_MUG.get());
 				tabData.accept(CraftNoTaizaiModItems.BEER_MUG.get());
+				tabData.accept(CraftNoTaizaiModItems.LOW_TIER_SOULS.get());
+				tabData.accept(CraftNoTaizaiModItems.MID_TIER_SOULS.get());
+				tabData.accept(CraftNoTaizaiModItems.HIGH_TIER_SOULS.get());
 			})
 
 					.build());
@@ -304,7 +306,6 @@ public class CraftNoTaizaiModTabs {
 				tabData.accept(CraftNoTaizaiModItems.ANDRE_DEMON_FORM_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.EARTH_GOLEM_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.GUARDIAN_TRUE_SPIRT_SPEAR_SPAWN_EGG.get());
-				tabData.accept(CraftNoTaizaiModItems.HORNOF_CERNUNNOS_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.TWIGO_ANIMATED_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.GIL_THUNDER_ANIMATED_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.GOLGIUS_ANIMATED_SPAWN_EGG.get());
@@ -349,6 +350,7 @@ public class CraftNoTaizaiModTabs {
 				tabData.accept(CraftNoTaizaiModItems.KING_BOSS_ANIMATED_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.MELIODAS_BOSS_ANIMATED_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.MERLIN_BOSS_ANIMATED_SPAWN_EGG.get());
+				tabData.accept(CraftNoTaizaiModItems.GERHEADE_SPAWN_EGG.get());
 			})
 
 					.build());

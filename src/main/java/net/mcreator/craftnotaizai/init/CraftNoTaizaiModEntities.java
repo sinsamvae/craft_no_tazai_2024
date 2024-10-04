@@ -40,6 +40,7 @@ import net.mcreator.craftnotaizai.entity.SnowflowerbeamProjectileEntity;
 import net.mcreator.craftnotaizai.entity.SmallTowerEntity;
 import net.mcreator.craftnotaizai.entity.SladerAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.SimonAnimatedEntity;
+import net.mcreator.craftnotaizai.entity.ServantEntity;
 import net.mcreator.craftnotaizai.entity.RuinAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.RoyalGurardAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.RoyalGuardAnimatedEntity;
@@ -66,6 +67,7 @@ import net.mcreator.craftnotaizai.entity.MoonRoseEntity;
 import net.mcreator.craftnotaizai.entity.MerlinBossAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.MeliodasBossAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.MediumTowerEntity;
+import net.mcreator.craftnotaizai.entity.MarmasEntity;
 import net.mcreator.craftnotaizai.entity.MantaEntity;
 import net.mcreator.craftnotaizai.entity.ManpuunoGekirinProjectileEntity;
 import net.mcreator.craftnotaizai.entity.LuigiEntity;
@@ -117,6 +119,7 @@ import net.mcreator.craftnotaizai.entity.GilThunderAnimated2Entity;
 import net.mcreator.craftnotaizai.entity.GigaPickEntity;
 import net.mcreator.craftnotaizai.entity.GigaFallEntity;
 import net.mcreator.craftnotaizai.entity.GigaCrushEntity;
+import net.mcreator.craftnotaizai.entity.GerheadeEntity;
 import net.mcreator.craftnotaizai.entity.GeckolibKrakenEntity;
 import net.mcreator.craftnotaizai.entity.FurkuuSutonEntity;
 import net.mcreator.craftnotaizai.entity.FrozenBreathEntity;
@@ -155,6 +158,7 @@ import net.mcreator.craftnotaizai.entity.DaichiNoKibaEntity;
 import net.mcreator.craftnotaizai.entity.CruelSunProjectileEntity;
 import net.mcreator.craftnotaizai.entity.CrazyProminenceEntity;
 import net.mcreator.craftnotaizai.entity.CondensePowerProjectileEntity;
+import net.mcreator.craftnotaizai.entity.CocoonOfDarknessEntity;
 import net.mcreator.craftnotaizai.entity.ClayDragonEntity;
 import net.mcreator.craftnotaizai.entity.ChickenEntity;
 import net.mcreator.craftnotaizai.entity.ChatifolshotEntity;
@@ -705,6 +709,20 @@ public class CraftNoTaizaiModEntities {
 					.sized(2.5f, 4.6f));
 	public static final RegistryObject<EntityType<JumanjuEntityEntity>> JUMANJU_ENTITY = register("jumanju_entity", EntityType.Builder.<JumanjuEntityEntity>of(JumanjuEntityEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true)
 			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JumanjuEntityEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<CocoonOfDarknessEntity>> COCOON_OF_DARKNESS = register("cocoon_of_darkness", EntityType.Builder.<CocoonOfDarknessEntity>of(CocoonOfDarknessEntity::new, MobCategory.AMBIENT)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CocoonOfDarknessEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GerheadeEntity>> GERHEADE = register("gerheade",
+			EntityType.Builder.<GerheadeEntity>of(GerheadeEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GerheadeEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ServantEntity>> SERVANT = register("servant",
+			EntityType.Builder.<ServantEntity>of(ServantEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ServantEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<MarmasEntity>> MARMAS = register("marmas",
+			EntityType.Builder.<MarmasEntity>of(MarmasEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MarmasEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -820,6 +838,10 @@ public class CraftNoTaizaiModEntities {
 			MoonRoseEntity.init();
 			HellGateRedDemonsEntity.init();
 			JumanjuEntityEntity.init();
+			CocoonOfDarknessEntity.init();
+			GerheadeEntity.init();
+			ServantEntity.init();
+			MarmasEntity.init();
 		});
 	}
 
@@ -932,5 +954,9 @@ public class CraftNoTaizaiModEntities {
 		event.put(MOON_ROSE.get(), MoonRoseEntity.createAttributes().build());
 		event.put(HELL_GATE_RED_DEMONS.get(), HellGateRedDemonsEntity.createAttributes().build());
 		event.put(JUMANJU_ENTITY.get(), JumanjuEntityEntity.createAttributes().build());
+		event.put(COCOON_OF_DARKNESS.get(), CocoonOfDarknessEntity.createAttributes().build());
+		event.put(GERHEADE.get(), GerheadeEntity.createAttributes().build());
+		event.put(SERVANT.get(), ServantEntity.createAttributes().build());
+		event.put(MARMAS.get(), MarmasEntity.createAttributes().build());
 	}
 }

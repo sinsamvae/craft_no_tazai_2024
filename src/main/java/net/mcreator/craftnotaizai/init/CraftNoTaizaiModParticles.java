@@ -10,6 +10,7 @@ import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.craftnotaizai.client.particle.WhiteParticle;
+import net.mcreator.craftnotaizai.client.particle.VenomToxicyParticle;
 import net.mcreator.craftnotaizai.client.particle.SmokeParticle;
 import net.mcreator.craftnotaizai.client.particle.Smoke2Particle;
 import net.mcreator.craftnotaizai.client.particle.PurplefirepartiiclesParticle;
@@ -108,5 +109,6 @@ public class CraftNoTaizaiModParticles {
 		event.registerSpriteSet(CraftNoTaizaiModParticleTypes.JUBAKUENSA_PARTICLE.get(), JubakuensaParticleParticle::provider);
 		event.registerSpriteSet(CraftNoTaizaiModParticleTypes.JUBAKU_ENSA_PARTICLE_2.get(), JubakuEnsaParticle2Particle::provider);
 		event.registerSpriteSet(CraftNoTaizaiModParticleTypes.BREAKABLE_BUG_PARTICLES.get(), BreakableBugParticlesParticle::provider);
+		event.registerSpriteSet(CraftNoTaizaiModParticleTypes.VENOM_TOXICY.get(), VenomToxicyParticle::provider);
 	}
 }

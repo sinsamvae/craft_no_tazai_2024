@@ -46,6 +46,8 @@ public class HornofCernunnosRightClickedOnEntityProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			entity.getPersistentData().putString("MyFullText", "MyFullText");
+			entity.getPersistentData().putDouble("CharacterCount", 0);
 		}
 	}
 }

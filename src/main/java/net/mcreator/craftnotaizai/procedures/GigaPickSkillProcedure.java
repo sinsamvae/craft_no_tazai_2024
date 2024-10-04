@@ -79,6 +79,7 @@ public class GigaPickSkillProcedure {
 								}.checkGamemode(entityiterator) || entityiterator instanceof GigaPickEntity)) {
 							entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("craft_no_taizai:mana_dmg"))), entity),
 									(float) (Math.ceil(0.45 * (entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).ManaAttack) + 1));
+							entityiterator.setDeltaMovement(new Vec3((0 * entity.getX()), (1 * entity.getY()), (0 * entity.getZ())));
 						}
 					}
 				}

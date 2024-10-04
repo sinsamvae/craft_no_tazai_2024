@@ -31,6 +31,29 @@
           "x": 154,
           "y": 126
         }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "name": "Y",
+          "width": 120,
+          "height": 20,
+          "x": 154,
+          "y": 158
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_teleport",
+          "text": "Teleport",
+          "isUndecorated": false,
+          "width": 67,
+          "height": 20,
+          "x": 180,
+          "y": 58
+        }
       }
     ],
     "gridSettings": {

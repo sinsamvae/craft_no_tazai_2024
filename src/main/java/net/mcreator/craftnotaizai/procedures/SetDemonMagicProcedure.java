@@ -38,7 +38,7 @@ public class SetDemonMagicProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-			RandomMagic = Mth.nextInt(RandomSource.create(), 1, 95);
+			RandomMagic = Mth.nextInt(RandomSource.create(), 1, 120);
 			if (RandomMagic <= 60) {
 				{
 					String _setval = "HellBlaze";
@@ -48,7 +48,7 @@ public class SetDemonMagicProcedure {
 					});
 				}
 			}
-			if (RandomMagic >= 60 && RandomMagic <= 80) {
+			if (RandomMagic >= 60 && RandomMagic <= 90) {
 				{
 					String _setval = "Invasion";
 					entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -64,16 +64,7 @@ public class SetDemonMagicProcedure {
 					});
 				}
 			}
-			if (RandomMagic >= 80 && RandomMagic <= 90) {
-				{
-					String _setval = "Full_Counter";
-					entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.magic = _setval;
-						capability.syncPlayerVariables(entity);
-					});
-				}
-			}
-			if (RandomMagic >= 90 && RandomMagic <= 95) {
+			if (RandomMagic >= 90 && RandomMagic <= 120) {
 				{
 					String _setval = "Hellblaze_Fullcounter";
 					entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

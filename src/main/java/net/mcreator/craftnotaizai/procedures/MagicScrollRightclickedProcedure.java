@@ -49,7 +49,7 @@ public class MagicScrollRightclickedProcedure {
 			if (random == 9) {
 				skill = "Resist Fire";
 			}
-			if (random == 9) {
+			if (random == 10) {
 				skill = "Magic Detection";
 			}
 			itemstack.getOrCreateTag().putString("skill", skill);
