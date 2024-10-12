@@ -5,9 +5,9 @@
     "enableHelmet": false,
     "textureHelmet": "",
     "enableBody": true,
-    "textureBody": "howzerarmor_body",
+    "textureBody": "hower_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "howzerarmor_leggings",
+    "textureLeggings": "howzer_leggings",
     "enableBoots": false,
     "textureBoots": "",
     "creativeTabs": [
@@ -60,6 +60,18 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
     "helmetPiglinNeutral": {
       "fixedValue": false
     },

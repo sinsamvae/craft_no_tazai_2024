@@ -25,6 +25,7 @@ import net.mcreator.craftnotaizai.block.SleepingForestStairBlock;
 import net.mcreator.craftnotaizai.block.SleepingForestSlabBlock;
 import net.mcreator.craftnotaizai.block.QuickSandBlock;
 import net.mcreator.craftnotaizai.block.PurplefireBlock;
+import net.mcreator.craftnotaizai.block.PurgatoryBlockBlock;
 import net.mcreator.craftnotaizai.block.PerfectCubeBlock;
 import net.mcreator.craftnotaizai.block.LastStageAgaveBlock;
 import net.mcreator.craftnotaizai.block.KegBlock;
@@ -124,6 +125,7 @@ public class CraftNoTaizaiModBlocks {
 	public static final RegistryObject<Block> CHAOS_FLOOR = REGISTRY.register("chaos_floor", () -> new ChaosFloorBlock());
 	public static final RegistryObject<Block> CHAOS_WALL = REGISTRY.register("chaos_wall", () -> new ChaosWallBlock());
 	public static final RegistryObject<Block> CHAOS_DIMENSION_PORTAL = REGISTRY.register("chaos_dimension_portal", () -> new ChaosDimensionPortalBlock());
+	public static final RegistryObject<Block> PURGATORY_BLOCK = REGISTRY.register("purgatory_block", () -> new PurgatoryBlockBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

@@ -14,7 +14,6 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.craftnotaizai.world.inventory.HornOfCernunosGuiMenu;
-import net.mcreator.craftnotaizai.network.CraftNoTaizaiModVariables;
 
 import io.netty.buffer.Unpooled;
 
@@ -23,31 +22,20 @@ public class HornofCernunnosRightClickedOnEntityProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		boolean can_set = false;
-		can_set = true;
-		if (can_set) {
-			if (sourceentity instanceof ServerPlayer _ent) {
-				BlockPos _bpos = BlockPos.containing(x, y, z);
-				NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
-					@Override
-					public Component getDisplayName() {
-						return Component.literal("HornOfCernunosGui");
-					}
+		if (sourceentity instanceof ServerPlayer _ent) {
+			BlockPos _bpos = BlockPos.containing(x, y, z);
+			NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+				@Override
+				public Component getDisplayName() {
+					return Component.literal("HornOfCernunosGui");
+				}
 
-					@Override
-					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-						return new HornOfCernunosGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
-					}
-				}, _bpos);
-			}
-			{
-				double _setval = 0;
-				entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.HornOfCernunnosID = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-			entity.getPersistentData().putString("MyFullText", "MyFullText");
-			entity.getPersistentData().putDouble("CharacterCount", 0);
+				@Override
+				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+					return new HornOfCernunosGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+				}
+			}, _bpos);
 		}
+		entity.getPersistentData().putDouble("CharacterCount", 0);
 	}
 }

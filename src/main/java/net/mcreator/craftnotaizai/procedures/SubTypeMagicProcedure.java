@@ -3,7 +3,7 @@ package net.mcreator.craftnotaizai.procedures;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 
 import net.minecraft.world.entity.Entity;
 
@@ -14,10 +14,8 @@ import javax.annotation.Nullable;
 @Mod.EventBusSubscriber
 public class SubTypeMagicProcedure {
 	@SubscribeEvent
-	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		if (event.phase == TickEvent.Phase.END) {
-			execute(event, event.player);
-		}
+	public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
+		execute(event, event.getEntity());
 	}
 
 	public static void execute(Entity entity) {
@@ -32,6 +30,13 @@ public class SubTypeMagicProcedure {
 				String _setval = "ark";
 				entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.magic = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				String _setval = "";
+				entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.supmagic = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}

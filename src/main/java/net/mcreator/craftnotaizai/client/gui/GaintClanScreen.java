@@ -37,6 +37,11 @@ public class GaintClanScreen extends AbstractContainerScreen<GaintClanMenu> {
 		this.imageHeight = 0;
 	}
 
+	@Override
+	public boolean isPauseScreen() {
+		return true;
+	}
+
 	private static final ResourceLocation texture = new ResourceLocation("craft_no_taizai:textures/screens/gaint_clan.png");
 
 	@Override

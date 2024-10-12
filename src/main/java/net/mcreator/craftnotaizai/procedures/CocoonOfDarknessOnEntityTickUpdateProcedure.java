@@ -9,7 +9,7 @@ public class CocoonOfDarknessOnEntityTickUpdateProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		CraftNoTaizaiMod.queueServerWork(60, () -> {
+		CraftNoTaizaiMod.queueServerWork(40, () -> {
 			if (!entity.level().isClientSide())
 				entity.discard();
 		});

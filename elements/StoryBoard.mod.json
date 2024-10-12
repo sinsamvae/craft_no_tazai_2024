@@ -103,15 +103,6 @@
         }
       },
       {
-        "type": "image",
-        "data": {
-          "image": "story2_00000.png",
-          "use1Xscale": false,
-          "x": 61,
-          "y": 37
-        }
-      },
-      {
         "type": "label",
         "data": {
           "name": "label_this_is_a_tale_of_ancient_times",
@@ -143,8 +134,8 @@
           "displayCondition": {
             "name": "Story1"
           },
-          "x": 72,
-          "y": 63
+          "x": 74,
+          "y": 64
         }
       },
       {
@@ -197,8 +188,8 @@
           "displayCondition": {
             "name": "Story1"
           },
-          "x": 71,
-          "y": 103
+          "x": 70,
+          "y": 108
         }
       },
       {
@@ -299,7 +290,7 @@
             "fixedValue": "EP1: The Seven Deadly Sins"
           },
           "color": {
-            "value": -16737895,
+            "value": -16711681,
             "falpha": 0.0
           },
           "displayCondition": {
@@ -353,7 +344,7 @@
             "fixedValue": "EP2-3 The Sin in the Sleeping Forest"
           },
           "color": {
-            "value": -16737895,
+            "value": -16711681,
             "falpha": 0.0
           },
           "displayCondition": {
@@ -425,7 +416,7 @@
             "fixedValue": "EP4: A Little Girl's Dream"
           },
           "color": {
-            "value": -16737895,
+            "value": -16711681,
             "falpha": 0.0
           },
           "displayCondition": {
@@ -515,7 +506,7 @@
             "fixedValue": "EP:5 Even If You Die"
           },
           "color": {
-            "value": -16737895,
+            "value": -16711681,
             "falpha": 0.0
           },
           "displayCondition": {
@@ -569,7 +560,7 @@
             "fixedValue": "EP5 Part 2: Even if You Should Die"
           },
           "color": {
-            "value": -16737895,
+            "value": -16711681,
             "falpha": 0.0
           },
           "displayCondition": {
@@ -641,7 +632,7 @@
             "fixedValue": "EP 6 Part 1:The Poem Of Beginning"
           },
           "color": {
-            "value": -16724788,
+            "value": -16711681,
             "falpha": 0.0
           },
           "displayCondition": {
@@ -713,7 +704,7 @@
             "fixedValue": "EP 6 Part 2:The Poem Of Beginning"
           },
           "color": {
-            "value": -16724788,
+            "value": -16711681,
             "falpha": 0.0
           },
           "displayCondition": {
@@ -785,7 +776,7 @@
             "fixedValue": "EP 7 Part 1:A Touching Reunion"
           },
           "color": {
-            "value": -16724788,
+            "value": -16711681,
             "falpha": 0.0
           },
           "displayCondition": {
@@ -857,7 +848,7 @@
             "fixedValue": "EP 8:The Fearsome Pursuer"
           },
           "color": {
-            "value": -16724788,
+            "value": -16711681,
             "falpha": 0.0
           },
           "displayCondition": {
@@ -929,7 +920,7 @@
             "fixedValue": "EP 9:The Vaizel Fighting Festival"
           },
           "color": {
-            "value": -16724788,
+            "value": -16711681,
             "falpha": 0.0
           },
           "displayCondition": {
@@ -1019,7 +1010,7 @@
             "fixedValue": "EP 10:The Vaizel Fighting Festival Round 1"
           },
           "color": {
-            "value": -16724788,
+            "value": -16711681,
             "falpha": 0.0
           },
           "displayCondition": {
@@ -2457,53 +2448,305 @@
         "data": {
           "name": "label_the_end",
           "text": {
-            "fixedValue": "The End"
+            "fixedValue": "The Seven Deadly Sins: Revival of The Commandments."
           },
           "color": {
-            "value": -16777216,
+            "value": -16711681,
             "falpha": 0.0
           },
           "displayCondition": {
             "name": "Story29"
           },
-          "x": 72,
+          "x": 67,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_obtain_coffin_of_eternal_darknes",
+          "text": {
+            "fixedValue": "Obtain Coffin Of Eternal Darkness"
+          },
+          "color": {
+            "value": -13369345,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story29"
+          },
+          "x": 70,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_revival_of_the_demon_clan",
+          "text": {
+            "fixedValue": "EP1: Revival Of the Demon Clan"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story30"
+          },
+          "x": 69,
           "y": 49
         }
       },
       {
         "type": "label",
         "data": {
-          "name": "label_thank_you_guys_some_much_for_pla",
+          "name": "label_as_the_kingdom_begins_to_rebuild",
           "text": {
-            "fixedValue": "Thank You Guys some much for playing the mod"
+            "fixedValue": "As the kingdom begins to rebuild after the coup attempt,"
           },
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
           "displayCondition": {
-            "name": "Story29"
+            "name": "Story30"
           },
-          "x": 72,
-          "y": 65
+          "x": 68,
+          "y": 63
         }
       },
       {
         "type": "label",
         "data": {
-          "name": "label_season_2_will_be_added_in_soon",
+          "name": "label_the_king_honors_the_seven_deadly",
           "text": {
-            "fixedValue": "season 2 will be added in soon"
+            "fixedValue": "the king honors the Seven Deadly Sins for their bravery"
           },
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
           "displayCondition": {
-            "name": "Story29"
+            "name": "Story30"
+          },
+          "x": 66,
+          "y": 76
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_with_a_medal_ceremoney",
+          "text": {
+            "fixedValue": "with a medal ceremoney."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story30"
+          },
+          "x": 68,
+          "y": 91
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_dogedo",
+          "text": {
+            "fixedValue": "Defeat Dogedo"
+          },
+          "color": {
+            "value": -13369345,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story30"
+          },
+          "x": 70,
+          "y": 110
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_existence_proof",
+          "text": {
+            "fixedValue": "EP2: Existence & Proof"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story31"
+          },
+          "x": 70,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_with_fraudrins_manipulation_of",
+          "text": {
+            "fixedValue": "With Fraudrin's manipulation of Hendrickson, the"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story31"
+          },
+          "x": 70,
+          "y": 64
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ten_commandments_return_to_the_p",
+          "text": {
+            "fixedValue": "Ten Commandments return to the physical realm. King"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story31"
+          },
+          "x": 70,
+          "y": 77
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_follows_ban_to_the_fairy_kings",
+          "text": {
+            "fixedValue": "follows Ban to the Fairy King's Forest."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story31"
           },
           "x": 69,
-          "y": 84
+          "y": 93
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_gowther",
+          "text": {
+            "fixedValue": "Defeat Gowther"
+          },
+          "color": {
+            "value": -13369345,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story31"
+          },
+          "x": 70,
+          "y": 110
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_3the_scared_treasure_lostvay",
+          "text": {
+            "fixedValue": "EP 3:The Scared Treasure Lostvayne"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Stroy32"
+          },
+          "x": 69,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_diane_confronts_gowther_after_he",
+          "text": {
+            "fixedValue": "Diane confronts Gowther after he manipulates Guila and"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Stroy32"
+          },
+          "x": 68,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_zeals_memories_with_the_return",
+          "text": {
+            "fixedValue": "Zeal's memories. With the return of the Demon Clan, New"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Stroy32"
+          },
+          "x": 70,
+          "y": 77
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_threats_descend_upon_allied_clan",
+          "text": {
+            "fixedValue": "threats descend upon allied clans."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Stroy32"
+          },
+          "x": 70,
+          "y": 94
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_albion",
+          "text": {
+            "fixedValue": "Defeat Albion"
+          },
+          "color": {
+            "value": -13369345,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Stroy32"
+          },
+          "x": 70,
+          "y": 109
         }
       }
     ],

@@ -50,9 +50,6 @@ public class RisingTornadoProcedure {
 		for (int index0 = 0; index0 < 200; index0++) {
 			rep = rep + 0.5;
 			CraftNoTaizaiMod.queueServerWork((int) rep, () -> {
-				entity.getPersistentData().putDouble("pX", (entity.getPersistentData().getDouble("pX") + entity.getPersistentData().getDouble("vX")));
-				entity.getPersistentData().putDouble("pY", (entity.getPersistentData().getDouble("pY") + entity.getPersistentData().getDouble("vY")));
-				entity.getPersistentData().putDouble("pZ", (entity.getPersistentData().getDouble("pZ") + entity.getPersistentData().getDouble("vZ")));
 				entity.getPersistentData().putDouble("rep2", (entity.getPersistentData().getDouble("rep2") + (2 * Math.PI) / 60));
 				entity.getPersistentData().putDouble("rep", (entity.getPersistentData().getDouble("rep2")));
 				entity.getPersistentData().putDouble("height", 0);

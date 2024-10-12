@@ -5,6 +5,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
@@ -18,15 +19,15 @@ public class SetHumanMagicProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
 		if (event.phase == TickEvent.Phase.END) {
-			execute(event, event.player);
+			execute(event, event.player.level(), event.player);
 		}
 	}
 
-	public static void execute(Entity entity) {
-		execute(null, entity);
+	public static void execute(LevelAccessor world, Entity entity) {
+		execute(null, world, entity);
 	}
 
-	private static void execute(@Nullable Event event, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		double RandomMagic = 0;
@@ -38,7 +39,7 @@ public class SetHumanMagicProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-			RandomMagic = Mth.nextInt(RandomSource.create(), 1, 1010);
+			RandomMagic = Mth.nextInt(RandomSource.create(), 1, 1040);
 			if (RandomMagic <= 70) {
 				{
 					String _setval = "Wind Shooter";
@@ -221,13 +222,32 @@ public class SetHumanMagicProcedure {
 			}
 			if (RandomMagic >= 980 && RandomMagic <= 1010) {
 				{
-					String _setval = "arkelizebeth";
+					String _setval = "Ark";
 					entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.supmagic = _setval;
+						capability.magic = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				{
+					boolean _setval = true;
+					entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.elizbethArk = _setval;
 						capability.syncPlayerVariables(entity);
 					});
 				}
 			}
+			if (RandomMagic >= 1010 && RandomMagic <= 1040) {
+				{
+					String _setval = "SunShine";
+					entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.magic = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				CraftNoTaizaiModVariables.MapVariables.get(world).sunshine = true;
+				CraftNoTaizaiModVariables.MapVariables.get(world).syncData(world);
+			}
+			SetHumanMagicSunshineProcedure.execute(world, entity);
 		}
 	}
 }

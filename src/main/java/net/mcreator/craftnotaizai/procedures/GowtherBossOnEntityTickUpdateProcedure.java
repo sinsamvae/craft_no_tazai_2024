@@ -12,6 +12,7 @@ import net.minecraft.util.Mth;
 import net.minecraft.commands.arguments.EntityAnchorArgument;
 
 import net.mcreator.craftnotaizai.init.CraftNoTaizaiModEntities;
+import net.mcreator.craftnotaizai.entity.PainEditionEntity;
 import net.mcreator.craftnotaizai.entity.KillSwitchProjectileEntity;
 import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
 
@@ -56,6 +57,29 @@ public class GowtherBossOnEntityTickUpdateProcedure {
 				if (ran == 2) {
 					CraftNoTaizaiMod.queueServerWork(8, () -> {
 						NightmareTellermoveProcedure.execute(world, x, y, z, entity);
+					});
+				}
+				if (ran == 2) {
+					CraftNoTaizaiMod.queueServerWork(8, () -> {
+						{
+							Entity _shootFrom = entity;
+							Level projectileLevel = _shootFrom.level();
+							if (!projectileLevel.isClientSide()) {
+								Projectile _entityToSpawn = new Object() {
+									public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+										AbstractArrow entityToSpawn = new PainEditionEntity(CraftNoTaizaiModEntities.PAIN_EDITION.get(), level);
+										entityToSpawn.setOwner(shooter);
+										entityToSpawn.setBaseDamage(damage);
+										entityToSpawn.setKnockback(knockback);
+										entityToSpawn.setSilent(true);
+										return entityToSpawn;
+									}
+								}.getArrow(projectileLevel, entity, 600, 1);
+								_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+								_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2, 0);
+								projectileLevel.addFreshEntity(_entityToSpawn);
+							}
+						}
 					});
 				}
 			}

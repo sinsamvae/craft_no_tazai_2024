@@ -37,6 +37,11 @@ public class HumanClanScreen extends AbstractContainerScreen<HumanClanMenu> {
 		this.imageHeight = 0;
 	}
 
+	@Override
+	public boolean isPauseScreen() {
+		return true;
+	}
+
 	private static final ResourceLocation texture = new ResourceLocation("craft_no_taizai:textures/screens/human_clan.png");
 
 	@Override

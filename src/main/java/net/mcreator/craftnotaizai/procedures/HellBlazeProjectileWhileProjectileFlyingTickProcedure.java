@@ -4,9 +4,11 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
+import net.mcreator.craftnotaizai.init.CraftNoTaizaiModParticleTypes;
 import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
 
 public class HellBlazeProjectileWhileProjectileFlyingTickProcedure {
@@ -14,14 +16,16 @@ public class HellBlazeProjectileWhileProjectileFlyingTickProcedure {
 		if (entity == null || immediatesourceentity == null)
 			return;
 		double delay = 0;
-		immediatesourceentity.setNoGravity(true);
+		if (world instanceof ServerLevel _level)
+			_level.sendParticles((SimpleParticleType) (CraftNoTaizaiModParticleTypes.FLAME_PURPLE.get()), x, y, z, 10, 0.3, 0.3, 0.3, 0.1);
 		{
 			Entity _ent = immediatesourceentity;
 			if (!_ent.level().isClientSide() && _ent.getServer() != null) {
 				_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-						_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "photon fx photon:purple_flying entity @s");
+						_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "particle dust 0.26 0 0.26 5 ~ ~1 ~ 0 0 0 0 1");
 			}
 		}
+		immediatesourceentity.setNoGravity(true);
 		entity.getPersistentData().putDouble("range", 0);
 		entity.getPersistentData().putDouble("sx", (entity.getX()));
 		entity.getPersistentData().putDouble("sy", (entity.getY() + 1.2));

@@ -5,9 +5,9 @@
     "enableHelmet": true,
     "textureHelmet": "ban_head",
     "enableBody": true,
-    "textureBody": "ban_body",
+    "textureBody": "ban_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "ban_leggings",
+    "textureLeggings": "bans_leggins",
     "enableBoots": false,
     "textureBoots": "",
     "creativeTabs": [
@@ -60,6 +60,18 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
     "helmetPiglinNeutral": {
       "fixedValue": false
     },

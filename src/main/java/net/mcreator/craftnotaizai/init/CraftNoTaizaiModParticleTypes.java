@@ -63,4 +63,5 @@ public class CraftNoTaizaiModParticleTypes {
 	public static final RegistryObject<SimpleParticleType> JUBAKU_ENSA_PARTICLE_2 = REGISTRY.register("jubaku_ensa_particle_2", () -> new SimpleParticleType(false));
 	public static final RegistryObject<SimpleParticleType> BREAKABLE_BUG_PARTICLES = REGISTRY.register("breakable_bug_particles", () -> new SimpleParticleType(false));
 	public static final RegistryObject<SimpleParticleType> VENOM_TOXICY = REGISTRY.register("venom_toxicy", () -> new SimpleParticleType(false));
+	public static final RegistryObject<SimpleParticleType> RED_PARTICLES = REGISTRY.register("red_particles", () -> new SimpleParticleType(false));
 }

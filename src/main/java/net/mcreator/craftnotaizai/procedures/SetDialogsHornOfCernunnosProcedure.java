@@ -14,6 +14,6 @@ public class SetDialogsHornOfCernunnosProcedure {
 		double set2_continue = 0;
 		double set3_continue = 0;
 		entity.getPersistentData().putString("MyFullText", "Naka Is Gay!");
-		return "";
+		return entity.getPersistentData().getString("MyFullText");
 	}
 }

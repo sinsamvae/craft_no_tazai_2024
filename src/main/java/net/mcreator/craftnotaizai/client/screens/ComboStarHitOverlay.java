@@ -41,15 +41,15 @@ public class ComboStarHitOverlay {
 			if (DisplayComboStarHitProcedure.execute(entity))
 				event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-						ComboStarVarProcedure.execute(entity), w / 2 + -154, h - 16, -1, false);
+						ComboStarVarProcedure.execute(entity), 5, h - 16, -1, false);
 			if (LostVayneOverlayProcedure.execute(entity))
 				event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-						LostVayneVarProcedure.execute(entity), w / 2 + -154, h / 2 + 104, -1, false);
+						LostVayneVarProcedure.execute(entity), 5, h - 16, -1, false);
 			if (RhittaReturnProcedure.execute(entity))
 				event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-						RhittaCountProcedure.execute(entity), w / 2 + -154, h / 2 + 104, -1, false);
+						RhittaCountProcedure.execute(entity), 5, h - 16, -1, false);
 		}
 	}
 }

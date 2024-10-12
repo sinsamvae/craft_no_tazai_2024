@@ -32,7 +32,7 @@ public class ManastartProcedure {
 		if (entity == null)
 			return;
 		double RandomDemonMana = 0;
-		CraftNoTaizaiMod.queueServerWork(20, () -> {
+		CraftNoTaizaiMod.queueServerWork(5, () -> {
 			if ((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).Demon_Clan == 3) {
 				{
 					double _setval = Mth.nextInt(RandomSource.create(), 4, 10) * 50;
@@ -64,7 +64,7 @@ public class ManastartProcedure {
 				}
 			}
 		});
-		CraftNoTaizaiMod.queueServerWork(20, () -> {
+		CraftNoTaizaiMod.queueServerWork(5, () -> {
 			if ((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).Human_Clan == 3) {
 				{
 					double _setval = Mth.nextInt(RandomSource.create(), 2, 6) * 50;
@@ -96,7 +96,7 @@ public class ManastartProcedure {
 				}
 			}
 		});
-		CraftNoTaizaiMod.queueServerWork(20, () -> {
+		CraftNoTaizaiMod.queueServerWork(5, () -> {
 			if ((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).Fairy_Clan == 3) {
 				{
 					double _setval = Mth.nextInt(RandomSource.create(), 10, 16) * 50;
@@ -128,7 +128,7 @@ public class ManastartProcedure {
 				}
 			}
 		});
-		CraftNoTaizaiMod.queueServerWork(20, () -> {
+		CraftNoTaizaiMod.queueServerWork(5, () -> {
 			if ((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).GaintRace == 3) {
 				{
 					double _setval = Mth.nextInt(RandomSource.create(), 3, 7) * 50;

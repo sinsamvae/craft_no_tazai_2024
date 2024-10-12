@@ -37,7 +37,7 @@ public class SetFairyMagicProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-			RandomMagic = Mth.nextInt(RandomSource.create(), 1, 570);
+			RandomMagic = Mth.nextInt(RandomSource.create(), 1, 620);
 			if (RandomMagic <= 70) {
 				{
 					String _setval = "Wind Shooter";
@@ -119,7 +119,16 @@ public class SetFairyMagicProcedure {
 					});
 				}
 			}
-			if (RandomMagic >= 560 && RandomMagic <= 570) {
+			if (RandomMagic >= 560 && RandomMagic <= 590) {
+				{
+					String _setval = "Disaster";
+					entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.magic = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			}
+			if (RandomMagic >= 590 && RandomMagic <= 620) {
 				{
 					String _setval = "Disaster";
 					entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -129,6 +138,8 @@ public class SetFairyMagicProcedure {
 				}
 			}
 			SetFairyMagicIfFairyKingIsTrueProcedure.execute(world, entity);
+			SetFairyGloxinaMagicProcedure.execute(world, entity);
+			SetFairyKingBothProcedure.execute(world, entity);
 		}
 	}
 }

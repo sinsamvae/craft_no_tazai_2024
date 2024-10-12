@@ -133,6 +133,7 @@ public class CraftNoTaizaiModTabs {
 				tabData.accept(CraftNoTaizaiModItems.LOSTVAYNE.get());
 				tabData.accept(CraftNoTaizaiModItems.TWIN_BOW_HERRITT.get());
 				tabData.accept(CraftNoTaizaiModItems.HEAT_FORK.get());
+				tabData.accept(CraftNoTaizaiModItems.HOLY_STAFF_COURE_CHOUSE.get());
 			})
 
 					.build());
@@ -167,29 +168,26 @@ public class CraftNoTaizaiModTabs {
 				tabData.accept(CraftNoTaizaiModItems.DRAGON_HANDLE.get());
 				tabData.accept(CraftNoTaizaiModItems.LIZ_SWORD.get());
 				tabData.accept(CraftNoTaizaiModItems.LIZ_SNEATH_SWORD.get());
-				tabData.accept(CraftNoTaizaiModItems.SEQUENCE.get());
-				tabData.accept(CraftNoTaizaiModItems.HELBRUMSWORD.get());
-				tabData.accept(CraftNoTaizaiModItems.GUARD_SPEAR.get());
-				tabData.accept(CraftNoTaizaiModItems.GIL_THUNDER_SWORD.get());
-				tabData.accept(CraftNoTaizaiModItems.SAW_SWORD.get());
-				tabData.accept(CraftNoTaizaiModItems.RAPIER.get());
-				tabData.accept(CraftNoTaizaiModItems.SPIRALEDLANCE.get());
-				tabData.accept(CraftNoTaizaiModItems.TWIGOSWORD.get());
-				tabData.accept(CraftNoTaizaiModItems.GOLGIUSSWORD.get());
 				tabData.accept(CraftNoTaizaiModItems.BELL_STAFF.get());
 				tabData.accept(CraftNoTaizaiModItems.WHIP.get());
-				tabData.accept(CraftNoTaizaiModItems.JERICHO_SWORD.get());
-				tabData.accept(CraftNoTaizaiModItems.SCYTHE.get());
-				tabData.accept(CraftNoTaizaiModItems.AXE_2.get());
-				tabData.accept(CraftNoTaizaiModItems.KATANA.get());
-				tabData.accept(CraftNoTaizaiModItems.DREYFUS_SWORD.get());
-				tabData.accept(CraftNoTaizaiModItems.DEMON_KING_SWORD.get());
-				tabData.accept(CraftNoTaizaiModItems.HENDRIKSONSWORD.get());
-				tabData.accept(CraftNoTaizaiModItems.SAW_BLADE.get());
 				tabData.accept(CraftNoTaizaiModItems.BOW.get());
-				tabData.accept(CraftNoTaizaiModItems.LONG_AXE.get());
-				tabData.accept(CraftNoTaizaiModItems.HALBERT.get());
 				tabData.accept(CraftNoTaizaiModItems.CURVED_SWORD.get());
+				tabData.accept(CraftNoTaizaiModItems.HALBERT.get());
+				tabData.accept(CraftNoTaizaiModItems.DEMON_KING_SWORD.get());
+				tabData.accept(CraftNoTaizaiModItems.DREYFUS_SWORD.get());
+				tabData.accept(CraftNoTaizaiModItems.KATANA.get());
+				tabData.accept(CraftNoTaizaiModItems.SCYTHE.get());
+				tabData.accept(CraftNoTaizaiModItems.JERICHO_SWORD.get());
+				tabData.accept(CraftNoTaizaiModItems.GOLGIUS_SWORD.get());
+				tabData.accept(CraftNoTaizaiModItems.TWIGOSWORD.get());
+				tabData.accept(CraftNoTaizaiModItems.SPIRALEDLANCE.get());
+				tabData.accept(CraftNoTaizaiModItems.RAPIER.get());
+				tabData.accept(CraftNoTaizaiModItems.GIL_THUNDER_SWORD.get());
+				tabData.accept(CraftNoTaizaiModItems.SAW_SWORD.get());
+				tabData.accept(CraftNoTaizaiModItems.AXE_2.get());
+				tabData.accept(CraftNoTaizaiModItems.SAW_BLADE.get());
+				tabData.accept(CraftNoTaizaiModItems.LONG_AXE.get());
+				tabData.accept(CraftNoTaizaiModItems.GUARD_SPEAR.get());
 			})
 
 					.build());
@@ -265,6 +263,7 @@ public class CraftNoTaizaiModTabs {
 				tabData.accept(CraftNoTaizaiModItems.LOW_TIER_SOULS.get());
 				tabData.accept(CraftNoTaizaiModItems.MID_TIER_SOULS.get());
 				tabData.accept(CraftNoTaizaiModItems.HIGH_TIER_SOULS.get());
+				tabData.accept(CraftNoTaizaiModItems.TROLL_EAR.get());
 			})
 
 					.build());
@@ -351,6 +350,11 @@ public class CraftNoTaizaiModTabs {
 				tabData.accept(CraftNoTaizaiModItems.MELIODAS_BOSS_ANIMATED_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.MERLIN_BOSS_ANIMATED_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.GERHEADE_SPAWN_EGG.get());
+				tabData.accept(CraftNoTaizaiModItems.DOGEDO_SPAWN_EGG.get());
+				tabData.accept(CraftNoTaizaiModItems.GOWTHER_STORY_1_SPAWN_EGG.get());
+				tabData.accept(CraftNoTaizaiModItems.ALBION_SPAWN_EGG.get());
+				tabData.accept(CraftNoTaizaiModItems.ALBION_FAT_SPAWN_EGG.get());
+				tabData.accept(CraftNoTaizaiModItems.TALL_ALBION_SPAWN_EGG.get());
 			})
 
 					.build());
@@ -379,6 +383,7 @@ public class CraftNoTaizaiModTabs {
 			tabData.accept(CraftNoTaizaiModItems.MOON_ROSE_SPAWN_EGG.get());
 			tabData.accept(CraftNoTaizaiModItems.HELL_GATE_RED_DEMONS_SPAWN_EGG.get());
 			tabData.accept(CraftNoTaizaiModItems.JUMANJU_ENTITY_SPAWN_EGG.get());
+			tabData.accept(CraftNoTaizaiModItems.HORN_OF_CERNUNOS_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(CraftNoTaizaiModItems.JONAH_NO_JUNAN_SPAWN_EGG.get());
 			tabData.accept(CraftNoTaizaiModItems.WICKED_BITE_SPAWN_EGG.get());
@@ -394,6 +399,26 @@ public class CraftNoTaizaiModTabs {
 			tabData.accept(CraftNoTaizaiModBlocks.HOLY_TREE_ORE.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(CraftNoTaizaiModItems.CHAOS_DIMENSION.get());
+			tabData.accept(CraftNoTaizaiModItems.CURVED_SWORD.get());
+			tabData.accept(CraftNoTaizaiModItems.HALBERT.get());
+			tabData.accept(CraftNoTaizaiModItems.HENDRIKSON_SWORD.get());
+			tabData.accept(CraftNoTaizaiModItems.DEMON_KING_SWORD.get());
+			tabData.accept(CraftNoTaizaiModItems.DREYFUS_SWORD.get());
+			tabData.accept(CraftNoTaizaiModItems.KATANA.get());
+			tabData.accept(CraftNoTaizaiModItems.SCYTHE.get());
+			tabData.accept(CraftNoTaizaiModItems.JERICHO_SWORD.get());
+			tabData.accept(CraftNoTaizaiModItems.GOLGIUS_SWORD.get());
+			tabData.accept(CraftNoTaizaiModItems.TWIGOSWORD.get());
+			tabData.accept(CraftNoTaizaiModItems.SPIRALEDLANCE.get());
+			tabData.accept(CraftNoTaizaiModItems.RAPIER.get());
+			tabData.accept(CraftNoTaizaiModItems.GIL_THUNDER_SWORD.get());
+			tabData.accept(CraftNoTaizaiModItems.HELBRUMSWORD.get());
+			tabData.accept(CraftNoTaizaiModItems.SEQUENCE.get());
+			tabData.accept(CraftNoTaizaiModItems.SAW_SWORD.get());
+			tabData.accept(CraftNoTaizaiModItems.AXE_2.get());
+			tabData.accept(CraftNoTaizaiModItems.SAW_BLADE.get());
+			tabData.accept(CraftNoTaizaiModItems.LONG_AXE.get());
+			tabData.accept(CraftNoTaizaiModItems.GUARD_SPEAR.get());
 		}
 	}
 }

@@ -12,7 +12,7 @@ import com.mojang.brigadier.context.CommandContext;
 public class ChangemagicarkelizebethProcedure {
 	public static void execute(CommandContext<CommandSourceStack> arguments) {
 		{
-			String _setval = "arkelizebeth";
+			String _setval = "";
 			(new Object() {
 				public Entity getEntity() {
 					try {
@@ -37,7 +37,7 @@ public class ChangemagicarkelizebethProcedure {
 			});
 		}
 		{
-			String _setval = "";
+			String _setval = "Ark";
 			(new Object() {
 				public Entity getEntity() {
 					try {
@@ -61,85 +61,30 @@ public class ChangemagicarkelizebethProcedure {
 				}.getEntity()));
 			});
 		}
-		(new Object() {
-			public Entity getEntity() {
-				try {
-					return EntityArgument.getEntity(arguments, "Player");
-				} catch (CommandSyntaxException e) {
-					e.printStackTrace();
-					return null;
+		{
+			boolean _setval = true;
+			(new Object() {
+				public Entity getEntity() {
+					try {
+						return EntityArgument.getEntity(arguments, "Player");
+					} catch (CommandSyntaxException e) {
+						e.printStackTrace();
+						return null;
+					}
 				}
-			}
-		}.getEntity()).getPersistentData().putString("Ability1", "Invigorate");
-		(new Object() {
-			public Entity getEntity() {
-				try {
-					return EntityArgument.getEntity(arguments, "Player");
-				} catch (CommandSyntaxException e) {
-					e.printStackTrace();
-					return null;
-				}
-			}
-		}.getEntity()).getPersistentData().putString("Ability2", "Manipulate");
-		(new Object() {
-			public Entity getEntity() {
-				try {
-					return EntityArgument.getEntity(arguments, "Player");
-				} catch (CommandSyntaxException e) {
-					e.printStackTrace();
-					return null;
-				}
-			}
-		}.getEntity()).getPersistentData().putString("Ability3", "Enchantment: Ark");
-		(new Object() {
-			public Entity getEntity() {
-				try {
-					return EntityArgument.getEntity(arguments, "Player");
-				} catch (CommandSyntaxException e) {
-					e.printStackTrace();
-					return null;
-				}
-			}
-		}.getEntity()).getPersistentData().putString("Ability4", "Jonah no Junan");
-		(new Object() {
-			public Entity getEntity() {
-				try {
-					return EntityArgument.getEntity(arguments, "Player");
-				} catch (CommandSyntaxException e) {
-					e.printStackTrace();
-					return null;
-				}
-			}
-		}.getEntity()).getPersistentData().putString("Ability5", "Half Awaken");
-		(new Object() {
-			public Entity getEntity() {
-				try {
-					return EntityArgument.getEntity(arguments, "Player");
-				} catch (CommandSyntaxException e) {
-					e.printStackTrace();
-					return null;
-				}
-			}
-		}.getEntity()).getPersistentData().putString("Ability6", "");
-		(new Object() {
-			public Entity getEntity() {
-				try {
-					return EntityArgument.getEntity(arguments, "Player");
-				} catch (CommandSyntaxException e) {
-					e.printStackTrace();
-					return null;
-				}
-			}
-		}.getEntity()).getPersistentData().putString("Ability7", "");
-		(new Object() {
-			public Entity getEntity() {
-				try {
-					return EntityArgument.getEntity(arguments, "Player");
-				} catch (CommandSyntaxException e) {
-					e.printStackTrace();
-					return null;
-				}
-			}
-		}.getEntity()).getPersistentData().putString("Ability8", "");
+			}.getEntity()).getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.elizbethArk = _setval;
+				capability.syncPlayerVariables((new Object() {
+					public Entity getEntity() {
+						try {
+							return EntityArgument.getEntity(arguments, "Player");
+						} catch (CommandSyntaxException e) {
+							e.printStackTrace();
+							return null;
+						}
+					}
+				}.getEntity()));
+			});
+		}
 	}
 }

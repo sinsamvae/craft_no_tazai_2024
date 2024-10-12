@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "rhitta_texture_"
+        "0": "rhitta-texture"
       },
       "name": "default"
     }

@@ -1,7 +1,7 @@
 {
-  "parent": "craft_no_taizai:custom/rhitta_3",
+  "parent": "craft_no_taizai:custom/rhitta",
   "textures": {
-    "2": "craft_no_taizai:block/rhitta-texture",
+    "0": "craft_no_taizai:block/rhitta-texture",
     "particle": "craft_no_taizai:item/rhitta-texture"
   }
 }

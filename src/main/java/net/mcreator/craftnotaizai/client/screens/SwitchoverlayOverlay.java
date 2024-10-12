@@ -43,7 +43,7 @@ public class SwitchoverlayOverlay {
 						RCoolDownVarProcedure.execute(entity), w / 2 + -33, h / 2 + -1, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					AbilityDisplayProcedure.execute(entity), 2, h - 34, -1, false);
+					AbilityDisplayProcedure.execute(entity), 4, h - 35, -1, false);
 			if (CoolDownReturnProcedure.execute(entity))
 				event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 

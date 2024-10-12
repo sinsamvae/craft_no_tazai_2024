@@ -32,7 +32,7 @@ public class IncreaseProcedure {
 			return;
 		double rep = 0;
 		double num_rep = 0;
-		entity.getPersistentData().putDouble("range", 0.3);
+		entity.getPersistentData().putDouble("range", 0.1);
 		entity.getPersistentData().putDouble("look_x", (entity.getLookAngle().x));
 		entity.getPersistentData().putDouble("look_y", (entity.getLookAngle().y));
 		entity.getPersistentData().putDouble("look_z", (entity.getLookAngle().z));

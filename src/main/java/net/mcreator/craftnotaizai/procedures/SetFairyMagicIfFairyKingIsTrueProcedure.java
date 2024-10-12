@@ -12,8 +12,8 @@ public class SetFairyMagicIfFairyKingIsTrueProcedure {
 		if (entity == null)
 			return;
 		double RandomMagic = 0;
-		if (CraftNoTaizaiModVariables.MapVariables.get(world).fairy_king == 1) {
-			RandomMagic = Mth.nextInt(RandomSource.create(), 1, 560);
+		if (CraftNoTaizaiModVariables.MapVariables.get(world).fairyking == true && CraftNoTaizaiModVariables.MapVariables.get(world).gloxina_fairyking == false) {
+			RandomMagic = Mth.nextInt(RandomSource.create(), 1, 590);
 			if (RandomMagic <= 70) {
 				{
 					String _setval = "Wind Shooter";
@@ -87,7 +87,31 @@ public class SetFairyMagicIfFairyKingIsTrueProcedure {
 				}
 			}
 			if (RandomMagic >= 510 && RandomMagic <= 560) {
-				entity.getPersistentData().putString("Ability1", "Hunter Wisp");
+				{
+					String _setval = "Hunter Wisp";
+					entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.magic = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			}
+			if (RandomMagic >= 560 && RandomMagic <= 590) {
+				{
+					String _setval = "Disaster";
+					entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.magic = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				{
+					boolean _setval = true;
+					entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.Gloxinia = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				CraftNoTaizaiModVariables.MapVariables.get(world).gloxina_fairyking = true;
+				CraftNoTaizaiModVariables.MapVariables.get(world).syncData(world);
 			}
 		}
 	}

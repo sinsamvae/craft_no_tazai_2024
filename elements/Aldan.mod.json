@@ -5,7 +5,7 @@
     "toolType": "Special",
     "renderType": 1,
     "blockingRenderType": 0,
-    "texture": "alda",
+    "texture": "aldan",
     "customModelName": "aldan:default",
     "blockingModelName": "Normal blocking",
     "name": "Aldan",
@@ -20,8 +20,11 @@
     "efficiency": 0.0,
     "attackSpeed": 0.0,
     "enchantability": 0,
-    "damageVsEntity": 0.0,
+    "damageVsEntity": 0.1,
     "usageCount": 0,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [],
     "immuneToFire": false,
     "blockDropsTier": "STONE",

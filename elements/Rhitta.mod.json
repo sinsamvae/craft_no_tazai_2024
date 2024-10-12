@@ -6,7 +6,7 @@
     "renderType": 1,
     "blockingRenderType": 0,
     "texture": "rhitta-texture",
-    "customModelName": "rhitta_3:default",
+    "customModelName": "rhitta:default",
     "blockingModelName": "Normal blocking",
     "name": "Rhitta",
     "specialInformation": {

@@ -20,7 +20,7 @@ public class Modelkamichigiri<T extends Entity> extends EntityModel<T> {
 		PartDefinition bone = partdefinition.addOrReplaceChild("bone",
 				CubeListBuilder.create().texOffs(0, 7).addBox(0.0F, -3.5F, -1.0F, 0.0F, 7.0F, 5.0F,
 						new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, 0.0F, -1.5708F, -3.1416F));
+				PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, 1.5708F, 1.5708F, -3.1416F));
 
 		PartDefinition cube_r1 = bone
 				.addOrReplaceChild("cube_r1",

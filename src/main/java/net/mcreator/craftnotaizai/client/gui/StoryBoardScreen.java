@@ -10,6 +10,7 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.craftnotaizai.world.inventory.StoryBoardMenu;
+import net.mcreator.craftnotaizai.procedures.Stroy32Procedure;
 import net.mcreator.craftnotaizai.procedures.Story9Procedure;
 import net.mcreator.craftnotaizai.procedures.Story8Procedure;
 import net.mcreator.craftnotaizai.procedures.Story7Procedure;
@@ -17,6 +18,8 @@ import net.mcreator.craftnotaizai.procedures.Story6Procedure;
 import net.mcreator.craftnotaizai.procedures.Story5Procedure;
 import net.mcreator.craftnotaizai.procedures.Story4Procedure;
 import net.mcreator.craftnotaizai.procedures.Story3Procedure;
+import net.mcreator.craftnotaizai.procedures.Story31Procedure;
+import net.mcreator.craftnotaizai.procedures.Story30Procedure;
 import net.mcreator.craftnotaizai.procedures.Story2Procedure;
 import net.mcreator.craftnotaizai.procedures.Story29Procedure;
 import net.mcreator.craftnotaizai.procedures.Story28Procedure;
@@ -94,8 +97,6 @@ public class StoryBoardScreen extends AbstractContainerScreen<StoryBoardMenu> {
 
 		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/story2.png"), this.leftPos + -65, this.topPos + 0, 0, 0, 302, 167, 302, 167);
 
-		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/story2_00000.png"), this.leftPos + -65, this.topPos + 0, 0, 0, 302, 167, 302, 167);
-
 		RenderSystem.disableBlend();
 	}
 
@@ -113,13 +114,13 @@ public class StoryBoardScreen extends AbstractContainerScreen<StoryBoardMenu> {
 		if (Story1Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_this_is_a_tale_of_ancient_times"), -54, 12, -16777216, false);
 		if (Story1Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_human_and_nonhuman_worlds_were"), -54, 26, -16777216, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_human_and_nonhuman_worlds_were"), -52, 27, -16777216, false);
 		if (Story1Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_when_the_holy_knights_defended_t"), -54, 41, -16777216, false);
 		if (Story1Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_their_magical_powers_they_were"), -55, 54, -16777216, false);
 		if (Story1Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_respected_but_among_them_a_grou"), -55, 66, -16777216, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_respected_but_among_them_a_grou"), -56, 71, -16777216, false);
 		if (Story1Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_this_is_a_tale_of_ancient_times1"), -55, 79, -16777216, false);
 		if (Story1Procedure.execute(entity))
@@ -131,13 +132,13 @@ public class StoryBoardScreen extends AbstractContainerScreen<StoryBoardMenu> {
 		if (Story2Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_defeat_twigo"), -55, 61, -13369345, false);
 		if (Story2Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_the_seven_deadly_sins"), -53, 12, -16737895, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_the_seven_deadly_sins"), -53, 12, -16711681, false);
 		if (Story2Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_youve_met_elizabeth_young_girl"), -55, 26, -16777216, false);
 		if (Story2Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_seven_deadly_sins"), -54, 40, -16777216, false);
 		if (Start2Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep2_the_sin_in_the_sleeping_fore"), -54, 12, -16737895, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep2_the_sin_in_the_sleeping_fore"), -54, 12, -16711681, false);
 		if (Start2Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_go_to_the_sleeping_forest_biome"), -55, 61, -13369345, false);
 		if (Start2Procedure.execute(entity))
@@ -145,7 +146,7 @@ public class StoryBoardScreen extends AbstractContainerScreen<StoryBoardMenu> {
 		if (Start2Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_the_other_memebers_of_the_seven"), -54, 41, -16777216, false);
 		if (Story3Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep4_a_little_girls_dream"), -54, 12, -16737895, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep4_a_little_girls_dream"), -54, 12, -16711681, false);
 		if (Story3Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_dinae_joins_the_mission_to_free"), -53, 26, -16777216, false);
 		if (Story3Procedure.execute(entity))
@@ -155,13 +156,13 @@ public class StoryBoardScreen extends AbstractContainerScreen<StoryBoardMenu> {
 		if (Story3Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_defeat_gilthunder"), -55, 68, -16711681, false);
 		if (Story4Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep5"), -54, 12, -16737895, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep5"), -54, 12, -16711681, false);
 		if (Story4Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_golgiu_tries_to_seize_the_sword"), -56, 35, -16777216, false);
 		if (Story4Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_defect"), -55, 61, -16711681, false);
 		if (Story5Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep5_part_2_even_if_you_should_d"), -54, 12, -16737895, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep5_part_2_even_if_you_should_d"), -54, 12, -16711681, false);
 		if (Story5Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_the_sound_of_a_mysterious_bell"), -57, 26, -16777216, false);
 		if (Story5Procedure.execute(entity))
@@ -169,7 +170,7 @@ public class StoryBoardScreen extends AbstractContainerScreen<StoryBoardMenu> {
 		if (Story5Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_defeat_diane"), -55, 53, -16711681, false);
 		if (Story6Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep_6_part_1the_poem_of_beginnin"), -54, 12, -16724788, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep_6_part_1the_poem_of_beginnin"), -54, 12, -16711681, false);
 		if (Story6Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_must_fight_the_holy_knights_frie"), -56, 26, -16777216, false);
 		if (Story6Procedure.execute(entity))
@@ -177,7 +178,7 @@ public class StoryBoardScreen extends AbstractContainerScreen<StoryBoardMenu> {
 		if (Story6Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_defeat_ruin"), -55, 53, -16711681, false);
 		if (Story7Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep_6_part_2"), -52, 12, -16724788, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep_6_part_2"), -52, 12, -16711681, false);
 		if (Story7Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_must_fight_the_holy_knights_frie1"), -56, 25, -16777216, false);
 		if (Story7Procedure.execute(entity))
@@ -185,7 +186,7 @@ public class StoryBoardScreen extends AbstractContainerScreen<StoryBoardMenu> {
 		if (Story7Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_empty"), -54, 54, -16711681, false);
 		if (Story8Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep_7_part_1a_touching_reunion"), -53, 12, -16724788, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep_7_part_1a_touching_reunion"), -53, 12, -16711681, false);
 		if (Story8Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_empty1"), -55, 26, -16777216, false);
 		if (Story8Procedure.execute(entity))
@@ -193,7 +194,7 @@ public class StoryBoardScreen extends AbstractContainerScreen<StoryBoardMenu> {
 		if (Story8Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_locate_capital_of_the_dead"), -55, 55, -16711681, false);
 		if (Story9Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep_8the_fearsome_pursuer"), -55, 12, -16724788, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep_8the_fearsome_pursuer"), -55, 12, -16711681, false);
 		if (Story9Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_holy_knight_guila_follows_you_to"), -56, 25, -16777216, false);
 		if (Story9Procedure.execute(entity))
@@ -201,7 +202,7 @@ public class StoryBoardScreen extends AbstractContainerScreen<StoryBoardMenu> {
 		if (Story9Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_defeat_guila"), -54, 55, -16711681, false);
 		if (Story10Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep_10"), -55, 12, -16724788, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep_10"), -55, 12, -16711681, false);
 		if (Story10Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_upon_learning_the_fighting_festi"), -56, 26, -16777216, false);
 		if (Story10Procedure.execute(entity))
@@ -211,7 +212,7 @@ public class StoryBoardScreen extends AbstractContainerScreen<StoryBoardMenu> {
 		if (Story10Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_defect_all_vaizel_fighting_festi"), -56, 67, -13369345, false);
 		if (Story11Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_empty2"), -55, 12, -16724788, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_empty2"), -55, 12, -16711681, false);
 		if (Story11Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_roun_1"), -58, 35, -16777216, false);
 		if (Story11Procedure.execute(entity))
@@ -373,11 +374,39 @@ public class StoryBoardScreen extends AbstractContainerScreen<StoryBoardMenu> {
 		if (Story28Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_defeat_gray_demon"), -54, 73, -16711681, false);
 		if (Story29Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_the_end"), -54, 12, -16777216, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_the_end"), -59, 11, -16711681, false);
 		if (Story29Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_thank_you_guys_some_much_for_pla"), -54, 28, -16777216, false);
-		if (Story29Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_season_2_will_be_added_in_soon"), -57, 47, -16777216, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_obtain_coffin_of_eternal_darknes"), -56, 70, -13369345, false);
+		if (Story30Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_revival_of_the_demon_clan"), -57, 12, -16711681, false);
+		if (Story30Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_as_the_kingdom_begins_to_rebuild"), -58, 26, -16777216, false);
+		if (Story30Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_the_king_honors_the_seven_deadly"), -60, 39, -16777216, false);
+		if (Story30Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_with_a_medal_ceremoney"), -58, 54, -16777216, false);
+		if (Story30Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_defeat_dogedo"), -56, 73, -13369345, false);
+		if (Story31Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_existence_proof"), -56, 11, -16711681, false);
+		if (Story31Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_with_fraudrins_manipulation_of"), -56, 27, -16777216, false);
+		if (Story31Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ten_commandments_return_to_the_p"), -56, 40, -16777216, false);
+		if (Story31Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_follows_ban_to_the_fairy_kings"), -57, 56, -16777216, false);
+		if (Story31Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_defeat_gowther"), -56, 73, -13369345, false);
+		if (Stroy32Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep_3the_scared_treasure_lostvay"), -57, 11, -16711681, false);
+		if (Stroy32Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_diane_confronts_gowther_after_he"), -58, 26, -16777216, false);
+		if (Stroy32Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_zeals_memories_with_the_return"), -56, 40, -16777216, false);
+		if (Stroy32Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_threats_descend_upon_allied_clan"), -56, 57, -16777216, false);
+		if (Stroy32Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_defeat_albion"), -56, 72, -13369345, false);
 	}
 
 	@Override

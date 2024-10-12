@@ -11,6 +11,7 @@ import net.mcreator.craftnotaizai.entity.VineEntity;
 import net.mcreator.craftnotaizai.entity.TyrantDragonEntity;
 import net.mcreator.craftnotaizai.entity.TwigoAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.TrollEntity;
+import net.mcreator.craftnotaizai.entity.TallAlbionEntity;
 import net.mcreator.craftnotaizai.entity.TaizooAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.SwordWolfEntity;
 import net.mcreator.craftnotaizai.entity.SunFlowerTrueSpirtSpearEntity;
@@ -45,7 +46,6 @@ import net.mcreator.craftnotaizai.entity.InsectFEntity;
 import net.mcreator.craftnotaizai.entity.InsectEntity;
 import net.mcreator.craftnotaizai.entity.HugoAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.HowzerAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.HornofCernunnosEntity;
 import net.mcreator.craftnotaizai.entity.HideAndSeekEntity;
 import net.mcreator.craftnotaizai.entity.HendricksonAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.HellGateRedDemonsEntity;
@@ -61,6 +61,7 @@ import net.mcreator.craftnotaizai.entity.GreenKnightAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.GrayDemonHendricksonAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.GrayDemonEntityEntity;
 import net.mcreator.craftnotaizai.entity.GrayDemonEntity;
+import net.mcreator.craftnotaizai.entity.GowtherStory1Entity;
 import net.mcreator.craftnotaizai.entity.GowtherBossAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.GolgiusAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.GilThunderAnimatedEntity;
@@ -77,6 +78,7 @@ import net.mcreator.craftnotaizai.entity.EarthCrawlerEntity;
 import net.mcreator.craftnotaizai.entity.DuskBison1Entity;
 import net.mcreator.craftnotaizai.entity.DumblebbasAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.DreyfusAnimatedEntity;
+import net.mcreator.craftnotaizai.entity.DogedoEntity;
 import net.mcreator.craftnotaizai.entity.DianeBossAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.DianeAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.DemonHendricksonAnimatedEntity;
@@ -96,6 +98,9 @@ import net.mcreator.craftnotaizai.entity.BanBossAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.AngleCureEntity;
 import net.mcreator.craftnotaizai.entity.AndreDemonFormEntity;
 import net.mcreator.craftnotaizai.entity.AndreAnimatedEntity;
+import net.mcreator.craftnotaizai.entity.AlbionFatEntity;
+import net.mcreator.craftnotaizai.entity.AlbionEntity;
+import net.mcreator.craftnotaizai.entity.AealHealEntity;
 
 @Mod.EventBusSubscriber
 public class EntityAnimationFactory {
@@ -306,13 +311,6 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof GuardianTrueSpirtSpearEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof HornofCernunnosEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");
@@ -740,6 +738,48 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof MarmasEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof AealHealEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DogedoEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof GowtherStory1Entity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof AlbionEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof AlbionFatEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof TallAlbionEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

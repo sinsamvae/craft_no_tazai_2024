@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "fork_heat_texture"
+        "missing": "fork_heat_texture"
       },
       "name": "default"
     }

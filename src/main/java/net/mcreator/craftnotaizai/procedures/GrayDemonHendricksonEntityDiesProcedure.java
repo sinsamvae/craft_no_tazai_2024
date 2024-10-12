@@ -16,7 +16,7 @@ public class GrayDemonHendricksonEntityDiesProcedure {
 	public static void execute(LevelAccessor world, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (((sourceentity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).Story).equals("Story28")) {
+		if (((sourceentity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).Story).equals("Story30")) {
 			if (!(entity instanceof Player)) {
 				{
 					final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
@@ -25,14 +25,14 @@ public class GrayDemonHendricksonEntityDiesProcedure {
 						if (entityiterator instanceof Player && !(entityiterator == entity)) {
 							{
 								double _setval = ((sourceentity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).xp
-										+ Math.ceil(sourceentity.getPersistentData().getDouble("level")) * 0.5 + 905) * ((double) RandomRaceConfigConfiguration.XP_AMOUNT.get() / 10);
+										+ Math.ceil(sourceentity.getPersistentData().getDouble("level")) * 0.5 + 910) * ((double) RandomRaceConfigConfiguration.XP_AMOUNT.get() / 10);
 								sourceentity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 									capability.xp = _setval;
 									capability.syncPlayerVariables(sourceentity);
 								});
 							}
 							{
-								String _setval = "Story29";
+								String _setval = "Story31";
 								sourceentity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 									capability.Story = _setval;
 									capability.syncPlayerVariables(sourceentity);

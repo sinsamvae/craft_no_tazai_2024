@@ -13,14 +13,17 @@ import software.bernie.geckolib.animatable.GeoItem;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 
+import net.mcreator.craftnotaizai.procedures.BellStaffLivingEntityIsHitWithItemProcedure;
 import net.mcreator.craftnotaizai.item.renderer.BellStaffItemRenderer;
 
 import java.util.function.Consumer;
@@ -34,7 +37,7 @@ public class BellStaffItem extends Item implements GeoItem {
 	public static ItemDisplayContext transformType;
 
 	public BellStaffItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().durability(250).rarity(Rarity.COMMON));
 	}
 
 	@Override
@@ -108,5 +111,12 @@ public class BellStaffItem extends Item implements GeoItem {
 			return builder.build();
 		}
 		return super.getDefaultAttributeModifiers(equipmentSlot);
+	}
+
+	@Override
+	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
+		BellStaffLivingEntityIsHitWithItemProcedure.execute(entity, sourceentity, itemstack);
+		return retval;
 	}
 }

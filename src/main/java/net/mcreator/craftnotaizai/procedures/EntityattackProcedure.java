@@ -60,6 +60,10 @@ public class EntityattackProcedure {
 				}
 				if (weapon.getItem() instanceof SwordItem || weapon.getItem() instanceof AxeItem) {
 					damage = damage * 1.1;
+					if (sourceentity instanceof Player && (sourceentity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).damage_indicator == true) {
+						if (sourceentity instanceof Player _player && !_player.level().isClientSide())
+							_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("DMG: ##").format(damage))), true);
+					}
 				}
 			}
 			entity.getPersistentData().putBoolean("hit", true);

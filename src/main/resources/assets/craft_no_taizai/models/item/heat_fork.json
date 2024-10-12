@@ -1,7 +1,7 @@
 {
   "parent": "craft_no_taizai:custom/heat_fork",
   "textures": {
-    "0": "craft_no_taizai:block/fork_heat_texture",
+    "missing": "craft_no_taizai:block/fork_heat_texture",
     "particle": "craft_no_taizai:item/fork_heat_texture"
   }
 }

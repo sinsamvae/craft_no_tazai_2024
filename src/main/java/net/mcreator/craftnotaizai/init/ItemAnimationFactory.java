@@ -11,7 +11,7 @@ import net.minecraft.client.renderer.ItemInHandRenderer;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.craftnotaizai.item.WhipItem;
-import net.mcreator.craftnotaizai.item.CoureChouseItem;
+import net.mcreator.craftnotaizai.item.HolyStaffCoureChouseItem;
 import net.mcreator.craftnotaizai.item.BowItem;
 import net.mcreator.craftnotaizai.item.BellStaffItem;
 
@@ -97,22 +97,22 @@ public class ItemAnimationFactory {
 					}
 				}
 			}
-			if (mainhandItem.getItem() instanceof CoureChouseItem animatable) {
+			if (mainhandItem.getItem() instanceof HolyStaffCoureChouseItem animatable) {
 				animation = mainhandItem.getOrCreateTag().getString("geckoAnim");
 				if (!animation.isEmpty()) {
 					event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
 					if (event.player.level().isClientSide()) {
-						((CoureChouseItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
+						((HolyStaffCoureChouseItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
 						disableUseAnim("right");
 					}
 				}
 			}
-			if (offhandItem.getItem() instanceof CoureChouseItem animatable) {
+			if (offhandItem.getItem() instanceof HolyStaffCoureChouseItem animatable) {
 				animation = offhandItem.getOrCreateTag().getString("geckoAnim");
 				if (!animation.isEmpty()) {
 					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
 					if (event.player.level().isClientSide()) {
-						((CoureChouseItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
+						((HolyStaffCoureChouseItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
 						disableUseAnim("left");
 					}
 				}

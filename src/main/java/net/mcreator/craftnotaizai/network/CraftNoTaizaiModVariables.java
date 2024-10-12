@@ -143,7 +143,6 @@ public class CraftNoTaizaiModVariables {
 			clone.Death = original.Death;
 			clone.BP = original.BP;
 			clone.immortality = original.immortality;
-			clone.sunshine = original.sunshine;
 			clone.Sunshine = original.Sunshine;
 			clone.skill = original.skill;
 			clone.playerjoins = original.playerjoins;
@@ -296,6 +295,9 @@ public class CraftNoTaizaiModVariables {
 			clone.JubakuEnsaTick = original.JubakuEnsaTick;
 			clone.JubakuEnsa = original.JubakuEnsa;
 			clone.God = original.God;
+			clone.elizbethArk = original.elizbethArk;
+			clone.hunter_fest = original.hunter_fest;
+			clone.hunterfest = original.hunterfest;
 			if (!event.isWasDeath()) {
 				clone.jumbvar = original.jumbvar;
 				clone.Gloxinia = original.Gloxinia;
@@ -383,12 +385,15 @@ public class CraftNoTaizaiModVariables {
 		public boolean choas = false;
 		public boolean purplefire = false;
 		public boolean fariykingtree = false;
-		public String fairykingtreecoords = "\"\"";
 		public boolean courechouse = false;
 		public boolean Gideon = false;
 		public boolean TwinBowHerritt = false;
 		public boolean Aldan = false;
 		public boolean MobHP = false;
+		public boolean gloxina_fairyking = false;
+		public boolean sunshine = false;
+		public boolean fullcounter = false;
+		public boolean full_counter = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -403,12 +408,15 @@ public class CraftNoTaizaiModVariables {
 			choas = nbt.getBoolean("choas");
 			purplefire = nbt.getBoolean("purplefire");
 			fariykingtree = nbt.getBoolean("fariykingtree");
-			fairykingtreecoords = nbt.getString("fairykingtreecoords");
 			courechouse = nbt.getBoolean("courechouse");
 			Gideon = nbt.getBoolean("Gideon");
 			TwinBowHerritt = nbt.getBoolean("TwinBowHerritt");
 			Aldan = nbt.getBoolean("Aldan");
 			MobHP = nbt.getBoolean("MobHP");
+			gloxina_fairyking = nbt.getBoolean("gloxina_fairyking");
+			sunshine = nbt.getBoolean("sunshine");
+			fullcounter = nbt.getBoolean("fullcounter");
+			full_counter = nbt.getBoolean("full_counter");
 		}
 
 		@Override
@@ -419,12 +427,15 @@ public class CraftNoTaizaiModVariables {
 			nbt.putBoolean("choas", choas);
 			nbt.putBoolean("purplefire", purplefire);
 			nbt.putBoolean("fariykingtree", fariykingtree);
-			nbt.putString("fairykingtreecoords", fairykingtreecoords);
 			nbt.putBoolean("courechouse", courechouse);
 			nbt.putBoolean("Gideon", Gideon);
 			nbt.putBoolean("TwinBowHerritt", TwinBowHerritt);
 			nbt.putBoolean("Aldan", Aldan);
 			nbt.putBoolean("MobHP", MobHP);
+			nbt.putBoolean("gloxina_fairyking", gloxina_fairyking);
+			nbt.putBoolean("sunshine", sunshine);
+			nbt.putBoolean("fullcounter", fullcounter);
+			nbt.putBoolean("full_counter", full_counter);
 			return nbt;
 		}
 
@@ -576,7 +587,6 @@ public class CraftNoTaizaiModVariables {
 		public boolean Death = false;
 		public double BP = 0;
 		public boolean immortality = false;
-		public boolean sunshine = false;
 		public double Sunshine = 0;
 		public double skill = 0;
 		public boolean playerjoins = false;
@@ -731,6 +741,9 @@ public class CraftNoTaizaiModVariables {
 		public double JubakuEnsaTick = 0;
 		public boolean JubakuEnsa = false;
 		public boolean God = false;
+		public boolean elizbethArk = false;
+		public boolean hunter_fest = false;
+		public double hunterfest = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -798,7 +811,6 @@ public class CraftNoTaizaiModVariables {
 			nbt.putBoolean("Death", Death);
 			nbt.putDouble("BP", BP);
 			nbt.putBoolean("immortality", immortality);
-			nbt.putBoolean("sunshine", sunshine);
 			nbt.putDouble("Sunshine", Sunshine);
 			nbt.putDouble("skill", skill);
 			nbt.putBoolean("playerjoins", playerjoins);
@@ -953,6 +965,9 @@ public class CraftNoTaizaiModVariables {
 			nbt.putDouble("JubakuEnsaTick", JubakuEnsaTick);
 			nbt.putBoolean("JubakuEnsa", JubakuEnsa);
 			nbt.putBoolean("God", God);
+			nbt.putBoolean("elizbethArk", elizbethArk);
+			nbt.putBoolean("hunter_fest", hunter_fest);
+			nbt.putDouble("hunterfest", hunterfest);
 			return nbt;
 		}
 
@@ -1017,7 +1032,6 @@ public class CraftNoTaizaiModVariables {
 			Death = nbt.getBoolean("Death");
 			BP = nbt.getDouble("BP");
 			immortality = nbt.getBoolean("immortality");
-			sunshine = nbt.getBoolean("sunshine");
 			Sunshine = nbt.getDouble("Sunshine");
 			skill = nbt.getDouble("skill");
 			playerjoins = nbt.getBoolean("playerjoins");
@@ -1172,6 +1186,9 @@ public class CraftNoTaizaiModVariables {
 			JubakuEnsaTick = nbt.getDouble("JubakuEnsaTick");
 			JubakuEnsa = nbt.getBoolean("JubakuEnsa");
 			God = nbt.getBoolean("God");
+			elizbethArk = nbt.getBoolean("elizbethArk");
+			hunter_fest = nbt.getBoolean("hunter_fest");
+			hunterfest = nbt.getDouble("hunterfest");
 		}
 	}
 
@@ -1264,7 +1281,6 @@ public class CraftNoTaizaiModVariables {
 					variables.Death = message.data.Death;
 					variables.BP = message.data.BP;
 					variables.immortality = message.data.immortality;
-					variables.sunshine = message.data.sunshine;
 					variables.Sunshine = message.data.Sunshine;
 					variables.skill = message.data.skill;
 					variables.playerjoins = message.data.playerjoins;
@@ -1419,6 +1435,9 @@ public class CraftNoTaizaiModVariables {
 					variables.JubakuEnsaTick = message.data.JubakuEnsaTick;
 					variables.JubakuEnsa = message.data.JubakuEnsa;
 					variables.God = message.data.God;
+					variables.elizbethArk = message.data.elizbethArk;
+					variables.hunter_fest = message.data.hunter_fest;
+					variables.hunterfest = message.data.hunterfest;
 				}
 			});
 			context.setPacketHandled(true);

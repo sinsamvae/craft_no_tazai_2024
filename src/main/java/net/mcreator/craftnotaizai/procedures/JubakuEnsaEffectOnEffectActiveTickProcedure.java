@@ -20,7 +20,7 @@ public class JubakuEnsaEffectOnEffectActiveTickProcedure {
 			if (entity.getPersistentData().getDouble("JubakuEnsaTick") >= 600) {
 				entity.getPersistentData().putDouble("JubakuEnsaTick", 0);
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (CraftNoTaizaiModParticleTypes.JUBAKU_ENSA_PARTICLE_2.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 50, 3, 3, 3, 0.1);
+					_level.sendParticles((SimpleParticleType) (CraftNoTaizaiModParticleTypes.JUBAKU_ENSA_PARTICLE_2.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 50, 0.5, 3, 0.5, 0.1);
 				CraftNoTaizaiMod.queueServerWork(1, () -> {
 					{
 						Entity _ent = entity;

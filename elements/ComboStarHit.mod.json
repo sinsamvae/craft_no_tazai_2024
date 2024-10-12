@@ -19,8 +19,8 @@
           "displayCondition": {
             "name": "DisplayComboStarHit"
           },
-          "anchorPoint": "BOTTOM_CENTER",
-          "x": 59,
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 5,
           "y": 224
         }
       },
@@ -39,8 +39,8 @@
           "displayCondition": {
             "name": "LostVayneOverlay"
           },
-          "anchorPoint": "CENTER",
-          "x": 59,
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 5,
           "y": 224
         }
       },
@@ -59,8 +59,8 @@
           "displayCondition": {
             "name": "RhittaReturn"
           },
-          "anchorPoint": "CENTER",
-          "x": 59,
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 5,
           "y": 224
         }
       }

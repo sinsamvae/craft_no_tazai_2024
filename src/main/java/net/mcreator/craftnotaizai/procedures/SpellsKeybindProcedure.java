@@ -18,5 +18,6 @@ public class SpellsKeybindProcedure {
 		RapidMovementSkillProcedure.execute(world, entity);
 		ResistFireProcedure.execute(entity);
 		MagicDetectionKeyProcedure.execute(entity);
+		SpiralHailKeyBindProcedure.execute(world, entity);
 	}
 }

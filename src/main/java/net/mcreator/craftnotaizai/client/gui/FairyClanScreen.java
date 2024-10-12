@@ -37,6 +37,11 @@ public class FairyClanScreen extends AbstractContainerScreen<FairyClanMenu> {
 		this.imageHeight = 0;
 	}
 
+	@Override
+	public boolean isPauseScreen() {
+		return true;
+	}
+
 	private static final ResourceLocation texture = new ResourceLocation("craft_no_taizai:textures/screens/fairy_clan.png");
 
 	@Override

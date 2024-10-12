@@ -12,7 +12,7 @@ public class HornofCernunnosOnEntityTickUpdateProcedure {
 			} else {
 				entity.getPersistentData().putDouble("CharacterCount", 0);
 			}
-			entity.getPersistentData().putString("DisplayText", ((entity.getPersistentData().getString("MyFullText")).substring((int) entity.getPersistentData().getDouble("CharacterCount"))));
+			entity.getPersistentData().putString("DisplayText", ((entity.getPersistentData().getString("MyFullText")).substring(0, (int) entity.getPersistentData().getDouble("CharacterCount"))));
 			entity.getPersistentData().putDouble("TextDelay", 0);
 		} else {
 			entity.getPersistentData().putDouble("TextDelay", (entity.getPersistentData().getDouble("TextDelay") + 1));

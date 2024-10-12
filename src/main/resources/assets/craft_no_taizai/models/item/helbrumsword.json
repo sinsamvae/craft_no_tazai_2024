@@ -1,7 +1,7 @@
 {
-  "parent": "craft_no_taizai:custom/helbramsword",
+  "parent": "craft_no_taizai:custom/helbrumsword",
   "textures": {
-    "0": "craft_no_taizai:block/helbram_sword_texture",
-    "particle": "craft_no_taizai:item/helbram_sword_texture"
+    "0": "craft_no_taizai:block/helbramsword",
+    "particle": "craft_no_taizai:item/helbramsword"
   }
 }

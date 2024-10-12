@@ -28,12 +28,15 @@ import net.mcreator.craftnotaizai.entity.VineEntity;
 import net.mcreator.craftnotaizai.entity.TyrantDragonEntity;
 import net.mcreator.craftnotaizai.entity.TwigoAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.TrollEntity;
+import net.mcreator.craftnotaizai.entity.TallAlbionEntity;
 import net.mcreator.craftnotaizai.entity.TaizooAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.SwordWolfEntity;
+import net.mcreator.craftnotaizai.entity.SuperSlashEntity;
 import net.mcreator.craftnotaizai.entity.SunflowerEntity;
 import net.mcreator.craftnotaizai.entity.SunFlowerTrueSpirtSpearEntity;
 import net.mcreator.craftnotaizai.entity.StoryBanAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.StoryBan2AnimatedEntity;
+import net.mcreator.craftnotaizai.entity.SpiralHailEntity;
 import net.mcreator.craftnotaizai.entity.SoyokazenoGekirinProjectileEntity;
 import net.mcreator.craftnotaizai.entity.SoldierAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.SnowflowerbeamProjectileEntity;
@@ -88,11 +91,12 @@ import net.mcreator.craftnotaizai.entity.JerichoAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.InsectFEntity;
 import net.mcreator.craftnotaizai.entity.InsectEntity;
 import net.mcreator.craftnotaizai.entity.InfernoIncantationEntity;
+import net.mcreator.craftnotaizai.entity.IncreaseProjectileEntity;
 import net.mcreator.craftnotaizai.entity.IceBulletsProjectileEntity;
 import net.mcreator.craftnotaizai.entity.HunterWispProjectileEntity;
 import net.mcreator.craftnotaizai.entity.HugoAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.HowzerAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.HornofCernunnosEntity;
+import net.mcreator.craftnotaizai.entity.HornOfCernunosEntity;
 import net.mcreator.craftnotaizai.entity.HideAndSeekEntity;
 import net.mcreator.craftnotaizai.entity.HendricksonAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.HellblazeOmegaProjectileEntity;
@@ -112,6 +116,7 @@ import net.mcreator.craftnotaizai.entity.GreenKnightAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.GrayDemonHendricksonAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.GrayDemonEntityEntity;
 import net.mcreator.craftnotaizai.entity.GrayDemonEntity;
+import net.mcreator.craftnotaizai.entity.GowtherStory1Entity;
 import net.mcreator.craftnotaizai.entity.GowtherBossAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.GolgiusAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.GilThunderAnimatedEntity;
@@ -143,6 +148,7 @@ import net.mcreator.craftnotaizai.entity.DuskBison1Entity;
 import net.mcreator.craftnotaizai.entity.DumblebbasAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.DriftBombProjectileEntity;
 import net.mcreator.craftnotaizai.entity.DreyfusAnimatedEntity;
+import net.mcreator.craftnotaizai.entity.DogedoEntity;
 import net.mcreator.craftnotaizai.entity.DivineSlashEntity;
 import net.mcreator.craftnotaizai.entity.DianeBossAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.DianeAnimatedEntity;
@@ -164,6 +170,7 @@ import net.mcreator.craftnotaizai.entity.ChickenEntity;
 import net.mcreator.craftnotaizai.entity.ChatifolshotEntity;
 import net.mcreator.craftnotaizai.entity.ChastiefolTrueSpirtSpearEntity;
 import net.mcreator.craftnotaizai.entity.ChainExplosionV2Entity;
+import net.mcreator.craftnotaizai.entity.CannonEntity;
 import net.mcreator.craftnotaizai.entity.CainBarzadAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.BusterIceEntity;
 import net.mcreator.craftnotaizai.entity.BulletSquallEntity;
@@ -185,6 +192,9 @@ import net.mcreator.craftnotaizai.entity.ArrowEntity;
 import net.mcreator.craftnotaizai.entity.AngleCureEntity;
 import net.mcreator.craftnotaizai.entity.AndreDemonFormEntity;
 import net.mcreator.craftnotaizai.entity.AndreAnimatedEntity;
+import net.mcreator.craftnotaizai.entity.AlbionFatEntity;
+import net.mcreator.craftnotaizai.entity.AlbionEntity;
+import net.mcreator.craftnotaizai.entity.AealHealEntity;
 import net.mcreator.craftnotaizai.entity.AcidtowerProjectileEntity;
 import net.mcreator.craftnotaizai.entity.AcidTwowerMobEntity;
 import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
@@ -476,8 +486,6 @@ public class CraftNoTaizaiModEntities {
 					.setCustomClientFactory(GuardianTrueSpirtSpearEntity::new).fireImmune().sized(2f, 5f));
 	public static final RegistryObject<EntityType<HellBlaze2Entity>> HELL_BLAZE_2 = register("hell_blaze_2",
 			EntityType.Builder.<HellBlaze2Entity>of(HellBlaze2Entity::new, MobCategory.MISC).setCustomClientFactory(HellBlaze2Entity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<HornofCernunnosEntity>> HORNOF_CERNUNNOS = register("hornof_cernunnos", EntityType.Builder.<HornofCernunnosEntity>of(HornofCernunnosEntity::new, MobCategory.AMBIENT)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HornofCernunnosEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<LetThereBeLightEntity>> LET_THERE_BE_LIGHT = register("let_there_be_light", EntityType.Builder.<LetThereBeLightEntity>of(LetThereBeLightEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(LetThereBeLightEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<InfernoIncantationEntity>> INFERNO_INCANTATION = register("inferno_incantation", EntityType.Builder.<InfernoIncantationEntity>of(InfernoIncantationEntity::new, MobCategory.MISC)
@@ -723,6 +731,40 @@ public class CraftNoTaizaiModEntities {
 			EntityType.Builder.<MarmasEntity>of(MarmasEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MarmasEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<AealHealEntity>> AEAL_HEAL = register("aeal_heal",
+			EntityType.Builder.<AealHealEntity>of(AealHealEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AealHealEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<SuperSlashEntity>> SUPER_SLASH = register("super_slash",
+			EntityType.Builder.<SuperSlashEntity>of(SuperSlashEntity::new, MobCategory.MISC).setCustomClientFactory(SuperSlashEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<HornOfCernunosEntity>> HORN_OF_CERNUNOS = register("horn_of_cernunos",
+			EntityType.Builder.<HornOfCernunosEntity>of(HornOfCernunosEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HornOfCernunosEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<SpiralHailEntity>> SPIRAL_HAIL = register("spiral_hail",
+			EntityType.Builder.<SpiralHailEntity>of(SpiralHailEntity::new, MobCategory.MISC).setCustomClientFactory(SpiralHailEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<IncreaseProjectileEntity>> INCREASE_PROJECTILE = register("increase_projectile", EntityType.Builder.<IncreaseProjectileEntity>of(IncreaseProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(IncreaseProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<DogedoEntity>> DOGEDO = register("dogedo",
+			EntityType.Builder.<DogedoEntity>of(DogedoEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DogedoEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GowtherStory1Entity>> GOWTHER_STORY_1 = register("gowther_story_1",
+			EntityType.Builder.<GowtherStory1Entity>of(GowtherStory1Entity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GowtherStory1Entity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<AlbionEntity>> ALBION = register("albion",
+			EntityType.Builder.<AlbionEntity>of(AlbionEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AlbionEntity::new)
+
+					.sized(0.8f, 2.5f));
+	public static final RegistryObject<EntityType<CannonEntity>> CANNON = register("cannon",
+			EntityType.Builder.<CannonEntity>of(CannonEntity::new, MobCategory.MISC).setCustomClientFactory(CannonEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<AlbionFatEntity>> ALBION_FAT = register("albion_fat",
+			EntityType.Builder.<AlbionFatEntity>of(AlbionFatEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AlbionFatEntity::new)
+
+					.sized(0.8f, 2.5f));
+	public static final RegistryObject<EntityType<TallAlbionEntity>> TALL_ALBION = register("tall_albion",
+			EntityType.Builder.<TallAlbionEntity>of(TallAlbionEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TallAlbionEntity::new)
+
+					.sized(0.8f, 2.3f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -780,7 +822,6 @@ public class CraftNoTaizaiModEntities {
 			EarthGolemEntity.init();
 			PhysicalCloneEntity.init();
 			GuardianTrueSpirtSpearEntity.init();
-			HornofCernunnosEntity.init();
 			TwigoAnimatedEntity.init();
 			GrayDemonEntityEntity.init();
 			GilThunderAnimatedEntity.init();
@@ -842,6 +883,13 @@ public class CraftNoTaizaiModEntities {
 			GerheadeEntity.init();
 			ServantEntity.init();
 			MarmasEntity.init();
+			AealHealEntity.init();
+			HornOfCernunosEntity.init();
+			DogedoEntity.init();
+			GowtherStory1Entity.init();
+			AlbionEntity.init();
+			AlbionFatEntity.init();
+			TallAlbionEntity.init();
 		});
 	}
 
@@ -896,7 +944,6 @@ public class CraftNoTaizaiModEntities {
 		event.put(EARTH_GOLEM.get(), EarthGolemEntity.createAttributes().build());
 		event.put(PHYSICAL_CLONE.get(), PhysicalCloneEntity.createAttributes().build());
 		event.put(GUARDIAN_TRUE_SPIRT_SPEAR.get(), GuardianTrueSpirtSpearEntity.createAttributes().build());
-		event.put(HORNOF_CERNUNNOS.get(), HornofCernunnosEntity.createAttributes().build());
 		event.put(TWIGO_ANIMATED.get(), TwigoAnimatedEntity.createAttributes().build());
 		event.put(GRAY_DEMON_ENTITY.get(), GrayDemonEntityEntity.createAttributes().build());
 		event.put(GIL_THUNDER_ANIMATED.get(), GilThunderAnimatedEntity.createAttributes().build());
@@ -958,5 +1005,12 @@ public class CraftNoTaizaiModEntities {
 		event.put(GERHEADE.get(), GerheadeEntity.createAttributes().build());
 		event.put(SERVANT.get(), ServantEntity.createAttributes().build());
 		event.put(MARMAS.get(), MarmasEntity.createAttributes().build());
+		event.put(AEAL_HEAL.get(), AealHealEntity.createAttributes().build());
+		event.put(HORN_OF_CERNUNOS.get(), HornOfCernunosEntity.createAttributes().build());
+		event.put(DOGEDO.get(), DogedoEntity.createAttributes().build());
+		event.put(GOWTHER_STORY_1.get(), GowtherStory1Entity.createAttributes().build());
+		event.put(ALBION.get(), AlbionEntity.createAttributes().build());
+		event.put(ALBION_FAT.get(), AlbionFatEntity.createAttributes().build());
+		event.put(TALL_ALBION.get(), TallAlbionEntity.createAttributes().build());
 	}
 }
