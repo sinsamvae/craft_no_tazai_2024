@@ -116,7 +116,7 @@ public class BellStaffItem extends Item implements GeoItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		BellStaffLivingEntityIsHitWithItemProcedure.execute(entity, sourceentity, itemstack);
+		BellStaffLivingEntityIsHitWithItemProcedure.execute(entity, itemstack);
 		return retval;
 	}
 }

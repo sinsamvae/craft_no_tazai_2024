@@ -161,6 +161,7 @@ import net.mcreator.craftnotaizai.client.renderer.ArrowShotProjectileRenderer;
 import net.mcreator.craftnotaizai.client.renderer.AngleCureRenderer;
 import net.mcreator.craftnotaizai.client.renderer.AndreDemonFormRenderer;
 import net.mcreator.craftnotaizai.client.renderer.AndreAnimatedRenderer;
+import net.mcreator.craftnotaizai.client.renderer.AlbionTallRenderer;
 import net.mcreator.craftnotaizai.client.renderer.AlbionRenderer;
 import net.mcreator.craftnotaizai.client.renderer.AlbionFatRenderer;
 import net.mcreator.craftnotaizai.client.renderer.AealHealRenderer;
@@ -351,5 +352,6 @@ public class CraftNoTaizaiModEntityRenderers {
 		event.registerEntityRenderer(CraftNoTaizaiModEntities.CANNON.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(CraftNoTaizaiModEntities.ALBION_FAT.get(), AlbionFatRenderer::new);
 		event.registerEntityRenderer(CraftNoTaizaiModEntities.TALL_ALBION.get(), TallAlbionRenderer::new);
+		event.registerEntityRenderer(CraftNoTaizaiModEntities.ALBION_TALL.get(), AlbionTallRenderer::new);
 	}
 }

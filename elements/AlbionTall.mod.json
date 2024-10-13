@@ -2,29 +2,29 @@
   "_fv": 66,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Fat Albion",
+    "mobName": "Tall Albion",
     "mobLabel": "",
-    "mobModelTexture": "albion.png",
+    "mobModelTexture": "tall_albion.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 5.0
+      "fixedValue": 6.0
     },
     "boundingBoxScale": {
-      "fixedValue": 5.0
+      "fixedValue": 6.0
     },
     "entityDataEntries": [],
-    "modelWidth": 0.8,
-    "modelHeight": 2.5,
-    "modelShadowSize": 0.7999999999999999,
+    "modelWidth": 0.7999999999999999,
+    "modelHeight": 2.3000000000000003,
+    "modelShadowSize": 0.7,
     "mountedYOffset": 0.0,
     "stepHeight": 0.6,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -1842194,
+      "value": -3683904,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -11576014,
+      "value": -12761051,
       "falpha": 0.0
     },
     "creativeTabs": [
@@ -59,7 +59,7 @@
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
     "movementSpeed": 0.3,
-    "armorBaseValue": 21.0,
+    "armorBaseValue": 20.0,
     "trackingRange": 64,
     "followRange": 16,
     "health": 480,
@@ -110,12 +110,12 @@
       "name": "VeryHardMobDie"
     },
     "onMobTickUpdate": {
-      "name": "AlbionFatOnEntityTickUpdate"
+      "name": "AlbionTallOnEntityTickUpdate"
     },
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
-    "model": "albion.geo.json",
+    "model": "tall_albion.geo.json",
     "groupName": "",
     "animation1": "idle",
     "animation2": "walk",

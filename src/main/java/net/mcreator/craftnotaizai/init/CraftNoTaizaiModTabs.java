@@ -355,6 +355,7 @@ public class CraftNoTaizaiModTabs {
 				tabData.accept(CraftNoTaizaiModItems.ALBION_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.ALBION_FAT_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.TALL_ALBION_SPAWN_EGG.get());
+				tabData.accept(CraftNoTaizaiModItems.ALBION_TALL_SPAWN_EGG.get());
 			})
 
 					.build());

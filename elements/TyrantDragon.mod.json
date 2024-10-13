@@ -33,10 +33,11 @@
       "value": -6750208,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:SpawnEggs"
-    },
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:SpawnEggs"
+      }
+    ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -70,7 +71,7 @@
     "health": 120,
     "xpAmount": 0,
     "waterMob": false,
-    "flyingMob": false,
+    "flyingMob": true,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -106,6 +107,9 @@
       "value": "entity.generic.death"
     },
     "stepSound": {
+      "value": ""
+    },
+    "raidCelebrationSound": {
       "value": ""
     },
     "onMobTickUpdate": {

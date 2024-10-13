@@ -2736,7 +2736,7 @@
         "data": {
           "name": "label_defeat_albion",
           "text": {
-            "fixedValue": "Defeat Albion"
+            "fixedValue": "Defeat Fat Albion"
           },
           "color": {
             "value": -13369345,
@@ -2747,6 +2747,96 @@
           },
           "x": 70,
           "y": 109
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_3the_scared_treasure_lostvay1",
+          "text": {
+            "fixedValue": "EP 4:The Ten Commandments on the Move"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story33"
+          },
+          "x": 69,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_king_struggles_to_fend_off_the_g",
+          "text": {
+            "fixedValue": "King struggles to fend off the giant Albion sent to"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story33"
+          },
+          "x": 69,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_destory_the_fairy_kings_forest",
+          "text": {
+            "fixedValue": "destory the Fairy King's Forest. Galand of Ten "
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story33"
+          },
+          "x": 68,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_commandments_appears_before_meli",
+          "text": {
+            "fixedValue": "Commandments appears before Meliodas."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story33"
+          },
+          "x": 68,
+          "y": 94
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_tall_albion",
+          "text": {
+            "fixedValue": "Defeat Tall Albion"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story33"
+          },
+          "x": 70,
+          "y": 112
         }
       }
     ],

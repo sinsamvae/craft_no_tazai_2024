@@ -587,6 +587,7 @@ public class CraftNoTaizaiModItems {
 	public static final RegistryObject<Item> ALBION_FAT_SPAWN_EGG = REGISTRY.register("albion_fat_spawn_egg", () -> new ForgeSpawnEggItem(CraftNoTaizaiModEntities.ALBION_FAT, -1842194, -11576014, new Item.Properties()));
 	public static final RegistryObject<Item> TALL_ALBION_SPAWN_EGG = REGISTRY.register("tall_albion_spawn_egg", () -> new ForgeSpawnEggItem(CraftNoTaizaiModEntities.TALL_ALBION, -3683904, -12761051, new Item.Properties()));
 	public static final RegistryObject<Item> PURGATORY_BLOCK = block(CraftNoTaizaiModBlocks.PURGATORY_BLOCK);
+	public static final RegistryObject<Item> ALBION_TALL_SPAWN_EGG = REGISTRY.register("albion_tall_spawn_egg", () -> new ForgeSpawnEggItem(CraftNoTaizaiModEntities.ALBION_TALL, -3683904, -12761051, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

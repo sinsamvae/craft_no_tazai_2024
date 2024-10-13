@@ -98,6 +98,7 @@ import net.mcreator.craftnotaizai.entity.BanBossAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.AngleCureEntity;
 import net.mcreator.craftnotaizai.entity.AndreDemonFormEntity;
 import net.mcreator.craftnotaizai.entity.AndreAnimatedEntity;
+import net.mcreator.craftnotaizai.entity.AlbionTallEntity;
 import net.mcreator.craftnotaizai.entity.AlbionFatEntity;
 import net.mcreator.craftnotaizai.entity.AlbionEntity;
 import net.mcreator.craftnotaizai.entity.AealHealEntity;
@@ -780,6 +781,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof TallAlbionEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof AlbionTallEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

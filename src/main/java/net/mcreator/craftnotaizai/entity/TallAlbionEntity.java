@@ -39,6 +39,8 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
+import net.mcreator.craftnotaizai.procedures.TallAlbionOnEntityTickUpdateProcedure;
+import net.mcreator.craftnotaizai.procedures.TallAlbionEntityDiesProcedure;
 import net.mcreator.craftnotaizai.init.CraftNoTaizaiModEntities;
 
 public class TallAlbionEntity extends Monster implements GeoEntity {
@@ -114,6 +116,12 @@ public class TallAlbionEntity extends Monster implements GeoEntity {
 	}
 
 	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		TallAlbionEntityDiesProcedure.execute();
+	}
+
+	@Override
 	public void addAdditionalSaveData(CompoundTag compound) {
 		super.addAdditionalSaveData(compound);
 		compound.putString("Texture", this.getTexture());
@@ -129,6 +137,7 @@ public class TallAlbionEntity extends Monster implements GeoEntity {
 	@Override
 	public void baseTick() {
 		super.baseTick();
+		TallAlbionOnEntityTickUpdateProcedure.execute(this.level(), this);
 		this.refreshDimensions();
 	}
 

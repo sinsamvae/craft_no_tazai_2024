@@ -192,6 +192,7 @@ import net.mcreator.craftnotaizai.entity.ArrowEntity;
 import net.mcreator.craftnotaizai.entity.AngleCureEntity;
 import net.mcreator.craftnotaizai.entity.AndreDemonFormEntity;
 import net.mcreator.craftnotaizai.entity.AndreAnimatedEntity;
+import net.mcreator.craftnotaizai.entity.AlbionTallEntity;
 import net.mcreator.craftnotaizai.entity.AlbionFatEntity;
 import net.mcreator.craftnotaizai.entity.AlbionEntity;
 import net.mcreator.craftnotaizai.entity.AealHealEntity;
@@ -765,6 +766,10 @@ public class CraftNoTaizaiModEntities {
 			EntityType.Builder.<TallAlbionEntity>of(TallAlbionEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TallAlbionEntity::new)
 
 					.sized(0.8f, 2.3f));
+	public static final RegistryObject<EntityType<AlbionTallEntity>> ALBION_TALL = register("albion_tall",
+			EntityType.Builder.<AlbionTallEntity>of(AlbionTallEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AlbionTallEntity::new)
+
+					.sized(0.8f, 2.3f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -890,6 +895,7 @@ public class CraftNoTaizaiModEntities {
 			AlbionEntity.init();
 			AlbionFatEntity.init();
 			TallAlbionEntity.init();
+			AlbionTallEntity.init();
 		});
 	}
 
@@ -1012,5 +1018,6 @@ public class CraftNoTaizaiModEntities {
 		event.put(ALBION.get(), AlbionEntity.createAttributes().build());
 		event.put(ALBION_FAT.get(), AlbionFatEntity.createAttributes().build());
 		event.put(TALL_ALBION.get(), TallAlbionEntity.createAttributes().build());
+		event.put(ALBION_TALL.get(), AlbionTallEntity.createAttributes().build());
 	}
 }
