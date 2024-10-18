@@ -11,8 +11,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 
-import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
-
 public class CraftNoTaizaiModSounds {
 	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, CraftNoTaizaiMod.MODID);
 	public static final RegistryObject<SoundEvent> FULLCONTER = REGISTRY.register("fullconter", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("craft_no_taizai", "fullconter")));

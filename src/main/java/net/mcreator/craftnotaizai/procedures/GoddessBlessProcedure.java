@@ -38,6 +38,9 @@ public class GoddessBlessProcedure {
 			return;
 		double y_offset = 0;
 		double distance_in_blocks = 0;
+		double x = 0;
+		double z = 0;
+		double yaw = 0;
 		if ((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).GoddessBless == true) {
 			{
 				double _setval = (entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).goddessbless + 1;
@@ -55,11 +58,14 @@ public class GoddessBlessProcedure {
 						(entity.getZ() + entity.getLookAngle().z * distance_in_blocks), 0, 0, 0);
 			}
 			if ((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).goddessbless > 50) {
+				x = entity.getX();
+				z = entity.getZ();
+				yaw = entity.getYRot() + 180;
 				{
 					Entity _ent = entity;
 					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
 						_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-								_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "photon fx photon:goddess_bless entity @s");
+								_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("summon craft_no_taizai:goddess_bless_entity " + x + " ~ " + z + " {Rotation:[" + yaw + "f,0f]}"));
 					}
 				}
 			}

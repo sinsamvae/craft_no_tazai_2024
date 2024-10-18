@@ -29,7 +29,7 @@ import java.util.List;
 import java.util.Comparator;
 
 public class DeathThornSkillProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
+	public static void execute(LevelAccessor world, double y, Entity entity) {
 		if (entity == null)
 			return;
 		double x = 0;
@@ -139,7 +139,7 @@ public class DeathThornSkillProcedure {
 			}
 			CraftNoTaizaiMod.queueServerWork(6, () -> {
 				{
-					final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
+					final Vec3 _center = new Vec3((entity.getX()), y, (entity.getZ()));
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 					for (Entity entityiterator : _entfound) {
 						if (!(entityiterator == entity || entityiterator instanceof ItemEntity || entityiterator instanceof ExperienceOrb

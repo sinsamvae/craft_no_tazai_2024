@@ -298,6 +298,7 @@ public class CraftNoTaizaiModVariables {
 			clone.elizbethArk = original.elizbethArk;
 			clone.hunter_fest = original.hunter_fest;
 			clone.hunterfest = original.hunterfest;
+			clone.commandment = original.commandment;
 			if (!event.isWasDeath()) {
 				clone.jumbvar = original.jumbvar;
 				clone.Gloxinia = original.Gloxinia;
@@ -744,6 +745,7 @@ public class CraftNoTaizaiModVariables {
 		public boolean elizbethArk = false;
 		public boolean hunter_fest = false;
 		public double hunterfest = 0;
+		public String commandment = "";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -968,6 +970,7 @@ public class CraftNoTaizaiModVariables {
 			nbt.putBoolean("elizbethArk", elizbethArk);
 			nbt.putBoolean("hunter_fest", hunter_fest);
 			nbt.putDouble("hunterfest", hunterfest);
+			nbt.putString("commandment", commandment);
 			return nbt;
 		}
 
@@ -1189,6 +1192,7 @@ public class CraftNoTaizaiModVariables {
 			elizbethArk = nbt.getBoolean("elizbethArk");
 			hunter_fest = nbt.getBoolean("hunter_fest");
 			hunterfest = nbt.getDouble("hunterfest");
+			commandment = nbt.getString("commandment");
 		}
 	}
 
@@ -1438,6 +1442,7 @@ public class CraftNoTaizaiModVariables {
 					variables.elizbethArk = message.data.elizbethArk;
 					variables.hunter_fest = message.data.hunter_fest;
 					variables.hunterfest = message.data.hunterfest;
+					variables.commandment = message.data.commandment;
 				}
 			});
 			context.setPacketHandled(true);

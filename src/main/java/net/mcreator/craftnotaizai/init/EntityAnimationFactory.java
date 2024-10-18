@@ -4,105 +4,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
-import net.mcreator.craftnotaizai.entity.WickedBiteEntity;
-import net.mcreator.craftnotaizai.entity.WeinheidtAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.VivianAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.VineEntity;
-import net.mcreator.craftnotaizai.entity.TyrantDragonEntity;
-import net.mcreator.craftnotaizai.entity.TwigoAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.TrollEntity;
-import net.mcreator.craftnotaizai.entity.TallAlbionEntity;
-import net.mcreator.craftnotaizai.entity.TaizooAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.SwordWolfEntity;
-import net.mcreator.craftnotaizai.entity.SunFlowerTrueSpirtSpearEntity;
-import net.mcreator.craftnotaizai.entity.StoryBanAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.StoryBan2AnimatedEntity;
-import net.mcreator.craftnotaizai.entity.SoldierAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.SladerAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.SimonAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.ServantEntity;
-import net.mcreator.craftnotaizai.entity.RuinAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.RoyalGurardAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.RoyalGuardAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.RedKnightAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.RedDemonGeckolibEntity;
-import net.mcreator.craftnotaizai.entity.PuoraEntity;
-import net.mcreator.craftnotaizai.entity.ParadaAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.MutilatorRabbitsEntity;
-import net.mcreator.craftnotaizai.entity.MuramoDemonFormEntity;
-import net.mcreator.craftnotaizai.entity.MuramoAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.MoonRoseEntity;
-import net.mcreator.craftnotaizai.entity.MerlinBossAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.MeliodasBossAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.MarmasEntity;
-import net.mcreator.craftnotaizai.entity.KulumilEntity;
-import net.mcreator.craftnotaizai.entity.KingBossAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.JumanjuEntityEntity;
-import net.mcreator.craftnotaizai.entity.JonahNoJunanEntity;
-import net.mcreator.craftnotaizai.entity.JillianAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.JerichoDemonFormEntity;
-import net.mcreator.craftnotaizai.entity.JerichoAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.InsectFEntity;
-import net.mcreator.craftnotaizai.entity.InsectEntity;
-import net.mcreator.craftnotaizai.entity.HugoAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.HowzerAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.HideAndSeekEntity;
-import net.mcreator.craftnotaizai.entity.HendricksonAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.HellGateRedDemonsEntity;
-import net.mcreator.craftnotaizai.entity.HelbremAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.HawksEntity;
-import net.mcreator.craftnotaizai.entity.GustafAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.GuilaDemonanimatedEntity;
-import net.mcreator.craftnotaizai.entity.GuilaAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.GuardianTrueSpirtSpearEntity;
-import net.mcreator.craftnotaizai.entity.Guardian1Entity;
-import net.mcreator.craftnotaizai.entity.GriamoreAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.GreenKnightAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.GrayDemonHendricksonAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.GrayDemonEntityEntity;
-import net.mcreator.craftnotaizai.entity.GrayDemonEntity;
-import net.mcreator.craftnotaizai.entity.GowtherStory1Entity;
-import net.mcreator.craftnotaizai.entity.GowtherBossAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.GolgiusAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.GilThunderAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.GilThunderAnimated2Entity;
-import net.mcreator.craftnotaizai.entity.GigaPickEntity;
-import net.mcreator.craftnotaizai.entity.GigaFallEntity;
-import net.mcreator.craftnotaizai.entity.GigaCrushEntity;
-import net.mcreator.craftnotaizai.entity.GerheadeEntity;
-import net.mcreator.craftnotaizai.entity.GeckolibKrakenEntity;
-import net.mcreator.craftnotaizai.entity.FriesiaAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.FairyHelbremAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.EarthGolemEntity;
-import net.mcreator.craftnotaizai.entity.EarthCrawlerEntity;
-import net.mcreator.craftnotaizai.entity.DuskBison1Entity;
-import net.mcreator.craftnotaizai.entity.DumblebbasAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.DreyfusAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.DogedoEntity;
-import net.mcreator.craftnotaizai.entity.DianeBossAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.DianeAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.DemonHendricksonAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.DeathThornEntity;
-import net.mcreator.craftnotaizai.entity.DeadHelbramanimatedEntity;
-import net.mcreator.craftnotaizai.entity.DalefinalEntity;
-import net.mcreator.craftnotaizai.entity.DaleSecEntity;
-import net.mcreator.craftnotaizai.entity.DaleArmoredEntity;
-import net.mcreator.craftnotaizai.entity.CocoonOfDarknessEntity;
-import net.mcreator.craftnotaizai.entity.ClayDragonEntity;
-import net.mcreator.craftnotaizai.entity.ChickenEntity;
-import net.mcreator.craftnotaizai.entity.CainBarzadAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.BlackOutEntity;
-import net.mcreator.craftnotaizai.entity.BlackHoundEntity;
-import net.mcreator.craftnotaizai.entity.BasquiasGuardianEntity;
-import net.mcreator.craftnotaizai.entity.BanBossAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.AngleCureEntity;
-import net.mcreator.craftnotaizai.entity.AndreDemonFormEntity;
-import net.mcreator.craftnotaizai.entity.AndreAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.AlbionTallEntity;
-import net.mcreator.craftnotaizai.entity.AlbionFatEntity;
-import net.mcreator.craftnotaizai.entity.AlbionEntity;
-import net.mcreator.craftnotaizai.entity.AealHealEntity;
-
 @Mod.EventBusSubscriber
 public class EntityAnimationFactory {
 	@SubscribeEvent
@@ -788,6 +689,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof AlbionTallEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof GoddessBlessEntityEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "cookedtentacles",
+    "texture": "cook_kraken",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Cookedtentacles",
+    "name": "Cooked Tentacles",
     "rarity": "COMMON",
     "creativeTabs": [
       {

@@ -12,6 +12,7 @@ public class RandomRaceConfigConfiguration {
 	public static final ForgeConfigSpec.ConfigValue<Double> MANA_DRAIN_ONE;
 	public static final ForgeConfigSpec.ConfigValue<Double> MANA_DRAIN_TWO;
 	public static final ForgeConfigSpec.ConfigValue<Double> MANA_DRAIN_THREE;
+	public static final ForgeConfigSpec.ConfigValue<Double> SPEED;
 	static {
 		BUILDER.push("random_race");
 		RANDOM_RACE = BUILDER.comment("gives random race when you join world").define("random_race", true);
@@ -21,6 +22,7 @@ public class RandomRaceConfigConfiguration {
 		MANA_DRAIN_ONE = BUILDER.comment("this is for first forms/skills that drain mana").define("mana_drain_one", (double) 0.09);
 		MANA_DRAIN_TWO = BUILDER.define("mana_drain_two", (double) 0.09);
 		MANA_DRAIN_THREE = BUILDER.define("mana_drain_three", (double) 0.09);
+		SPEED = BUILDER.define("Speed", (double) 100);
 		BUILDER.pop();
 
 		SPEC = BUILDER.build();

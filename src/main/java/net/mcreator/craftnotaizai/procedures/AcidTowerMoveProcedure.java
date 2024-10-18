@@ -33,7 +33,7 @@ public class AcidTowerMoveProcedure {
 						(z + 0.5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 1, 0, 0.5, 0, 0);
 			loop = loop + 1;
 		}
-		CraftNoTaizaiMod.queueServerWork(135, () -> {
+		CraftNoTaizaiMod.queueServerWork(60, () -> {
 			if (!entity.level().isClientSide())
 				entity.discard();
 		});

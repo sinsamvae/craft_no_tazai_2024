@@ -79,7 +79,7 @@ public class BlackOutSkillProcedure {
 				}
 				CraftNoTaizaiMod.queueServerWork(6, () -> {
 					{
-						final Vec3 _center = new Vec3((entity.getX() + entity.getLookAngle().x), y, (entity.getZ() + entity.getLookAngle().z));
+						final Vec3 _center = new Vec3((entity.getX()), y, (entity.getZ()));
 						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 						for (Entity entityiterator : _entfound) {
 							if (!(entityiterator == entity || entityiterator instanceof ItemEntity || entityiterator instanceof ExperienceOrb

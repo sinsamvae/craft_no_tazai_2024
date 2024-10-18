@@ -16,8 +16,6 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
-import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
-
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CraftNoTaizaiModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CraftNoTaizaiMod.MODID);
@@ -239,6 +237,9 @@ public class CraftNoTaizaiModTabs {
 				tabData.accept(CraftNoTaizaiModBlocks.BASTE_DUNGEON_ROOF.get().asItem());
 				tabData.accept(CraftNoTaizaiModBlocks.CHAOS_FLOOR.get().asItem());
 				tabData.accept(CraftNoTaizaiModBlocks.CHAOS_WALL.get().asItem());
+				tabData.accept(CraftNoTaizaiModBlocks.PURGATORY_BLOCK.get().asItem());
+				tabData.accept(CraftNoTaizaiModBlocks.PURGATORY_SLAB.get().asItem());
+				tabData.accept(CraftNoTaizaiModBlocks.PURGATORY_STAIR.get().asItem());
 			})
 
 					.build());
@@ -292,8 +293,6 @@ public class CraftNoTaizaiModTabs {
 				tabData.accept(CraftNoTaizaiModItems.INSECT_F_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.LUIGI_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.TYRANT_DRAGON_SPAWN_EGG.get());
-				tabData.accept(CraftNoTaizaiModItems.MUTILATOR_RABBITS_SPAWN_EGG.get());
-				tabData.accept(CraftNoTaizaiModItems.ANGLE_CURE_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.DUSK_BISON_1_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.JERICHO_DEMON_FORM_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.TROLL_SPAWN_EGG.get());

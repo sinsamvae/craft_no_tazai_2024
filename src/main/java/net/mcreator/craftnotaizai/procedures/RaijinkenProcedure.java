@@ -38,9 +38,10 @@ public class RaijinkenProcedure {
 			_level.sendParticles((SimpleParticleType) (CraftNoTaizaiModParticleTypes.LIGHTNING.get()), x, y, z, 5, 0.1, 2, 0.1, 1);
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles(ParticleTypes.POOF, x, y, z, 5, 1, 2, 1, 1);
+		entity.setDeltaMovement(new Vec3((6.5 * entity.getLookAngle().x), (0 * entity.getLookAngle().y), (6.5 * entity.getLookAngle().z)));
 		{
 			final Vec3 _center = new Vec3(x, y, z);
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(25 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 			for (Entity entityiterator : _entfound) {
 				if (!(entityiterator == entity || entityiterator instanceof ItemEntity || entityiterator instanceof ExperienceOrb
 						|| (entityiterator instanceof TamableAnimal _tamIsTamedBy && entity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false)
@@ -65,7 +66,6 @@ public class RaijinkenProcedure {
 								return false;
 							}
 						}.checkGamemode(entityiterator))) {
-					entityiterator.setDeltaMovement(new Vec3((6.5 * entityiterator.getLookAngle().x), (0 * entityiterator.getLookAngle().y), (6.5 * entityiterator.getLookAngle().z)));
 					if (world instanceof ServerLevel _level) {
 						LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
 						entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));

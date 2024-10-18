@@ -7,7 +7,7 @@ public class UseMagicPressed3Procedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		SpellsKeybindProcedure.execute(world, entity);
+		SpellsKeybindProcedure.execute(world, x, y, z, entity);
 		TempestBindOnKeyPressedProcedure.execute(world, entity);
 		IceFangBindOnKeyPressedProcedure.execute(world, x, y, z, entity);
 		AcidkeyPressProcedure.execute(world, x, y, z, entity);

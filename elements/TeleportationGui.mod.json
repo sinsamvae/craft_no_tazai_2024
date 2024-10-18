@@ -3,8 +3,8 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 176,
-    "height": 166,
+    "width": 0,
+    "height": 0,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
@@ -13,7 +13,7 @@
       {
         "type": "textfield",
         "data": {
-          "placeholder": "",
+          "placeholder": "x",
           "name": "X",
           "width": 120,
           "height": 20,
@@ -24,8 +24,19 @@
       {
         "type": "textfield",
         "data": {
-          "placeholder": "",
+          "placeholder": "z",
           "name": "Z",
+          "width": 120,
+          "height": 20,
+          "x": 154,
+          "y": 161
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "y",
+          "name": "Y",
           "width": 120,
           "height": 20,
           "x": 154,
@@ -33,26 +44,40 @@
         }
       },
       {
-        "type": "textfield",
+        "type": "image",
         "data": {
-          "placeholder": "",
-          "name": "Y",
-          "width": 120,
-          "height": 20,
-          "x": 154,
-          "y": 158
+          "image": "orvmenu.png",
+          "use1Xscale": false,
+          "x": 114,
+          "y": 24
         }
       },
       {
-        "type": "button",
+        "type": "imagebutton",
         "data": {
-          "name": "button_teleport",
-          "text": "Teleport",
-          "isUndecorated": false,
-          "width": 67,
-          "height": 20,
-          "x": 180,
-          "y": 58
+          "name": "imagebutton_slot2",
+          "image": "slot2.png",
+          "hoveredImage": "slot_2_hover.png",
+          "onClick": {
+            "name": "TeleportButton"
+          },
+          "x": 182,
+          "y": 67
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_teleport",
+          "text": {
+            "fixedValue": "Teleport"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 193,
+          "y": 70
         }
       }
     ],

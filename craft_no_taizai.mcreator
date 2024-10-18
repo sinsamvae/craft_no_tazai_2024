@@ -2247,7 +2247,7 @@
           }
         ]
       },
-      "path": "~/magic abilities/HumanMagic/Acid/Acid Tower"
+      "path": "~/magic abilities/HumanMagic/Acid/Acid Tower/Projectile"
     },
     {
       "name": "FullCounterOnKeyPressed",
@@ -4357,6 +4357,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -5373,25 +5385,6 @@
         ]
       },
       "path": "~/magic abilities/sevendeadlysinsmagic/Invasion/Nightmare Teller"
-    },
-    {
-      "name": "LuminosityRightclicked",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "luminosity_rightclicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/craftnotaizai/procedures/LuminosityRightclickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Weapons/Sacred Treasure/chastiefol/Luminosity"
     },
     {
       "name": "BreakerOff",
@@ -6702,25 +6695,6 @@
       "path": "~/entities/VeryHard/weak/reddemon"
     },
     {
-      "name": "ChaosTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chaos_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/craftnotaizai/procedures/ChaosTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/magic abilities/HumanMagic/Chaos"
-    },
-    {
       "name": "HowzerArmor",
       "type": "armor",
       "compiles": true,
@@ -6766,63 +6740,6 @@
         ]
       },
       "path": "~/Weapons/Sacred Treasure/chastiefol/guardian"
-    },
-    {
-      "name": "Highspeedregenerationtick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "highspeedregenerationtick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/craftnotaizai/procedures/HighspeedregenerationtickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/magic abilities/HumanMagic/Chaos/high-speed regeneration"
-    },
-    {
-      "name": "Highspeedregeneration",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "highspeedregeneration",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/craftnotaizai/procedures/HighspeedregenerationProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/magic abilities/HumanMagic/Chaos/high-speed regeneration"
-    },
-    {
-      "name": "Highspeedregenerationmana",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "highspeedregenerationmana",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/craftnotaizai/procedures/HighspeedregenerationmanaProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/magic abilities/HumanMagic/Chaos/high-speed regeneration"
     },
     {
       "name": "BanOutfit",
@@ -9054,41 +8971,6 @@
       "path": "~/Recipe/Armor/gowtherrecipe"
     },
     {
-      "name": "DuskbisonEntityDies",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "duskbison_entity_dies",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/craftnotaizai/procedures/DuskbisonEntityDiesProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/entities/Normal/hard/duskbison"
-    },
-    {
       "name": "Elaine",
       "type": "livingentity",
       "compiles": true,
@@ -10091,7 +9973,7 @@
           "src/main/java/net/mcreator/craftnotaizai/entity/AcidtowerProjectileEntity.java"
         ]
       },
-      "path": "~/magic abilities/HumanMagic/Acid/Acid Tower"
+      "path": "~/magic abilities/HumanMagic/Acid/Acid Tower/Projectile"
     },
     {
       "name": "Acidtower",
@@ -10105,7 +9987,7 @@
           "src/main/resources/assets/craft_no_taizai/models/item/acidtower.json"
         ]
       },
-      "path": "~/magic abilities/HumanMagic/Acid/Acid Tower"
+      "path": "~/magic abilities/HumanMagic/Acid/Acid Tower/Projectile"
     },
     {
       "name": "EvilhoundProjectile",
@@ -11362,37 +11244,6 @@
         ]
       },
       "path": "~/entities/geckolibmodels/whale"
-    },
-    {
-      "name": "ManipulateEffectOnEffectActiveTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "manipulate_effect_on_effect_active_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/craftnotaizai/procedures/ManipulateEffectOnEffectActiveTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/magic abilities/ark/elizebeth/Old_Moves/Manipulate"
     },
     {
       "name": "DaleSecEntityIsHurt",
@@ -13668,37 +13519,6 @@
       "path": "~/Block/capital of the dead"
     },
     {
-      "name": "SleepingForestFog",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sleeping_forest_fog",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/craftnotaizai/procedures/SleepingForestFogProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/biomes/sleeplforest"
-    },
-    {
       "name": "SleepingForestWood",
       "type": "block",
       "compiles": true,
@@ -14193,41 +14013,6 @@
       "path": "~/magic abilities/ark/elizebeth/Old_Moves/Enchantment_Ark"
     },
     {
-      "name": "Manipulate",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "manipulate",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/craftnotaizai/procedures/ManipulateProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/magic abilities/ark/elizebeth/Old_Moves/Manipulate"
-    },
-    {
       "name": "Arkparticle",
       "type": "particle",
       "compiles": true,
@@ -14259,33 +14044,6 @@
         ]
       },
       "path": "~/mana/SubTypeMagic"
-    },
-    {
-      "name": "ArkHit",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ark_hit",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/craftnotaizai/procedures/ArkHitProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/magic abilities/ark/elizebeth/Old_Moves/Enchantment_Ark"
     },
     {
       "name": "JonahNoJunan",
@@ -14655,44 +14413,6 @@
         ]
       },
       "path": "~/magic abilities/HumanMagic/IceFang/Killer Iceberg"
-    },
-    {
-      "name": "ManipulateManaDrain",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "manipulate_mana_drain",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/craftnotaizai/procedures/ManipulateManaDrainProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/magic abilities/ark/elizebeth/Old_Moves/Manipulate"
-    },
-    {
-      "name": "IfManipulateReachZero",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "if_manipulate_reach_zero",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/craftnotaizai/procedures/IfManipulateReachZeroProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/magic abilities/ark/elizebeth/Old_Moves/Manipulate"
     },
     {
       "name": "FoxHunt",
@@ -23073,6 +22793,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -23089,7 +22821,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/craftnotaizai/client/gui/TeleportationGuiScreen.java",
-          "src/main/java/net/mcreator/craftnotaizai/world/inventory/TeleportationGuiMenu.java"
+          "src/main/java/net/mcreator/craftnotaizai/world/inventory/TeleportationGuiMenu.java",
+          "src/main/java/net/mcreator/craftnotaizai/network/TeleportationGuiButtonMessage.java"
         ]
       },
       "path": "~/Spells/Utility/teleportation"
@@ -25253,6 +24986,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -26583,7 +26332,7 @@
           "src/main/resources/data/craft_no_taizai/loot_tables/entities/hawks.json"
         ]
       },
-      "path": "~/Loot"
+      "path": "~/Loot/Magical Creatures"
     },
     {
       "name": "DianeAnimated",
@@ -28825,6 +28574,10 @@
             "type": "entity"
           },
           {
+            "name": "y",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -30620,7 +30373,7 @@
           }
         ]
       },
-      "path": "~/magic abilities/ten commandments/Disaster/Moon Rose"
+      "path": "~/magic abilities/ten commandments/Disaster/Moon Rose/MoonRose"
     },
     {
       "name": "MoonRoseOnInitialEntitySpawn",
@@ -30647,7 +30400,7 @@
           }
         ]
       },
-      "path": "~/magic abilities/ten commandments/Disaster/Moon Rose"
+      "path": "~/magic abilities/ten commandments/Disaster/Moon Rose/MoonRose"
     },
     {
       "name": "MoonroseParticle",
@@ -30696,7 +30449,7 @@
           "src/main/resources/assets/craft_no_taizai/models/item/moon_rose_spawn_egg.json"
         ]
       },
-      "path": "~/magic abilities/ten commandments/Disaster/Moon Rose"
+      "path": "~/magic abilities/ten commandments/Disaster/Moon Rose/MoonRose"
     },
     {
       "name": "MoonRoseSkill",
@@ -31041,18 +30794,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -32486,7 +32227,16 @@
         "files": [
           "src/main/java/net/mcreator/craftnotaizai/procedures/TeleportButtonProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
       },
       "path": "~/Spells/Utility/teleportation"
     },
@@ -33317,28 +33067,7 @@
         "files": [
           "src/main/java/net/mcreator/craftnotaizai/procedures/IncreaseSpawnProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Weapons/Sacred Treasure/chastiefol/Increase"
     },
@@ -33891,7 +33620,7 @@
           "src/main/resources/data/craft_no_taizai/loot_tables/blocks/purgatory_block.json"
         ]
       },
-      "path": "~/Block"
+      "path": "~/Block/PurgatoryBlock"
     },
     {
       "name": "TallAlbionOnEntityTickUpdate",
@@ -33989,6 +33718,421 @@
         ]
       },
       "path": "~/entities/VeryHard/Hard/TallAlbion"
+    },
+    {
+      "name": "CommandmentVar",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "commandment_var",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/craftnotaizai/procedures/CommandmentVarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/var"
+    },
+    {
+      "name": "CommandmentReturn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "commandment_return",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnotaizai/procedures/CommandmentReturnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/var"
+    },
+    {
+      "name": "CommandmentCommand",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "commandment_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnotaizai/command/CommandmentCommandCommand.java"
+        ]
+      },
+      "path": "~/commands/Commandment"
+    },
+    {
+      "name": "CommandmentProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "commandment_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnotaizai/procedures/CommandmentProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/commands/Commandment"
+    },
+    {
+      "name": "PurgatorySlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatory_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/craft_no_taizai/models/item/purgatory_slab.json",
+          "src/main/resources/assets/craft_no_taizai/blockstates/purgatory_slab.json",
+          "src/main/resources/data/craft_no_taizai/loot_tables/blocks/purgatory_slab.json",
+          "src/main/resources/assets/craft_no_taizai/models/block/purgatory_slab_full.json",
+          "src/main/java/net/mcreator/craftnotaizai/block/PurgatorySlabBlock.java",
+          "src/main/resources/assets/craft_no_taizai/models/block/purgatory_slab.json",
+          "src/main/resources/assets/craft_no_taizai/models/block/purgatory_slab_top.json"
+        ]
+      },
+      "path": "~/Block/PurgatoryBlock"
+    },
+    {
+      "name": "PurgatoryStair",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatory_stair",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/craft_no_taizai/models/block/purgatory_stair_inner.json",
+          "src/main/resources/assets/craft_no_taizai/models/item/purgatory_stair.json",
+          "src/main/java/net/mcreator/craftnotaizai/block/PurgatoryStairBlock.java",
+          "src/main/resources/assets/craft_no_taizai/blockstates/purgatory_stair.json",
+          "src/main/resources/assets/craft_no_taizai/models/block/purgatory_stair.json",
+          "src/main/resources/data/craft_no_taizai/loot_tables/blocks/purgatory_stair.json",
+          "src/main/resources/assets/craft_no_taizai/models/block/purgatory_stair_outer.json"
+        ]
+      },
+      "path": "~/Block/PurgatoryBlock"
+    },
+    {
+      "name": "RisingMeteorSkill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rising_meteor_skill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnotaizai/procedures/RisingMeteorSkillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/magic abilities/sevendeadlysinsmagic/Creation/Rising Meteor"
+    },
+    {
+      "name": "DiamondTowerSkill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_tower_skill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnotaizai/procedures/DiamondTowerSkillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/magic abilities/sevendeadlysinsmagic/Creation/Diamond Tower"
+    },
+    {
+      "name": "GoddessBlessEntityOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goddess_bless_entity_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnotaizai/procedures/GoddessBlessEntityOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/magic abilities/ark/elizebeth/Goddess Bless"
+    },
+    {
+      "name": "GoddessBlessEntity",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goddess_bless_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnotaizai/client/renderer/GoddessBlessEntityRenderer.java",
+          "src/main/java/net/mcreator/craftnotaizai/entity/GoddessBlessEntityEntity.java",
+          "src/main/resources/assets/craft_no_taizai/models/item/goddess_bless_entity_spawn_egg.json",
+          "src/main/java/net/mcreator/craftnotaizai/entity/model/GoddessBlessEntityModel.java"
+        ]
+      },
+      "path": "~/magic abilities/ark/elizebeth/Goddess Bless"
+    },
+    {
+      "name": "AcidTowerSkill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acid_tower_skill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnotaizai/procedures/AcidTowerSkillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/magic abilities/HumanMagic/Acid/Acid Tower"
+    },
+    {
+      "name": "GodspeedCrossSlashSkill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "godspeed_cross_slash_skill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnotaizai/procedures/GodspeedCrossSlashSkillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/magic abilities/HumanMagic/GodSpeed"
+    },
+    {
+      "name": "GodspeedBoneCrusherSkill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "godspeed_bone_crusher_skill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnotaizai/procedures/GodspeedBoneCrusherSkillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/magic abilities/HumanMagic/GodSpeed"
+    },
+    {
+      "name": "TransparncySetNoTarget",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transparncy_set_no_target",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnotaizai/procedures/TransparncySetNoTargetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/magic abilities/HumanMagic/Transparency"
+    },
+    {
+      "name": "DuskBisonLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dusk_bison_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craft_no_taizai/loot_tables/entities/duskbison1.json"
+        ]
+      },
+      "path": "~/Loot/Magical Creatures"
+    },
+    {
+      "name": "ChickenMatangoLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chicken_matango_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craft_no_taizai/loot_tables/entities/chicken.json"
+        ]
+      },
+      "path": "~/Loot/Magical Creatures"
+    },
+    {
+      "name": "TyrantDragonCook",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tyrant_dragon_cook",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/tyrant_dragon_cook.json"
+        ]
+      },
+      "path": "~/food_drinks/TyrantDragon"
+    },
+    {
+      "name": "TyrantDragonSmoke",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tyrant_dragon_smoke",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/tyrant_dragon_smoke.json"
+        ]
+      },
+      "path": "~/food_drinks/TyrantDragon"
+    },
+    {
+      "name": "TyrantDragonCampfire",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tyrant_dragon_campfire",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/tyrant_dragon_campfire.json"
+        ]
+      },
+      "path": "~/food_drinks/TyrantDragon"
+    },
+    {
+      "name": "MutilatorRabbitsLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mutilator_rabbits_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craft_no_taizai/loot_tables/entities/mutilatorrabbots.json"
+        ]
+      },
+      "path": "~/Loot/Magical Creatures"
+    },
+    {
+      "name": "KrakenLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kraken_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craft_no_taizai/loot_tables/entities/geckolibkraken.json"
+        ]
+      },
+      "path": "~/Loot/Magical Creatures"
+    },
+    {
+      "name": "AngleCureLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "angle_cure_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craft_no_taizai/loot_tables/entities/anglecure.json"
+        ]
+      },
+      "path": "~/Loot/Magical Creatures"
     }
   ],
   "variable_elements": [
@@ -35401,6 +35545,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "commandment",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
     }
   ],
   "sound_elements": [
@@ -35507,7 +35657,6 @@
       "CUSTOM:Albion"
     ],
     "ITEMS:minecraft:pickaxes": [
-      "~CUSTOM:HeatFork",
       "~CUSTOM:TwinBowHerritt",
       "~CUSTOM:Lostvayne",
       "~CUSTOM:Aldan",
@@ -35590,6 +35739,7 @@
       "CUSTOM:RoyalGurardAnimated"
     ],
     "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:PurgatorySlab",
       "~CUSTOM:FairyTreeSlab",
       "~CUSTOM:BlueBrickSlab",
       "~CUSTOM:SleepingForestSlab",
@@ -35650,6 +35800,7 @@
       "CUSTOM:AndreAnimated"
     ],
     "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:PurgatoryStair",
       "~CUSTOM:FairyTreeStaires",
       "~CUSTOM:BlueBrickStair",
       "~CUSTOM:SleepingForestStair",
@@ -35675,6 +35826,7 @@
       "~CUSTOM:DemonKingSword",
       "~CUSTOM:HendriksonSword",
       "~CUSTOM:CurvedSword",
+      "~CUSTOM:HeatFork",
       "~CUSTOM:Gideon",
       "~CUSTOM:Chastiefol2",
       "~CUSTOM:DragonHandle"
@@ -35896,6 +36048,7 @@
       "item.craft_no_taizai.dead_helbramanimated_spawn_egg": "Dead Helbram Spawn Egg",
       "item.craft_no_taizai.jillian_animated_spawn_egg": "Jillian Spawn Egg",
       "item.craft_no_taizai.troll_ear": "Troll Ear",
+      "gui.craft_no_taizai.teleportation_gui.label_teleport": "Teleport",
       "item.craft_no_taizai.black_out_spawn_egg": "Black Out Spawn Egg",
       "entity.craft_no_taizai.dusk_bison_1": "Dusk Bison",
       "effect.craft_no_taizai.freeze_coffin_potion_effect": "Freeze Coffin Potion Effect",
@@ -35938,7 +36091,7 @@
       "gui.craft_no_taizai.gaint_clan.label_30_health": "- Health: 25 to 35",
       "item.craft_no_taizai.elaine_spawn_egg": "Elaine Spawn Egg",
       "gui.craft_no_taizai.story_board.label_defect_dreyfus": "Defect Dreyfus",
-      "item.craft_no_taizai.cookedtentacles": "Cookedtentacles",
+      "item.craft_no_taizai.cookedtentacles": "Cooked Tentacles",
       "item.craft_no_taizai.rising_tornado_entity_spawn_egg": "Rising Tornado Entity Spawn Egg",
       "advancements.defeat_ban.title": "Defeat Ban",
       "key.craft_no_taizai.mana_charge_bind": "Mana Charge",
@@ -36020,7 +36173,7 @@
       "gui.craft_no_taizai.story_board.label_you_begin_a_new_search_for_the_r": "You begin a new search for the remaining Seven Deadly",
       "entity.craft_no_taizai.gustaf_animated": "Gustaf Animated",
       "item_group.craft_no_taizai.armor": "Craft No Taizai Armor",
-      "block.craft_no_taizai.purgatory_block": "Purgatory Block",
+      "block.craft_no_taizai.purgatory_block": "Purgatory",
       "entity.craft_no_taizai.black_out": "Black Out",
       "block.craft_no_taizai.talavillage_roof_1": "Talavillage Roof 1",
       "block.craft_no_taizai.areafence": "Areafence",
@@ -36094,6 +36247,7 @@
       "block.craft_no_taizai.area_ground": "Area Ground",
       "gui.craft_no_taizai.story_board.label_the_end": "The Seven Deadly Sins: Revival of The Commandments.",
       "block.craft_no_taizai.fairy_tree_wood": "Fairy Tree Wood",
+      "block.craft_no_taizai.purgatory_stair": "Purgatory",
       "gui.craft_no_taizai.story_board.label_drives_the_group_to_fight_each_o": "Drives the group to fight each other.",
       "entity.craft_no_taizai.guardian_true_spirt_spear": "Guardian",
       "item.craft_no_taizai.holy_staff_coure_chouse": "Holy Staff Coure Chouse",
@@ -36203,8 +36357,11 @@
       "item.craft_no_taizai.scythe": "Scythe",
       "gui.craft_no_taizai.teleportation_gui.button_teleport": "Teleport",
       "item.craft_no_taizai.ruin_armor_leggings": "Ruin Leggings",
+      "gui.craft_no_taizai.teleportation_gui.label_y": "Y:",
       "advancements.ruby.descr": "Get BP 8750",
+      "gui.craft_no_taizai.teleportation_gui.label_z": "Z:",
       "item.craft_no_taizai.green_knight_armor_helmet": "GreenKnight Helmet",
+      "gui.craft_no_taizai.teleportation_gui.label_x": "X:",
       "gui.craft_no_taizai.demon_clan.label_50_strength": "- Strength: 30 to 50",
       "effect.craft_no_taizai.nightmareteller": "nightmareteller",
       "item.craft_no_taizai.helbrum_armor_chestplate": "Helbrum Armor",
@@ -36275,6 +36432,7 @@
       "item.craft_no_taizai.andre_armor_chestplate": "Andre Chestplate",
       "gui.craft_no_taizai.story_board.label_holy_knights_they_were_known_t": "Holy Knights",
       "advancements.sapphire.title": "Sapphire",
+      "entity.craft_no_taizai.goddess_bless_entity": "Goddess Bless Entity",
       "item.craft_no_taizai.empty_mug": "Empty Mug",
       "entity.craft_no_taizai.bullet_squall": "Bullet Squall",
       "item.craft_no_taizai.royal_gurard_animated_spawn_egg": "Royal Guard Spawn Egg",
@@ -36294,6 +36452,7 @@
       "gui.craft_no_taizai.story_board.label_defect_helbram": "Defect Helbram",
       "block.craft_no_taizai.fairy_tree_fence": "Fairy Tree Fence",
       "biome.craft_no_taizai.sleeping_forest": "Sleeping Forest",
+      "item.craft_no_taizai.goddess_bless_entity_spawn_egg": "Goddess Bless Entity Spawn Egg",
       "gui.craft_no_taizai.demon_stat.label_tp": "TP:",
       "subtitles.swish": "",
       "item.craft_no_taizai.purgatory_venom": "Purgatory Venom",
@@ -36469,9 +36628,9 @@
       "subtitles.fast": "",
       "item.craft_no_taizai.simon_armor_chestplate": "Simon Chestplate",
       "gui.craft_no_taizai.story_board.label_youve_met_elizabeth_young_girl": "You\u0027ve met elizabeth, young girl who is looking for the",
-      "gui.craft_no_taizai.teleportation_gui.Z": "",
-      "gui.craft_no_taizai.teleportation_gui.Y": "",
-      "gui.craft_no_taizai.teleportation_gui.X": "",
+      "gui.craft_no_taizai.teleportation_gui.Z": "z",
+      "gui.craft_no_taizai.teleportation_gui.Y": "y",
+      "gui.craft_no_taizai.teleportation_gui.X": "x",
       "item.craft_no_taizai.guardian_true_spirt_spear_spawn_egg": "Guardian Spawn Egg",
       "gui.craft_no_taizai.keg_gui.label_inventory": "Inventory",
       "item.craft_no_taizai.muramo_demon_form_spawn_egg": "Muramo Demon Form Spawn Egg",
@@ -36527,9 +36686,10 @@
       "item.craft_no_taizai.spiraledlance": "Spiraledlance",
       "effect.craft_no_taizai.necrosis": "Necrosis",
       "item.craft_no_taizai.dreyfus_animated_spawn_egg": "Dreyfus Spawn Egg",
-      "item.craft_no_taizai.tentacles": "Tentacles",
+      "item.craft_no_taizai.tentacles": "Raw Tentacles",
       "item.craft_no_taizai.hugo_armor_chestplate": "Hugo Chestplate",
       "gui.craft_no_taizai.story_board.label_during_the_last_match_of_the_fes": "During the last match of the festival, the vanue breaks",
+      "block.craft_no_taizai.purgatory_slab": "Purgatory",
       "item.craft_no_taizai.tyrant_dragon_meat": "Tyrant Dragon Meat",
       "gui.craft_no_taizai.story_board.label_he_has_to_kill_in_order_to_save": "he has to kill in order to save Elaine",
       "item.craft_no_taizai.king_outfit_chestplate": "King Shirt",
@@ -36853,10 +37013,6 @@
                     "name": "Old_Moves",
                     "children": [
                       {
-                        "name": "Manipulate",
-                        "children": []
-                      },
-                      {
                         "name": "Enchantment_Ark",
                         "children": []
                       }
@@ -36896,7 +37052,12 @@
                   },
                   {
                     "name": "Acid Tower",
-                    "children": []
+                    "children": [
+                      {
+                        "name": "Projectile",
+                        "children": []
+                      }
+                    ]
                   }
                 ]
               },
@@ -37030,12 +37191,7 @@
               },
               {
                 "name": "Chaos",
-                "children": [
-                  {
-                    "name": "high-speed regeneration",
-                    "children": []
-                  }
-                ]
+                "children": []
               },
               {
                 "name": "Purge",
@@ -37224,7 +37380,12 @@
                   },
                   {
                     "name": "Moon Rose",
-                    "children": []
+                    "children": [
+                      {
+                        "name": "MoonRose",
+                        "children": []
+                      }
+                    ]
                   },
                   {
                     "name": "Death Thorn",
@@ -37806,6 +37967,10 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Commandment",
+            "children": []
           }
         ]
       },
@@ -38435,6 +38600,10 @@
           {
             "name": "Baste Dungeon",
             "children": []
+          },
+          {
+            "name": "PurgatoryBlock",
+            "children": []
           }
         ]
       },
@@ -38788,6 +38957,10 @@
           },
           {
             "name": "Drops",
+            "children": []
+          },
+          {
+            "name": "Magical Creatures",
             "children": []
           }
         ]

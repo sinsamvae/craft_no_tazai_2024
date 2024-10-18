@@ -21,7 +21,7 @@ public class MagicScrollRightclickedProcedure {
 		double magic = 0;
 		itemstack.shrink(1);
 		if ((itemstack.getOrCreateTag().getString("skill")).equals("")) {
-			random = Mth.nextInt(RandomSource.create(), 1, 11);
+			random = Mth.nextInt(RandomSource.create(), 1, 12);
 			if (random == 1) {
 				skill = "Dark Destory";
 			}
@@ -54,6 +54,9 @@ public class MagicScrollRightclickedProcedure {
 			}
 			if (random == 11) {
 				skill = "Spiral Hail";
+			}
+			if (random == 12) {
+				skill = "Teleportation";
 			}
 			itemstack.getOrCreateTag().putString("skill", skill);
 		} else {

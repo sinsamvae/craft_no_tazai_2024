@@ -27,10 +27,11 @@
       "value": -52429,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:SpawnEggs"
-    },
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:SpawnEggs"
+      }
+    ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -102,8 +103,8 @@
     "stepSound": {
       "value": ""
     },
-    "whenMobDies": {
-      "name": "DuskbisonEntityDies"
+    "raidCelebrationSound": {
+      "value": ""
     },
     "hasAI": true,
     "aiBase": "(none)",

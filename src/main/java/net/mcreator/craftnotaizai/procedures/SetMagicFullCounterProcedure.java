@@ -31,13 +31,6 @@ public class SetMagicFullCounterProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
-				{
-					String _setval = "Doll";
-					entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.Race = _setval;
-						capability.syncPlayerVariables(entity);
-					});
-				}
 			}
 			if (RandomMagic >= 90 && RandomMagic <= 120) {
 				{

@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "azym0c2_1",
+    "texture": "raw_kraken",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Tentacles",
+    "name": "Raw Tentacles",
     "rarity": "COMMON",
     "creativeTabs": [
       {

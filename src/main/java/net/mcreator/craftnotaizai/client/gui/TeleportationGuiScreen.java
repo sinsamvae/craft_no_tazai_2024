@@ -6,12 +6,14 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.components.EditBox;
-import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.craftnotaizai.world.inventory.TeleportationGuiMenu;
+import net.mcreator.craftnotaizai.network.TeleportationGuiButtonMessage;
+import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
 
 import java.util.HashMap;
 
@@ -25,7 +27,7 @@ public class TeleportationGuiScreen extends AbstractContainerScreen<Teleportatio
 	EditBox X;
 	EditBox Z;
 	EditBox Y;
-	Button button_teleport;
+	ImageButton imagebutton_slot2;
 
 	public TeleportationGuiScreen(TeleportationGuiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -34,8 +36,8 @@ public class TeleportationGuiScreen extends AbstractContainerScreen<Teleportatio
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
-		this.imageHeight = 166;
+		this.imageWidth = 0;
+		this.imageHeight = 0;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("craft_no_taizai:textures/screens/teleportation_gui.png");
@@ -56,6 +58,9 @@ public class TeleportationGuiScreen extends AbstractContainerScreen<Teleportatio
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/orvmenu.png"), this.leftPos + -100, this.topPos + -96, 0, 0, 196, 186, 196, 186);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -95,26 +100,88 @@ public class TeleportationGuiScreen extends AbstractContainerScreen<Teleportatio
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.teleportation_gui.label_teleport"), -21, -50, -1, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		X = new EditBox(this.font, this.leftPos + 29, this.topPos + 55, 118, 18, Component.translatable("gui.craft_no_taizai.teleportation_gui.X"));
+		X = new EditBox(this.font, this.leftPos + -59, this.topPos + -28, 118, 18, Component.translatable("gui.craft_no_taizai.teleportation_gui.X")) {
+			@Override
+			public void insertText(String text) {
+				super.insertText(text);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.craft_no_taizai.teleportation_gui.X").getString());
+				else
+					setSuggestion(null);
+			}
+
+			@Override
+			public void moveCursorTo(int pos) {
+				super.moveCursorTo(pos);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.craft_no_taizai.teleportation_gui.X").getString());
+				else
+					setSuggestion(null);
+			}
+		};
+		X.setSuggestion(Component.translatable("gui.craft_no_taizai.teleportation_gui.X").getString());
 		X.setMaxLength(32767);
 		guistate.put("text:X", X);
 		this.addWidget(this.X);
-		Z = new EditBox(this.font, this.leftPos + 29, this.topPos + 90, 118, 18, Component.translatable("gui.craft_no_taizai.teleportation_gui.Z"));
+		Z = new EditBox(this.font, this.leftPos + -59, this.topPos + 42, 118, 18, Component.translatable("gui.craft_no_taizai.teleportation_gui.Z")) {
+			@Override
+			public void insertText(String text) {
+				super.insertText(text);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.craft_no_taizai.teleportation_gui.Z").getString());
+				else
+					setSuggestion(null);
+			}
+
+			@Override
+			public void moveCursorTo(int pos) {
+				super.moveCursorTo(pos);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.craft_no_taizai.teleportation_gui.Z").getString());
+				else
+					setSuggestion(null);
+			}
+		};
+		Z.setSuggestion(Component.translatable("gui.craft_no_taizai.teleportation_gui.Z").getString());
 		Z.setMaxLength(32767);
 		guistate.put("text:Z", Z);
 		this.addWidget(this.Z);
-		Y = new EditBox(this.font, this.leftPos + 29, this.topPos + 122, 118, 18, Component.translatable("gui.craft_no_taizai.teleportation_gui.Y"));
+		Y = new EditBox(this.font, this.leftPos + -59, this.topPos + 7, 118, 18, Component.translatable("gui.craft_no_taizai.teleportation_gui.Y")) {
+			@Override
+			public void insertText(String text) {
+				super.insertText(text);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.craft_no_taizai.teleportation_gui.Y").getString());
+				else
+					setSuggestion(null);
+			}
+
+			@Override
+			public void moveCursorTo(int pos) {
+				super.moveCursorTo(pos);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.craft_no_taizai.teleportation_gui.Y").getString());
+				else
+					setSuggestion(null);
+			}
+		};
+		Y.setSuggestion(Component.translatable("gui.craft_no_taizai.teleportation_gui.Y").getString());
 		Y.setMaxLength(32767);
 		guistate.put("text:Y", Y);
 		this.addWidget(this.Y);
-		button_teleport = Button.builder(Component.translatable("gui.craft_no_taizai.teleportation_gui.button_teleport"), e -> {
-		}).bounds(this.leftPos + 54, this.topPos + 21, 67, 20).build();
-		guistate.put("button:button_teleport", button_teleport);
-		this.addRenderableWidget(button_teleport);
+		imagebutton_slot2 = new ImageButton(this.leftPos + -32, this.topPos + -53, 62, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_slot2.png"), 62, 32, e -> {
+			if (true) {
+				CraftNoTaizaiMod.PACKET_HANDLER.sendToServer(new TeleportationGuiButtonMessage(0, x, y, z));
+				TeleportationGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
+		});
+		guistate.put("button:imagebutton_slot2", imagebutton_slot2);
+		this.addRenderableWidget(imagebutton_slot2);
 	}
 }

@@ -124,6 +124,23 @@
             "varname": "mana_drain_three",
             "enablecomment": false,
             "stringlist": []
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 100.0,
+            "textDefault": "",
+            "comment": "for the max speed stat",
+            "vardisplay": "Speed",
+            "varname": "Speed",
+            "enablecomment": false,
+            "stringlist": []
           }
         ]
       }

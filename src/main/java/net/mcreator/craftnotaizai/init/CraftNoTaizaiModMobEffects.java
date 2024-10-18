@@ -10,25 +10,6 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.effect.MobEffect;
 
-import net.mcreator.craftnotaizai.potion.VenomToxicyPotionMobEffect;
-import net.mcreator.craftnotaizai.potion.PurgatoryFlameMobEffect;
-import net.mcreator.craftnotaizai.potion.PowerAmplifyEffectMobEffect;
-import net.mcreator.craftnotaizai.potion.PhysicalhuntMobEffect;
-import net.mcreator.craftnotaizai.potion.PhysicalHuntNegMobEffect;
-import net.mcreator.craftnotaizai.potion.NightmaretellerMobEffect;
-import net.mcreator.craftnotaizai.potion.NecrosisMobEffect;
-import net.mcreator.craftnotaizai.potion.MinimumTabletsEffectMobEffect;
-import net.mcreator.craftnotaizai.potion.ManaRegenEffetMobEffect;
-import net.mcreator.craftnotaizai.potion.KingTrumpetMobEffect;
-import net.mcreator.craftnotaizai.potion.JubakuEnsaEffectMobEffect;
-import net.mcreator.craftnotaizai.potion.JackPotionMobEffect;
-import net.mcreator.craftnotaizai.potion.FrezzeMobEffect;
-import net.mcreator.craftnotaizai.potion.FreezeCoffinPotionEffectMobEffect;
-import net.mcreator.craftnotaizai.potion.FossilizationEffectMobEffect;
-import net.mcreator.craftnotaizai.potion.BlackOutEffectMobEffect;
-import net.mcreator.craftnotaizai.potion.BindMobEffect;
-import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
-
 public class CraftNoTaizaiModMobEffects {
 	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, CraftNoTaizaiMod.MODID);
 	public static final RegistryObject<MobEffect> FREZZE = REGISTRY.register("frezze", () -> new FrezzeMobEffect());

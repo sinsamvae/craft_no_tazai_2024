@@ -15,19 +15,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
-import net.mcreator.craftnotaizai.network.WPressFLyMessage;
-import net.mcreator.craftnotaizai.network.UseMagicMessage;
-import net.mcreator.craftnotaizai.network.SwapMoveMessage;
-import net.mcreator.craftnotaizai.network.OpenStatsMessage;
-import net.mcreator.craftnotaizai.network.MantaraySpaceMessage;
-import net.mcreator.craftnotaizai.network.MantaraySMoveMessage;
-import net.mcreator.craftnotaizai.network.MantarayMoveMessage;
-import net.mcreator.craftnotaizai.network.ManaChargeBindMessage;
-import net.mcreator.craftnotaizai.network.LockOnMessage;
-import net.mcreator.craftnotaizai.network.LevitationMessage;
-import net.mcreator.craftnotaizai.network.DoubleJumpMessage;
-import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
-
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class CraftNoTaizaiModKeyMappings {
 	public static final KeyMapping OPEN_STATS = new KeyMapping("key.craft_no_taizai.open_stats", GLFW.GLFW_KEY_V, "key.categories.misc") {

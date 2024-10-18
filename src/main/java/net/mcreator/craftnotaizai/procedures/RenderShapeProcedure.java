@@ -4,11 +4,8 @@ import org.joml.Matrix4f;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.client.event.ScreenEvent;
 import net.minecraftforge.client.event.RenderLevelStageEvent;
-import net.minecraftforge.client.event.RenderGuiEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
@@ -49,7 +46,7 @@ public class RenderShapeProcedure {
 	private static float partialTick = 0.0F;
 	private static int ticks = 0;
 	private static int currentStage = 0;
-	private static int targetStage = 0; // NONE: 0, OVERLAY: 1, SKY: 2, WORLD: 3
+	private static int targetStage = 0; // NONE: 0, SKY: 1, WORLD: 2
 
 	private static void add(double x, double y, double z, float u, float v, int color) {
 		if (bufferBuilder == null || !bufferBuilder.building())
@@ -128,9 +125,8 @@ public class RenderShapeProcedure {
 			return;
 		if (vertexBuffer == null)
 			return;
-		boolean overlay = currentStage == 1;
 		float i, j, k;
-		if (!worldCoordinate || overlay) {
+		if (!worldCoordinate) {
 			i = (float) x;
 			j = (float) y;
 			k = (float) z;
@@ -149,50 +145,11 @@ public class RenderShapeProcedure {
 		poseStack.translate(offset.x(), offset.y(), offset.z());
 		RenderSystem.setShaderColor((color >> 16 & 255) / 255.0F, (color >> 8 & 255) / 255.0F, (color & 255) / 255.0F, (color >>> 24) / 255.0F);
 		vertexBuffer.bind();
-		Matrix4f matrix4f;
-		if (overlay) {
-			PoseStack modelViewStack = RenderSystem.getModelViewStack();
-			modelViewStack.pushPose();
-			modelViewStack.mulPoseMatrix(poseStack.last().pose());
-			matrix4f = modelViewStack.last().pose();
-			modelViewStack.popPose();
-		} else {
-			matrix4f = poseStack.last().pose();
-		}
+		Matrix4f matrix4f = poseStack.last().pose();
 		vertexBuffer.drawWithShader(matrix4f, projectionMatrix, vertexBuffer.getFormat().hasUV(0) ? GameRenderer.getPositionTexColorShader() : GameRenderer.getPositionColorShader());
 		VertexBuffer.unbind();
 		RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
 		poseStack.popPose();
-	}
-
-	@SubscribeEvent(priority = EventPriority.LOWEST)
-	public static void renderGUI(RenderGuiEvent.Pre event) {
-		if (Minecraft.getInstance().screen == null) {
-			poseStack = event.getGuiGraphics().pose();
-			projectionMatrix = RenderSystem.getProjectionMatrix();
-			partialTick = event.getPartialTick();
-			renderOverlay(event);
-		}
-	}
-
-	@SubscribeEvent(priority = EventPriority.LOWEST)
-	public static void renderScreen(ScreenEvent.Render.Post event) {
-		poseStack = event.getGuiGraphics().pose();
-		projectionMatrix = RenderSystem.getProjectionMatrix();
-		partialTick = event.getPartialTick();
-		renderOverlay(event);
-	}
-
-	private static void renderOverlay(Event event) {
-		if (Minecraft.getInstance().getWindow().getGuiScale() > 0.0D) {
-			currentStage = 1;
-			RenderSystem.depthMask(true);
-			RenderSystem.enableDepthTest();
-			renderShapes(event);
-			RenderSystem.disableCull();
-			RenderSystem.depthMask(true);
-			currentStage = 0;
-		}
 	}
 
 	@SubscribeEvent
@@ -202,13 +159,13 @@ public class RenderShapeProcedure {
 		partialTick = event.getPartialTick();
 		ticks = event.getRenderTick();
 		if (event.getStage() == RenderLevelStageEvent.Stage.AFTER_SKY) {
-			currentStage = 2;
+			currentStage = 1;
 			RenderSystem.depthMask(false);
 			renderShapes(event);
 			RenderSystem.enableCull();
 			RenderSystem.depthMask(true);
 		} else if (event.getStage() == RenderLevelStageEvent.Stage.AFTER_PARTICLES) {
-			currentStage = 3;
+			currentStage = 2;
 			RenderSystem.depthMask(true);
 			renderShapes(event);
 			RenderSystem.enableCull();

@@ -26,6 +26,8 @@ import net.mcreator.craftnotaizai.procedures.GaintimageProcedure;
 import net.mcreator.craftnotaizai.procedures.FairyimageProcedure;
 import net.mcreator.craftnotaizai.procedures.DisplaynameProcedure;
 import net.mcreator.craftnotaizai.procedures.DemonimageProcedure;
+import net.mcreator.craftnotaizai.procedures.CommandmentVarProcedure;
+import net.mcreator.craftnotaizai.procedures.CommandmentReturnProcedure;
 import net.mcreator.craftnotaizai.procedures.AgilityVarProcedure;
 import net.mcreator.craftnotaizai.network.DemonStatButtonMessage;
 import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
@@ -119,13 +121,13 @@ public class DemonStatScreen extends AbstractContainerScreen<DemonStatMenu> {
 				GetLevelProcedure.execute(entity), 19, -81, -1, false);
 		guiGraphics.drawString(this.font,
 
-				ManavarProcedure.execute(entity), -79, 44, -1, false);
+				ManavarProcedure.execute(entity), -79, 47, -1, false);
 		guiGraphics.drawString(this.font,
 
-				StrvarProcedure.execute(entity), -80, -15, -1, false);
+				StrvarProcedure.execute(entity), -80, -7, -1, false);
 		guiGraphics.drawString(this.font,
 
-				HpvarProcedure.execute(entity), -80, 4, -1, false);
+				HpvarProcedure.execute(entity), -80, 11, -1, false);
 		guiGraphics.drawString(this.font,
 
 				TPProcedure.execute(entity), 18, -56, -1, false);
@@ -140,13 +142,17 @@ public class DemonStatScreen extends AbstractContainerScreen<DemonStatMenu> {
 				UCVarProcedure.execute(entity), -26, 72, -1, false);
 		guiGraphics.drawString(this.font,
 
-				AgilityVarProcedure.execute(entity), -80, 24, -1, false);
+				AgilityVarProcedure.execute(entity), -80, 30, -1, false);
 		guiGraphics.drawString(this.font,
 
 				PowerPercentageProcedure.execute(entity), -64, -100, -1, false);
 		guiGraphics.drawString(this.font,
 
-				ManapowerProcedure.execute(entity), -79, 55, -1, false);
+				ManapowerProcedure.execute(entity), -79, 58, -1, false);
+		if (CommandmentReturnProcedure.execute(entity))
+			guiGraphics.drawString(this.font,
+
+					CommandmentVarProcedure.execute(entity), -94, -24, -1, false);
 	}
 
 	@Override
@@ -182,7 +188,7 @@ public class DemonStatScreen extends AbstractContainerScreen<DemonStatMenu> {
 		};
 		guistate.put("button:imagebutton_human", imagebutton_human);
 		this.addRenderableWidget(imagebutton_human);
-		imagebutton_statplusbutton = new ImageButton(this.leftPos + -94, this.topPos + -17, 13, 13, 0, 0, 13, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_statplusbutton.png"), 13, 26, e -> {
+		imagebutton_statplusbutton = new ImageButton(this.leftPos + -94, this.topPos + -9, 13, 13, 0, 0, 13, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_statplusbutton.png"), 13, 26, e -> {
 			if (true) {
 				CraftNoTaizaiMod.PACKET_HANDLER.sendToServer(new DemonStatButtonMessage(3, x, y, z));
 				DemonStatButtonMessage.handleButtonAction(entity, 3, x, y, z);
@@ -190,7 +196,7 @@ public class DemonStatScreen extends AbstractContainerScreen<DemonStatMenu> {
 		});
 		guistate.put("button:imagebutton_statplusbutton", imagebutton_statplusbutton);
 		this.addRenderableWidget(imagebutton_statplusbutton);
-		imagebutton_statplusbutton1 = new ImageButton(this.leftPos + -94, this.topPos + 2, 13, 13, 0, 0, 13, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_statplusbutton1.png"), 13, 26, e -> {
+		imagebutton_statplusbutton1 = new ImageButton(this.leftPos + -94, this.topPos + 9, 13, 13, 0, 0, 13, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_statplusbutton1.png"), 13, 26, e -> {
 			if (true) {
 				CraftNoTaizaiMod.PACKET_HANDLER.sendToServer(new DemonStatButtonMessage(4, x, y, z));
 				DemonStatButtonMessage.handleButtonAction(entity, 4, x, y, z);
@@ -198,7 +204,7 @@ public class DemonStatScreen extends AbstractContainerScreen<DemonStatMenu> {
 		});
 		guistate.put("button:imagebutton_statplusbutton1", imagebutton_statplusbutton1);
 		this.addRenderableWidget(imagebutton_statplusbutton1);
-		imagebutton_statplusbutton2 = new ImageButton(this.leftPos + -94, this.topPos + 42, 13, 13, 0, 0, 13, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_statplusbutton2.png"), 13, 26, e -> {
+		imagebutton_statplusbutton2 = new ImageButton(this.leftPos + -94, this.topPos + 45, 13, 13, 0, 0, 13, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_statplusbutton2.png"), 13, 26, e -> {
 			if (true) {
 				CraftNoTaizaiMod.PACKET_HANDLER.sendToServer(new DemonStatButtonMessage(5, x, y, z));
 				DemonStatButtonMessage.handleButtonAction(entity, 5, x, y, z);
@@ -214,7 +220,7 @@ public class DemonStatScreen extends AbstractContainerScreen<DemonStatMenu> {
 		});
 		guistate.put("button:imagebutton_statplusbutton3", imagebutton_statplusbutton3);
 		this.addRenderableWidget(imagebutton_statplusbutton3);
-		imagebutton_statplusbutton4 = new ImageButton(this.leftPos + -94, this.topPos + 22, 13, 13, 0, 0, 13, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_statplusbutton4.png"), 13, 26, e -> {
+		imagebutton_statplusbutton4 = new ImageButton(this.leftPos + -94, this.topPos + 27, 13, 13, 0, 0, 13, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_statplusbutton4.png"), 13, 26, e -> {
 			if (true) {
 				CraftNoTaizaiMod.PACKET_HANDLER.sendToServer(new DemonStatButtonMessage(7, x, y, z));
 				DemonStatButtonMessage.handleButtonAction(entity, 7, x, y, z);

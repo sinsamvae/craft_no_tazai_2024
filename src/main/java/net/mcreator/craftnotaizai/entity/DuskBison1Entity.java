@@ -46,7 +46,6 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
 import net.mcreator.craftnotaizai.procedures.SpawnCondtionProcedure;
-import net.mcreator.craftnotaizai.procedures.DuskbisonEntityDiesProcedure;
 import net.mcreator.craftnotaizai.init.CraftNoTaizaiModEntities;
 
 import java.util.EnumSet;
@@ -169,12 +168,6 @@ public class DuskBison1Entity extends PathfinderMob implements GeoEntity {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
-	}
-
-	@Override
-	public void die(DamageSource source) {
-		super.die(source);
-		DuskbisonEntityDiesProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override

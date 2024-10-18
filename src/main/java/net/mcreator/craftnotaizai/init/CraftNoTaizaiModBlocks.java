@@ -25,6 +25,8 @@ import net.mcreator.craftnotaizai.block.SleepingForestStairBlock;
 import net.mcreator.craftnotaizai.block.SleepingForestSlabBlock;
 import net.mcreator.craftnotaizai.block.QuickSandBlock;
 import net.mcreator.craftnotaizai.block.PurplefireBlock;
+import net.mcreator.craftnotaizai.block.PurgatoryStairBlock;
+import net.mcreator.craftnotaizai.block.PurgatorySlabBlock;
 import net.mcreator.craftnotaizai.block.PurgatoryBlockBlock;
 import net.mcreator.craftnotaizai.block.PerfectCubeBlock;
 import net.mcreator.craftnotaizai.block.LastStageAgaveBlock;
@@ -66,7 +68,6 @@ import net.mcreator.craftnotaizai.block.AreaWoodSlabBlock;
 import net.mcreator.craftnotaizai.block.AreaSlabBlock;
 import net.mcreator.craftnotaizai.block.AreaGroundBlock;
 import net.mcreator.craftnotaizai.block.AleRedMugBlock;
-import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
 
 public class CraftNoTaizaiModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, CraftNoTaizaiMod.MODID);
@@ -126,6 +127,8 @@ public class CraftNoTaizaiModBlocks {
 	public static final RegistryObject<Block> CHAOS_WALL = REGISTRY.register("chaos_wall", () -> new ChaosWallBlock());
 	public static final RegistryObject<Block> CHAOS_DIMENSION_PORTAL = REGISTRY.register("chaos_dimension_portal", () -> new ChaosDimensionPortalBlock());
 	public static final RegistryObject<Block> PURGATORY_BLOCK = REGISTRY.register("purgatory_block", () -> new PurgatoryBlockBlock());
+	public static final RegistryObject<Block> PURGATORY_SLAB = REGISTRY.register("purgatory_slab", () -> new PurgatorySlabBlock());
+	public static final RegistryObject<Block> PURGATORY_STAIR = REGISTRY.register("purgatory_stair", () -> new PurgatoryStairBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
