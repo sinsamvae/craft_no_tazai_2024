@@ -28,6 +28,10 @@ public class DuskBisionAttackProcedure {
 	private static void execute(@Nullable Event event, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
+		double Xpar = 0;
+		double Ypar = 0;
+		double Zpar = 0;
+		double Range = 0;
 		if (sourceentity instanceof DuskBison1Entity) {
 			entity.setDeltaMovement(new Vec3((entity.getX() * 0), (entity.getY() * 1.5), (entity.getZ() * 0)));
 		}

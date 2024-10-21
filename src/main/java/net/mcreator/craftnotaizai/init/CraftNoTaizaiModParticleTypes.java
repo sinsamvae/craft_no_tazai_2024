@@ -11,6 +11,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.particles.ParticleType;
 
+import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
+
 public class CraftNoTaizaiModParticleTypes {
 	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, CraftNoTaizaiMod.MODID);
 	public static final RegistryObject<SimpleParticleType> PURPLE_FLAME = REGISTRY.register("purple_flame", () -> new SimpleParticleType(false));

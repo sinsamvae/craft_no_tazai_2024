@@ -16,6 +16,8 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
+
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CraftNoTaizaiModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CraftNoTaizaiMod.MODID);
@@ -119,6 +121,9 @@ public class CraftNoTaizaiModTabs {
 				tabData.accept(CraftNoTaizaiModItems.GUSTAF_ARMOR_LEGGINGS.get());
 				tabData.accept(CraftNoTaizaiModItems.BOAR_HAT_OUTFIT_CHESTPLATE.get());
 				tabData.accept(CraftNoTaizaiModItems.BOAR_HAT_OUTFIT_LEGGINGS.get());
+				tabData.accept(CraftNoTaizaiModItems.MERLIN_ARMOR_CHEST_PLATE_HELMET.get());
+				tabData.accept(CraftNoTaizaiModItems.MERLIN_ARMOR_CHEST_PLATE_CHESTPLATE.get());
+				tabData.accept(CraftNoTaizaiModItems.MERLIN_ARMOR_CHEST_PLATE_LEGGINGS.get());
 			})
 
 					.build());
@@ -144,7 +149,6 @@ public class CraftNoTaizaiModTabs {
 				tabData.accept(CraftNoTaizaiModItems.GRAY_DEMON_BLOOD_NEEDLE.get());
 				tabData.accept(CraftNoTaizaiModItems.NEEDLE.get());
 				tabData.accept(CraftNoTaizaiModItems.MAGIC_SCROLL.get());
-				tabData.accept(CraftNoTaizaiModItems.SWORD_WOLF_FANG.get());
 				tabData.accept(CraftNoTaizaiModItems.COFFIN_OF_ETERNAL_DARKNESS.get());
 				tabData.accept(CraftNoTaizaiModItems.FRAGMENT_OF_ETERNAL_DARKNESS.get());
 				tabData.accept(CraftNoTaizaiModItems.FRAGMENT_OF_ETERNAL_DARKNESS_2.get());
@@ -158,6 +162,7 @@ public class CraftNoTaizaiModTabs {
 				tabData.accept(CraftNoTaizaiModItems.BALORS_MAGICAL_EYE_HELMET.get());
 				tabData.accept(CraftNoTaizaiModItems.HOLY_TREE_SHARD.get());
 				tabData.accept(CraftNoTaizaiModItems.LUME_ORB.get());
+				tabData.accept(CraftNoTaizaiModItems.MONSTER_BLOCK.get());
 			})
 
 					.build());
@@ -240,6 +245,10 @@ public class CraftNoTaizaiModTabs {
 				tabData.accept(CraftNoTaizaiModBlocks.PURGATORY_BLOCK.get().asItem());
 				tabData.accept(CraftNoTaizaiModBlocks.PURGATORY_SLAB.get().asItem());
 				tabData.accept(CraftNoTaizaiModBlocks.PURGATORY_STAIR.get().asItem());
+				tabData.accept(CraftNoTaizaiModBlocks.PURGATORY_BRICK.get().asItem());
+				tabData.accept(CraftNoTaizaiModBlocks.PURGATORY_BRICK_SLAB.get().asItem());
+				tabData.accept(CraftNoTaizaiModBlocks.PURGATORY_BRICK_STAIR.get().asItem());
+				tabData.accept(CraftNoTaizaiModBlocks.PURGATORY_SPIKES.get().asItem());
 			})
 
 					.build());
@@ -293,6 +302,8 @@ public class CraftNoTaizaiModTabs {
 				tabData.accept(CraftNoTaizaiModItems.INSECT_F_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.LUIGI_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.TYRANT_DRAGON_SPAWN_EGG.get());
+				tabData.accept(CraftNoTaizaiModItems.MUTILATOR_RABBITS_SPAWN_EGG.get());
+				tabData.accept(CraftNoTaizaiModItems.ANGLE_CURE_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.DUSK_BISON_1_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.JERICHO_DEMON_FORM_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.TROLL_SPAWN_EGG.get());

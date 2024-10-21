@@ -411,7 +411,7 @@
           "src/main/java/net/mcreator/craftnotaizai/world/inventory/DemonStatMenu.java"
         ]
       },
-      "path": "~/stats"
+      "path": "~/stats/Gui"
     },
     {
       "name": "OpenStatsOnKeyPressed",
@@ -446,7 +446,7 @@
           }
         ]
       },
-      "path": "~/stats"
+      "path": "~/stats/Gui"
     },
     {
       "name": "OpenStats",
@@ -459,7 +459,7 @@
           "src/main/java/net/mcreator/craftnotaizai/network/OpenStatsMessage.java"
         ]
       },
-      "path": "~/stats"
+      "path": "~/stats/Gui"
     },
     {
       "name": "PlayerFirstJoins",
@@ -693,7 +693,7 @@
           }
         ]
       },
-      "path": "~/stats"
+      "path": "~/stats/AddStat"
     },
     {
       "name": "TPStr",
@@ -712,7 +712,7 @@
           }
         ]
       },
-      "path": "~/stats"
+      "path": "~/stats/AddStat"
     },
     {
       "name": "Tpmana",
@@ -731,7 +731,7 @@
           }
         ]
       },
-      "path": "~/stats"
+      "path": "~/stats/AddStat"
     },
     {
       "name": "RaceVar",
@@ -6755,7 +6755,7 @@
           "src/main/resources/assets/craft_no_taizai/models/item/ban_outfit_chestplate.json"
         ]
       },
-      "path": "~/armor"
+      "path": "~/armor/OutFit"
     },
     {
       "name": "KingOutfit",
@@ -6770,7 +6770,7 @@
           "src/main/java/net/mcreator/craftnotaizai/item/KingOutfitItem.java"
         ]
       },
-      "path": "~/armor"
+      "path": "~/armor/OutFit"
     },
     {
       "name": "MerlinOutfit",
@@ -6785,7 +6785,7 @@
           "src/main/resources/assets/craft_no_taizai/models/item/merlin_outfit_leggings.json"
         ]
       },
-      "path": "~/armor"
+      "path": "~/armor/OutFit"
     },
     {
       "name": "Meliodasoutfit",
@@ -6800,7 +6800,7 @@
           "src/main/resources/assets/craft_no_taizai/models/item/meliodasoutfit_leggings.json"
         ]
       },
-      "path": "~/armor"
+      "path": "~/armor/OutFit"
     },
     {
       "name": "RCoolDown",
@@ -6889,7 +6889,7 @@
           "src/main/java/net/mcreator/craftnotaizai/item/GowtherOutfitItem.java"
         ]
       },
-      "path": "~/armor"
+      "path": "~/armor/OutFit"
     },
     {
       "name": "Dianeoutfit",
@@ -6904,7 +6904,7 @@
           "src/main/resources/assets/craft_no_taizai/models/item/dianeoutfit_leggings.json"
         ]
       },
-      "path": "~/armor"
+      "path": "~/armor/OutFit"
     },
     {
       "name": "Jerichoarmor",
@@ -9357,7 +9357,7 @@
           "src/main/java/net/mcreator/craftnotaizai/item/PerfectCubeOrbItem.java"
         ]
       },
-      "path": "~/items/perfectcube"
+      "path": "~/items/Incantation Orb/perfectcube"
     },
     {
       "name": "PerfectCubeOrbRightclicked",
@@ -9373,6 +9373,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           },
           {
             "name": "x",
@@ -9392,7 +9396,7 @@
           }
         ]
       },
-      "path": "~/items/perfectcube"
+      "path": "~/items/Incantation Orb/perfectcube"
     },
     {
       "name": "SetAllStats",
@@ -9523,6 +9527,7 @@
         "files": [
           "src/main/resources/assets/craft_no_taizai/models/item/perfect_cube.json",
           "src/main/resources/assets/craft_no_taizai/blockstates/perfect_cube.json",
+          "src/main/java/net/mcreator/craftnotaizai/block/entity/PerfectCubeBlockEntity.java",
           "src/main/java/net/mcreator/craftnotaizai/block/PerfectCubeBlock.java",
           "src/main/resources/data/craft_no_taizai/loot_tables/blocks/perfect_cube.json",
           "src/main/resources/assets/craft_no_taizai/models/block/perfect_cube.json"
@@ -13946,7 +13951,7 @@
           }
         ]
       },
-      "path": "~/stats"
+      "path": "~/stats/AddStat"
     },
     {
       "name": "UCVar",
@@ -14010,7 +14015,7 @@
           "src/main/java/net/mcreator/craftnotaizai/enchantment/ArkEnchantment.java"
         ]
       },
-      "path": "~/magic abilities/ark/elizebeth/Old_Moves/Enchantment_Ark"
+      "path": "~/magic abilities/ark/elizebeth/Enchantment_Ark"
     },
     {
       "name": "Arkparticle",
@@ -15324,7 +15329,7 @@
           "src/main/resources/data/craft_no_taizai/advancements/crystal.json"
         ]
       },
-      "path": "~/advancement/Crystal"
+      "path": "~/advancement/Ranks/Crystal"
     },
     {
       "name": "GiveAdvancementCrystal",
@@ -15343,7 +15348,7 @@
           }
         ]
       },
-      "path": "~/advancement/Crystal"
+      "path": "~/advancement/Ranks/Crystal"
     },
     {
       "name": "EmeraldAdvancement",
@@ -15356,7 +15361,7 @@
           "src/main/resources/data/craft_no_taizai/advancements/emerald_advancement.json"
         ]
       },
-      "path": "~/advancement/Emerald"
+      "path": "~/advancement/Ranks/Emerald"
     },
     {
       "name": "EmeraldAdvancementGive",
@@ -15375,7 +15380,7 @@
           }
         ]
       },
-      "path": "~/advancement/Emerald"
+      "path": "~/advancement/Ranks/Emerald"
     },
     {
       "name": "Ruby",
@@ -15388,7 +15393,7 @@
           "src/main/resources/data/craft_no_taizai/advancements/ruby.json"
         ]
       },
-      "path": "~/advancement/Ruby"
+      "path": "~/advancement/Ranks/Ruby"
     },
     {
       "name": "RubyAdvancement",
@@ -15407,7 +15412,7 @@
           }
         ]
       },
-      "path": "~/advancement/Ruby"
+      "path": "~/advancement/Ranks/Ruby"
     },
     {
       "name": "Sapphire",
@@ -15420,7 +15425,7 @@
           "src/main/resources/data/craft_no_taizai/advancements/sapphire.json"
         ]
       },
-      "path": "~/advancement/Sapphire"
+      "path": "~/advancement/Ranks/Sapphire"
     },
     {
       "name": "SapphireAdvancement",
@@ -15439,7 +15444,7 @@
           }
         ]
       },
-      "path": "~/advancement/Sapphire"
+      "path": "~/advancement/Ranks/Sapphire"
     },
     {
       "name": "Plaatinum",
@@ -15452,7 +15457,7 @@
           "src/main/resources/data/craft_no_taizai/advancements/plaatinum.json"
         ]
       },
-      "path": "~/advancement/Platinum"
+      "path": "~/advancement/Diamond/Platinum"
     },
     {
       "name": "PlatinumAdvancement",
@@ -15471,7 +15476,7 @@
           }
         ]
       },
-      "path": "~/advancement/Platinum"
+      "path": "~/advancement/Diamond/Platinum"
     },
     {
       "name": "DiamondRank",
@@ -17486,7 +17491,7 @@
           }
         ]
       },
-      "path": "~/stats"
+      "path": "~/stats/AddStat"
     },
     {
       "name": "ReturnEnitiy",
@@ -17665,7 +17670,7 @@
           "src/main/resources/assets/craft_no_taizai/models/item/pefect_cube_spawn_egg.json"
         ]
       },
-      "path": "~/items/perfectcube"
+      "path": "~/items/Incantation Orb/perfectcube"
     },
     {
       "name": "BlueBrick",
@@ -18971,7 +18976,7 @@
           "src/main/java/net/mcreator/craftnotaizai/item/HowzerArmorOutfitItem.java"
         ]
       },
-      "path": "~/armor"
+      "path": "~/armor/OutFit"
     },
     {
       "name": "CainArmor",
@@ -18986,7 +18991,7 @@
           "src/main/resources/assets/craft_no_taizai/models/item/cain_armor_leggings.json"
         ]
       },
-      "path": "~/armor"
+      "path": "~/armor/OutFit"
     },
     {
       "name": "FairyHelbramArmor",
@@ -19001,7 +19006,7 @@
           "src/main/resources/assets/craft_no_taizai/models/item/fairy_helbram_armor_leggings.json"
         ]
       },
-      "path": "~/armor"
+      "path": "~/armor/OutFit"
     },
     {
       "name": "GreenKnightArmor",
@@ -19544,20 +19549,6 @@
         ]
       },
       "path": "~/food_drinks/TyrantDragon"
-    },
-    {
-      "name": "SwordWolfFang",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sword_wolf_fang",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/craftnotaizai/item/SwordWolfFangItem.java",
-          "src/main/resources/assets/craft_no_taizai/models/item/sword_wolf_fang.json"
-        ]
-      },
-      "path": "~/items"
     },
     {
       "name": "EarthCrawlerCook",
@@ -21174,6 +21165,10 @@
           "src/main/java/net/mcreator/craftnotaizai/procedures/ComboStarProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
           {
             "name": "entity",
             "type": "entity"
@@ -25441,7 +25436,7 @@
           "src/main/resources/data/craft_no_taizai/advancements/red_demon_blood.json"
         ]
       },
-      "path": "~/advancement/DemonBlood"
+      "path": "~/advancement/Diamond/DemonBlood"
     },
     {
       "name": "BloodAwaken",
@@ -25454,7 +25449,7 @@
           "src/main/resources/data/craft_no_taizai/advancements/blood_awaken.json"
         ]
       },
-      "path": "~/advancement/DemonBlood"
+      "path": "~/advancement/Diamond/DemonBlood"
     },
     {
       "name": "FairyKingForestAdvancement",
@@ -30974,7 +30969,7 @@
           "src/main/resources/assets/craft_no_taizai/models/item/boar_hat_outfit_chestplate.json"
         ]
       },
-      "path": "~/armor"
+      "path": "~/armor/OutFit"
     },
     {
       "name": "BoarHatShirtRecipe",
@@ -34133,6 +34128,288 @@
         ]
       },
       "path": "~/Loot/Magical Creatures"
+    },
+    {
+      "name": "AlwaysCanEat",
+      "type": "mixin",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "always_can_eat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnotaizai/mixins/AlwaysCanEatMixin.java"
+        ]
+      }
+    },
+    {
+      "name": "EarthCrawlerLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_crawler_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craft_no_taizai/loot_tables/entities/earthcrawler.json"
+        ]
+      },
+      "path": "~/Loot/Magical Creatures"
+    },
+    {
+      "name": "TrollLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "troll_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craft_no_taizai/loot_tables/entities/troll.json"
+        ]
+      },
+      "path": "~/Loot/Magical Creatures"
+    },
+    {
+      "name": "TyrantDragonLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tyrant_dragon_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craft_no_taizai/loot_tables/entities/tyrantdragon.json"
+        ]
+      },
+      "path": "~/Loot/Magical Creatures"
+    },
+    {
+      "name": "PerfectCubeOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perfect_cube_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnotaizai/procedures/PerfectCubeOnTickUpdateProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Block/perfectcube"
+    },
+    {
+      "name": "SwordWolfFur",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_wolf_fur",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnotaizai/item/SwordWolfFurItem.java",
+          "src/main/resources/assets/craft_no_taizai/models/item/sword_wolf_fur.json"
+        ]
+      },
+      "path": "~/items"
+    },
+    {
+      "name": "SwordWolfLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_wolf_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craft_no_taizai/loot_tables/entities/swordwolf.json"
+        ]
+      },
+      "path": "~/Loot/Magical Creatures"
+    },
+    {
+      "name": "MonsterBlock",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monster_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnotaizai/item/MonsterBlockItem.java",
+          "src/main/resources/assets/craft_no_taizai/models/item/monster_block.json"
+        ]
+      },
+      "path": "~/items/SmallBag"
+    },
+    {
+      "name": "MonsterBlockGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monster_block_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnotaizai/world/inventory/MonsterBlockGuiMenu.java",
+          "src/main/java/net/mcreator/craftnotaizai/client/gui/MonsterBlockGuiScreen.java"
+        ]
+      },
+      "path": "~/items/SmallBag"
+    },
+    {
+      "name": "PurgatoryBrick",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatory_brick",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/craft_no_taizai/models/item/purgatory_brick.json",
+          "src/main/resources/assets/craft_no_taizai/blockstates/purgatory_brick.json",
+          "src/main/resources/assets/craft_no_taizai/models/block/purgatory_brick.json",
+          "src/main/java/net/mcreator/craftnotaizai/block/PurgatoryBrickBlock.java",
+          "src/main/resources/data/craft_no_taizai/loot_tables/blocks/purgatory_brick.json"
+        ]
+      },
+      "path": "~/Block/PurgatoryBlock"
+    },
+    {
+      "name": "PurgatoryBrickSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatory_brick_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/craft_no_taizai/models/item/purgatory_brick_slab.json",
+          "src/main/resources/assets/craft_no_taizai/models/block/purgatory_brick_slab.json",
+          "src/main/resources/data/craft_no_taizai/loot_tables/blocks/purgatory_brick_slab.json",
+          "src/main/resources/assets/craft_no_taizai/models/block/purgatory_brick_slab_full.json",
+          "src/main/java/net/mcreator/craftnotaizai/block/PurgatoryBrickSlabBlock.java",
+          "src/main/resources/assets/craft_no_taizai/models/block/purgatory_brick_slab_top.json",
+          "src/main/resources/assets/craft_no_taizai/blockstates/purgatory_brick_slab.json"
+        ]
+      },
+      "path": "~/Block/PurgatoryBlock"
+    },
+    {
+      "name": "PurgatoryBrickStair",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatory_brick_stair",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/craft_no_taizai/models/block/purgatory_brick_stair_inner.json",
+          "src/main/resources/assets/craft_no_taizai/blockstates/purgatory_brick_stair.json",
+          "src/main/resources/assets/craft_no_taizai/models/block/purgatory_brick_stair.json",
+          "src/main/resources/assets/craft_no_taizai/models/item/purgatory_brick_stair.json",
+          "src/main/resources/data/craft_no_taizai/loot_tables/blocks/purgatory_brick_stair.json",
+          "src/main/java/net/mcreator/craftnotaizai/block/PurgatoryBrickStairBlock.java",
+          "src/main/resources/assets/craft_no_taizai/models/block/purgatory_brick_stair_outer.json"
+        ]
+      },
+      "path": "~/Block/PurgatoryBlock"
+    },
+    {
+      "name": "MerlinArmorChestPlate",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "merlin_armor_chest_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/craft_no_taizai/models/item/merlin_armor_chest_plate_helmet.json",
+          "src/main/java/net/mcreator/craftnotaizai/item/MerlinArmorChestPlateItem.java",
+          "src/main/resources/assets/craft_no_taizai/models/item/merlin_armor_chest_plate_leggings.json",
+          "src/main/resources/assets/craft_no_taizai/models/item/merlin_armor_chest_plate_chestplate.json"
+        ]
+      },
+      "path": "~/armor"
+    },
+    {
+      "name": "MerlinArmorHelmeantRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "merlin_armor_helmeant_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craft_no_taizai/recipes/merlin_armor_helmeant_recipe.json"
+        ]
+      },
+      "path": "~/Recipe/Armor/Seven Deadly Sins Armor/Merlin"
+    },
+    {
+      "name": "MerlinArmorChestPlateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "merlin_armor_chest_plate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craft_no_taizai/recipes/merlin_armor_chest_plate_recipe.json"
+        ]
+      },
+      "path": "~/Recipe/Armor/Seven Deadly Sins Armor/Merlin"
+    },
+    {
+      "name": "MerlinArmorLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "merlin_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craft_no_taizai/recipes/merlin_armor_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Recipe/Armor/Seven Deadly Sins Armor/Merlin"
+    },
+    {
+      "name": "PerfectCubeBreaks",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perfect_cube_breaks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnotaizai/procedures/PerfectCubeBreaksProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/items/Incantation Orb/perfectcube"
+    },
+    {
+      "name": "PurgatorySpikes",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatory_spikes",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/craft_no_taizai/models/item/purgatory_spikes.json",
+          "src/main/resources/assets/craft_no_taizai/blockstates/purgatory_spikes.json",
+          "src/main/resources/assets/craft_no_taizai/models/block/purgatory_spikes.json",
+          "src/main/java/net/mcreator/craftnotaizai/block/PurgatorySpikesBlock.java",
+          "src/main/resources/data/craft_no_taizai/loot_tables/blocks/purgatory_spikes.json"
+        ]
+      },
+      "path": "~/Block/PurgatoryBlock"
     }
   ],
   "variable_elements": [
@@ -35551,6 +35828,12 @@
       "type": "string",
       "scope": "player_persistent",
       "value": ""
+    },
+    {
+      "name": "combostarhit",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
     }
   ],
   "sound_elements": [
@@ -35739,6 +36022,7 @@
       "CUSTOM:RoyalGurardAnimated"
     ],
     "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:PurgatoryBrickSlab",
       "~CUSTOM:PurgatorySlab",
       "~CUSTOM:FairyTreeSlab",
       "~CUSTOM:BlueBrickSlab",
@@ -35800,6 +36084,7 @@
       "CUSTOM:AndreAnimated"
     ],
     "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:PurgatoryBrickStair",
       "~CUSTOM:PurgatoryStair",
       "~CUSTOM:FairyTreeStaires",
       "~CUSTOM:BlueBrickStair",
@@ -35901,7 +36186,7 @@
       "gui.craft_no_taizai.demon_stat.button_story": "Story",
       "gui.craft_no_taizai.story_board.label_next_challanger_griamore_appears": "Second round challanger Griamore appears",
       "entity.craft_no_taizai.hide_and_seek": "Hide And Seek",
-      "item.craft_no_taizai.chicken_matango_mush_room": "Agave",
+      "item.craft_no_taizai.chicken_matango_mush_room": "Chicken_Matango MushRoom",
       "item.craft_no_taizai.hendrickson_armor_leggings": "HendrickSon Leggings",
       "item.craft_no_taizai.taizoo_animated_spawn_egg": "Taizoo Spawn Egg",
       "death.attack.delay_damage": "%1$s died",
@@ -35933,6 +36218,7 @@
       "entity.craft_no_taizai.taizoo_animated": "Taizoo",
       "item.craft_no_taizai.meliodasoutfit_chestplate": "Meliodas Shirt",
       "item.craft_no_taizai.diane_boss_animated_spawn_egg": "Diane Boss Spawn Egg",
+      "item.craft_no_taizai.sword_wolf_fur": "Sword Wolf Fur",
       "item.craft_no_taizai.geckolib_kraken_spawn_egg": "Kraken Spawn Egg",
       "effect.craft_no_taizai.minimum_tablets_effect": "Minimum Tablets",
       "gui.craft_no_taizai.story_board.button_start2": "Start",
@@ -35950,6 +36236,7 @@
       "item.craft_no_taizai.hell_gate_red_demons_spawn_egg": "Hell Gate Red Demons Spawn Egg",
       "gui.craft_no_taizai.story_board.label_set_on_crushing_the_whole_town_a": "set on crushing the whole town and the seven deadly sin",
       "gui.craft_no_taizai.story_board.tooltip_skills": "Magic",
+      "block.craft_no_taizai.purgatory_spikes": "Purgatory Spikes",
       "gui.craft_no_taizai.fairy_clan.label_stats": "Stats",
       "gui.craft_no_taizai.human_clan.label_50_strength": "- Strength: 15 to 35",
       "item.craft_no_taizai.friesiaarmor_leggings": "Friesia Leggings",
@@ -36032,6 +36319,7 @@
       "block.craft_no_taizai.perfect_cube": "Perfect Cube",
       "gui.craft_no_taizai.story_board.label_ep_3the_scared_treasure_lostvay": "EP 3:The Scared Treasure Lostvayne",
       "item.craft_no_taizai.soldier_armor_helmet": "Soldier Helmet",
+      "item.craft_no_taizai.merlin_armor_chest_plate_chestplate": "BoarHat Chestplate",
       "gui.craft_no_taizai.fairy_clan.label_random_200_to_500": "Random: 500 to 800",
       "item.craft_no_taizai.soyokazeno_gekirin": "Soyokazeno Gekirin",
       "item.craft_no_taizai.earth_golem_spawn_egg": "Earth Golem Spawn Egg",
@@ -36135,6 +36423,7 @@
       "block.craft_no_taizai.purplefire": "Purplefire",
       "item.craft_no_taizai.albion_spawn_egg": "Albion Spawn Egg",
       "gui.craft_no_taizai.fairy_clan.button_empty": "\u003e",
+      "block.craft_no_taizai.purgatory_brick_slab": "Purgatory Brick",
       "item.craft_no_taizai.jericho_demon_form_spawn_egg": "Jericho Demon Form Spawn Egg",
       "item.craft_no_taizai.simon_armor_leggings": "Simon Leggings",
       "entity.craft_no_taizai.insect_f": "Insect",
@@ -36157,8 +36446,8 @@
       "item.craft_no_taizai.bow": "Bow",
       "item.craft_no_taizai.rank": "Rank Icon",
       "item.craft_no_taizai.guard_spear": "Guard Spear",
-      "gui.craft_no_taizai.demon_stat.label_health": "Health",
       "entity.craft_no_taizai.gowther_story_1": "Gowther",
+      "gui.craft_no_taizai.demon_stat.label_health": "Health",
       "gui.craft_no_taizai.human_clan.label_15_magic_damage": "- Magic Damage: 0 to 10",
       "entity.craft_no_taizai.black_hound": "Black Hound",
       "gui.craft_no_taizai.story_board.label_ep_13the_angel_of_destruction": "EP 13:The Angel of Destruction",
@@ -36234,6 +36523,7 @@
       "item.craft_no_taizai.hunter_wisp": "Hunter Wisp",
       "advancements.ruby.title": "Ruby",
       "item.craft_no_taizai.black_hound_spawn_egg": "Black Hound Spawn Egg",
+      "item.craft_no_taizai.monster_block": "Monster Block",
       "advancements.crystal.title": "Crystal",
       "item.craft_no_taizai.green_knight_armor_leggings": "GreenKnight Leggings",
       "entity.craft_no_taizai.story_ban_animated": "Story Ban",
@@ -36282,6 +36572,7 @@
       "item.craft_no_taizai.guardian_1_spawn_egg": "Guardian Spawn Egg",
       "gui.craft_no_taizai.story_board.label_power_returns": "power returns.",
       "item.craft_no_taizai.angle_cure_meat": "Angle Cure Meat",
+      "item.craft_no_taizai.merlin_armor_chest_plate_helmet": "Merlin Armor Helments",
       "item.craft_no_taizai.magic_scroll": "Magic Scroll",
       "item.craft_no_taizai.hendrickson_armor_chestplate": "HendrickSon Chestplate",
       "item.craft_no_taizai.hide_and_seek_spawn_egg": "Hide And Seek Spawn Egg",
@@ -36405,6 +36696,7 @@
       "entity.craft_no_taizai.golgius_animated": "Golgius",
       "block.craft_no_taizai.holy_tree_ore": "Holy Tree Ore",
       "block.craft_no_taizai.hay_bale_roof": "Hay Bale Roof",
+      "item.craft_no_taizai.merlin_armor_chest_plate_leggings": "BoarHat Leggings",
       "entity.craft_no_taizai.jericho_animated": "Jericho Animated",
       "gui.craft_no_taizai.story_board.label_defeat_gray_demon": "Defeat Gray Demon Hendrickson",
       "item.craft_no_taizai.green_knight_animated_spawn_egg": "Green Knight Spawn Egg",
@@ -36425,6 +36717,7 @@
       "item.craft_no_taizai.mutilator_rabbits_spawn_egg": "Mutilator Rabbits Spawn Egg",
       "item.craft_no_taizai.lightningbeast": "Lightningbeast",
       "item.craft_no_taizai.insect_spawn_egg": "Insect Spawn Egg",
+      "block.craft_no_taizai.purgatory_brick_stair": "Purgatory Brick",
       "item.craft_no_taizai.sequence": "Sequence",
       "item.craft_no_taizai.blaze": "Blaze",
       "item.craft_no_taizai.rhitta": "Rhitta",
@@ -36585,7 +36878,6 @@
       "block.craft_no_taizai.keg": "Keg",
       "gui.craft_no_taizai.story_board.label_thank_you_guys_some_much_for_pla": "the king honors the Seven Deadly Sins for their bravery",
       "item_group.craft_no_taizai.spawn_eggs": "Craft No Taizai Spawns Eggs",
-      "item.craft_no_taizai.sword_wolf_fang": "Sword Wolf Fang",
       "gui.craft_no_taizai.story_board.label_each_other": "each other",
       "effect.craft_no_taizai.jubaku_ensa_effect": "Jubaku Ensa Effect",
       "item.craft_no_taizai.demon_king_sword": "Demon King Sword",
@@ -36699,6 +36991,7 @@
       "item.craft_no_taizai.slader_animated_spawn_egg": "Slader Spawn Egg",
       "entity.craft_no_taizai.andre_animated": "Andre",
       "death.attack.mana_dmg.item": "%1$s was killed by %2$s using %3$s",
+      "block.craft_no_taizai.purgatory_brick": "Purgatory Brick",
       "entity.craft_no_taizai.tyrant_dragon": "Tyrant Dragon",
       "gui.craft_no_taizai.story_board.label_golgiu_tries_to_seize_the_sword": "Golgiu tries to seize the sword",
       "item.craft_no_taizai.red_knight_armor_helmet": "RedKnight Helmet",
@@ -37010,13 +37303,8 @@
                     "children": []
                   },
                   {
-                    "name": "Old_Moves",
-                    "children": [
-                      {
-                        "name": "Enchantment_Ark",
-                        "children": []
-                      }
-                    ]
+                    "name": "Enchantment_Ark",
+                    "children": []
                   }
                 ]
               }
@@ -37530,6 +37818,14 @@
         "children": [
           {
             "name": "PowerPercentage",
+            "children": []
+          },
+          {
+            "name": "Gui",
+            "children": []
+          },
+          {
+            "name": "AddStat",
             "children": []
           }
         ]
@@ -38651,7 +38947,12 @@
       },
       {
         "name": "armor",
-        "children": []
+        "children": [
+          {
+            "name": "OutFit",
+            "children": []
+          }
+        ]
       },
       {
         "name": "biomes",
@@ -38703,10 +39004,6 @@
                 "children": []
               }
             ]
-          },
-          {
-            "name": "perfectcube",
-            "children": []
           },
           {
             "name": "demonblood",
@@ -38771,6 +39068,10 @@
               {
                 "name": "Lume",
                 "children": []
+              },
+              {
+                "name": "perfectcube",
+                "children": []
               }
             ]
           },
@@ -38790,6 +39091,10 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "SmallBag",
+            "children": []
           }
         ]
       },
@@ -38902,6 +39207,15 @@
               {
                 "name": "Boar_Hat",
                 "children": []
+              },
+              {
+                "name": "Seven Deadly Sins Armor",
+                "children": [
+                  {
+                    "name": "Merlin",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
@@ -38969,36 +39283,42 @@
         "name": "advancement",
         "children": [
           {
-            "name": "Crystal",
+            "name": "Seven Deadly Sins",
             "children": []
           },
           {
-            "name": "Emerald",
-            "children": []
-          },
-          {
-            "name": "Ruby",
-            "children": []
-          },
-          {
-            "name": "Sapphire",
-            "children": []
-          },
-          {
-            "name": "Platinum",
-            "children": []
+            "name": "Ranks",
+            "children": [
+              {
+                "name": "Crystal",
+                "children": []
+              },
+              {
+                "name": "Emerald",
+                "children": []
+              },
+              {
+                "name": "Ruby",
+                "children": []
+              },
+              {
+                "name": "Sapphire",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Diamond",
-            "children": []
-          },
-          {
-            "name": "DemonBlood",
-            "children": []
-          },
-          {
-            "name": "Seven Deadly Sins",
-            "children": []
+            "children": [
+              {
+                "name": "Platinum",
+                "children": []
+              },
+              {
+                "name": "DemonBlood",
+                "children": []
+              }
+            ]
           }
         ]
       },

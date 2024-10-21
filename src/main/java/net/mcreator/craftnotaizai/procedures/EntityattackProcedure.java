@@ -50,6 +50,11 @@ public class EntityattackProcedure {
 				if (sourceentity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("DMG: ##").format(damage))), true);
 			}
+			if ((sourceentity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).combostar == true) {
+				damage = damage * (sourceentity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).combostarhit;
+				if (sourceentity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("DMG: ##").format(damage))), true);
+			}
 			for (int index0 = 0; index0 < 2; index0++) {
 				stage = stage + 1;
 				if (stage == 1) {

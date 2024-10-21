@@ -29,6 +29,13 @@ public class ComboStarKeybindProcedure {
 									capability.syncPlayerVariables(entity);
 								});
 							}
+							{
+								double _setval = 1;
+								entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+									capability.combostarhit = _setval;
+									capability.syncPlayerVariables(entity);
+								});
+							}
 						} else if ((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).combostar == true) {
 							{
 								boolean _setval = false;
@@ -48,6 +55,13 @@ public class ComboStarKeybindProcedure {
 								double _setval = 0;
 								entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 									capability.hit = _setval;
+									capability.syncPlayerVariables(entity);
+								});
+							}
+							{
+								double _setval = 1;
+								entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+									capability.combostarhit = _setval;
 									capability.syncPlayerVariables(entity);
 								});
 							}

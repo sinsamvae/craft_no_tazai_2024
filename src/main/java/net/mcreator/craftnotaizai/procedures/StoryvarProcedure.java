@@ -343,7 +343,8 @@ public class StoryvarProcedure {
 			}
 			if (entity instanceof Player _player)
 				_player.closeContainer();
-		} else if (((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).Story).equals("Story33")) {
+		} else if (((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).Story).equals("Story33")
+				&& world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("craft_no_taizai:fairy_king_forest"))) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = CraftNoTaizaiModEntities.TALL_ALBION.get().spawn(_level,
 						BlockPos.containing(entity.getLookAngle().x + entity.getX(), entity.getLookAngle().y + entity.getY() + entity.getBbHeight(), entity.getLookAngle().z + entity.getZ()), MobSpawnType.MOB_SUMMONED);

@@ -17,6 +17,12 @@
         "1": "lume_orb"
       },
       "name": "lume"
+    },
+    "perfect_cube": {
+      "map": {
+        "1": "perfectcubeorb"
+      },
+      "name": "perfect_cube"
     }
   }
 }

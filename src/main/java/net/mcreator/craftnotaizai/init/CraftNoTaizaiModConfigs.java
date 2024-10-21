@@ -6,6 +6,9 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
+import net.mcreator.craftnotaizai.configuration.RandomRaceConfigConfiguration;
+import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
+
 @Mod.EventBusSubscriber(modid = CraftNoTaizaiMod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CraftNoTaizaiModConfigs {
 	@SubscribeEvent

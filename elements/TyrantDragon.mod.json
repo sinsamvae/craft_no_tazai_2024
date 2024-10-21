@@ -95,7 +95,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "CUSTOM:TyrantDragonMeat"
+      "value": ""
     },
     "livingSound": {
       "value": ""

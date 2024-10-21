@@ -10,7 +10,10 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.client.renderer.ItemInHandRenderer;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.craftnotaizai.item.WhipItem;
+import net.mcreator.craftnotaizai.item.HolyStaffCoureChouseItem;
 import net.mcreator.craftnotaizai.item.BowItem;
+import net.mcreator.craftnotaizai.item.BellStaffItem;
 
 @Mod.EventBusSubscriber
 public class ItemAnimationFactory {

@@ -4,7 +4,7 @@
   "definition": {
     "renderType": 1,
     "texture": "perfectcubeorb",
-    "customModelName": "perfectcube:default",
+    "customModelName": "hyperrecovery:perfect_cube",
     "customProperties": {},
     "states": [],
     "name": "Perfect Cube Orb (Working On)",
@@ -18,7 +18,7 @@
     "enchantability": 0,
     "useDuration": 1,
     "toolType": 1.0,
-    "damageCount": 1,
+    "damageCount": 2,
     "recipeRemainder": {
       "value": ""
     },

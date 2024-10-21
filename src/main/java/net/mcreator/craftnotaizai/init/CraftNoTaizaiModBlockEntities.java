@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.craftnotaizai.block.entity.StageTwoAgaveBlockEntity;
 import net.mcreator.craftnotaizai.block.entity.StageOneAgaveBlockEntity;
+import net.mcreator.craftnotaizai.block.entity.PerfectCubeBlockEntity;
 import net.mcreator.craftnotaizai.block.entity.LastStageAgaveBlockEntity;
 import net.mcreator.craftnotaizai.block.entity.KegBlockEntity;
 import net.mcreator.craftnotaizai.block.entity.CapitaloftheDeadBlockBlockEntity;
@@ -21,6 +22,7 @@ import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
 public class CraftNoTaizaiModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, CraftNoTaizaiMod.MODID);
 	public static final RegistryObject<BlockEntityType<?>> CAPITALOFTHE_DEAD_BLOCK = register("capitalofthe_dead_block", CraftNoTaizaiModBlocks.CAPITALOFTHE_DEAD_BLOCK, CapitaloftheDeadBlockBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> PERFECT_CUBE = register("perfect_cube", CraftNoTaizaiModBlocks.PERFECT_CUBE, PerfectCubeBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> KEG = register("keg", CraftNoTaizaiModBlocks.KEG, KegBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> STAGE_ONE_AGAVE = register("stage_one_agave", CraftNoTaizaiModBlocks.STAGE_ONE_AGAVE, StageOneAgaveBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> STAGE_TWO_AGAVE = register("stage_two_agave", CraftNoTaizaiModBlocks.STAGE_TWO_AGAVE, StageTwoAgaveBlockEntity::new);

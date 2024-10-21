@@ -84,17 +84,27 @@
     "bootsPiglinNeutral": {
       "fixedValue": false
     },
-    "maxDamage": 200,
+    "maxDamage": 5,
     "damageValueHelmet": 1,
     "damageValueBody": 10,
     "damageValueLeggings": 5,
     "damageValueBoots": 3,
-    "enchantability": 9,
+    "enchantability": 15,
     "toughness": 0.0,
     "knockbackResistance": 0.0,
     "equipSound": {
-      "value": ""
+      "value": "item.armor.equip_leather"
     },
-    "repairItems": []
+    "repairItems": [
+      {
+        "value": "Blocks.WOOL#4"
+      },
+      {
+        "value": "Blocks.WOOL#3"
+      },
+      {
+        "value": "Blocks.WOOL#11"
+      }
+    ]
   }
 }

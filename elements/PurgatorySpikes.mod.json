@@ -1,0 +1,749 @@
+{
+  "_fv": 66,
+  "_type": "block",
+  "definition": {
+    "texture": "purple-spikes-texture",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "purple-spikes:default",
+    "rotationMode": 1,
+    "enablePitch": false,
+    "emissiveRendering": false,
+    "displayFluidOverlay": true,
+    "itemTexture": "",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "hasTransparency": true,
+    "connectedSides": false,
+    "transparencyType": "SOLID",
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 0.5,
+        "my": 1.0,
+        "mz": 0.5,
+        "Mx": 15.5,
+        "My": 2.0,
+        "Mz": 15.5,
+        "subtract": false
+      },
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 1.0,
+        "Mz": 16.0,
+        "subtract": false
+      },
+      {
+        "mx": 6.0,
+        "my": 0.5,
+        "mz": -1.4,
+        "Mx": 10.0,
+        "My": 1.5,
+        "Mz": 2.6,
+        "subtract": false
+      },
+      {
+        "mx": 6.3,
+        "my": 0.8,
+        "mz": 0.4,
+        "Mx": 9.7,
+        "My": 3.2,
+        "Mz": 3.8,
+        "subtract": false
+      },
+      {
+        "mx": 6.6,
+        "my": 2.85,
+        "mz": 0.7,
+        "Mx": 9.4,
+        "My": 6.65,
+        "Mz": 3.5,
+        "subtract": false
+      },
+      {
+        "mx": 6.9,
+        "my": 5.15217,
+        "mz": -1.2951,
+        "Mx": 9.1,
+        "My": 7.35217,
+        "Mz": 0.9049,
+        "subtract": false
+      },
+      {
+        "mx": 7.2,
+        "my": 7.10217,
+        "mz": -0.9951,
+        "Mx": 8.8,
+        "My": 10.70217,
+        "Mz": 0.6049,
+        "subtract": false
+      },
+      {
+        "mx": 7.5,
+        "my": 10.65217,
+        "mz": -0.6951,
+        "Mx": 8.5,
+        "My": 13.65217,
+        "Mz": 0.3049,
+        "subtract": false
+      },
+      {
+        "mx": 7.75,
+        "my": 12.45406,
+        "mz": -5.15772,
+        "Mx": 8.25,
+        "My": 12.95406,
+        "Mz": -3.15772,
+        "subtract": false
+      },
+      {
+        "mx": 10.5,
+        "my": 2.0,
+        "mz": 1.5,
+        "Mx": 14.5,
+        "My": 3.0,
+        "Mz": 5.5,
+        "subtract": false
+      },
+      {
+        "mx": 10.8,
+        "my": 2.8,
+        "mz": 1.8,
+        "Mx": 14.2,
+        "My": 5.2,
+        "Mz": 5.2,
+        "subtract": false
+      },
+      {
+        "mx": 11.1,
+        "my": 4.1,
+        "mz": -0.15,
+        "Mx": 13.9,
+        "My": 7.9,
+        "Mz": 2.65,
+        "subtract": false
+      },
+      {
+        "mx": 11.4,
+        "my": 7.85,
+        "mz": 0.15,
+        "Mx": 13.6,
+        "My": 10.05,
+        "Mz": 2.35,
+        "subtract": false
+      },
+      {
+        "mx": 11.7,
+        "my": 8.78686,
+        "mz": -1.62151,
+        "Mx": 13.3,
+        "My": 12.38686,
+        "Mz": -0.02151,
+        "subtract": false
+      },
+      {
+        "mx": 12.0,
+        "my": 12.36091,
+        "mz": -3.62056,
+        "Mx": 13.0,
+        "My": 13.36091,
+        "Mz": -0.62056,
+        "subtract": false
+      },
+      {
+        "mx": 12.25,
+        "my": 13.17628,
+        "mz": -4.61832,
+        "Mx": 12.75,
+        "My": 13.67628,
+        "Mz": -3.36832,
+        "subtract": false
+      },
+      {
+        "mx": 10.75,
+        "my": 5.84326,
+        "mz": -2.56073,
+        "Mx": 11.75,
+        "My": 6.84326,
+        "Mz": 0.43927,
+        "subtract": false
+      },
+      {
+        "mx": 11.0,
+        "my": 7.17628,
+        "mz": -4.01832,
+        "Mx": 11.5,
+        "My": 7.67628,
+        "Mz": -1.76832,
+        "subtract": false
+      },
+      {
+        "mx": 10.45,
+        "my": 2.31402,
+        "mz": 0.5842,
+        "Mx": 12.05,
+        "My": 5.91402,
+        "Mz": 2.1842,
+        "subtract": false
+      },
+      {
+        "mx": 10.15,
+        "my": 1.0171,
+        "mz": 1.2584,
+        "Mx": 12.35,
+        "My": 3.2171,
+        "Mz": 3.4584,
+        "subtract": false
+      },
+      {
+        "mx": 2.65,
+        "my": 1.5171,
+        "mz": 12.2584,
+        "Mx": 4.85,
+        "My": 3.7171,
+        "Mz": 14.4584,
+        "subtract": false
+      },
+      {
+        "mx": 2.95,
+        "my": 2.81402,
+        "mz": 11.5842,
+        "Mx": 4.55,
+        "My": 6.41402,
+        "Mz": 13.1842,
+        "subtract": false
+      },
+      {
+        "mx": 3.25,
+        "my": 5.81558,
+        "mz": 12.10955,
+        "Mx": 4.25,
+        "My": 8.81558,
+        "Mz": 13.10955,
+        "subtract": false
+      },
+      {
+        "mx": 3.5,
+        "my": 7.67628,
+        "mz": 6.98168,
+        "Mx": 4.0,
+        "My": 8.17628,
+        "Mz": 9.23168,
+        "subtract": false
+      },
+      {
+        "mx": 3.0,
+        "my": 8.57098,
+        "mz": -7.55222,
+        "Mx": 4.0,
+        "My": 9.57098,
+        "Mz": -4.55222,
+        "subtract": false
+      },
+      {
+        "mx": 3.25,
+        "my": 10.47628,
+        "mz": -6.81832,
+        "Mx": 3.75,
+        "My": 10.97628,
+        "Mz": -5.56832,
+        "subtract": false
+      },
+      {
+        "mx": 2.1,
+        "my": 0.63985,
+        "mz": -1.52181,
+        "Mx": 4.9,
+        "My": 4.43985,
+        "Mz": 1.27819,
+        "subtract": false
+      },
+      {
+        "mx": 2.7,
+        "my": 7.06096,
+        "mz": -6.03244,
+        "Mx": 4.3,
+        "My": 8.66096,
+        "Mz": -2.43244,
+        "subtract": false
+      },
+      {
+        "mx": 2.4,
+        "my": 4.38985,
+        "mz": -1.22181,
+        "Mx": 4.6,
+        "My": 6.58985,
+        "Mz": 0.97819,
+        "subtract": false
+      },
+      {
+        "mx": 12.1,
+        "my": -0.11015,
+        "mz": 10.72819,
+        "Mx": 14.9,
+        "My": 3.68985,
+        "Mz": 13.52819,
+        "subtract": false
+      },
+      {
+        "mx": 12.4,
+        "my": 3.63985,
+        "mz": 11.02819,
+        "Mx": 14.6,
+        "My": 5.83985,
+        "Mz": 13.22819,
+        "subtract": false
+      },
+      {
+        "mx": 12.7,
+        "my": 4.49892,
+        "mz": 11.60116,
+        "Mx": 14.3,
+        "My": 8.09892,
+        "Mz": 13.20116,
+        "subtract": false
+      },
+      {
+        "mx": 13.0,
+        "my": 7.82098,
+        "mz": 4.69778,
+        "Mx": 14.0,
+        "My": 8.82098,
+        "Mz": 7.69778,
+        "subtract": false
+      },
+      {
+        "mx": 13.25,
+        "my": 9.72628,
+        "mz": 5.43168,
+        "Mx": 13.75,
+        "My": 10.22628,
+        "Mz": 6.68168,
+        "subtract": false
+      },
+      {
+        "mx": 5.1,
+        "my": -0.22671,
+        "mz": 2.2482,
+        "Mx": 7.3,
+        "My": 1.97329,
+        "Mz": 4.4482,
+        "subtract": false
+      },
+      {
+        "mx": 5.4,
+        "my": 1.0702,
+        "mz": 1.574,
+        "Mx": 7.0,
+        "My": 4.6702,
+        "Mz": 3.174,
+        "subtract": false
+      },
+      {
+        "mx": 5.7,
+        "my": 4.59944,
+        "mz": -1.57093,
+        "Mx": 6.7,
+        "My": 5.59944,
+        "Mz": 1.42907,
+        "subtract": false
+      },
+      {
+        "mx": 5.95,
+        "my": 5.93246,
+        "mz": -2.02852,
+        "Mx": 6.45,
+        "My": 6.43246,
+        "Mz": -0.77852,
+        "subtract": false
+      },
+      {
+        "mx": 1.8,
+        "my": 0.1,
+        "mz": -0.4,
+        "Mx": 5.2,
+        "My": 2.5,
+        "Mz": 3.0,
+        "subtract": false
+      },
+      {
+        "mx": 1.5,
+        "my": -0.7,
+        "mz": -0.7,
+        "Mx": 5.5,
+        "My": 0.3,
+        "Mz": 3.3,
+        "subtract": false
+      },
+      {
+        "mx": 11.7,
+        "my": 1.56253,
+        "mz": 7.42848,
+        "Mx": 13.9,
+        "My": 3.76253,
+        "Mz": 9.62848,
+        "subtract": false
+      },
+      {
+        "mx": 8.0,
+        "my": 1.32764,
+        "mz": 6.40164,
+        "Mx": 12.0,
+        "My": 2.32764,
+        "Mz": 10.40164,
+        "subtract": false
+      },
+      {
+        "mx": 8.3,
+        "my": 2.12764,
+        "mz": 6.70164,
+        "Mx": 11.7,
+        "My": 4.52764,
+        "Mz": 10.10164,
+        "subtract": false
+      },
+      {
+        "mx": 8.6,
+        "my": 4.17764,
+        "mz": 7.00164,
+        "Mx": 11.4,
+        "My": 7.97764,
+        "Mz": 9.80164,
+        "subtract": false
+      },
+      {
+        "mx": 8.9,
+        "my": 6.46513,
+        "mz": 6.56867,
+        "Mx": 11.1,
+        "My": 8.66513,
+        "Mz": 8.76867,
+        "subtract": false
+      },
+      {
+        "mx": 9.2,
+        "my": 8.41513,
+        "mz": 6.86867,
+        "Mx": 10.8,
+        "My": 12.01513,
+        "Mz": 8.46867,
+        "subtract": false
+      },
+      {
+        "mx": 9.5,
+        "my": 11.96513,
+        "mz": 7.16867,
+        "Mx": 10.5,
+        "My": 14.96513,
+        "Mz": 8.16867,
+        "subtract": false
+      },
+      {
+        "mx": 9.75,
+        "my": 13.28797,
+        "mz": -0.61047,
+        "Mx": 10.25,
+        "My": 13.78797,
+        "Mz": 1.38953,
+        "subtract": false
+      },
+      {
+        "mx": 6.0,
+        "my": 1.32764,
+        "mz": 11.40164,
+        "Mx": 10.0,
+        "My": 2.32764,
+        "Mz": 15.40164,
+        "subtract": false
+      },
+      {
+        "mx": 6.3,
+        "my": 2.12764,
+        "mz": 11.70164,
+        "Mx": 9.7,
+        "My": 4.52764,
+        "Mz": 15.10164,
+        "subtract": false
+      },
+      {
+        "mx": 6.6,
+        "my": 4.17764,
+        "mz": 12.00164,
+        "Mx": 9.4,
+        "My": 7.97764,
+        "Mz": 14.80164,
+        "subtract": false
+      },
+      {
+        "mx": 7.2,
+        "my": 8.41513,
+        "mz": 11.86867,
+        "Mx": 8.8,
+        "My": 12.01513,
+        "Mz": 13.46867,
+        "subtract": false
+      },
+      {
+        "mx": 7.5,
+        "my": 13.84578,
+        "mz": 9.44406,
+        "Mx": 8.5,
+        "My": 14.84578,
+        "Mz": 12.44406,
+        "subtract": false
+      },
+      {
+        "mx": 7.75,
+        "my": 14.22787,
+        "mz": 7.64213,
+        "Mx": 8.25,
+        "My": 14.72787,
+        "Mz": 9.64213,
+        "subtract": false
+      },
+      {
+        "mx": 6.9,
+        "my": 6.46513,
+        "mz": 11.56867,
+        "Mx": 9.1,
+        "My": 8.66513,
+        "Mz": 13.76867,
+        "subtract": false
+      },
+      {
+        "mx": 3.5,
+        "my": 1.63163,
+        "mz": 7.06478,
+        "Mx": 7.5,
+        "My": 2.63163,
+        "Mz": 11.06478,
+        "subtract": false
+      },
+      {
+        "mx": 3.8,
+        "my": 2.43163,
+        "mz": 7.36478,
+        "Mx": 7.2,
+        "My": 4.83163,
+        "Mz": 10.76478,
+        "subtract": false
+      },
+      {
+        "mx": 4.1,
+        "my": 2.99255,
+        "mz": 6.21144,
+        "Mx": 6.9,
+        "My": 6.79255,
+        "Mz": 9.01144,
+        "subtract": false
+      },
+      {
+        "mx": 4.4,
+        "my": 6.74255,
+        "mz": 6.51144,
+        "Mx": 6.6,
+        "My": 8.94255,
+        "Mz": 8.71144,
+        "subtract": false
+      },
+      {
+        "mx": 4.7,
+        "my": 9.39259,
+        "mz": 1.80671,
+        "Mx": 6.3,
+        "My": 10.99259,
+        "Mz": 5.40671,
+        "subtract": false
+      },
+      {
+        "mx": 5.0,
+        "my": 10.89522,
+        "mz": 0.24975,
+        "Mx": 6.0,
+        "My": 11.89522,
+        "Mz": 3.24975,
+        "subtract": false
+      },
+      {
+        "mx": 5.25,
+        "my": 12.80791,
+        "mz": 0.94646,
+        "Mx": 5.75,
+        "My": 13.30791,
+        "Mz": 2.19646,
+        "subtract": false
+      },
+      {
+        "mx": 2.25,
+        "my": 4.97813,
+        "mz": 3.57153,
+        "Mx": 3.25,
+        "My": 7.97813,
+        "Mz": 4.57153,
+        "subtract": false
+      },
+      {
+        "mx": 2.5,
+        "my": 9.03525,
+        "mz": 1.39353,
+        "Mx": 3.0,
+        "My": 9.53525,
+        "Mz": 3.64353,
+        "subtract": false
+      },
+      {
+        "mx": 1.95,
+        "my": 2.29274,
+        "mz": 4.29835,
+        "Mx": 3.55,
+        "My": 5.89274,
+        "Mz": 5.89835,
+        "subtract": false
+      },
+      {
+        "mx": 1.65,
+        "my": 1.7671,
+        "mz": 6.0084,
+        "Mx": 3.85,
+        "My": 3.9671,
+        "Mz": 8.2084,
+        "subtract": false
+      },
+      {
+        "mx": 12.0,
+        "my": 2.70783,
+        "mz": 5.26302,
+        "Mx": 13.6,
+        "My": 6.30783,
+        "Mz": 6.86302,
+        "subtract": false
+      },
+      {
+        "mx": 12.3,
+        "my": 8.26113,
+        "mz": 5.87634,
+        "Mx": 13.3,
+        "My": 9.26113,
+        "Mz": 8.87634,
+        "subtract": false
+      },
+      {
+        "mx": 12.55,
+        "my": 8.43246,
+        "mz": 4.47148,
+        "Mx": 13.05,
+        "My": 8.93246,
+        "Mz": 5.72148,
+        "subtract": false
+      }
+    ],
+    "name": "Purgatory Spikes",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "hardness": 1.0,
+    "resistance": 10.0,
+    "hasGravity": false,
+    "isWaterloggable": false,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:SdsBlocks"
+      }
+    ],
+    "destroyTool": "Not specified",
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "useLootTableForDrops": false,
+    "requiresCorrectTool": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canRedstoneConnect": false,
+    "lightOpacity": 0,
+    "material": {
+      "value": "ROCK"
+    },
+    "tickRate": 0,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "canProvidePower": false,
+    "emittedRedstonePower": {
+      "fixedValue": 15.0
+    },
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": false,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "STONE"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "luminance": 0,
+    "unbreakable": false,
+    "vanillaToolTier": "NONE",
+    "isBonemealable": false,
+    "hasInventory": false,
+    "guiBoundTo": "<NONE>",
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
+    "hasEnergyStorage": false,
+    "energyInitial": 0,
+    "energyCapacity": 400000,
+    "energyMaxReceive": 200,
+    "energyMaxExtract": 200,
+    "isFluidTank": false,
+    "fluidCapacity": 8000,
+    "fluidRestrictions": [],
+    "generateFeature": false,
+    "restrictionBiomes": [],
+    "blocksToReplace": [
+      {
+        "value": "TAG:stone_ore_replaceables"
+      }
+    ],
+    "generationShape": "UNIFORM",
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
+  }
+}

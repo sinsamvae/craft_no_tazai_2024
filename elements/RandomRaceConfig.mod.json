@@ -66,7 +66,7 @@
               "value": ""
             },
             "logicField": 0,
-            "numberField": 0.05,
+            "numberField": 0.04,
             "textDefault": "",
             "comment": "this change the amount you get from mana regen",
             "vardisplay": "mana_regen",
@@ -100,7 +100,7 @@
               "value": ""
             },
             "logicField": 0,
-            "numberField": 0.09,
+            "numberField": 0.13,
             "textDefault": "",
             "comment": "this is for second forms/skills that drain mana",
             "vardisplay": "mana_drain_two",
@@ -117,7 +117,7 @@
               "value": ""
             },
             "logicField": 0,
-            "numberField": 0.09,
+            "numberField": 0.15,
             "textDefault": "",
             "comment": "this is for third forms/skills that drain mana",
             "vardisplay": "mana_drain_three",

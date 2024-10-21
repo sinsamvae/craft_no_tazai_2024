@@ -9,5 +9,5 @@
     "west": "craft_no_taizai:block/perfectcube",
     "particle": "craft_no_taizai:block/perfectcube"
   },
-  "render_type": "cutout"
+  "render_type": "translucent"
 }

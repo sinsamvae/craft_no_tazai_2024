@@ -14,7 +14,7 @@
     "damage": 5.0,
     "knockback": 5,
     "entityModel": "ModelCruel_Sun_Converted",
-    "customModelTexture": "sun_curel.png",
+    "customModelTexture": "crazy_prominence.png",
     "onHitsBlock": {
       "name": "CruelSunProjectileHitsBlock"
     },

@@ -46,6 +46,13 @@ public class ComboStarManaZeroProcedure {
 			{
 				double _setval = 0;
 				entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.combostarhit = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				double _setval = 0;
+				entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.hit = _setval;
 					capability.syncPlayerVariables(entity);
 				});

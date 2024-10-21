@@ -16,7 +16,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class CruelSunProjectileRenderer extends EntityRenderer<CruelSunProjectileEntity> {
-	private static final ResourceLocation texture = new ResourceLocation("craft_no_taizai:textures/entities/sun_curel.png");
+	private static final ResourceLocation texture = new ResourceLocation("craft_no_taizai:textures/entities/crazy_prominence.png");
 	private final ModelCruel_Sun_Converted model;
 
 	public CruelSunProjectileRenderer(EntityRendererProvider.Context context) {

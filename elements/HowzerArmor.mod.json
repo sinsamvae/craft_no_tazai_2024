@@ -84,17 +84,21 @@
     "bootsPiglinNeutral": {
       "fixedValue": false
     },
-    "maxDamage": 250,
+    "maxDamage": 15,
     "damageValueHelmet": 3,
     "damageValueBody": 10,
     "damageValueLeggings": 5,
     "damageValueBoots": 3,
-    "enchantability": 9,
+    "enchantability": 15,
     "toughness": 0.0,
     "knockbackResistance": 0.0,
     "equipSound": {
-      "value": ""
+      "value": "item.armor.equip_iron"
     },
-    "repairItems": []
+    "repairItems": [
+      {
+        "value": "CUSTOM:CarbonSteel"
+      }
+    ]
   }
 }

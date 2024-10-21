@@ -2,19 +2,19 @@
   "_fv": 66,
   "_type": "item",
   "definition": {
-    "renderType": 0,
-    "texture": "sword_wolf_fang",
-    "customModelName": "Normal",
+    "renderType": 1,
+    "texture": "small_bags_texture",
+    "customModelName": "smallbag:default",
     "customProperties": {},
     "states": [],
-    "name": "Sword Wolf Fang",
-    "rarity": "COMMON",
+    "name": "Monster Block",
+    "rarity": "RARE",
     "creativeTabs": [
       {
         "value": "CUSTOM:Items"
       }
     ],
-    "stackSize": 64,
+    "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,

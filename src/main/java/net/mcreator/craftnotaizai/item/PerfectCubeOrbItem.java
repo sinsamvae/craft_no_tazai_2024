@@ -13,7 +13,7 @@ import net.mcreator.craftnotaizai.procedures.PerfectCubeOrbRightclickedProcedure
 
 public class PerfectCubeOrbItem extends Item {
 	public PerfectCubeOrbItem() {
-		super(new Item.Properties().durability(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().durability(2).rarity(Rarity.COMMON));
 	}
 
 	@Override
@@ -24,7 +24,7 @@ public class PerfectCubeOrbItem extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		PerfectCubeOrbRightclickedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
+		PerfectCubeOrbRightclickedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
 		return ar;
 	}
 }

@@ -27,10 +27,11 @@
       "value": -14997738,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:SpawnEggs"
-    },
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:SpawnEggs"
+      }
+    ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -88,7 +89,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "CUSTOM:EarthCrawlerTail"
+      "value": ""
     },
     "livingSound": {
       "value": ""
@@ -100,6 +101,9 @@
       "value": "entity.generic.death"
     },
     "stepSound": {
+      "value": ""
+    },
+    "raidCelebrationSound": {
       "value": ""
     },
     "hasAI": true,

@@ -14,6 +14,7 @@ import net.minecraft.client.gui.screens.MenuScreens;
 import net.mcreator.craftnotaizai.client.gui.TeleportationGuiScreen;
 import net.mcreator.craftnotaizai.client.gui.StoryBoardScreen;
 import net.mcreator.craftnotaizai.client.gui.SideQuestGuiScreen;
+import net.mcreator.craftnotaizai.client.gui.MonsterBlockGuiScreen;
 import net.mcreator.craftnotaizai.client.gui.MagicMenuScreen;
 import net.mcreator.craftnotaizai.client.gui.KegGuiScreen;
 import net.mcreator.craftnotaizai.client.gui.HumanClanScreen;
@@ -41,6 +42,7 @@ public class CraftNoTaizaiModScreens {
 			MenuScreens.register(CraftNoTaizaiModMenus.HORN_OF_CERNUNOS_GUI.get(), HornOfCernunosGuiScreen::new);
 			MenuScreens.register(CraftNoTaizaiModMenus.SIDE_QUEST_GUI.get(), SideQuestGuiScreen::new);
 			MenuScreens.register(CraftNoTaizaiModMenus.CLONES_GUI.get(), ClonesGuiScreen::new);
+			MenuScreens.register(CraftNoTaizaiModMenus.MONSTER_BLOCK_GUI.get(), MonsterBlockGuiScreen::new);
 		});
 	}
 }

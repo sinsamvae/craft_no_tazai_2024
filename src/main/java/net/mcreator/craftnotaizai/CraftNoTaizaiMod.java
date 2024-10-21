@@ -17,6 +17,17 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.craftnotaizai.init.CraftNoTaizaiModTabs;
+import net.mcreator.craftnotaizai.init.CraftNoTaizaiModSounds;
+import net.mcreator.craftnotaizai.init.CraftNoTaizaiModParticleTypes;
+import net.mcreator.craftnotaizai.init.CraftNoTaizaiModMobEffects;
+import net.mcreator.craftnotaizai.init.CraftNoTaizaiModMenus;
+import net.mcreator.craftnotaizai.init.CraftNoTaizaiModItems;
+import net.mcreator.craftnotaizai.init.CraftNoTaizaiModEntities;
+import net.mcreator.craftnotaizai.init.CraftNoTaizaiModEnchantments;
+import net.mcreator.craftnotaizai.init.CraftNoTaizaiModBlocks;
+import net.mcreator.craftnotaizai.init.CraftNoTaizaiModBlockEntities;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;

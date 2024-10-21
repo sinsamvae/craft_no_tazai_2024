@@ -42,8 +42,12 @@ public class GuardianSkillProcedure {
 		if (entity.isShiftKeyDown()) {
 			if (entity.onGround()) {
 				for (int index0 = 0; index0 < 8; index0++) {
-					x = entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(range)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getX();
-					z = entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(range)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ();
+					x = entity.level()
+							.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale((entity.getPersistentData().getDouble("range")))), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
+							.getBlockPos().getX();
+					z = entity.level()
+							.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale((entity.getPersistentData().getDouble("range")))), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
+							.getBlockPos().getZ();
 					yaw = entity.getYRot() + 0;
 					{
 						Entity _ent = entity;
@@ -56,9 +60,12 @@ public class GuardianSkillProcedure {
 						_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 50, 1000000));
 					{
 						final Vec3 _center = new Vec3(
-								(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(range)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getX()),
-								y,
-								(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(range)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ()));
+								(entity.level()
+										.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale((entity.getPersistentData().getDouble("range")))), ClipContext.Block.OUTLINE,
+												ClipContext.Fluid.NONE, entity))
+										.getBlockPos().getX()),
+								y, (entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale((entity.getPersistentData().getDouble("range")))), ClipContext.Block.OUTLINE,
+										ClipContext.Fluid.NONE, entity)).getBlockPos().getZ()));
 						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 						for (Entity entityiterator : _entfound) {
 							if (!(entityiterator == entity || entityiterator instanceof ItemEntity || entityiterator instanceof ExperienceOrb
@@ -92,7 +99,7 @@ public class GuardianSkillProcedure {
 							}
 						}
 					}
-					range = range + 1;
+					entity.getPersistentData().putDouble("range", (entity.getPersistentData().getDouble("range") + 1));
 				}
 			} else {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
