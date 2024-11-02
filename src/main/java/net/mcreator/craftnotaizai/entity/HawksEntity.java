@@ -42,6 +42,7 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
 import net.mcreator.craftnotaizai.procedures.SpawnCondtionProcedure;
+import net.mcreator.craftnotaizai.procedures.HawksEntityDiesProcedure;
 import net.mcreator.craftnotaizai.init.CraftNoTaizaiModEntities;
 
 public class HawksEntity extends PathfinderMob implements GeoEntity {
@@ -70,7 +71,7 @@ public class HawksEntity extends PathfinderMob implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "hawks");
+		this.entityData.define(TEXTURE, "hawk-texture2");
 	}
 
 	public void setTexture(String texture) {
@@ -114,6 +115,12 @@ public class HawksEntity extends PathfinderMob implements GeoEntity {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		HawksEntityDiesProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override

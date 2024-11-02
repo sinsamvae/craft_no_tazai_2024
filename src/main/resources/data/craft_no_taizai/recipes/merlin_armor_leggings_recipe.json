@@ -2,7 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "ab"
+    "ab",
+    "cd"
   ],
   "key": {
     "a": {
@@ -10,6 +11,12 @@
     },
     "b": {
       "item": "minecraft:blue_dye"
+    },
+    "c": {
+      "item": "minecraft:iron_boots"
+    },
+    "d": {
+      "item": "minecraft:gray_dye"
     }
   },
   "result": {

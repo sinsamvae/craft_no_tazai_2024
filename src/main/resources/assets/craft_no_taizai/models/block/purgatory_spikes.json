@@ -1,9 +1,0 @@
-{
-  "parent": "craft_no_taizai:custom/purple-spikes",
-  "textures": {
-    "all": "craft_no_taizai:block/purple-spikes-texture",
-    "particle": "craft_no_taizai:block/purple-spikes-texture",
-    "0": "craft_no_taizai:block/purple-spikes-texture"
-  },
-  "render_type": "solid"
-}

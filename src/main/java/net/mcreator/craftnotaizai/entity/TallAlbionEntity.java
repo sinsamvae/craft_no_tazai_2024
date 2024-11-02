@@ -118,7 +118,7 @@ public class TallAlbionEntity extends Monster implements GeoEntity {
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		TallAlbionEntityDiesProcedure.execute();
+		TallAlbionEntityDiesProcedure.execute(this.level(), this, source.getEntity());
 	}
 
 	@Override

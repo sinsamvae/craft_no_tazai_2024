@@ -81,7 +81,7 @@ public class KegBlockEntity extends RandomizableContainerBlockEntity implements 
 
 	@Override
 	public int getMaxStackSize() {
-		return 64;
+		return 1024;
 	}
 
 	@Override

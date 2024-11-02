@@ -22,5 +22,12 @@ public class MagicMenuThisGUIIsClosedProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
+		{
+			boolean _setval = false;
+			entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.demonkingpage = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 	}
 }

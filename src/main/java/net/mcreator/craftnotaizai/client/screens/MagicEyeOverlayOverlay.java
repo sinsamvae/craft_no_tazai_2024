@@ -52,7 +52,7 @@ public class MagicEyeOverlayOverlay {
 			event.getGuiGraphics().blit(new ResourceLocation("craft_no_taizai:textures/screens/2prupleoverlay.png"), 0, 0, 0, 0, w, h, w, h);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					MagicEyeBattlePowerMobReturnProcedure.execute(world, entity), 90, h - 149, -1, false);
+					MagicEyeBattlePowerMobReturnProcedure.execute(world, entity), w / 2 + -123, h / 2 + -29, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
 					MaigcEyeReturnStrProcedure.execute(world, entity), w / 2 + 55, h / 2 + -29, -1, false);

@@ -91,7 +91,7 @@ public class StageOneAgaveBlockEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Stage One Agave");
+		return Component.literal("Agave");
 	}
 
 	@Override

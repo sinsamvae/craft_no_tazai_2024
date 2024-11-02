@@ -2757,7 +2757,7 @@
             "fixedValue": "EP 4:The Ten Commandments on the Move"
           },
           "color": {
-            "value": -12829636,
+            "value": -16711681,
             "falpha": 0.0
           },
           "displayCondition": {
@@ -2775,7 +2775,7 @@
             "fixedValue": "King struggles to fend off the giant Albion sent to"
           },
           "color": {
-            "value": -12829636,
+            "value": -16777216,
             "falpha": 0.0
           },
           "displayCondition": {
@@ -2793,7 +2793,7 @@
             "fixedValue": "destory the Fairy King's Forest. Galand of Ten "
           },
           "color": {
-            "value": -12829636,
+            "value": -16777216,
             "falpha": 0.0
           },
           "displayCondition": {
@@ -2811,7 +2811,7 @@
             "fixedValue": "Commandments appears before Meliodas."
           },
           "color": {
-            "value": -12829636,
+            "value": -16777216,
             "falpha": 0.0
           },
           "displayCondition": {
@@ -2829,11 +2829,101 @@
             "fixedValue": "Defeat Tall Albion"
           },
           "color": {
-            "value": -12829636,
+            "value": -13369345,
             "falpha": 0.0
           },
           "displayCondition": {
             "name": "Story33"
+          },
+          "x": 70,
+          "y": 112
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_5_overwhelming_violence",
+          "text": {
+            "fixedValue": "EP 5: Overwhelming Violence"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story34"
+          },
+          "x": 69,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_the_fairies_reconcile_their_diff",
+          "text": {
+            "fixedValue": "The fairies reconcile their differences with King as Ban"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story34"
+          },
+          "x": 68,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_leaves_the_forest_meanwhile_me",
+          "text": {
+            "fixedValue": "leaves the forest. Meanwhile, Meliodas and gang are"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story34"
+          },
+          "x": 67,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_overwhelmed_by_the_sheer_power_o",
+          "text": {
+            "fixedValue": "overwhelmed by the sheer power of Galand."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story34"
+          },
+          "x": 69,
+          "y": 94
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_galand",
+          "text": {
+            "fixedValue": "Defeat Galand"
+          },
+          "color": {
+            "value": -13369345,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story34"
           },
           "x": 70,
           "y": 112

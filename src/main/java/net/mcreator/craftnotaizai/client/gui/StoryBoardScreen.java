@@ -18,6 +18,7 @@ import net.mcreator.craftnotaizai.procedures.Story6Procedure;
 import net.mcreator.craftnotaizai.procedures.Story5Procedure;
 import net.mcreator.craftnotaizai.procedures.Story4Procedure;
 import net.mcreator.craftnotaizai.procedures.Story3Procedure;
+import net.mcreator.craftnotaizai.procedures.Story34Procedure;
 import net.mcreator.craftnotaizai.procedures.Story33Procedure;
 import net.mcreator.craftnotaizai.procedures.Story31Procedure;
 import net.mcreator.craftnotaizai.procedures.Story30Procedure;
@@ -409,15 +410,25 @@ public class StoryBoardScreen extends AbstractContainerScreen<StoryBoardMenu> {
 		if (Stroy32Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_defeat_albion"), -56, 72, -13369345, false);
 		if (Story33Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep_3the_scared_treasure_lostvay1"), -57, 12, -12829636, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep_3the_scared_treasure_lostvay1"), -57, 12, -16711681, false);
 		if (Story33Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_king_struggles_to_fend_off_the_g"), -57, 26, -12829636, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_king_struggles_to_fend_off_the_g"), -57, 26, -16777216, false);
 		if (Story33Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_destory_the_fairy_kings_forest"), -58, 41, -12829636, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_destory_the_fairy_kings_forest"), -58, 41, -16777216, false);
 		if (Story33Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_commandments_appears_before_meli"), -58, 57, -12829636, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_commandments_appears_before_meli"), -58, 57, -16777216, false);
 		if (Story33Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_defeat_tall_albion"), -56, 75, -12829636, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_defeat_tall_albion"), -56, 75, -13369345, false);
+		if (Story34Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep_5_overwhelming_violence"), -57, 12, -16711681, false);
+		if (Story34Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_the_fairies_reconcile_their_diff"), -58, 26, -16777216, false);
+		if (Story34Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_leaves_the_forest_meanwhile_me"), -59, 41, -16777216, false);
+		if (Story34Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_overwhelmed_by_the_sheer_power_o"), -57, 57, -16777216, false);
+		if (Story34Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_defeat_galand"), -56, 75, -13369345, false);
 	}
 
 	@Override

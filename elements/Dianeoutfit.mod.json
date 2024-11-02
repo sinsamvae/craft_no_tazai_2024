@@ -5,9 +5,9 @@
     "enableHelmet": false,
     "textureHelmet": "",
     "enableBody": true,
-    "textureBody": "diane_body",
+    "textureBody": "dianeoutfit_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "diane_leggings",
+    "textureLeggings": "dianeoutfit_leggings",
     "enableBoots": false,
     "textureBoots": "",
     "creativeTabs": [

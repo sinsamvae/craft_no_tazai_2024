@@ -57,8 +57,8 @@ public class GowtherBossEntityDiesProcedure {
 			}
 		}
 		if (CraftNoTaizaiModVariables.MapVariables.get(world).TwinBowHerritt) {
-			drop = Mth.nextInt(RandomSource.create(), 1, 10);
-			if (drop <= 1) {
+			drop = Mth.nextInt(RandomSource.create(), 1, 100);
+			if (drop <= 5) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(CraftNoTaizaiModItems.TWIN_BOW_HERRITT.get()));
 					entityToSpawn.setPickUpDelay(10);

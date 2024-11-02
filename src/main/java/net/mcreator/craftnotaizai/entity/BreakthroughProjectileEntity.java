@@ -70,7 +70,7 @@ public class BreakthroughProjectileEntity extends AbstractArrow implements ItemS
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		BreakthroughProjectileHitsBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this.getOwner(), this);
+		BreakthroughProjectileHitsBlockProcedure.execute(this.level(), this.getOwner(), this);
 	}
 
 	@Override

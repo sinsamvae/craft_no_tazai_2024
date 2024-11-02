@@ -30,7 +30,7 @@
         "data": {
           "name": "label_30_health",
           "text": {
-            "fixedValue": "- health: 30 to 40"
+            "fixedValue": "- Health: 30 to 40"
           },
           "color": {
             "value": -1,

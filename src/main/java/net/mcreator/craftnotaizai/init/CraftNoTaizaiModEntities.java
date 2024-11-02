@@ -41,6 +41,7 @@ import net.mcreator.craftnotaizai.entity.SoyokazenoGekirinProjectileEntity;
 import net.mcreator.craftnotaizai.entity.SoldierAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.SnowflowerbeamProjectileEntity;
 import net.mcreator.craftnotaizai.entity.SmallTowerEntity;
+import net.mcreator.craftnotaizai.entity.SmallHawksEntity;
 import net.mcreator.craftnotaizai.entity.SladerAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.SimonAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.ServantEntity;
@@ -127,6 +128,7 @@ import net.mcreator.craftnotaizai.entity.GigaFallEntity;
 import net.mcreator.craftnotaizai.entity.GigaCrushEntity;
 import net.mcreator.craftnotaizai.entity.GerheadeEntity;
 import net.mcreator.craftnotaizai.entity.GeckolibKrakenEntity;
+import net.mcreator.craftnotaizai.entity.GalandEntity;
 import net.mcreator.craftnotaizai.entity.FurkuuSutonEntity;
 import net.mcreator.craftnotaizai.entity.FrozenBreathEntity;
 import net.mcreator.craftnotaizai.entity.FriesiaAnimatedEntity;
@@ -154,6 +156,7 @@ import net.mcreator.craftnotaizai.entity.DivineSlashEntity;
 import net.mcreator.craftnotaizai.entity.DianeBossAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.DianeAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.DespairVenomEntity;
+import net.mcreator.craftnotaizai.entity.DemonKingEntity;
 import net.mcreator.craftnotaizai.entity.DemonHendricksonAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.DeathThornEntity;
 import net.mcreator.craftnotaizai.entity.DeadHelbramanimatedEntity;
@@ -773,6 +776,16 @@ public class CraftNoTaizaiModEntities {
 					.sized(0.8f, 2.3f));
 	public static final RegistryObject<EntityType<GoddessBlessEntityEntity>> GODDESS_BLESS_ENTITY = register("goddess_bless_entity", EntityType.Builder.<GoddessBlessEntityEntity>of(GoddessBlessEntityEntity::new, MobCategory.AMBIENT)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GoddessBlessEntityEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DemonKingEntity>> DEMON_KING = register("demon_king", EntityType.Builder.<DemonKingEntity>of(DemonKingEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+			.setUpdateInterval(3).setCustomClientFactory(DemonKingEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<SmallHawksEntity>> SMALL_HAWKS = register("small_hawks",
+			EntityType.Builder.<SmallHawksEntity>of(SmallHawksEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SmallHawksEntity::new)
+
+					.sized(1.5f, 1.5f));
+	public static final RegistryObject<EntityType<GalandEntity>> GALAND = register("galand",
+			EntityType.Builder.<GalandEntity>of(GalandEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GalandEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -900,6 +913,9 @@ public class CraftNoTaizaiModEntities {
 			TallAlbionEntity.init();
 			AlbionTallEntity.init();
 			GoddessBlessEntityEntity.init();
+			DemonKingEntity.init();
+			SmallHawksEntity.init();
+			GalandEntity.init();
 		});
 	}
 
@@ -1024,5 +1040,8 @@ public class CraftNoTaizaiModEntities {
 		event.put(TALL_ALBION.get(), TallAlbionEntity.createAttributes().build());
 		event.put(ALBION_TALL.get(), AlbionTallEntity.createAttributes().build());
 		event.put(GODDESS_BLESS_ENTITY.get(), GoddessBlessEntityEntity.createAttributes().build());
+		event.put(DEMON_KING.get(), DemonKingEntity.createAttributes().build());
+		event.put(SMALL_HAWKS.get(), SmallHawksEntity.createAttributes().build());
+		event.put(GALAND.get(), GalandEntity.createAttributes().build());
 	}
 }

@@ -24,6 +24,7 @@ import net.mcreator.craftnotaizai.client.particle.PerfectshellparticleParticle;
 import net.mcreator.craftnotaizai.client.particle.ParticleArkParticle;
 import net.mcreator.craftnotaizai.client.particle.MoonroseParticleParticle;
 import net.mcreator.craftnotaizai.client.particle.LightningParticle;
+import net.mcreator.craftnotaizai.client.particle.Lightning2Particle;
 import net.mcreator.craftnotaizai.client.particle.KillerbregParticlesParticle;
 import net.mcreator.craftnotaizai.client.particle.JubakuensaParticleParticle;
 import net.mcreator.craftnotaizai.client.particle.JubakuEnsaParticle2Particle;
@@ -33,6 +34,7 @@ import net.mcreator.craftnotaizai.client.particle.IncreaseParticleParticle;
 import net.mcreator.craftnotaizai.client.particle.IceParticle;
 import net.mcreator.craftnotaizai.client.particle.IceBulletsParticelsParticle;
 import net.mcreator.craftnotaizai.client.particle.HunterWispparticleParticle;
+import net.mcreator.craftnotaizai.client.particle.HellGateParticlesParticle;
 import net.mcreator.craftnotaizai.client.particle.HealingGardenParticlesParticle;
 import net.mcreator.craftnotaizai.client.particle.HealParticle;
 import net.mcreator.craftnotaizai.client.particle.GravityParticlesParticle;
@@ -112,5 +114,7 @@ public class CraftNoTaizaiModParticles {
 		event.registerSpriteSet(CraftNoTaizaiModParticleTypes.BREAKABLE_BUG_PARTICLES.get(), BreakableBugParticlesParticle::provider);
 		event.registerSpriteSet(CraftNoTaizaiModParticleTypes.VENOM_TOXICY.get(), VenomToxicyParticle::provider);
 		event.registerSpriteSet(CraftNoTaizaiModParticleTypes.RED_PARTICLES.get(), RedParticlesParticle::provider);
+		event.registerSpriteSet(CraftNoTaizaiModParticleTypes.HELL_GATE_PARTICLES.get(), HellGateParticlesParticle::provider);
+		event.registerSpriteSet(CraftNoTaizaiModParticleTypes.LIGHTNING_2.get(), Lightning2Particle::provider);
 	}
 }

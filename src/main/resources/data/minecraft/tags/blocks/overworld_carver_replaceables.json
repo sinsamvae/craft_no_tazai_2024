@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "craft_no_taizai:purgatory_block",
+    "craft_no_taizai:purgatory_brick",
     "craft_no_taizai:chaos_wall",
     "craft_no_taizai:chaos_floor",
     "craft_no_taizai:capital_of_the_dead_ground",

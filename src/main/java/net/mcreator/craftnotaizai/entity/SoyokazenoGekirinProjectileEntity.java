@@ -70,7 +70,7 @@ public class SoyokazenoGekirinProjectileEntity extends AbstractArrow implements 
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		SoyokazenoGekirinProjectileHitsLivingEntityProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity(), this);
+		SoyokazenoGekirinProjectileHitsLivingEntityProcedure.execute(this.level(), entityHitResult.getEntity(), this);
 	}
 
 	@Override

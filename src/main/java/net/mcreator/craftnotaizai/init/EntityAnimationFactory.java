@@ -18,6 +18,7 @@ import net.mcreator.craftnotaizai.entity.SunFlowerTrueSpirtSpearEntity;
 import net.mcreator.craftnotaizai.entity.StoryBanAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.StoryBan2AnimatedEntity;
 import net.mcreator.craftnotaizai.entity.SoldierAnimatedEntity;
+import net.mcreator.craftnotaizai.entity.SmallHawksEntity;
 import net.mcreator.craftnotaizai.entity.SladerAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.SimonAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.ServantEntity;
@@ -72,6 +73,7 @@ import net.mcreator.craftnotaizai.entity.GigaFallEntity;
 import net.mcreator.craftnotaizai.entity.GigaCrushEntity;
 import net.mcreator.craftnotaizai.entity.GerheadeEntity;
 import net.mcreator.craftnotaizai.entity.GeckolibKrakenEntity;
+import net.mcreator.craftnotaizai.entity.GalandEntity;
 import net.mcreator.craftnotaizai.entity.FriesiaAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.FairyHelbremAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.EarthGolemEntity;
@@ -796,6 +798,20 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof GoddessBlessEntityEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof SmallHawksEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof GalandEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

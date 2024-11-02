@@ -17,6 +17,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.craftnotaizai.world.features.StructureFeature;
 import net.mcreator.craftnotaizai.init.CraftNoTaizaiModTabs;
 import net.mcreator.craftnotaizai.init.CraftNoTaizaiModSounds;
 import net.mcreator.craftnotaizai.init.CraftNoTaizaiModParticleTypes;
@@ -55,6 +56,7 @@ public class CraftNoTaizaiMod {
 		CraftNoTaizaiModEnchantments.REGISTRY.register(bus);
 		CraftNoTaizaiModTabs.REGISTRY.register(bus);
 
+		StructureFeature.REGISTRY.register(bus);
 		CraftNoTaizaiModMobEffects.REGISTRY.register(bus);
 
 		CraftNoTaizaiModParticleTypes.REGISTRY.register(bus);

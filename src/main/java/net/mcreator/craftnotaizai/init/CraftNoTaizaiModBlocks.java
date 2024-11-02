@@ -26,7 +26,7 @@ import net.mcreator.craftnotaizai.block.SleepingForestSlabBlock;
 import net.mcreator.craftnotaizai.block.QuickSandBlock;
 import net.mcreator.craftnotaizai.block.PurplefireBlock;
 import net.mcreator.craftnotaizai.block.PurgatoryStairBlock;
-import net.mcreator.craftnotaizai.block.PurgatorySpikesBlock;
+import net.mcreator.craftnotaizai.block.PurgatorySpikeBlock;
 import net.mcreator.craftnotaizai.block.PurgatorySlabBlock;
 import net.mcreator.craftnotaizai.block.PurgatoryBrickStairBlock;
 import net.mcreator.craftnotaizai.block.PurgatoryBrickSlabBlock;
@@ -137,7 +137,7 @@ public class CraftNoTaizaiModBlocks {
 	public static final RegistryObject<Block> PURGATORY_BRICK = REGISTRY.register("purgatory_brick", () -> new PurgatoryBrickBlock());
 	public static final RegistryObject<Block> PURGATORY_BRICK_SLAB = REGISTRY.register("purgatory_brick_slab", () -> new PurgatoryBrickSlabBlock());
 	public static final RegistryObject<Block> PURGATORY_BRICK_STAIR = REGISTRY.register("purgatory_brick_stair", () -> new PurgatoryBrickStairBlock());
-	public static final RegistryObject<Block> PURGATORY_SPIKES = REGISTRY.register("purgatory_spikes", () -> new PurgatorySpikesBlock());
+	public static final RegistryObject<Block> PURGATORY_SPIKE = REGISTRY.register("purgatory_spike", () -> new PurgatorySpikeBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

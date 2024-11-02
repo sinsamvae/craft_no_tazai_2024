@@ -5,9 +5,9 @@
     "enableHelmet": false,
     "textureHelmet": "",
     "enableBody": true,
-    "textureBody": "arthurarmor_body",
+    "textureBody": "arthur_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "arthurarmor_leggings",
+    "textureLeggings": "arthur_leggings",
     "enableBoots": false,
     "textureBoots": "",
     "creativeTabs": [

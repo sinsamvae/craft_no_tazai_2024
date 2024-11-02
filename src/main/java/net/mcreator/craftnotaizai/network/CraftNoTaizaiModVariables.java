@@ -300,6 +300,15 @@ public class CraftNoTaizaiModVariables {
 			clone.hunterfest = original.hunterfest;
 			clone.commandment = original.commandment;
 			clone.combostarhit = original.combostarhit;
+			clone.manaFill = original.manaFill;
+			clone.healthFill = original.healthFill;
+			clone.Purgatory = original.Purgatory;
+			clone.demonkingpower = original.demonkingpower;
+			clone.demonkingpage = original.demonkingpage;
+			clone.God_Chance = original.God_Chance;
+			clone.ThunderGodsFlash = original.ThunderGodsFlash;
+			clone.thundergodsflash = original.thundergodsflash;
+			clone.defeatRedDemon = original.defeatRedDemon;
 			if (!event.isWasDeath()) {
 				clone.jumbvar = original.jumbvar;
 				clone.Gloxinia = original.Gloxinia;
@@ -396,6 +405,19 @@ public class CraftNoTaizaiModVariables {
 		public boolean sunshine = false;
 		public boolean fullcounter = false;
 		public boolean full_counter = false;
+		public boolean heat_fork = false;
+		public boolean god = false;
+		public boolean purgatory = false;
+		public boolean Selflessness = false;
+		public boolean Pacifism = false;
+		public boolean Patience = false;
+		public boolean Repose = false;
+		public boolean Purity = false;
+		public boolean Reticence = false;
+		public boolean Faith = false;
+		public boolean Truth = false;
+		public boolean Love = false;
+		public boolean Piety = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -419,6 +441,19 @@ public class CraftNoTaizaiModVariables {
 			sunshine = nbt.getBoolean("sunshine");
 			fullcounter = nbt.getBoolean("fullcounter");
 			full_counter = nbt.getBoolean("full_counter");
+			heat_fork = nbt.getBoolean("heat_fork");
+			god = nbt.getBoolean("god");
+			purgatory = nbt.getBoolean("purgatory");
+			Selflessness = nbt.getBoolean("Selflessness");
+			Pacifism = nbt.getBoolean("Pacifism");
+			Patience = nbt.getBoolean("Patience");
+			Repose = nbt.getBoolean("Repose");
+			Purity = nbt.getBoolean("Purity");
+			Reticence = nbt.getBoolean("Reticence");
+			Faith = nbt.getBoolean("Faith");
+			Truth = nbt.getBoolean("Truth");
+			Love = nbt.getBoolean("Love");
+			Piety = nbt.getBoolean("Piety");
 		}
 
 		@Override
@@ -438,6 +473,19 @@ public class CraftNoTaizaiModVariables {
 			nbt.putBoolean("sunshine", sunshine);
 			nbt.putBoolean("fullcounter", fullcounter);
 			nbt.putBoolean("full_counter", full_counter);
+			nbt.putBoolean("heat_fork", heat_fork);
+			nbt.putBoolean("god", god);
+			nbt.putBoolean("purgatory", purgatory);
+			nbt.putBoolean("Selflessness", Selflessness);
+			nbt.putBoolean("Pacifism", Pacifism);
+			nbt.putBoolean("Patience", Patience);
+			nbt.putBoolean("Repose", Repose);
+			nbt.putBoolean("Purity", Purity);
+			nbt.putBoolean("Reticence", Reticence);
+			nbt.putBoolean("Faith", Faith);
+			nbt.putBoolean("Truth", Truth);
+			nbt.putBoolean("Love", Love);
+			nbt.putBoolean("Piety", Piety);
 			return nbt;
 		}
 
@@ -748,6 +796,15 @@ public class CraftNoTaizaiModVariables {
 		public double hunterfest = 0;
 		public String commandment = "";
 		public double combostarhit = 1.0;
+		public double manaFill = 0;
+		public double healthFill = 0;
+		public boolean Purgatory = false;
+		public boolean demonkingpower = false;
+		public boolean demonkingpage = false;
+		public boolean God_Chance = false;
+		public boolean ThunderGodsFlash = false;
+		public double thundergodsflash = 0;
+		public double defeatRedDemon = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -974,6 +1031,15 @@ public class CraftNoTaizaiModVariables {
 			nbt.putDouble("hunterfest", hunterfest);
 			nbt.putString("commandment", commandment);
 			nbt.putDouble("combostarhit", combostarhit);
+			nbt.putDouble("manaFill", manaFill);
+			nbt.putDouble("healthFill", healthFill);
+			nbt.putBoolean("Purgatory", Purgatory);
+			nbt.putBoolean("demonkingpower", demonkingpower);
+			nbt.putBoolean("demonkingpage", demonkingpage);
+			nbt.putBoolean("God_Chance", God_Chance);
+			nbt.putBoolean("ThunderGodsFlash", ThunderGodsFlash);
+			nbt.putDouble("thundergodsflash", thundergodsflash);
+			nbt.putDouble("defeatRedDemon", defeatRedDemon);
 			return nbt;
 		}
 
@@ -1197,6 +1263,15 @@ public class CraftNoTaizaiModVariables {
 			hunterfest = nbt.getDouble("hunterfest");
 			commandment = nbt.getString("commandment");
 			combostarhit = nbt.getDouble("combostarhit");
+			manaFill = nbt.getDouble("manaFill");
+			healthFill = nbt.getDouble("healthFill");
+			Purgatory = nbt.getBoolean("Purgatory");
+			demonkingpower = nbt.getBoolean("demonkingpower");
+			demonkingpage = nbt.getBoolean("demonkingpage");
+			God_Chance = nbt.getBoolean("God_Chance");
+			ThunderGodsFlash = nbt.getBoolean("ThunderGodsFlash");
+			thundergodsflash = nbt.getDouble("thundergodsflash");
+			defeatRedDemon = nbt.getDouble("defeatRedDemon");
 		}
 	}
 
@@ -1448,6 +1523,15 @@ public class CraftNoTaizaiModVariables {
 					variables.hunterfest = message.data.hunterfest;
 					variables.commandment = message.data.commandment;
 					variables.combostarhit = message.data.combostarhit;
+					variables.manaFill = message.data.manaFill;
+					variables.healthFill = message.data.healthFill;
+					variables.Purgatory = message.data.Purgatory;
+					variables.demonkingpower = message.data.demonkingpower;
+					variables.demonkingpage = message.data.demonkingpage;
+					variables.God_Chance = message.data.God_Chance;
+					variables.ThunderGodsFlash = message.data.ThunderGodsFlash;
+					variables.thundergodsflash = message.data.thundergodsflash;
+					variables.defeatRedDemon = message.data.defeatRedDemon;
 				}
 			});
 			context.setPacketHandled(true);

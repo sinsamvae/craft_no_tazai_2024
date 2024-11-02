@@ -40,7 +40,7 @@ public class DisplayAbility1Procedure {
 					skill = "Rising Tornado";
 				}
 				if (((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).magic).equals("GreatThunder")) {
-					skill = "Raijin no Shukusei";
+					skill = "Purge of Thunder God";
 				}
 				if (((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).magic).equals("Boost")) {
 					skill = "Boost";

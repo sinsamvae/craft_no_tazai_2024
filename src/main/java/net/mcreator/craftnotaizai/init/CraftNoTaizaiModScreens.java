@@ -22,6 +22,7 @@ import net.mcreator.craftnotaizai.client.gui.HornOfCernunosGuiScreen;
 import net.mcreator.craftnotaizai.client.gui.GaintClanScreen;
 import net.mcreator.craftnotaizai.client.gui.FairyClanScreen;
 import net.mcreator.craftnotaizai.client.gui.DemonStatScreen;
+import net.mcreator.craftnotaizai.client.gui.DemonKingGuiScreen;
 import net.mcreator.craftnotaizai.client.gui.DemonClanScreen;
 import net.mcreator.craftnotaizai.client.gui.ClonesGuiScreen;
 
@@ -43,6 +44,7 @@ public class CraftNoTaizaiModScreens {
 			MenuScreens.register(CraftNoTaizaiModMenus.SIDE_QUEST_GUI.get(), SideQuestGuiScreen::new);
 			MenuScreens.register(CraftNoTaizaiModMenus.CLONES_GUI.get(), ClonesGuiScreen::new);
 			MenuScreens.register(CraftNoTaizaiModMenus.MONSTER_BLOCK_GUI.get(), MonsterBlockGuiScreen::new);
+			MenuScreens.register(CraftNoTaizaiModMenus.DEMON_KING_GUI.get(), DemonKingGuiScreen::new);
 		});
 	}
 }

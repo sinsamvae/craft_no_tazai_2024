@@ -75,6 +75,27 @@ public class MagicAbilityslotProcedure {
 				}
 			}
 		}
+		if ((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).demonkingpage == true) {
+			if (!(DisplayDemonKingSkillProcedure.execute(entity)).equals("LOCKED")) {
+				can_set = true;
+				for (int index3 = 0; index3 < 8; index3++) {
+					if ((((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).AbilitySelect).getOrCreateTag().getString(("skill" + check)))
+							.equals(DisplayDemonKingSkillProcedure.execute(entity))) {
+						can_set = false;
+					}
+					check = check + 1;
+				}
+				if (can_set) {
+					((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).AbilitySelect).getOrCreateTag()
+							.putString(("skill" + (entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).Move), DisplayDemonKingSkillProcedure.execute(entity));
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal(DisplayDemonKingSkillProcedure.execute(entity)), false);
+				} else {
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("You already have this skill"), false);
+				}
+			}
+		}
 		if ((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).SlotSwitch == 2) {
 			MagicBilitySlot9Procedure.execute(entity);
 		}

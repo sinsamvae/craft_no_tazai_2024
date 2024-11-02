@@ -23,6 +23,7 @@ import net.mcreator.craftnotaizai.procedures.MagicScroll6Procedure;
 import net.mcreator.craftnotaizai.procedures.MagicScroll5Procedure;
 import net.mcreator.craftnotaizai.procedures.LearnSkillsDisplay1Procedure;
 import net.mcreator.craftnotaizai.procedures.LearnDemonSkillsDisplayProcedure;
+import net.mcreator.craftnotaizai.procedures.LearnDemonKingDisplayProcedure;
 import net.mcreator.craftnotaizai.procedures.DisplaySlotProcedure;
 import net.mcreator.craftnotaizai.procedures.DisplaySlot3Procedure;
 import net.mcreator.craftnotaizai.procedures.DisplaySlot2Procedure;
@@ -33,6 +34,7 @@ import net.mcreator.craftnotaizai.procedures.DisplayDemonSkill3Procedure;
 import net.mcreator.craftnotaizai.procedures.DisplayDemonSkill2Procedure;
 import net.mcreator.craftnotaizai.procedures.DisplayDemonSkill1Procedure;
 import net.mcreator.craftnotaizai.procedures.DisplayDemonSKill5Procedure;
+import net.mcreator.craftnotaizai.procedures.DisplayDemonKingSkillProcedure;
 import net.mcreator.craftnotaizai.procedures.DisplayAbilty17Procedure;
 import net.mcreator.craftnotaizai.procedures.DisplayAbility9Procedure;
 import net.mcreator.craftnotaizai.procedures.DisplayAbility8Procedure;
@@ -57,6 +59,7 @@ import net.mcreator.craftnotaizai.procedures.DisplayAbility13Procedure;
 import net.mcreator.craftnotaizai.procedures.DisplayAbility11Procedure;
 import net.mcreator.craftnotaizai.procedures.DisplayAbility10Procedure;
 import net.mcreator.craftnotaizai.procedures.Display12Procedure;
+import net.mcreator.craftnotaizai.procedures.DemonKingPowerReturnProcedure;
 import net.mcreator.craftnotaizai.procedures.DemonBloodReturnProcedure;
 import net.mcreator.craftnotaizai.network.MagicMenuButtonMessage;
 import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
@@ -85,6 +88,7 @@ public class MagicMenuScreen extends AbstractContainerScreen<MagicMenuMenu> {
 	ImageButton imagebutton_storybook2;
 	ImageButton imagebutton_scroll;
 	ImageButton imagebutton_restart;
+	ImageButton imagebutton_berserk_mode;
 
 	public MagicMenuScreen(MagicMenuMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -105,9 +109,9 @@ public class MagicMenuScreen extends AbstractContainerScreen<MagicMenuMenu> {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 		if (DemonBloodReturnProcedure.execute(entity))
-			if (mouseX > leftPos + -55 && mouseX < leftPos + -31 && mouseY > topPos + -69 && mouseY < topPos + -45)
+			if (mouseX > leftPos + -41 && mouseX < leftPos + -17 && mouseY > topPos + -67 && mouseY < topPos + -43)
 				guiGraphics.renderTooltip(font, Component.translatable("gui.craft_no_taizai.magic_menu.tooltip_demon_blood_skills"), mouseX, mouseY);
-		if (mouseX > leftPos + -80 && mouseX < leftPos + -56 && mouseY > topPos + -68 && mouseY < topPos + -44)
+		if (mouseX > leftPos + -85 && mouseX < leftPos + -61 && mouseY > topPos + -68 && mouseY < topPos + -44)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.craft_no_taizai.magic_menu.tooltip_learned_skills_from_magic_scroll"), mouseX, mouseY);
 		if (mouseX > leftPos + 91 && mouseX < leftPos + 115 && mouseY > topPos + -49 && mouseY < topPos + -25)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.craft_no_taizai.magic_menu.tooltip_story"), mouseX, mouseY);
@@ -115,6 +119,9 @@ public class MagicMenuScreen extends AbstractContainerScreen<MagicMenuMenu> {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.craft_no_taizai.magic_menu.tooltip_stats"), mouseX, mouseY);
 		if (mouseX > leftPos + -115 && mouseX < leftPos + -91 && mouseY > topPos + -42 && mouseY < topPos + -18)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.craft_no_taizai.magic_menu.tooltip_reset"), mouseX, mouseY);
+		if (DemonKingPowerReturnProcedure.execute(entity))
+			if (mouseX > leftPos + -62 && mouseX < leftPos + -38 && mouseY > topPos + -67 && mouseY < topPos + -43)
+				guiGraphics.renderTooltip(font, Component.translatable("gui.craft_no_taizai.magic_menu.tooltip_demon_king_magic"), mouseX, mouseY);
 	}
 
 	@Override
@@ -305,12 +312,16 @@ public class MagicMenuScreen extends AbstractContainerScreen<MagicMenuMenu> {
 			guiGraphics.drawString(this.font,
 
 					DisplayDemonSKill5Procedure.execute(entity), -80, 11, -1, false);
+		if (LearnDemonKingDisplayProcedure.execute(entity))
+			guiGraphics.drawString(this.font,
+
+					DisplayDemonKingSkillProcedure.execute(entity), -80, -44, -1, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_blood = new ImageButton(this.leftPos + -58, this.topPos + -72, 16, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_blood.png"), 16, 32, e -> {
+		imagebutton_blood = new ImageButton(this.leftPos + -41, this.topPos + -72, 16, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_blood.png"), 16, 32, e -> {
 			if (DemonBloodReturnProcedure.execute(entity)) {
 				CraftNoTaizaiMod.PACKET_HANDLER.sendToServer(new MagicMenuButtonMessage(0, x, y, z));
 				MagicMenuButtonMessage.handleButtonAction(entity, 0, x, y, z);
@@ -324,7 +335,7 @@ public class MagicMenuScreen extends AbstractContainerScreen<MagicMenuMenu> {
 		};
 		guistate.put("button:imagebutton_blood", imagebutton_blood);
 		this.addRenderableWidget(imagebutton_blood);
-		imagebutton_plusbuttonoutline = new ImageButton(this.leftPos + -79, this.topPos + -72, 16, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_plusbuttonoutline.png"), 16, 32, e -> {
+		imagebutton_plusbuttonoutline = new ImageButton(this.leftPos + -84, this.topPos + -72, 16, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_plusbuttonoutline.png"), 16, 32, e -> {
 			if (true) {
 				CraftNoTaizaiMod.PACKET_HANDLER.sendToServer(new MagicMenuButtonMessage(1, x, y, z));
 				MagicMenuButtonMessage.handleButtonAction(entity, 1, x, y, z);
@@ -436,5 +447,19 @@ public class MagicMenuScreen extends AbstractContainerScreen<MagicMenuMenu> {
 		});
 		guistate.put("button:imagebutton_restart", imagebutton_restart);
 		this.addRenderableWidget(imagebutton_restart);
+		imagebutton_berserk_mode = new ImageButton(this.leftPos + -60, this.topPos + -72, 20, 20, 0, 0, 20, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_berserk_mode.png"), 20, 40, e -> {
+			if (DemonKingPowerReturnProcedure.execute(entity)) {
+				CraftNoTaizaiMod.PACKET_HANDLER.sendToServer(new MagicMenuButtonMessage(15, x, y, z));
+				MagicMenuButtonMessage.handleButtonAction(entity, 15, x, y, z);
+			}
+		}) {
+			@Override
+			public void render(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
+				if (DemonKingPowerReturnProcedure.execute(entity))
+					super.render(guiGraphics, gx, gy, ticks);
+			}
+		};
+		guistate.put("button:imagebutton_berserk_mode", imagebutton_berserk_mode);
+		this.addRenderableWidget(imagebutton_berserk_mode);
 	}
 }

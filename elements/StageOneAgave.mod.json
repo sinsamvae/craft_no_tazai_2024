@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Stage One Agave",
+    "name": "Agave",
     "specialInformation": {
       "fixedValue": []
     },
@@ -58,7 +58,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "PLANTS"
+      "value": "ROCK"
     },
     "tickRate": 0,
     "tickRandomly": true,

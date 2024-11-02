@@ -12,6 +12,9 @@
     "creativeTabs": [
       {
         "value": "CUSTOM:Items"
+      },
+      {
+        "value": "CUSTOM:IncantationOrb"
       }
     ],
     "stackSize": 1,

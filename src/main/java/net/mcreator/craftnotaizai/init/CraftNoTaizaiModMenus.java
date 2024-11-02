@@ -22,6 +22,7 @@ import net.mcreator.craftnotaizai.world.inventory.HornOfCernunosGuiMenu;
 import net.mcreator.craftnotaizai.world.inventory.GaintClanMenu;
 import net.mcreator.craftnotaizai.world.inventory.FairyClanMenu;
 import net.mcreator.craftnotaizai.world.inventory.DemonStatMenu;
+import net.mcreator.craftnotaizai.world.inventory.DemonKingGuiMenu;
 import net.mcreator.craftnotaizai.world.inventory.DemonClanMenu;
 import net.mcreator.craftnotaizai.world.inventory.ClonesGuiMenu;
 import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
@@ -41,4 +42,5 @@ public class CraftNoTaizaiModMenus {
 	public static final RegistryObject<MenuType<SideQuestGuiMenu>> SIDE_QUEST_GUI = REGISTRY.register("side_quest_gui", () -> IForgeMenuType.create(SideQuestGuiMenu::new));
 	public static final RegistryObject<MenuType<ClonesGuiMenu>> CLONES_GUI = REGISTRY.register("clones_gui", () -> IForgeMenuType.create(ClonesGuiMenu::new));
 	public static final RegistryObject<MenuType<MonsterBlockGuiMenu>> MONSTER_BLOCK_GUI = REGISTRY.register("monster_block_gui", () -> IForgeMenuType.create(MonsterBlockGuiMenu::new));
+	public static final RegistryObject<MenuType<DemonKingGuiMenu>> DEMON_KING_GUI = REGISTRY.register("demon_king_gui", () -> IForgeMenuType.create(DemonKingGuiMenu::new));
 }

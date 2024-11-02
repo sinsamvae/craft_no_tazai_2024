@@ -29,6 +29,7 @@ import net.mcreator.craftnotaizai.client.renderer.StoryBanAnimatedRenderer;
 import net.mcreator.craftnotaizai.client.renderer.StoryBan2AnimatedRenderer;
 import net.mcreator.craftnotaizai.client.renderer.SoldierAnimatedRenderer;
 import net.mcreator.craftnotaizai.client.renderer.SmallTowerRenderer;
+import net.mcreator.craftnotaizai.client.renderer.SmallHawksRenderer;
 import net.mcreator.craftnotaizai.client.renderer.SladerAnimatedRenderer;
 import net.mcreator.craftnotaizai.client.renderer.SimonAnimatedRenderer;
 import net.mcreator.craftnotaizai.client.renderer.ServantRenderer;
@@ -106,6 +107,7 @@ import net.mcreator.craftnotaizai.client.renderer.GigaFallRenderer;
 import net.mcreator.craftnotaizai.client.renderer.GigaCrushRenderer;
 import net.mcreator.craftnotaizai.client.renderer.GerheadeRenderer;
 import net.mcreator.craftnotaizai.client.renderer.GeckolibKrakenRenderer;
+import net.mcreator.craftnotaizai.client.renderer.GalandRenderer;
 import net.mcreator.craftnotaizai.client.renderer.FurkuuSutonRenderer;
 import net.mcreator.craftnotaizai.client.renderer.FrozenBreathRenderer;
 import net.mcreator.craftnotaizai.client.renderer.FriesiaAnimatedRenderer;
@@ -129,6 +131,7 @@ import net.mcreator.craftnotaizai.client.renderer.DogedoRenderer;
 import net.mcreator.craftnotaizai.client.renderer.DivineSlashRenderer;
 import net.mcreator.craftnotaizai.client.renderer.DianeBossAnimatedRenderer;
 import net.mcreator.craftnotaizai.client.renderer.DianeAnimatedRenderer;
+import net.mcreator.craftnotaizai.client.renderer.DemonKingRenderer;
 import net.mcreator.craftnotaizai.client.renderer.DemonHendricksonAnimatedRenderer;
 import net.mcreator.craftnotaizai.client.renderer.DeathThornRenderer;
 import net.mcreator.craftnotaizai.client.renderer.DeadHelbramanimatedRenderer;
@@ -355,5 +358,8 @@ public class CraftNoTaizaiModEntityRenderers {
 		event.registerEntityRenderer(CraftNoTaizaiModEntities.TALL_ALBION.get(), TallAlbionRenderer::new);
 		event.registerEntityRenderer(CraftNoTaizaiModEntities.ALBION_TALL.get(), AlbionTallRenderer::new);
 		event.registerEntityRenderer(CraftNoTaizaiModEntities.GODDESS_BLESS_ENTITY.get(), GoddessBlessEntityRenderer::new);
+		event.registerEntityRenderer(CraftNoTaizaiModEntities.DEMON_KING.get(), DemonKingRenderer::new);
+		event.registerEntityRenderer(CraftNoTaizaiModEntities.SMALL_HAWKS.get(), SmallHawksRenderer::new);
+		event.registerEntityRenderer(CraftNoTaizaiModEntities.GALAND.get(), GalandRenderer::new);
 	}
 }

@@ -87,7 +87,7 @@ public class DisplayAbility2Procedure {
 					skill = "Killer Iceberg";
 				}
 				if (((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).magic).equals("GreatThunder")) {
-					skill = "Raijinken";
+					skill = "Thunder God Sword";
 				}
 				if (((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).magic).equals("Explosion")) {
 					skill = "Drift Bomb";

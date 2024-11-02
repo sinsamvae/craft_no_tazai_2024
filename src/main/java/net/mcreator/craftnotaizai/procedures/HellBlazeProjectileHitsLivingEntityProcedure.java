@@ -20,7 +20,7 @@ public class HellBlazeProjectileHitsLivingEntityProcedure {
 			_entity.addEffect(new MobEffectInstance(CraftNoTaizaiModMobEffects.PURGATORY_FLAME.get(), 300, 1, false, false));
 		entity.setSecondsOnFire(10);
 		if (immediatesourceentity.getPersistentData().getBoolean("deflected") == true) {
-			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("craft_no_taizai:delay_damage")))),
+			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("craft_no_taizai:mana_dmg"))), immediatesourceentity),
 					(float) ((immediatesourceentity instanceof Projectile _projEnt ? _projEnt.getDeltaMovement().length() : 0) * 1.5));
 		}
 	}

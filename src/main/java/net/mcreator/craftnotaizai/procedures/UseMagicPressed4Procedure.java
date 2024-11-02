@@ -14,5 +14,6 @@ public class UseMagicPressed4Procedure {
 		FullCounterKeyBindProcedure.execute(world, x, y, z, entity);
 		HellGateKeyBindProcedure.execute(world, x, y, z, entity);
 		OminousNebulaKeyBindProcedure.execute(world, x, y, z, entity);
+		GodKeyBindProcedure.execute(entity);
 	}
 }

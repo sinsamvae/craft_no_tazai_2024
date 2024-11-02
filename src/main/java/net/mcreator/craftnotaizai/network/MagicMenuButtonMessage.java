@@ -26,6 +26,7 @@ import net.mcreator.craftnotaizai.procedures.MagicAbilitySlot3Procedure;
 import net.mcreator.craftnotaizai.procedures.MagicAbilitySlot2Procedure;
 import net.mcreator.craftnotaizai.procedures.LearnedSkillsProcedure;
 import net.mcreator.craftnotaizai.procedures.LearnedDemonSkillsProcedure;
+import net.mcreator.craftnotaizai.procedures.DemonKingPageProcedure;
 import net.mcreator.craftnotaizai.procedures.ChangeSlotProcedure;
 import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
 
@@ -135,6 +136,10 @@ public class MagicMenuButtonMessage {
 		if (buttonID == 14) {
 
 			ResetMoveSelectProcedure.execute(entity);
+		}
+		if (buttonID == 15) {
+
+			DemonKingPageProcedure.execute(entity);
 		}
 	}
 

@@ -3,8 +3,12 @@ package net.mcreator.craftnotaizai.procedures;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -12,6 +16,7 @@ import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
 import net.mcreator.craftnotaizai.network.CraftNoTaizaiModVariables;
+import net.mcreator.craftnotaizai.init.CraftNoTaizaiModItems;
 import net.mcreator.craftnotaizai.configuration.RandomRaceConfigConfiguration;
 
 import java.util.List;
@@ -49,6 +54,19 @@ public class BanBossEntityDiesProcedure {
 						}
 					}
 				}
+			}
+		}
+		if (CraftNoTaizaiModVariables.MapVariables.get(world).courechouse) {
+			drop = Mth.nextInt(RandomSource.create(), 1, 100);
+			if (drop <= 5) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(CraftNoTaizaiModItems.HOLY_STAFF_COURE_CHOUSE.get()));
+					entityToSpawn.setPickUpDelay(10);
+					entityToSpawn.setUnlimitedLifetime();
+					_level.addFreshEntity(entityToSpawn);
+				}
+				CraftNoTaizaiModVariables.MapVariables.get(world).courechouse = true;
+				CraftNoTaizaiModVariables.MapVariables.get(world).syncData(world);
 			}
 		}
 	}

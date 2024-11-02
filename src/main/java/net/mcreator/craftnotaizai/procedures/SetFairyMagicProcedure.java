@@ -136,6 +136,13 @@ public class SetFairyMagicProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
+				{
+					boolean _setval = true;
+					entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.Gloxinia = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 			}
 			SetFairyMagicIfFairyKingIsTrueProcedure.execute(world, entity);
 			SetFairyGloxinaMagicProcedure.execute(world, entity);

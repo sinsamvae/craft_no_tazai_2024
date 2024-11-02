@@ -17,8 +17,8 @@
     ],
     "armorTextureFile": "arthurarmor",
     "helmetName": "Merlin Armor Helments",
-    "bodyName": "BoarHat Chestplate",
-    "leggingsName": "BoarHat Leggings",
+    "bodyName": "Merlin Chestplate",
+    "leggingsName": "Merlin Leggings",
     "bootsName": "Friesiaarmor Boots",
     "helmetSpecialInformation": {
       "fixedValue": []

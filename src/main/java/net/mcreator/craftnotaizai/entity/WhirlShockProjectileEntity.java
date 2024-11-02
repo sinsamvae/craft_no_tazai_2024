@@ -70,7 +70,7 @@ public class WhirlShockProjectileEntity extends AbstractArrow implements ItemSup
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		WhirlShockProjectileHitsLivingEntityProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity(), this);
+		WhirlShockProjectileHitsLivingEntityProcedure.execute(this.level(), entityHitResult.getEntity(), this);
 	}
 
 	@Override
