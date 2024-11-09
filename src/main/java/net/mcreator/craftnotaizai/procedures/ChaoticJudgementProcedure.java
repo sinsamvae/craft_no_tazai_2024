@@ -62,7 +62,7 @@ public class ChaoticJudgementProcedure {
 								return false;
 							}
 						}.checkGamemode(entityiterator))) {
-					entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.PLAYER_ATTACK), entity),
+					entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.PLAYER_ATTACK)),
 							(float) (Math.ceil(0.45 * (entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).strength) + 2));
 					for (int index0 = 0; index0 < 3; index0++) {
 						if (world instanceof ServerLevel _level)

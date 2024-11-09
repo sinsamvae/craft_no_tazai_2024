@@ -58,14 +58,9 @@ public class HumanClanScreen extends AbstractContainerScreen<HumanClanMenu> {
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/orvmenu.png"), this.leftPos + -108, this.topPos + -104, 0, 0, 196, 186, 196, 186);
+		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/gui.png"), this.leftPos + -108, this.topPos + -104, 0, 0, 196, 186, 196, 186);
 
-		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/deadly-sins-retribution-tier-list-12-removebg-preview.png"), this.leftPos + -90, this.topPos + -76, 0, 0, 42, 42, 42, 42);
-
-		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/humanbar.png"), this.leftPos + -43, this.topPos + -86, 0, 0, 115, 33, 115, 33);
-
-		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/13903025e1f60ee6711c42900368b533da068b25da39a3ee5e6b4b0d3255bfef95601890afd80709da39a3ee5e6b4b0d3255bfef95601890afd80709c58f8eb180a04ede88a426bcd54c2e35.png"),
-				this.leftPos + -20, this.topPos + -80, 0, 0, 76, 23, 76, 23);
+		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/deadly-sins-retribution-tier-list-12-removebg-preview.png"), this.leftPos + -88, this.topPos + -66, 0, 0, 42, 42, 42, 42);
 
 		RenderSystem.disableBlend();
 	}
@@ -86,14 +81,18 @@ public class HumanClanScreen extends AbstractContainerScreen<HumanClanMenu> {
 		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.human_clan.label_50_strength"), -85, -11, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.human_clan.label_40_spirit"), -84, 4, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.human_clan.label_15_magic_damage"), -84, 19, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.human_clan.label_magic"), -83, 33, -65485, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.human_clan.label_random_200_to_500"), -84, 46, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.human_clan.label_magic"), -73, 38, -65485, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.human_clan.label_random_200_to_500"), -73, 46, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.human_clan.label_human_race"), -46, -50, -16777216, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.human_clan.label_empty"), -133, -11, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.human_clan.label_empty1"), 107, -11, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.human_clan.label_select"), -31, 96, -1, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_overarrow = new ImageButton(this.leftPos + -123, this.topPos + -14, 16, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_overarrow.png"), 16, 32, e -> {
+		imagebutton_overarrow = new ImageButton(this.leftPos + -138, this.topPos + -14, 16, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_overarrow.png"), 16, 32, e -> {
 			if (true) {
 				CraftNoTaizaiMod.PACKET_HANDLER.sendToServer(new HumanClanButtonMessage(0, x, y, z));
 				HumanClanButtonMessage.handleButtonAction(entity, 0, x, y, z);
@@ -101,7 +100,7 @@ public class HumanClanScreen extends AbstractContainerScreen<HumanClanMenu> {
 		});
 		guistate.put("button:imagebutton_overarrow", imagebutton_overarrow);
 		this.addRenderableWidget(imagebutton_overarrow);
-		imagebutton_overarrow2 = new ImageButton(this.leftPos + 87, this.topPos + -14, 16, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_overarrow2.png"), 16, 32, e -> {
+		imagebutton_overarrow2 = new ImageButton(this.leftPos + 102, this.topPos + -14, 16, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_overarrow2.png"), 16, 32, e -> {
 			if (true) {
 				CraftNoTaizaiMod.PACKET_HANDLER.sendToServer(new HumanClanButtonMessage(1, x, y, z));
 				HumanClanButtonMessage.handleButtonAction(entity, 1, x, y, z);
@@ -109,7 +108,7 @@ public class HumanClanScreen extends AbstractContainerScreen<HumanClanMenu> {
 		});
 		guistate.put("button:imagebutton_overarrow2", imagebutton_overarrow2);
 		this.addRenderableWidget(imagebutton_overarrow2);
-		imagebutton_select = new ImageButton(this.leftPos + -35, this.topPos + 83, 48, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_select.png"), 48, 32, e -> {
+		imagebutton_select = new ImageButton(this.leftPos + -48, this.topPos + 91, 64, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_select.png"), 64, 32, e -> {
 			if (true) {
 				CraftNoTaizaiMod.PACKET_HANDLER.sendToServer(new HumanClanButtonMessage(2, x, y, z));
 				HumanClanButtonMessage.handleButtonAction(entity, 2, x, y, z);

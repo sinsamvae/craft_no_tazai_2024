@@ -22,6 +22,6 @@ public class UseMagicOnKeyPressedProcedure {
 		HumandemonmarkProcedure.execute(entity);
 		Chastiefol2RightclickedProcedure.execute(world, x, y, z, entity);
 		UseMagicPressed4Procedure.execute(world, x, y, z, entity);
-		BulletSquallKeyBindProcedure.execute(world, entity);
+		BulletSquallKeyBindProcedure.execute(world, x, y, z, entity);
 	}
 }

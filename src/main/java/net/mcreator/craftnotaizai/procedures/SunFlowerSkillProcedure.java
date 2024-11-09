@@ -1,10 +1,10 @@
 package net.mcreator.craftnotaizai.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.projectile.Projectile;
+import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
@@ -14,20 +14,22 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
-import net.mcreator.craftnotaizai.entity.SunflowerEntity;
-
-import java.util.Comparator;
+import net.mcreator.craftnotaizai.network.CraftNoTaizaiModVariables;
+import net.mcreator.craftnotaizai.init.CraftNoTaizaiModEntities;
+import net.mcreator.craftnotaizai.entity.SnowflowerbeamProjectileEntity;
+import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
 
 public class SunFlowerSkillProcedure {
-	public static void execute(LevelAccessor world, double y, Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		double x = 0;
 		double z = 0;
 		double yaw = 0;
+		double distance = 0;
 		if (entity.onGround()) {
-			x = entity.getX() + entity.getLookAngle().x;
-			z = entity.getZ() + entity.getLookAngle().z;
+			x = entity.getX() + entity.getLookAngle().x * (-1);
+			z = entity.getZ() + entity.getLookAngle().z * (-1);
 			yaw = entity.getYRot() + 0;
 			{
 				Entity _ent = entity;
@@ -38,12 +40,27 @@ public class SunFlowerSkillProcedure {
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 100000, false, false));
-			if (((Entity) world.getEntitiesOfClass(SunflowerEntity.class, AABB.ofSize(new Vec3((entity.getX()), y, (entity.getZ())), 100, 100, 100), e -> true).stream().sorted(new Object() {
-				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+			CraftNoTaizaiMod.queueServerWork(8, () -> {
+				{
+					Entity _shootFrom = entity;
+					Level projectileLevel = _shootFrom.level();
+					if (!projectileLevel.isClientSide()) {
+						Projectile _entityToSpawn = new Object() {
+							public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+								AbstractArrow entityToSpawn = new SnowflowerbeamProjectileEntity(CraftNoTaizaiModEntities.SNOWFLOWERBEAM_PROJECTILE.get(), level);
+								entityToSpawn.setOwner(shooter);
+								entityToSpawn.setBaseDamage(damage);
+								entityToSpawn.setKnockback(knockback);
+								entityToSpawn.setSilent(true);
+								return entityToSpawn;
+							}
+						}.getArrow(projectileLevel, entity, (float) (Math.ceil(0.45 * (entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).ManaAttack) + 5), 1);
+						_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 3, 0);
+						projectileLevel.addFreshEntity(_entityToSpawn);
+					}
 				}
-			}.compareDistOf((entity.getX()), y, (entity.getZ()))).findFirst().orElse(null)) instanceof TamableAnimal _toTame && entity instanceof Player _owner)
-				_toTame.tame(_owner);
+			});
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("You need to be grounded to use this move!"), true);

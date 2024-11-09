@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.craftnotaizai.block.TowerOfTrialsBlock;
 import net.mcreator.craftnotaizai.block.TalavillageWood3Block;
 import net.mcreator.craftnotaizai.block.TalavillageWood2Block;
 import net.mcreator.craftnotaizai.block.TalavillageStaries2Block;
@@ -23,6 +24,8 @@ import net.mcreator.craftnotaizai.block.SmallCrystalBlock;
 import net.mcreator.craftnotaizai.block.SleepingForestWoodBlock;
 import net.mcreator.craftnotaizai.block.SleepingForestStairBlock;
 import net.mcreator.craftnotaizai.block.SleepingForestSlabBlock;
+import net.mcreator.craftnotaizai.block.SleepingForestDirtBlock;
+import net.mcreator.craftnotaizai.block.SideMountainBlock;
 import net.mcreator.craftnotaizai.block.QuickSandBlock;
 import net.mcreator.craftnotaizai.block.PurplefireBlock;
 import net.mcreator.craftnotaizai.block.PurgatoryStairBlock;
@@ -53,6 +56,7 @@ import net.mcreator.craftnotaizai.block.EmptyMugBlockBlock;
 import net.mcreator.craftnotaizai.block.ChaosWallBlock;
 import net.mcreator.craftnotaizai.block.ChaosFloorBlock;
 import net.mcreator.craftnotaizai.block.ChaosDimensionPortalBlock;
+import net.mcreator.craftnotaizai.block.CaveOfTrainingBlock;
 import net.mcreator.craftnotaizai.block.CapitaloftheDeadBlockBlock;
 import net.mcreator.craftnotaizai.block.CapitalOfTheDeadGroundBlockBlock;
 import net.mcreator.craftnotaizai.block.CapitalOfTheDeadGroundBlock;
@@ -138,6 +142,10 @@ public class CraftNoTaizaiModBlocks {
 	public static final RegistryObject<Block> PURGATORY_BRICK_SLAB = REGISTRY.register("purgatory_brick_slab", () -> new PurgatoryBrickSlabBlock());
 	public static final RegistryObject<Block> PURGATORY_BRICK_STAIR = REGISTRY.register("purgatory_brick_stair", () -> new PurgatoryBrickStairBlock());
 	public static final RegistryObject<Block> PURGATORY_SPIKE = REGISTRY.register("purgatory_spike", () -> new PurgatorySpikeBlock());
+	public static final RegistryObject<Block> SLEEPING_FOREST_DIRT = REGISTRY.register("sleeping_forest_dirt", () -> new SleepingForestDirtBlock());
+	public static final RegistryObject<Block> TOWER_OF_TRIALS = REGISTRY.register("tower_of_trials", () -> new TowerOfTrialsBlock());
+	public static final RegistryObject<Block> CAVE_OF_TRAINING = REGISTRY.register("cave_of_training", () -> new CaveOfTrainingBlock());
+	public static final RegistryObject<Block> SIDE_MOUNTAIN = REGISTRY.register("side_mountain", () -> new SideMountainBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

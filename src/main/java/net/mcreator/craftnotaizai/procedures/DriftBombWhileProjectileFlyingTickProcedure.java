@@ -42,7 +42,7 @@ public class DriftBombWhileProjectileFlyingTickProcedure {
 				entity.getPersistentData().putDouble("sy", (entity.getPersistentData().getDouble("sy") + entity.getPersistentData().getDouble("y+") * (-0.2)));
 				entity.getPersistentData().putDouble("sz", (entity.getPersistentData().getDouble("sz") + entity.getPersistentData().getDouble("z+") * (-0.2)));
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.FLAME, (entity.getPersistentData().getDouble("sx")), (entity.getPersistentData().getDouble("sy")), (entity.getPersistentData().getDouble("sz")), 4, 0.02, 0.02, 0.02, 0);
+					_level.sendParticles(ParticleTypes.FLAME, x, y, z, 4, 0.5, 0.5, 0.5, 0);
 				ProjectileFullCounterProcedure.execute(world, x, y, z, entity, immediatesourceentity);
 			});
 		}

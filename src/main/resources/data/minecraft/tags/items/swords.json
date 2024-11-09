@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "craft_no_taizai:double_sided_spear",
     "craft_no_taizai:guard_spear",
     "craft_no_taizai:saw_sword",
     "craft_no_taizai:sequence",

@@ -13,7 +13,7 @@ import net.mcreator.craftnotaizai.procedures.PerfectCubeOrbRightclickedProcedure
 
 public class PerfectCubeOrbItem extends Item {
 	public PerfectCubeOrbItem() {
-		super(new Item.Properties().durability(2).rarity(Rarity.COMMON));
+		super(new Item.Properties().durability(1).rarity(Rarity.COMMON));
 	}
 
 	@Override

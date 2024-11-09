@@ -5,7 +5,10 @@ import org.checkerframework.checker.units.qual.s;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.particles.SimpleParticleType;
 
+import net.mcreator.craftnotaizai.init.CraftNoTaizaiModParticleTypes;
 import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
 
 public class SnowflowerbeamWhileProjectileFlyingTickProcedure {
@@ -47,6 +50,8 @@ public class SnowflowerbeamWhileProjectileFlyingTickProcedure {
 				entity.getPersistentData().putDouble("sx", (entity.getPersistentData().getDouble("sx") + entity.getPersistentData().getDouble("x+") * (-0.2)));
 				entity.getPersistentData().putDouble("sy", (entity.getPersistentData().getDouble("sy") + entity.getPersistentData().getDouble("y+") * (-0.2)));
 				entity.getPersistentData().putDouble("sz", (entity.getPersistentData().getDouble("sz") + entity.getPersistentData().getDouble("z+") * (-0.2)));
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles((SimpleParticleType) (CraftNoTaizaiModParticleTypes.HUNTER_WISPPARTICLE.get()), x, y, z, 3, 0.8, 0.8, 0.8, 0);
 				ProjectileFullCounterProcedure.execute(world, x, y, z, entity, immediatesourceentity);
 			});
 		}

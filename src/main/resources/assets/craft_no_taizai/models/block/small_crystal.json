@@ -1,13 +1,8 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "craft_no_taizai:block/air",
-    "up": "craft_no_taizai:block/untitled4_20240312230715",
-    "north": "craft_no_taizai:block/air",
-    "east": "craft_no_taizai:block/air",
-    "south": "craft_no_taizai:block/air",
-    "west": "craft_no_taizai:block/air",
-    "particle": "craft_no_taizai:block/air"
+    "all": "craft_no_taizai:block/untitled4_20240312230715",
+    "particle": "craft_no_taizai:block/untitled4_20240312230715"
   },
   "render_type": "cutout_mipped"
 }

@@ -19,10 +19,6 @@ public class LizSneathSwordRightclickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(CraftNoTaizaiModItems.LIZ_SNEATH_SWORD.get());
-			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-		}
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
 				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("craft_no_taizai:unsheathed")), SoundSource.NEUTRAL, 1, 1);

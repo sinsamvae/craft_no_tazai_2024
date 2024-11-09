@@ -22,6 +22,7 @@ import net.mcreator.craftnotaizai.potion.ManaRegenEffetMobEffect;
 import net.mcreator.craftnotaizai.potion.KingTrumpetMobEffect;
 import net.mcreator.craftnotaizai.potion.JubakuEnsaEffectMobEffect;
 import net.mcreator.craftnotaizai.potion.JackPotionMobEffect;
+import net.mcreator.craftnotaizai.potion.HeavyMetalMobEffect;
 import net.mcreator.craftnotaizai.potion.FrezzeMobEffect;
 import net.mcreator.craftnotaizai.potion.FreezeCoffinPotionEffectMobEffect;
 import net.mcreator.craftnotaizai.potion.FossilizationEffectMobEffect;
@@ -48,4 +49,5 @@ public class CraftNoTaizaiModMobEffects {
 	public static final RegistryObject<MobEffect> BLACK_OUT_EFFECT = REGISTRY.register("black_out_effect", () -> new BlackOutEffectMobEffect());
 	public static final RegistryObject<MobEffect> JUBAKU_ENSA_EFFECT = REGISTRY.register("jubaku_ensa_effect", () -> new JubakuEnsaEffectMobEffect());
 	public static final RegistryObject<MobEffect> VENOM_TOXICY_POTION = REGISTRY.register("venom_toxicy_potion", () -> new VenomToxicyPotionMobEffect());
+	public static final RegistryObject<MobEffect> HEAVY_METAL = REGISTRY.register("heavy_metal", () -> new HeavyMetalMobEffect());
 }

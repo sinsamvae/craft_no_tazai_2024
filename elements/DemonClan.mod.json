@@ -11,6 +11,15 @@
     "doesPauseGame": true,
     "components": [
       {
+        "type": "image",
+        "data": {
+          "image": "gui.png",
+          "use1Xscale": false,
+          "x": 106,
+          "y": 16
+        }
+      },
+      {
         "type": "label",
         "data": {
           "name": "label_stats",
@@ -96,8 +105,8 @@
             "value": -6750055,
             "falpha": 0.0
           },
-          "x": 131,
-          "y": 153
+          "x": 140,
+          "y": 157
         }
       },
       {
@@ -111,26 +120,8 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 130,
-          "y": 169
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "orvmenu.png",
-          "use1Xscale": false,
-          "x": 106,
-          "y": 16
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "demonbar.png",
-          "use1Xscale": true,
-          "x": 169,
-          "y": 34
+          "x": 140,
+          "y": 166
         }
       },
       {
@@ -138,17 +129,8 @@
         "data": {
           "image": "deadly-sins-retribution-tier-list-1-removebg-preview.png",
           "use1Xscale": true,
-          "x": 125,
-          "y": 45
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "demonclan-removebg-preview.png",
-          "use1Xscale": true,
-          "x": 183,
-          "y": 40
+          "x": 126,
+          "y": 54
         }
       },
       {
@@ -156,11 +138,11 @@
         "data": {
           "name": "imagebutton_overarrow",
           "image": "overarrow.png",
-          "hoveredImage": "overarrowhover.png",
+          "hoveredImage": "overarrow2hover.png",
           "onClick": {
             "name": "BackButton4"
           },
-          "x": 91,
+          "x": 74,
           "y": 106
         }
       },
@@ -168,12 +150,12 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_overarrow2",
-          "image": "overarrow2.png",
+          "image": "overarrow.png",
           "hoveredImage": "overarrow2hover.png",
           "onClick": {
             "name": "NextButton"
           },
-          "x": 301,
+          "x": 316,
           "y": 106
         }
       },
@@ -181,13 +163,73 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_select",
-          "image": "select.png",
-          "hoveredImage": "selecthover.png",
+          "image": "1button.png",
+          "hoveredImage": "button.png",
           "onClick": {
             "name": "SelectDemon"
           },
-          "x": 178,
-          "y": 202
+          "x": 166,
+          "y": 211
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_demon_clan",
+          "text": {
+            "fixedValue": "Demon Race"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 70
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_select",
+          "text": {
+            "fixedValue": "SELECT"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 182,
+          "y": 216
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "<"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 79,
+          "y": 109
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty1",
+          "text": {
+            "fixedValue": ">"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 322,
+          "y": 109
         }
       }
     ],

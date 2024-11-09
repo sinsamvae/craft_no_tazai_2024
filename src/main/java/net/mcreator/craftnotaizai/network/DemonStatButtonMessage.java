@@ -18,8 +18,6 @@ import net.mcreator.craftnotaizai.procedures.TPStrProcedure;
 import net.mcreator.craftnotaizai.procedures.TPHpProcedure;
 import net.mcreator.craftnotaizai.procedures.TPAgilityProcedure;
 import net.mcreator.craftnotaizai.procedures.StoryProcedure;
-import net.mcreator.craftnotaizai.procedures.PowerIncreaseProcedure;
-import net.mcreator.craftnotaizai.procedures.PowerDecreaseProcedure;
 import net.mcreator.craftnotaizai.procedures.OpenMagicMenuProcedure;
 import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
 
@@ -70,41 +68,33 @@ public class DemonStatButtonMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
-		if (buttonID == 3) {
+		if (buttonID == 0) {
 
 			TPStrProcedure.execute(entity);
 		}
-		if (buttonID == 4) {
+		if (buttonID == 1) {
 
 			TPHpProcedure.execute(entity);
 		}
-		if (buttonID == 5) {
+		if (buttonID == 2) {
 
 			TpmanaProcedure.execute(entity);
 		}
-		if (buttonID == 6) {
+		if (buttonID == 3) {
 
 			TpSwitchAmountProcedure.execute(entity);
 		}
-		if (buttonID == 7) {
+		if (buttonID == 4) {
 
 			TPAgilityProcedure.execute(entity);
 		}
-		if (buttonID == 8) {
-
-			StoryProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 9) {
+		if (buttonID == 5) {
 
 			OpenMagicMenuProcedure.execute(world, x, y, z, entity);
 		}
-		if (buttonID == 10) {
+		if (buttonID == 6) {
 
-			PowerDecreaseProcedure.execute(entity);
-		}
-		if (buttonID == 11) {
-
-			PowerIncreaseProcedure.execute(entity);
+			StoryProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

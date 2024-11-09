@@ -18,6 +18,8 @@ import net.mcreator.craftnotaizai.procedures.Story6Procedure;
 import net.mcreator.craftnotaizai.procedures.Story5Procedure;
 import net.mcreator.craftnotaizai.procedures.Story4Procedure;
 import net.mcreator.craftnotaizai.procedures.Story3Procedure;
+import net.mcreator.craftnotaizai.procedures.Story36Procedure;
+import net.mcreator.craftnotaizai.procedures.Story35Procedure;
 import net.mcreator.craftnotaizai.procedures.Story34Procedure;
 import net.mcreator.craftnotaizai.procedures.Story33Procedure;
 import net.mcreator.craftnotaizai.procedures.Story31Procedure;
@@ -46,6 +48,9 @@ import net.mcreator.craftnotaizai.procedures.Story11Procedure;
 import net.mcreator.craftnotaizai.procedures.Story10Procedure;
 import net.mcreator.craftnotaizai.procedures.Start2Procedure;
 import net.mcreator.craftnotaizai.procedures.RoylekillcountProcedure;
+import net.mcreator.craftnotaizai.procedures.RedDemonKillProcedure;
+import net.mcreator.craftnotaizai.procedures.KillGiantVarProcedure;
+import net.mcreator.craftnotaizai.procedures.GrayDemonKillProcedure;
 import net.mcreator.craftnotaizai.network.StoryBoardButtonMessage;
 import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
 
@@ -80,9 +85,9 @@ public class StoryBoardScreen extends AbstractContainerScreen<StoryBoardMenu> {
 		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
-		if (mouseX > leftPos + 235 && mouseX < leftPos + 259 && mouseY > topPos + 66 && mouseY < topPos + 90)
+		if (mouseX > leftPos + 237 && mouseX < leftPos + 261 && mouseY > topPos + 16 && mouseY < topPos + 40)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.craft_no_taizai.story_board.tooltip_stats"), mouseX, mouseY);
-		if (mouseX > leftPos + 235 && mouseX < leftPos + 259 && mouseY > topPos + 37 && mouseY < topPos + 61)
+		if (mouseX > leftPos + 237 && mouseX < leftPos + 261 && mouseY > topPos + -8 && mouseY < topPos + 16)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.craft_no_taizai.story_board.tooltip_skills"), mouseX, mouseY);
 	}
 
@@ -93,11 +98,7 @@ public class StoryBoardScreen extends AbstractContainerScreen<StoryBoardMenu> {
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/tab.png"), this.leftPos + 234, this.topPos + 32, 0, 0, 20, 20, 20, 20);
-
-		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/tab.png"), this.leftPos + 234, this.topPos + 60, 0, 0, 20, 20, 20, 20);
-
-		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/story2.png"), this.leftPos + -65, this.topPos + 0, 0, 0, 302, 167, 302, 167);
+		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/story_gui.png"), this.leftPos + -65, this.topPos + 1, 0, 0, 302, 167, 302, 167);
 
 		RenderSystem.disableBlend();
 	}
@@ -113,6 +114,7 @@ public class StoryBoardScreen extends AbstractContainerScreen<StoryBoardMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_start"), 77, 132, -1, false);
 		if (Story1Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_this_is_a_tale_of_ancient_times"), -54, 12, -16777216, false);
 		if (Story1Procedure.execute(entity))
@@ -418,7 +420,9 @@ public class StoryBoardScreen extends AbstractContainerScreen<StoryBoardMenu> {
 		if (Story33Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_commandments_appears_before_meli"), -58, 57, -16777216, false);
 		if (Story33Procedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_defeat_tall_albion"), -56, 75, -13369345, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_defeat_tall_albion"), -56, 85, -13369345, false);
+		if (Story33Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_go_to_the_fairy_king_forest_biom"), -57, 71, -16777216, false);
 		if (Story34Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep_5_overwhelming_violence"), -57, 12, -16711681, false);
 		if (Story34Procedure.execute(entity))
@@ -429,12 +433,44 @@ public class StoryBoardScreen extends AbstractContainerScreen<StoryBoardMenu> {
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_overwhelmed_by_the_sheer_power_o"), -57, 57, -16777216, false);
 		if (Story34Procedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_defeat_galand"), -56, 75, -13369345, false);
+		if (Story35Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep_6_the_chief_holy_knight_aton"), -57, 11, -16711681, false);
+		if (Story35Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_hendrickson_thought_to_have_bee"), -57, 25, -16777216, false);
+		if (Story35Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_against_meliodas_aids_gilthunde"), -59, 40, -16777216, false);
+		if (Story35Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_against_a_powerful_gray_demon"), -59, 58, -16777216, false);
+		if (Story35Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_defeat"), -56, 76, -13369345, false);
+		if (Story35Procedure.execute(entity))
+			guiGraphics.drawString(this.font,
+
+					RedDemonKillProcedure.execute(entity), -56, 95, -13369345, false);
+		if (Story35Procedure.execute(entity))
+			guiGraphics.drawString(this.font,
+
+					GrayDemonKillProcedure.execute(entity), -56, 108, -13369345, false);
+		if (Story36Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_ep_7_where_memories_lead"), -57, 12, -16711681, false);
+		if (Story36Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_an_injured_diane_awakens_having"), -60, 26, -16777216, false);
+		if (Story36Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_comrades_with_her_memories_fadi"), -59, 41, -16777216, false);
+		if (Story36Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_megadoza_home_of_the_giant_clan"), -57, 58, -16777216, false);
+		if (Story36Procedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.story_board.label_defeat_15_giants"), -56, 75, -13369345, false);
+		if (Story36Procedure.execute(entity))
+			guiGraphics.drawString(this.font,
+
+					KillGiantVarProcedure.execute(entity), -56, 94, -13369345, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_magicorb = new ImageButton(this.leftPos + 238, this.topPos + 34, 15, 15, 0, 0, 15, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_magicorb.png"), 15, 30, e -> {
+		imagebutton_magicorb = new ImageButton(this.leftPos + 237, this.topPos + 0, 15, 15, 0, 0, 15, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_magicorb.png"), 15, 30, e -> {
 			if (true) {
 				CraftNoTaizaiMod.PACKET_HANDLER.sendToServer(new StoryBoardButtonMessage(0, x, y, z));
 				StoryBoardButtonMessage.handleButtonAction(entity, 0, x, y, z);
@@ -442,7 +478,7 @@ public class StoryBoardScreen extends AbstractContainerScreen<StoryBoardMenu> {
 		});
 		guistate.put("button:imagebutton_magicorb", imagebutton_magicorb);
 		this.addRenderableWidget(imagebutton_magicorb);
-		imagebutton_scroll = new ImageButton(this.leftPos + 237, this.topPos + 62, 15, 15, 0, 0, 15, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_scroll.png"), 15, 30, e -> {
+		imagebutton_scroll = new ImageButton(this.leftPos + 237, this.topPos + 16, 15, 15, 0, 0, 15, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_scroll.png"), 15, 30, e -> {
 			if (true) {
 				CraftNoTaizaiMod.PACKET_HANDLER.sendToServer(new StoryBoardButtonMessage(1, x, y, z));
 				StoryBoardButtonMessage.handleButtonAction(entity, 1, x, y, z);
@@ -450,7 +486,7 @@ public class StoryBoardScreen extends AbstractContainerScreen<StoryBoardMenu> {
 		});
 		guistate.put("button:imagebutton_scroll", imagebutton_scroll);
 		this.addRenderableWidget(imagebutton_scroll);
-		imagebutton_startbutton = new ImageButton(this.leftPos + 61, this.topPos + 127, 48, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_startbutton.png"), 48, 32, e -> {
+		imagebutton_startbutton = new ImageButton(this.leftPos + 58, this.topPos + 128, 64, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_startbutton.png"), 64, 32, e -> {
 			if (true) {
 				CraftNoTaizaiMod.PACKET_HANDLER.sendToServer(new StoryBoardButtonMessage(2, x, y, z));
 				StoryBoardButtonMessage.handleButtonAction(entity, 2, x, y, z);

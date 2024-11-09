@@ -58,13 +58,9 @@ public class FairyClanScreen extends AbstractContainerScreen<FairyClanMenu> {
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/orvmenu.png"), this.leftPos + -108, this.topPos + -104, 0, 0, 196, 186, 196, 186);
+		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/gui.png"), this.leftPos + -108, this.topPos + -104, 0, 0, 196, 186, 196, 186);
 
 		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/fairy.png"), this.leftPos + -85, this.topPos + -68, 0, 0, 42, 42, 42, 42);
-
-		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/fairybar.png"), this.leftPos + -40, this.topPos + -81, 0, 0, 115, 33, 115, 33);
-
-		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/fairy-clan.png"), this.leftPos + -27, this.topPos + -75, 0, 0, 92, 23, 92, 23);
 
 		RenderSystem.disableBlend();
 	}
@@ -84,15 +80,19 @@ public class FairyClanScreen extends AbstractContainerScreen<FairyClanMenu> {
 		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.fairy_clan.label_30_health"), -84, -22, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.fairy_clan.label_50_strength"), -85, -10, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.fairy_clan.label_40_spirit"), -86, 4, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.fairy_clan.label_15_magic_damage"), -84, 19, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.fairy_clan.label_magic"), -83, 33, -16711732, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.fairy_clan.label_random_200_to_500"), -84, 46, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.fairy_clan.label_15_magic_damage"), -86, 19, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.fairy_clan.label_magic"), -75, 42, -16711732, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.fairy_clan.label_random_200_to_500"), -75, 50, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.fairy_clan.label_select"), -30, 96, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.fairy_clan.label_empty"), -133, -11, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.fairy_clan.label_empty1"), 107, -11, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.fairy_clan.label_fairy_race"), -43, -52, -16777216, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_overarrow = new ImageButton(this.leftPos + -123, this.topPos + -14, 16, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_overarrow.png"), 16, 32, e -> {
+		imagebutton_overarrow = new ImageButton(this.leftPos + -138, this.topPos + -14, 16, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_overarrow.png"), 16, 32, e -> {
 			if (true) {
 				CraftNoTaizaiMod.PACKET_HANDLER.sendToServer(new FairyClanButtonMessage(0, x, y, z));
 				FairyClanButtonMessage.handleButtonAction(entity, 0, x, y, z);
@@ -100,7 +100,7 @@ public class FairyClanScreen extends AbstractContainerScreen<FairyClanMenu> {
 		});
 		guistate.put("button:imagebutton_overarrow", imagebutton_overarrow);
 		this.addRenderableWidget(imagebutton_overarrow);
-		imagebutton_overarrow2 = new ImageButton(this.leftPos + 87, this.topPos + -14, 16, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_overarrow2.png"), 16, 32, e -> {
+		imagebutton_overarrow2 = new ImageButton(this.leftPos + 102, this.topPos + -14, 16, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_overarrow2.png"), 16, 32, e -> {
 			if (true) {
 				CraftNoTaizaiMod.PACKET_HANDLER.sendToServer(new FairyClanButtonMessage(1, x, y, z));
 				FairyClanButtonMessage.handleButtonAction(entity, 1, x, y, z);
@@ -108,7 +108,7 @@ public class FairyClanScreen extends AbstractContainerScreen<FairyClanMenu> {
 		});
 		guistate.put("button:imagebutton_overarrow2", imagebutton_overarrow2);
 		this.addRenderableWidget(imagebutton_overarrow2);
-		imagebutton_select = new ImageButton(this.leftPos + -33, this.topPos + 82, 48, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_select.png"), 48, 32, e -> {
+		imagebutton_select = new ImageButton(this.leftPos + -48, this.topPos + 91, 64, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_select.png"), 64, 32, e -> {
 			if (true) {
 				CraftNoTaizaiMod.PACKET_HANDLER.sendToServer(new FairyClanButtonMessage(2, x, y, z));
 				FairyClanButtonMessage.handleButtonAction(entity, 2, x, y, z);

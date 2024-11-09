@@ -31,8 +31,8 @@ public class SunFlowerTrueSpirtSpearSkillProcedure {
 		double xShot = 0;
 		double zShot = 0;
 		if (entity.onGround()) {
-			x = entity.getX() + entity.getLookAngle().x;
-			z = entity.getZ() + entity.getLookAngle().z - 5;
+			x = entity.getX() + entity.getLookAngle().x * (-1);
+			z = entity.getZ() + entity.getLookAngle().z * (-1);
 			yaw = entity.getYRot() + 0;
 			{
 				Entity _ent = entity;

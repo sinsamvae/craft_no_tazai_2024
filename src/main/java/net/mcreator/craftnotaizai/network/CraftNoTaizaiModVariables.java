@@ -309,6 +309,8 @@ public class CraftNoTaizaiModVariables {
 			clone.ThunderGodsFlash = original.ThunderGodsFlash;
 			clone.thundergodsflash = original.thundergodsflash;
 			clone.defeatRedDemon = original.defeatRedDemon;
+			clone.DefeatGrayDemon = original.DefeatGrayDemon;
+			clone.giantskills = original.giantskills;
 			if (!event.isWasDeath()) {
 				clone.jumbvar = original.jumbvar;
 				clone.Gloxinia = original.Gloxinia;
@@ -418,6 +420,7 @@ public class CraftNoTaizaiModVariables {
 		public boolean Truth = false;
 		public boolean Love = false;
 		public boolean Piety = false;
+		public boolean LostVayneTrade = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -454,6 +457,7 @@ public class CraftNoTaizaiModVariables {
 			Truth = nbt.getBoolean("Truth");
 			Love = nbt.getBoolean("Love");
 			Piety = nbt.getBoolean("Piety");
+			LostVayneTrade = nbt.getBoolean("LostVayneTrade");
 		}
 
 		@Override
@@ -486,6 +490,7 @@ public class CraftNoTaizaiModVariables {
 			nbt.putBoolean("Truth", Truth);
 			nbt.putBoolean("Love", Love);
 			nbt.putBoolean("Piety", Piety);
+			nbt.putBoolean("LostVayneTrade", LostVayneTrade);
 			return nbt;
 		}
 
@@ -805,6 +810,8 @@ public class CraftNoTaizaiModVariables {
 		public boolean ThunderGodsFlash = false;
 		public double thundergodsflash = 0;
 		public double defeatRedDemon = 0;
+		public double DefeatGrayDemon = 0;
+		public double giantskills = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -1040,6 +1047,8 @@ public class CraftNoTaizaiModVariables {
 			nbt.putBoolean("ThunderGodsFlash", ThunderGodsFlash);
 			nbt.putDouble("thundergodsflash", thundergodsflash);
 			nbt.putDouble("defeatRedDemon", defeatRedDemon);
+			nbt.putDouble("DefeatGrayDemon", DefeatGrayDemon);
+			nbt.putDouble("giantskills", giantskills);
 			return nbt;
 		}
 
@@ -1272,6 +1281,8 @@ public class CraftNoTaizaiModVariables {
 			ThunderGodsFlash = nbt.getBoolean("ThunderGodsFlash");
 			thundergodsflash = nbt.getDouble("thundergodsflash");
 			defeatRedDemon = nbt.getDouble("defeatRedDemon");
+			DefeatGrayDemon = nbt.getDouble("DefeatGrayDemon");
+			giantskills = nbt.getDouble("giantskills");
 		}
 	}
 
@@ -1532,6 +1543,8 @@ public class CraftNoTaizaiModVariables {
 					variables.ThunderGodsFlash = message.data.ThunderGodsFlash;
 					variables.thundergodsflash = message.data.thundergodsflash;
 					variables.defeatRedDemon = message.data.defeatRedDemon;
+					variables.DefeatGrayDemon = message.data.DefeatGrayDemon;
+					variables.giantskills = message.data.giantskills;
 				}
 			});
 			context.setPacketHandled(true);

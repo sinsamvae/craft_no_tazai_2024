@@ -12,7 +12,6 @@ import net.minecraft.util.Mth;
 import net.minecraft.commands.arguments.EntityAnchorArgument;
 
 import net.mcreator.craftnotaizai.init.CraftNoTaizaiModEntities;
-import net.mcreator.craftnotaizai.entity.RedDemonGeckolibEntity;
 import net.mcreator.craftnotaizai.entity.CannonEntity;
 import net.mcreator.craftnotaizai.CraftNoTaizaiMod;
 
@@ -31,9 +30,6 @@ public class AlbionTallOnEntityTickUpdateProcedure {
 			entity.lookAt(EntityAnchorArgument.Anchor.EYES, new Vec3(((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX()), ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY()),
 					((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ())));
 			if (distance <= 6) {
-				if (entity instanceof RedDemonGeckolibEntity) {
-					((RedDemonGeckolibEntity) entity).setAnimation("attack_2");
-				}
 				CraftNoTaizaiMod.queueServerWork(8, () -> {
 					{
 						Entity _shootFrom = entity;

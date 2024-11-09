@@ -3,6 +3,8 @@ package net.mcreator.craftnotaizai.procedures;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 
+import net.mcreator.craftnotaizai.network.CraftNoTaizaiModVariables;
+
 public class PurgatoryPlayerLeavesDimensionProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
@@ -31,6 +33,13 @@ public class PurgatoryPlayerLeavesDimensionProcedure {
 								? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getZSpawn())
 								: 0),
 						_ent.getYRot(), _ent.getXRot());
+		}
+		{
+			boolean _setval = true;
+			entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.Purgatory = _setval;
+				capability.syncPlayerVariables(entity);
+			});
 		}
 	}
 }

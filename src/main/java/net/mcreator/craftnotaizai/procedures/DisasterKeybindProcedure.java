@@ -195,7 +195,7 @@ public class DisasterKeybindProcedure {
 									capability.syncPlayerVariables(entity);
 								});
 							}
-							DeathThornSkillProcedure.execute(world, y, entity);
+							DeathThornSkillProcedure.execute(world, entity);
 							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 50, 1000000, false, false));
 							((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).AbilitySelect).getOrCreateTag().putDouble(

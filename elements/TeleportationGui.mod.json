@@ -29,7 +29,7 @@
           "width": 120,
           "height": 20,
           "x": 154,
-          "y": 161
+          "y": 137
         }
       },
       {
@@ -40,24 +40,24 @@
           "width": 120,
           "height": 20,
           "x": 154,
-          "y": 126
+          "y": 114
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "orvmenu.png",
+          "image": "gui.png",
           "use1Xscale": false,
-          "x": 114,
-          "y": 24
+          "x": 121,
+          "y": 16
         }
       },
       {
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_slot2",
-          "image": "slot2.png",
-          "hoveredImage": "slot_2_hover.png",
+          "image": "1button.png",
+          "hoveredImage": "button.png",
           "onClick": {
             "name": "TeleportButton"
           },
@@ -82,10 +82,10 @@
       }
     ],
     "gridSettings": {
-      "sx": 18,
-      "sy": 18,
-      "ox": 11,
-      "oy": 15,
+      "sx": 30,
+      "sy": 30,
+      "ox": 30,
+      "oy": 30,
       "snapOnGrid": false
     }
   }

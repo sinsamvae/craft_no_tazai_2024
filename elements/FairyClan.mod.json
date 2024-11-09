@@ -13,7 +13,7 @@
       {
         "type": "image",
         "data": {
-          "image": "orvmenu.png",
+          "image": "gui.png",
           "use1Xscale": false,
           "x": 106,
           "y": 16
@@ -84,13 +84,13 @@
         "data": {
           "name": "label_15_magic_damage",
           "text": {
-            "fixedValue": "-  Magic Damage: 5 to 20"
+            "fixedValue": "- Magic Damage: 5 to 20"
           },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "x": 130,
+          "x": 128,
           "y": 139
         }
       },
@@ -105,8 +105,8 @@
             "value": -16711732,
             "falpha": 0.0
           },
-          "x": 131,
-          "y": 153
+          "x": 139,
+          "y": 162
         }
       },
       {
@@ -120,8 +120,8 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 130,
-          "y": 166
+          "x": 139,
+          "y": 170
         }
       },
       {
@@ -134,33 +134,15 @@
         }
       },
       {
-        "type": "image",
-        "data": {
-          "image": "fairybar.png",
-          "use1Xscale": true,
-          "x": 174,
-          "y": 39
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "fairy-clan.png",
-          "use1Xscale": true,
-          "x": 187,
-          "y": 45
-        }
-      },
-      {
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_overarrow",
           "image": "overarrow.png",
-          "hoveredImage": "overarrowhover.png",
+          "hoveredImage": "overarrow2hover.png",
           "onClick": {
             "name": "BackButton2"
           },
-          "x": 91,
+          "x": 76,
           "y": 106
         }
       },
@@ -168,12 +150,12 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_overarrow2",
-          "image": "overarrow2.png",
+          "image": "overarrow.png",
           "hoveredImage": "overarrow2hover.png",
           "onClick": {
             "name": "NextButton3"
           },
-          "x": 301,
+          "x": 316,
           "y": 106
         }
       },
@@ -181,21 +163,81 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_select",
-          "image": "select.png",
-          "hoveredImage": "selecthover.png",
+          "image": "1button.png",
+          "hoveredImage": "button.png",
           "onClick": {
             "name": "SelectFairy"
           },
-          "x": 181,
-          "y": 202
+          "x": 166,
+          "y": 211
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_select",
+          "text": {
+            "fixedValue": "SELECT"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 184,
+          "y": 216
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "<"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 81,
+          "y": 109
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty1",
+          "text": {
+            "fixedValue": ">"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 321,
+          "y": 109
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_fairy_race",
+          "text": {
+            "fixedValue": "Fairy Race"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 171,
+          "y": 68
         }
       }
     ],
     "gridSettings": {
-      "sx": 50,
-      "sy": 50,
-      "ox": 80,
-      "oy": 80,
+      "sx": 30,
+      "sy": 30,
+      "ox": 30,
+      "oy": 30,
       "snapOnGrid": false
     }
   }

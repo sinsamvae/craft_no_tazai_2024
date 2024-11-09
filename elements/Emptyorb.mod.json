@@ -11,9 +11,6 @@
     "rarity": "COMMON",
     "creativeTabs": [
       {
-        "value": "CUSTOM:Items"
-      },
-      {
         "value": "CUSTOM:IncantationOrb"
       }
     ],

@@ -27,7 +27,10 @@ public class SpawnProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof WaterAnimal && (entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("craft_no_taizai:capitalofthe_dead"))) {
+		if (entity instanceof WaterAnimal && ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("craft_no_taizai:capitalofthe_dead"))
+				|| (entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("craft_no_taizai:istar"))
+				|| (entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("craft_no_taizai:purgatory"))
+				|| (entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("craft_no_taizai:chaos_dimension")))) {
 			if (!entity.level().isClientSide())
 				entity.discard();
 		}

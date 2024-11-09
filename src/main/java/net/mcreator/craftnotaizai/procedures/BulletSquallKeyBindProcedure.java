@@ -8,7 +8,7 @@ import net.minecraft.network.chat.Component;
 import net.mcreator.craftnotaizai.network.CraftNoTaizaiModVariables;
 
 public class BulletSquallKeyBindProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		double yaw = 0;
@@ -27,7 +27,7 @@ public class BulletSquallKeyBindProcedure {
 								capability.syncPlayerVariables(entity);
 							});
 						}
-						BulletSqualProcedure.execute(world, entity);
+						BulletSqualProcedure.execute(world, x, y, z, entity);
 						((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).AbilitySelect).getOrCreateTag().putDouble(
 								("cooldown" + new java.text.DecimalFormat("##").format((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).Move + 1)), 35);
 					} else {

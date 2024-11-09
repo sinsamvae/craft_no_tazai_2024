@@ -13,10 +13,19 @@
       {
         "type": "image",
         "data": {
-          "image": "orvmenu.png",
+          "image": "gui.png",
           "use1Xscale": false,
           "x": 106,
           "y": 16
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "deadly-sins-retribution-tier-list-12-removebg-preview.png",
+          "use1Xscale": true,
+          "x": 126,
+          "y": 54
         }
       },
       {
@@ -105,8 +114,8 @@
             "value": -65485,
             "falpha": 0.0
           },
-          "x": 131,
-          "y": 153
+          "x": 141,
+          "y": 158
         }
       },
       {
@@ -120,35 +129,8 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 130,
+          "x": 141,
           "y": 166
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "deadly-sins-retribution-tier-list-12-removebg-preview.png",
-          "use1Xscale": true,
-          "x": 124,
-          "y": 44
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "humanbar.png",
-          "use1Xscale": true,
-          "x": 171,
-          "y": 34
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "13903025e1f60ee6711c42900368b533da068b25da39a3ee5e6b4b0d3255bfef95601890afd80709da39a3ee5e6b4b0d3255bfef95601890afd80709c58f8eb180a04ede88a426bcd54c2e35.png",
-          "use1Xscale": true,
-          "x": 194,
-          "y": 40
         }
       },
       {
@@ -156,11 +138,11 @@
         "data": {
           "name": "imagebutton_overarrow",
           "image": "overarrow.png",
-          "hoveredImage": "overarrowhover.png",
+          "hoveredImage": "overarrow2hover.png",
           "onClick": {
             "name": "BackButton"
           },
-          "x": 91,
+          "x": 76,
           "y": 106
         }
       },
@@ -168,12 +150,12 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_overarrow2",
-          "image": "overarrow2.png",
+          "image": "overarrow.png",
           "hoveredImage": "overarrow2hover.png",
           "onClick": {
             "name": "NextButton2"
           },
-          "x": 301,
+          "x": 316,
           "y": 106
         }
       },
@@ -181,13 +163,73 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_select",
-          "image": "select.png",
-          "hoveredImage": "selecthover.png",
+          "image": "1button.png",
+          "hoveredImage": "button.png",
           "onClick": {
             "name": "SelectHuman"
           },
-          "x": 179,
-          "y": 203
+          "x": 166,
+          "y": 211
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_human_race",
+          "text": {
+            "fixedValue": "Human Race"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 70
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "<"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 81,
+          "y": 109
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty1",
+          "text": {
+            "fixedValue": ">"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 321,
+          "y": 109
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_select",
+          "text": {
+            "fixedValue": "SELECT"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 183,
+          "y": 216
         }
       }
     ],

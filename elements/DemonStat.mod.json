@@ -13,37 +13,10 @@
       {
         "type": "image",
         "data": {
-          "image": "tab.png",
+          "image": "gui.png",
           "use1Xscale": false,
-          "x": 299,
-          "y": 91
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "tab.png",
-          "use1Xscale": false,
-          "x": 299,
-          "y": 70
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "orvmenu.png",
-          "use1Xscale": false,
-          "x": 111,
-          "y": 27
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "lostvayne.png",
-          "use1Xscale": true,
-          "x": -27,
-          "y": -31
+          "x": 121,
+          "y": 16
         }
       },
       {
@@ -59,7 +32,7 @@
             "falpha": 0.0
           },
           "x": 121,
-          "y": 62
+          "y": 28
         }
       },
       {
@@ -74,8 +47,8 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 233,
-          "y": 52
+          "x": 255,
+          "y": 28
         }
       },
       {
@@ -90,8 +63,8 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 233,
-          "y": 39
+          "x": 254,
+          "y": 16
         }
       },
       {
@@ -107,7 +80,7 @@
             "falpha": 0.0
           },
           "x": 135,
-          "y": 167
+          "y": 136
         }
       },
       {
@@ -122,8 +95,8 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 134,
-          "y": 113
+          "x": 135,
+          "y": 92
         }
       },
       {
@@ -138,8 +111,8 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 134,
-          "y": 131
+          "x": 135,
+          "y": 107
         }
       },
       {
@@ -154,47 +127,8 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 232,
-          "y": 64
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_demon",
-          "image": "demon.png",
-          "hoveredImage": "",
-          "displayCondition": {
-            "name": "Demonimage"
-          },
-          "x": 244,
-          "y": 144
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_fairy2",
-          "image": "fairy2.png",
-          "hoveredImage": "",
-          "displayCondition": {
-            "name": "Fairyimage"
-          },
-          "x": 245,
-          "y": 145
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_human",
-          "image": "human.png",
-          "hoveredImage": "",
-          "displayCondition": {
-            "name": "Humanimage"
-          },
-          "x": 244,
-          "y": 144
+          "x": 255,
+          "y": 40
         }
       },
       {
@@ -210,7 +144,7 @@
             "falpha": 0.0
           },
           "x": 121,
-          "y": 80
+          "y": 40
         }
       },
       {
@@ -225,20 +159,8 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 120,
-          "y": 46
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "image_1.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Gaintimage"
-          },
-          "x": 245,
-          "y": 144
+          "x": 121,
+          "y": 16
         }
       },
       {
@@ -253,8 +175,8 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 188,
-          "y": 192
+          "x": 210,
+          "y": 190
         }
       },
       {
@@ -266,8 +188,8 @@
           "onClick": {
             "name": "TPStr"
           },
-          "x": 120,
-          "y": 111
+          "x": 121,
+          "y": 90
         }
       },
       {
@@ -279,8 +201,8 @@
           "onClick": {
             "name": "TPHp"
           },
-          "x": 120,
-          "y": 129
+          "x": 121,
+          "y": 105
         }
       },
       {
@@ -292,8 +214,8 @@
           "onClick": {
             "name": "Tpmana"
           },
-          "x": 120,
-          "y": 165
+          "x": 121,
+          "y": 134
         }
       },
       {
@@ -305,8 +227,8 @@
           "onClick": {
             "name": "TpSwitchAmount"
           },
-          "x": 174,
-          "y": 190
+          "x": 197,
+          "y": 188
         }
       },
       {
@@ -322,7 +244,7 @@
             "falpha": 0.0
           },
           "x": 134,
-          "y": 150
+          "y": 122
         }
       },
       {
@@ -334,21 +256,8 @@
           "onClick": {
             "name": "TPAgility"
           },
-          "x": 120,
-          "y": 147
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_storybook2",
-          "image": "storybook2.png",
-          "hoveredImage": "storybookhover.png",
-          "onClick": {
-            "name": "Story"
-          },
-          "x": 301,
-          "y": 72
+          "x": 121,
+          "y": 120
         }
       },
       {
@@ -360,8 +269,8 @@
           "onClick": {
             "name": "OpenMagicMenu"
           },
-          "x": 302,
-          "y": 93
+          "x": 317,
+          "y": 31
         }
       },
       {
@@ -373,8 +282,8 @@
           },
           "width": 24,
           "height": 24,
-          "x": 300,
-          "y": 95
+          "x": 317,
+          "y": 30
         }
       },
       {
@@ -386,50 +295,8 @@
           },
           "width": 24,
           "height": 24,
-          "x": 300,
-          "y": 71
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_overarrow2",
-          "image": "overarrow2.png",
-          "hoveredImage": "overarrow2hover.png",
-          "onClick": {
-            "name": "PowerDecrease"
-          },
-          "x": 274,
-          "y": 16
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_overarrow",
-          "image": "overarrow.png",
-          "hoveredImage": "overarrowhover.png",
-          "onClick": {
-            "name": "PowerIncrease"
-          },
-          "x": 131,
-          "y": 16
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_power_percentage",
-          "text": {
-            "fixedValue": "",
-            "name": "PowerPercentage"
-          },
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "x": 150,
-          "y": 20
+          "x": 317,
+          "y": 6
         }
       },
       {
@@ -444,8 +311,8 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 135,
-          "y": 178
+          "x": 134,
+          "y": 147
         }
       },
       {
@@ -463,16 +330,42 @@
           "displayCondition": {
             "name": "CommandmentReturn"
           },
-          "x": 120,
-          "y": 96
+          "x": 121,
+          "y": 53
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_storybook2",
+          "image": "storybook2.png",
+          "hoveredImage": "storybookhover.png",
+          "onClick": {
+            "name": "Story"
+          },
+          "x": 317,
+          "y": 16
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnEnitiy"
+          },
+          "scale": 35,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 258,
+          "y": 124
         }
       }
     ],
     "gridSettings": {
-      "sx": 1,
-      "sy": 1,
-      "ox": 1,
-      "oy": 1,
+      "sx": 30,
+      "sy": 30,
+      "ox": 30,
+      "oy": 30,
       "snapOnGrid": false
     }
   }

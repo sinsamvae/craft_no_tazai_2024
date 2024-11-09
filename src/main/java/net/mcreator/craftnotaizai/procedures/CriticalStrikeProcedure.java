@@ -67,9 +67,10 @@ public class CriticalStrikeProcedure {
 						}.checkGamemode(entityiterator))) {
 					{
 						Entity _ent = entity;
-						_ent.teleportTo((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()));
+						_ent.teleportTo((entityiterator.getX() + entity.getLookAngle().x * (-2)), (entity.getY() + entity.getLookAngle().y * (-2)), (entityiterator.getZ() + entity.getLookAngle().z * (-2)));
 						if (_ent instanceof ServerPlayer _serverPlayer)
-							_serverPlayer.connection.teleport((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), _ent.getYRot(), _ent.getXRot());
+							_serverPlayer.connection.teleport((entityiterator.getX() + entity.getLookAngle().x * (-2)), (entity.getY() + entity.getLookAngle().y * (-2)), (entityiterator.getZ() + entity.getLookAngle().z * (-2)), _ent.getYRot(),
+									_ent.getXRot());
 					}
 					entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.PLAYER_ATTACK), entity),
 							(float) (Math.ceil(0.45 * (entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).strength) + 3));

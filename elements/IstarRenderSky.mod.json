@@ -1,0 +1,7 @@
+{
+  "_fv": 66,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">graphic_render_sky</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"compare_dimensionids\"><value name=\"a\"><block type=\"entity_dimension_id\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value><value name=\"b\"><block type=\"get_dimensionid\"><field name=\"dimension\">CUSTOM:Istar</field></block></value></block></value><statement name=\"DO0\"><block type=\"graphic_enable_blending\"><field name=\"mode\">DEFAULT</field><next><block type=\"graphic_render_deepsky\"><value name=\"color\"><block type=\"graphic_get_rgbcolor\"><value name=\"red\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value><value name=\"green\"><block type=\"math_number\"><field name=\"NUM\">218</field></block></value><value name=\"blue\"><block type=\"math_number\"><field name=\"NUM\">182</field></block></value></block></value></block></next></block></statement><next><block type=\"return_logic\"><value name=\"return\"><block type=\"logic_boolean\"><field name=\"BOOL\">TRUE</field></block></value></block></next></block></next></block></xml>"
+  }
+}

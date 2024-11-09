@@ -29,12 +29,13 @@ import java.util.List;
 import java.util.Comparator;
 
 public class DeathThornSkillProcedure {
-	public static void execute(LevelAccessor world, double y, Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		double x = 0;
 		double z = 0;
 		double yaw = 0;
+		double distance = 0;
 		if (entity.onGround()) {
 			x = entity.getX();
 			z = entity.getZ();
@@ -139,10 +140,10 @@ public class DeathThornSkillProcedure {
 			}
 			CraftNoTaizaiMod.queueServerWork(6, () -> {
 				{
-					final Vec3 _center = new Vec3((entity.getX()), y, (entity.getZ()));
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+					final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(25 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 					for (Entity entityiterator : _entfound) {
-						if (!(entityiterator == entity || entityiterator instanceof ItemEntity || entityiterator instanceof ExperienceOrb
+						if (!(entity == entityiterator || entityiterator instanceof ItemEntity || entityiterator instanceof ExperienceOrb
 								|| (entityiterator instanceof TamableAnimal _tamIsTamedBy && entity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false)
 								|| (entity instanceof TamableAnimal _tamIsTamedBy && entityiterator instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false) || new Object() {
 									public boolean checkGamemode(Entity _ent) {
@@ -165,7 +166,7 @@ public class DeathThornSkillProcedure {
 										return false;
 									}
 								}.checkGamemode(entityiterator) || entityiterator instanceof DeathThornEntity)) {
-							entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("craft_no_taizai:mana_dmg"))), entity),
+							entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("craft_no_taizai:mana_dmg")))),
 									(float) (Math.ceil(0.45 * (entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).ManaAttack) + 5));
 						}
 					}

@@ -58,13 +58,9 @@ public class DemonClanScreen extends AbstractContainerScreen<DemonClanMenu> {
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/orvmenu.png"), this.leftPos + -108, this.topPos + -104, 0, 0, 196, 186, 196, 186);
+		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/gui.png"), this.leftPos + -108, this.topPos + -104, 0, 0, 196, 186, 196, 186);
 
-		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/demonbar.png"), this.leftPos + -45, this.topPos + -86, 0, 0, 115, 33, 115, 33);
-
-		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/deadly-sins-retribution-tier-list-1-removebg-preview.png"), this.leftPos + -89, this.topPos + -75, 0, 0, 42, 42, 42, 42);
-
-		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/demonclan-removebg-preview.png"), this.leftPos + -31, this.topPos + -80, 0, 0, 92, 22, 92, 22);
+		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/deadly-sins-retribution-tier-list-1-removebg-preview.png"), this.leftPos + -88, this.topPos + -66, 0, 0, 42, 42, 42, 42);
 
 		RenderSystem.disableBlend();
 	}
@@ -85,14 +81,18 @@ public class DemonClanScreen extends AbstractContainerScreen<DemonClanMenu> {
 		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.demon_clan.label_50_strength"), -84, -9, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.demon_clan.label_40_spirit"), -84, 5, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.demon_clan.label_15_magic_damage"), -85, 20, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.demon_clan.label_magic"), -83, 33, -6750055, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.demon_clan.label_random_200_to_500"), -84, 49, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.demon_clan.label_magic"), -74, 37, -6750055, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.demon_clan.label_random_200_to_500"), -74, 46, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.demon_clan.label_demon_clan"), -46, -50, -16777216, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.demon_clan.label_select"), -32, 96, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.demon_clan.label_empty"), -135, -11, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.demon_clan.label_empty1"), 108, -11, -1, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_overarrow = new ImageButton(this.leftPos + -123, this.topPos + -14, 16, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_overarrow.png"), 16, 32, e -> {
+		imagebutton_overarrow = new ImageButton(this.leftPos + -140, this.topPos + -14, 16, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_overarrow.png"), 16, 32, e -> {
 			if (true) {
 				CraftNoTaizaiMod.PACKET_HANDLER.sendToServer(new DemonClanButtonMessage(0, x, y, z));
 				DemonClanButtonMessage.handleButtonAction(entity, 0, x, y, z);
@@ -100,7 +100,7 @@ public class DemonClanScreen extends AbstractContainerScreen<DemonClanMenu> {
 		});
 		guistate.put("button:imagebutton_overarrow", imagebutton_overarrow);
 		this.addRenderableWidget(imagebutton_overarrow);
-		imagebutton_overarrow2 = new ImageButton(this.leftPos + 87, this.topPos + -14, 16, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_overarrow2.png"), 16, 32, e -> {
+		imagebutton_overarrow2 = new ImageButton(this.leftPos + 102, this.topPos + -14, 16, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_overarrow2.png"), 16, 32, e -> {
 			if (true) {
 				CraftNoTaizaiMod.PACKET_HANDLER.sendToServer(new DemonClanButtonMessage(1, x, y, z));
 				DemonClanButtonMessage.handleButtonAction(entity, 1, x, y, z);
@@ -108,7 +108,7 @@ public class DemonClanScreen extends AbstractContainerScreen<DemonClanMenu> {
 		});
 		guistate.put("button:imagebutton_overarrow2", imagebutton_overarrow2);
 		this.addRenderableWidget(imagebutton_overarrow2);
-		imagebutton_select = new ImageButton(this.leftPos + -36, this.topPos + 82, 48, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_select.png"), 48, 32, e -> {
+		imagebutton_select = new ImageButton(this.leftPos + -48, this.topPos + 91, 64, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_select.png"), 64, 32, e -> {
 			if (true) {
 				CraftNoTaizaiMod.PACKET_HANDLER.sendToServer(new DemonClanButtonMessage(2, x, y, z));
 				DemonClanButtonMessage.handleButtonAction(entity, 2, x, y, z);

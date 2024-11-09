@@ -154,6 +154,9 @@
     ],
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
+    "spawningCondition": {
+      "name": "SpawnCondtion"
+    },
     "spawningProbability": 8,
     "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 1,

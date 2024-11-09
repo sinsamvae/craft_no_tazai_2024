@@ -19,8 +19,8 @@
           "onClick": {
             "name": "OpenMagicMenu"
           },
-          "x": 364,
-          "y": 71
+          "x": 363,
+          "y": 37
         }
       },
       {
@@ -33,7 +33,7 @@
             "name": "OpenStatsOnKeyPressed"
           },
           "x": 363,
-          "y": 99
+          "y": 53
         }
       },
       {
@@ -45,8 +45,8 @@
           },
           "width": 24,
           "height": 24,
-          "x": 361,
-          "y": 103
+          "x": 363,
+          "y": 53
         }
       },
       {
@@ -58,48 +58,45 @@
           },
           "width": 24,
           "height": 24,
-          "x": 361,
-          "y": 74
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "tab.png",
-          "use1Xscale": false,
-          "x": 360,
-          "y": 69
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "tab.png",
-          "use1Xscale": false,
-          "x": 360,
-          "y": 97
+          "x": 363,
+          "y": 29
         }
       },
       {
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_startbutton",
-          "image": "startbutton.png",
-          "hoveredImage": "hoverstart.png",
+          "image": "1button.png",
+          "hoveredImage": "button.png",
           "onClick": {
             "name": "Storyvar"
           },
-          "x": 187,
-          "y": 164
+          "x": 184,
+          "y": 165
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_start",
+          "text": {
+            "fixedValue": "START"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 203,
+          "y": 169
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "story2.png",
+          "image": "story_gui.png",
           "use1Xscale": false,
           "x": 61,
-          "y": 37
+          "y": 38
         }
       },
       {
@@ -1259,7 +1256,7 @@
         "data": {
           "name": "label_defect_ban",
           "text": {
-            "fixedValue": "Defect Ban"
+            "fixedValue": "Defeat Ban"
           },
           "color": {
             "value": -16711681,
@@ -1349,7 +1346,7 @@
         "data": {
           "name": "label_defect_jericho",
           "text": {
-            "fixedValue": "Defect Jericho"
+            "fixedValue": "Defeat Jericho"
           },
           "color": {
             "value": -16711681,
@@ -1529,7 +1526,7 @@
         "data": {
           "name": "label_defect_armord_helbram",
           "text": {
-            "fixedValue": "Defect Armord Helbram"
+            "fixedValue": "Defeat Armord Helbram"
           },
           "color": {
             "value": -16711681,
@@ -1691,7 +1688,7 @@
         "data": {
           "name": "label_defect_15_royale_gurard",
           "text": {
-            "fixedValue": "Defect 10 Holy Knights"
+            "fixedValue": "Defeat 10 Holy Knights"
           },
           "color": {
             "value": -16711681,
@@ -1800,7 +1797,7 @@
         "data": {
           "name": "label_defect_dreyfus",
           "text": {
-            "fixedValue": "Defect Dreyfus"
+            "fixedValue": "Defeat Dreyfus"
           },
           "color": {
             "value": -16711681,
@@ -1890,7 +1887,7 @@
         "data": {
           "name": "label_defect_helbram",
           "text": {
-            "fixedValue": "Defect Helbram"
+            "fixedValue": "Defeat Helbram"
           },
           "color": {
             "value": -16711681,
@@ -2836,7 +2833,25 @@
             "name": "Story33"
           },
           "x": 70,
-          "y": 112
+          "y": 122
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_go_to_the_fairy_king_forest_biom",
+          "text": {
+            "fixedValue": "Go To the Fairy King Forest Biome"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story33"
+          },
+          "x": 69,
+          "y": 108
         }
       },
       {
@@ -2927,6 +2942,243 @@
           },
           "x": 70,
           "y": 112
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_6_the_chief_holy_knight_aton",
+          "text": {
+            "fixedValue": "EP 6: The Chief Holy Knight Atones For His Sins"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story35"
+          },
+          "x": 69,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_hendrickson_thought_to_have_bee",
+          "text": {
+            "fixedValue": "Hendrickson, thought to have been defeated in a battle"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story35"
+          },
+          "x": 69,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_against_meliodas_aids_gilthunde",
+          "text": {
+            "fixedValue": "against Meliodas, aids Gilthunder and the Holy Knights "
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story35"
+          },
+          "x": 67,
+          "y": 77
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_against_a_powerful_gray_demon",
+          "text": {
+            "fixedValue": "against a powerful Gray Demon."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story35"
+          },
+          "x": 67,
+          "y": 95
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat",
+          "text": {
+            "fixedValue": "Defeat Red & Gray Demons"
+          },
+          "color": {
+            "value": -13369345,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story35"
+          },
+          "x": 70,
+          "y": 113
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_red_demon_kill",
+          "text": {
+            "fixedValue": "",
+            "name": "RedDemonKill"
+          },
+          "color": {
+            "value": -13369345,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story35"
+          },
+          "x": 70,
+          "y": 132
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_gray_demon_kill",
+          "text": {
+            "fixedValue": "",
+            "name": "GrayDemonKill"
+          },
+          "color": {
+            "value": -13369345,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story35"
+          },
+          "x": 70,
+          "y": 145
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ep_7_where_memories_lead",
+          "text": {
+            "fixedValue": "EP 7: Where Memories Lead"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story36"
+          },
+          "x": 69,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_an_injured_diane_awakens_having",
+          "text": {
+            "fixedValue": "An injured Diane awakens, having trouble remembering her"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story36"
+          },
+          "x": 66,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_comrades_with_her_memories_fadi",
+          "text": {
+            "fixedValue": "comrades. With her memories fading, she heads for"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story36"
+          },
+          "x": 67,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_megadoza_home_of_the_giant_clan",
+          "text": {
+            "fixedValue": "Megadoza, home of the Giant Clan."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story36"
+          },
+          "x": 69,
+          "y": 95
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defeat_15_giants",
+          "text": {
+            "fixedValue": "Defeat 15 Giants"
+          },
+          "color": {
+            "value": -13369345,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story36"
+          },
+          "x": 70,
+          "y": 112
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_kill_giant_var",
+          "text": {
+            "fixedValue": "",
+            "name": "KillGiantVar"
+          },
+          "color": {
+            "value": -13369345,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Story36"
+          },
+          "x": 70,
+          "y": 131
         }
       }
     ],

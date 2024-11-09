@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.craftnotaizai.entity.ZaneriEntity;
 import net.mcreator.craftnotaizai.entity.Windshot3Entity;
 import net.mcreator.craftnotaizai.entity.WindShotProjectileEntity;
 import net.mcreator.craftnotaizai.entity.WindShot2Entity;
@@ -28,6 +29,7 @@ import net.mcreator.craftnotaizai.entity.VineEntity;
 import net.mcreator.craftnotaizai.entity.TyrantDragonEntity;
 import net.mcreator.craftnotaizai.entity.TwigoAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.TrollEntity;
+import net.mcreator.craftnotaizai.entity.TheoEntity;
 import net.mcreator.craftnotaizai.entity.TallAlbionEntity;
 import net.mcreator.craftnotaizai.entity.TaizooAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.SwordWolfEntity;
@@ -58,7 +60,6 @@ import net.mcreator.craftnotaizai.entity.PurgatoryVenomProjectileEntity;
 import net.mcreator.craftnotaizai.entity.PuoraEntity;
 import net.mcreator.craftnotaizai.entity.PollenGardenEntity;
 import net.mcreator.craftnotaizai.entity.PhysicalCloneEntity;
-import net.mcreator.craftnotaizai.entity.PefectCubeEntity;
 import net.mcreator.craftnotaizai.entity.ParadaAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.PainEditionEntity;
 import net.mcreator.craftnotaizai.entity.PainEdition3Entity;
@@ -71,6 +72,7 @@ import net.mcreator.craftnotaizai.entity.MoonRoseEntity;
 import net.mcreator.craftnotaizai.entity.MerlinBossAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.MeliodasBossAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.MediumTowerEntity;
+import net.mcreator.craftnotaizai.entity.MatronaEntity;
 import net.mcreator.craftnotaizai.entity.MarmasEntity;
 import net.mcreator.craftnotaizai.entity.MantaEntity;
 import net.mcreator.craftnotaizai.entity.ManpuunoGekirinProjectileEntity;
@@ -89,6 +91,7 @@ import net.mcreator.craftnotaizai.entity.JillianAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.JethammerProjectileEntity;
 import net.mcreator.craftnotaizai.entity.JerichoDemonFormEntity;
 import net.mcreator.craftnotaizai.entity.JerichoAnimatedEntity;
+import net.mcreator.craftnotaizai.entity.JennaEntity;
 import net.mcreator.craftnotaizai.entity.InsectFEntity;
 import net.mcreator.craftnotaizai.entity.InsectEntity;
 import net.mcreator.craftnotaizai.entity.InfernoIncantationEntity;
@@ -439,10 +442,6 @@ public class CraftNoTaizaiModEntities {
 					.sized(1.4f, 1.2f));
 	public static final RegistryObject<EntityType<ChainExplosionV2Entity>> CHAIN_EXPLOSION_V_2 = register("chain_explosion_v_2", EntityType.Builder.<ChainExplosionV2Entity>of(ChainExplosionV2Entity::new, MobCategory.AMBIENT)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChainExplosionV2Entity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<PefectCubeEntity>> PEFECT_CUBE = register("pefect_cube",
-			EntityType.Builder.<PefectCubeEntity>of(PefectCubeEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PefectCubeEntity::new)
-
-					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<ClayDragonEntity>> CLAY_DRAGON = register("clay_dragon",
 			EntityType.Builder.<ClayDragonEntity>of(ClayDragonEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ClayDragonEntity::new)
 
@@ -786,6 +785,16 @@ public class CraftNoTaizaiModEntities {
 			EntityType.Builder.<GalandEntity>of(GalandEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GalandEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<MatronaEntity>> MATRONA = register("matrona",
+			EntityType.Builder.<MatronaEntity>of(MatronaEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MatronaEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<TheoEntity>> THEO = register("theo",
+			EntityType.Builder.<TheoEntity>of(TheoEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TheoEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<JennaEntity>> JENNA = register("jenna",
+			EntityType.Builder.<JennaEntity>of(JennaEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JennaEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ZaneriEntity>> ZANERI = register("zaneri",
+			EntityType.Builder.<ZaneriEntity>of(ZaneriEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ZaneriEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -835,7 +844,6 @@ public class CraftNoTaizaiModEntities {
 			PuoraEntity.init();
 			EarthCrawlerEntity.init();
 			ChainExplosionV2Entity.init();
-			PefectCubeEntity.init();
 			ClayDragonEntity.init();
 			MuramoDemonFormEntity.init();
 			AndreDemonFormEntity.init();
@@ -916,6 +924,10 @@ public class CraftNoTaizaiModEntities {
 			DemonKingEntity.init();
 			SmallHawksEntity.init();
 			GalandEntity.init();
+			MatronaEntity.init();
+			TheoEntity.init();
+			JennaEntity.init();
+			ZaneriEntity.init();
 		});
 	}
 
@@ -962,7 +974,6 @@ public class CraftNoTaizaiModEntities {
 		event.put(PUORA.get(), PuoraEntity.createAttributes().build());
 		event.put(EARTH_CRAWLER.get(), EarthCrawlerEntity.createAttributes().build());
 		event.put(CHAIN_EXPLOSION_V_2.get(), ChainExplosionV2Entity.createAttributes().build());
-		event.put(PEFECT_CUBE.get(), PefectCubeEntity.createAttributes().build());
 		event.put(CLAY_DRAGON.get(), ClayDragonEntity.createAttributes().build());
 		event.put(MURAMO_DEMON_FORM.get(), MuramoDemonFormEntity.createAttributes().build());
 		event.put(ANDRE_DEMON_FORM.get(), AndreDemonFormEntity.createAttributes().build());
@@ -1043,5 +1054,9 @@ public class CraftNoTaizaiModEntities {
 		event.put(DEMON_KING.get(), DemonKingEntity.createAttributes().build());
 		event.put(SMALL_HAWKS.get(), SmallHawksEntity.createAttributes().build());
 		event.put(GALAND.get(), GalandEntity.createAttributes().build());
+		event.put(MATRONA.get(), MatronaEntity.createAttributes().build());
+		event.put(THEO.get(), TheoEntity.createAttributes().build());
+		event.put(JENNA.get(), JennaEntity.createAttributes().build());
+		event.put(ZANERI.get(), ZaneriEntity.createAttributes().build());
 	}
 }

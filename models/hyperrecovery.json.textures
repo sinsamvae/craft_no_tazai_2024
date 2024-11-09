@@ -23,6 +23,12 @@
         "1": "perfectcubeorb"
       },
       "name": "perfect_cube"
+    },
+    "teleport_orb": {
+      "map": {
+        "1": "teleport_orb"
+      },
+      "name": "teleport_orb"
     }
   }
 }

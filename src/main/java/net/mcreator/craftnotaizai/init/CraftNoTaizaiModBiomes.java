@@ -69,8 +69,8 @@ public class CraftNoTaizaiModBiomes {
 					SurfaceRules.RuleSource currentRuleSource = noiseGeneratorSettings.surfaceRule();
 					if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
 						List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
-						addSurfaceRule(surfaceRules, 1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("craft_no_taizai", "sleeping_forest")), Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.DIRT.defaultBlockState(),
-								Blocks.DIRT.defaultBlockState()));
+						addSurfaceRule(surfaceRules, 1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("craft_no_taizai", "sleeping_forest")), CraftNoTaizaiModBlocks.SLEEPING_FOREST_DIRT.get().defaultBlockState(),
+								Blocks.DIRT.defaultBlockState(), Blocks.DIRT.defaultBlockState()));
 						addSurfaceRule(surfaceRules, 1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("craft_no_taizai", "fairy_king_forest")), Blocks.GRASS_BLOCK.defaultBlockState(),
 								Blocks.DIRT.defaultBlockState(), Blocks.MOSS_BLOCK.defaultBlockState()));
 						NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(), noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),

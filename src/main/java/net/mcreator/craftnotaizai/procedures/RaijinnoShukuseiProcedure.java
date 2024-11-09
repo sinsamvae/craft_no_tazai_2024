@@ -70,7 +70,7 @@ public class RaijinnoShukuseiProcedure {
 								return false;
 							}
 						}.checkGamemode(entityiterator))) {
-					entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("craft_no_taizai:mana_dmg"))), entity),
+					entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("craft_no_taizai:mana_dmg")))),
 							(float) (Math.ceil(0.45 * (entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).ManaAttack) + 3));
 					entity.setDeltaMovement(new Vec3((4.5 * entity.getLookAngle().x), (0 * entity.getLookAngle().y), (4.5 * entity.getLookAngle().z)));
 					if (world instanceof ServerLevel _level) {

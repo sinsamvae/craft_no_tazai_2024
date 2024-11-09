@@ -13,7 +13,7 @@
       {
         "type": "image",
         "data": {
-          "image": "orvmenu.png",
+          "image": "gui.png",
           "use1Xscale": false,
           "x": 106,
           "y": 16
@@ -30,8 +30,8 @@
             "value": -26368,
             "falpha": 0.0
           },
-          "x": 129,
-          "y": 87
+          "x": 133,
+          "y": 88
         }
       },
       {
@@ -105,8 +105,8 @@
             "value": -26368,
             "falpha": 0.0
           },
-          "x": 131,
-          "y": 153
+          "x": 141,
+          "y": 161
         }
       },
       {
@@ -120,7 +120,7 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 130,
+          "x": 141,
           "y": 170
         }
       },
@@ -128,27 +128,9 @@
         "type": "image",
         "data": {
           "image": "image_1.png",
-          "use1Xscale": false,
-          "x": 118,
-          "y": 42
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "gaintbar.png",
           "use1Xscale": true,
-          "x": 172,
-          "y": 36
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "giant.png",
-          "use1Xscale": false,
-          "x": 190,
-          "y": 37
+          "x": 125,
+          "y": 58
         }
       },
       {
@@ -156,11 +138,11 @@
         "data": {
           "name": "imagebutton_overarrow",
           "image": "overarrow.png",
-          "hoveredImage": "overarrowhover.png",
+          "hoveredImage": "overarrow2hover.png",
           "onClick": {
             "name": "BackButton3"
           },
-          "x": 91,
+          "x": 76,
           "y": 106
         }
       },
@@ -168,12 +150,12 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_overarrow2",
-          "image": "overarrow2.png",
+          "image": "overarrow.png",
           "hoveredImage": "overarrow2hover.png",
           "onClick": {
             "name": "NextButton4"
           },
-          "x": 301,
+          "x": 316,
           "y": 106
         }
       },
@@ -181,13 +163,73 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_select",
-          "image": "select.png",
-          "hoveredImage": "selecthover.png",
+          "image": "1button.png",
+          "hoveredImage": "button.png",
           "onClick": {
             "name": "SelectGaint"
           },
-          "x": 180,
-          "y": 202
+          "x": 166,
+          "y": 211
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_giant_race",
+          "text": {
+            "fixedValue": "Giant Race"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 74
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "<"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 81,
+          "y": 109
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty1",
+          "text": {
+            "fixedValue": ">"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 321,
+          "y": 109
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_select",
+          "text": {
+            "fixedValue": "SELECT"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 182,
+          "y": 216
         }
       }
     ],

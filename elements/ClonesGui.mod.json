@@ -13,22 +13,22 @@
       {
         "type": "image",
         "data": {
-          "image": "orvmenu.png",
+          "image": "gui.png",
           "use1Xscale": false,
-          "x": 112,
-          "y": 29
+          "x": 106,
+          "y": 16
         }
       },
       {
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_slot",
-          "image": "slot.png",
-          "hoveredImage": "",
+          "image": "1button.png",
+          "hoveredImage": "button.png",
           "onClick": {
             "name": "ChangeCloneAmount"
           },
-          "x": 123,
+          "x": 165,
           "y": 86
         }
       },
@@ -43,7 +43,7 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 131,
+          "x": 182,
           "y": 89
         }
       },
@@ -59,21 +59,21 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 123,
-          "y": 74
+          "x": 165,
+          "y": 76
         }
       },
       {
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_slot1",
-          "image": "slot.png",
-          "hoveredImage": "",
+          "image": "1button.png",
+          "hoveredImage": "button.png",
           "onClick": {
             "name": "DespawnClones"
           },
-          "x": 123,
-          "y": 121
+          "x": 165,
+          "y": 122
         }
       },
       {
@@ -87,8 +87,8 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 129,
-          "y": 124
+          "x": 179,
+          "y": 125
         }
       },
       {
@@ -99,8 +99,8 @@
           "displayCondition": {
             "name": "Demonimage"
           },
-          "x": 242,
-          "y": 150
+          "x": 229,
+          "y": 141
         }
       },
       {
@@ -111,8 +111,8 @@
           "displayCondition": {
             "name": "Humanimage"
           },
-          "x": 243,
-          "y": 150
+          "x": 229,
+          "y": 141
         }
       },
       {
@@ -123,8 +123,8 @@
           "displayCondition": {
             "name": "Gaintimage"
           },
-          "x": 243,
-          "y": 149
+          "x": 229,
+          "y": 141
         }
       },
       {
@@ -135,16 +135,16 @@
           "displayCondition": {
             "name": "Fairyimage"
           },
-          "x": 243,
-          "y": 150
+          "x": 229,
+          "y": 141
         }
       }
     ],
     "gridSettings": {
-      "sx": 18,
-      "sy": 18,
-      "ox": 11,
-      "oy": 15,
+      "sx": 30,
+      "sy": 30,
+      "ox": 30,
+      "oy": 30,
       "snapOnGrid": false
     }
   }

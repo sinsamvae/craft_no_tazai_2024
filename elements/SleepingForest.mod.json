@@ -4,7 +4,7 @@
   "definition": {
     "name": "Sleeping Forest",
     "groundBlock": {
-      "value": "Blocks.GRASS"
+      "value": "CUSTOM:SleepingForestDirt"
     },
     "undergroundBlock": {
       "value": "Blocks.DIRT#0"

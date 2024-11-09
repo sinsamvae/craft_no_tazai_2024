@@ -34,6 +34,7 @@ import net.mcreator.craftnotaizai.item.TwigoArmorItem;
 import net.mcreator.craftnotaizai.item.TrollEarItem;
 import net.mcreator.craftnotaizai.item.ThankYouFor200DownloadsItem;
 import net.mcreator.craftnotaizai.item.TentaclesItem;
+import net.mcreator.craftnotaizai.item.TeleportationOrbItem;
 import net.mcreator.craftnotaizai.item.SwordWolfFurItem;
 import net.mcreator.craftnotaizai.item.SpiraledlanceItem;
 import net.mcreator.craftnotaizai.item.SoyokazenoGekirinItem;
@@ -150,6 +151,7 @@ import net.mcreator.craftnotaizai.item.DreyfusSwordItem;
 import net.mcreator.craftnotaizai.item.DreyfusArmorItem;
 import net.mcreator.craftnotaizai.item.DragonIconItem;
 import net.mcreator.craftnotaizai.item.DragonHandleItem;
+import net.mcreator.craftnotaizai.item.DoubleSidedSpearItem;
 import net.mcreator.craftnotaizai.item.DianeoutfitItem;
 import net.mcreator.craftnotaizai.item.DianeArmorItem;
 import net.mcreator.craftnotaizai.item.DemonWingItem;
@@ -370,7 +372,6 @@ public class CraftNoTaizaiModItems {
 	public static final RegistryObject<Item> EARTH_CRAWLER_SPAWN_EGG = REGISTRY.register("earth_crawler_spawn_egg", () -> new ForgeSpawnEggItem(CraftNoTaizaiModEntities.EARTH_CRAWLER, -13615322, -14997738, new Item.Properties()));
 	public static final RegistryObject<Item> CHAIN_EXPLOSION_V_2_SPAWN_EGG = REGISTRY.register("chain_explosion_v_2_spawn_egg", () -> new ForgeSpawnEggItem(CraftNoTaizaiModEntities.CHAIN_EXPLOSION_V_2, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> MAGIC_SCROLL = REGISTRY.register("magic_scroll", () -> new MagicScrollItem());
-	public static final RegistryObject<Item> PEFECT_CUBE_SPAWN_EGG = REGISTRY.register("pefect_cube_spawn_egg", () -> new ForgeSpawnEggItem(CraftNoTaizaiModEntities.PEFECT_CUBE, -3407617, -3407668, new Item.Properties()));
 	public static final RegistryObject<Item> BLUE_BRICK = block(CraftNoTaizaiModBlocks.BLUE_BRICK);
 	public static final RegistryObject<Item> BLUE_BRICK_STAIR = block(CraftNoTaizaiModBlocks.BLUE_BRICK_STAIR);
 	public static final RegistryObject<Item> BLUE_BRICK_SLAB = block(CraftNoTaizaiModBlocks.BLUE_BRICK_SLAB);
@@ -630,6 +631,16 @@ public class CraftNoTaizaiModItems {
 	public static final RegistryObject<Item> PEACE_AMULET_CHESTPLATE = REGISTRY.register("peace_amulet_chestplate", () -> new PeaceAmuletItem.Chestplate());
 	public static final RegistryObject<Item> SMALL_HAWKS_SPAWN_EGG = REGISTRY.register("small_hawks_spawn_egg", () -> new ForgeSpawnEggItem(CraftNoTaizaiModEntities.SMALL_HAWKS, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> GALAND_SPAWN_EGG = REGISTRY.register("galand_spawn_egg", () -> new ForgeSpawnEggItem(CraftNoTaizaiModEntities.GALAND, -8448202, -13754301, new Item.Properties()));
+	public static final RegistryObject<Item> MATRONA_SPAWN_EGG = REGISTRY.register("matrona_spawn_egg", () -> new ForgeSpawnEggItem(CraftNoTaizaiModEntities.MATRONA, -9654873, -12353377, new Item.Properties()));
+	public static final RegistryObject<Item> DOUBLE_SIDED_SPEAR = REGISTRY.register("double_sided_spear", () -> new DoubleSidedSpearItem());
+	public static final RegistryObject<Item> SLEEPING_FOREST_DIRT = block(CraftNoTaizaiModBlocks.SLEEPING_FOREST_DIRT);
+	public static final RegistryObject<Item> TELEPORTATION_ORB = REGISTRY.register("teleportation_orb", () -> new TeleportationOrbItem());
+	public static final RegistryObject<Item> TOWER_OF_TRIALS = block(CraftNoTaizaiModBlocks.TOWER_OF_TRIALS);
+	public static final RegistryObject<Item> CAVE_OF_TRAINING = block(CraftNoTaizaiModBlocks.CAVE_OF_TRAINING);
+	public static final RegistryObject<Item> SIDE_MOUNTAIN = block(CraftNoTaizaiModBlocks.SIDE_MOUNTAIN);
+	public static final RegistryObject<Item> THEO_SPAWN_EGG = REGISTRY.register("theo_spawn_egg", () -> new ForgeSpawnEggItem(CraftNoTaizaiModEntities.THEO, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> JENNA_SPAWN_EGG = REGISTRY.register("jenna_spawn_egg", () -> new ForgeSpawnEggItem(CraftNoTaizaiModEntities.JENNA, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> ZANERI_SPAWN_EGG = REGISTRY.register("zaneri_spawn_egg", () -> new ForgeSpawnEggItem(CraftNoTaizaiModEntities.ZANERI, -1, -1, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

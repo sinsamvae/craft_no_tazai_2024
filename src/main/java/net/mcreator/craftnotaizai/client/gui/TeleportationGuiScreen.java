@@ -59,7 +59,7 @@ public class TeleportationGuiScreen extends AbstractContainerScreen<Teleportatio
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/orvmenu.png"), this.leftPos + -100, this.topPos + -96, 0, 0, 196, 186, 196, 186);
+		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/gui.png"), this.leftPos + -93, this.topPos + -104, 0, 0, 196, 186, 196, 186);
 
 		RenderSystem.disableBlend();
 	}
@@ -129,7 +129,7 @@ public class TeleportationGuiScreen extends AbstractContainerScreen<Teleportatio
 		X.setMaxLength(32767);
 		guistate.put("text:X", X);
 		this.addWidget(this.X);
-		Z = new EditBox(this.font, this.leftPos + -59, this.topPos + 42, 118, 18, Component.translatable("gui.craft_no_taizai.teleportation_gui.Z")) {
+		Z = new EditBox(this.font, this.leftPos + -59, this.topPos + 18, 118, 18, Component.translatable("gui.craft_no_taizai.teleportation_gui.Z")) {
 			@Override
 			public void insertText(String text) {
 				super.insertText(text);
@@ -152,7 +152,7 @@ public class TeleportationGuiScreen extends AbstractContainerScreen<Teleportatio
 		Z.setMaxLength(32767);
 		guistate.put("text:Z", Z);
 		this.addWidget(this.Z);
-		Y = new EditBox(this.font, this.leftPos + -59, this.topPos + 7, 118, 18, Component.translatable("gui.craft_no_taizai.teleportation_gui.Y")) {
+		Y = new EditBox(this.font, this.leftPos + -59, this.topPos + -5, 118, 18, Component.translatable("gui.craft_no_taizai.teleportation_gui.Y")) {
 			@Override
 			public void insertText(String text) {
 				super.insertText(text);
@@ -175,7 +175,7 @@ public class TeleportationGuiScreen extends AbstractContainerScreen<Teleportatio
 		Y.setMaxLength(32767);
 		guistate.put("text:Y", Y);
 		this.addWidget(this.Y);
-		imagebutton_slot2 = new ImageButton(this.leftPos + -32, this.topPos + -53, 62, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_slot2.png"), 62, 32, e -> {
+		imagebutton_slot2 = new ImageButton(this.leftPos + -32, this.topPos + -53, 64, 16, 0, 0, 16, new ResourceLocation("craft_no_taizai:textures/screens/atlas/imagebutton_slot2.png"), 64, 32, e -> {
 			if (true) {
 				CraftNoTaizaiMod.PACKET_HANDLER.sendToServer(new TeleportationGuiButtonMessage(0, x, y, z));
 				TeleportationGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
