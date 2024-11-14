@@ -77,6 +77,7 @@ import net.mcreator.craftnotaizai.entity.GeckolibKrakenEntity;
 import net.mcreator.craftnotaizai.entity.GalandEntity;
 import net.mcreator.craftnotaizai.entity.FriesiaAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.FairyHelbremAnimatedEntity;
+import net.mcreator.craftnotaizai.entity.EscanorBossEntity;
 import net.mcreator.craftnotaizai.entity.EarthGolemEntity;
 import net.mcreator.craftnotaizai.entity.EarthCrawlerEntity;
 import net.mcreator.craftnotaizai.entity.DuskBison1Entity;
@@ -85,6 +86,7 @@ import net.mcreator.craftnotaizai.entity.DreyfusAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.DogedoEntity;
 import net.mcreator.craftnotaizai.entity.DianeBossAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.DianeAnimatedEntity;
+import net.mcreator.craftnotaizai.entity.DiamondTowerEntity;
 import net.mcreator.craftnotaizai.entity.DemonHendricksonAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.DeathThornEntity;
 import net.mcreator.craftnotaizai.entity.DeadHelbramanimatedEntity;
@@ -820,6 +822,20 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof MatronaEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof EscanorBossEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DiamondTowerEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

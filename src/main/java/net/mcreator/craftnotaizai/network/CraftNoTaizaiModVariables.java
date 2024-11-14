@@ -114,7 +114,6 @@ public class CraftNoTaizaiModVariables {
 			clone.FreezeShield = original.FreezeShield;
 			clone.Transparency_Use = original.Transparency_Use;
 			clone.StatusPromotion = original.StatusPromotion;
-			clone.chastiefol = original.chastiefol;
 			clone.chastifol = original.chastifol;
 			clone.snatch = original.snatch;
 			clone.PhysicalHunt = original.PhysicalHunt;
@@ -311,6 +310,24 @@ public class CraftNoTaizaiModVariables {
 			clone.defeatRedDemon = original.defeatRedDemon;
 			clone.DefeatGrayDemon = original.DefeatGrayDemon;
 			clone.giantskills = original.giantskills;
+			clone.monsterblock1 = original.monsterblock1;
+			clone.monsterblock2 = original.monsterblock2;
+			clone.monsterblock3 = original.monsterblock3;
+			clone.monsterblock4 = original.monsterblock4;
+			clone.monsterblock5 = original.monsterblock5;
+			clone.monsterblock6 = original.monsterblock6;
+			clone.monsterblock7 = original.monsterblock7;
+			clone.monsterblock8 = original.monsterblock8;
+			clone.monsterblock9 = original.monsterblock9;
+			clone.Monsterblock1 = original.Monsterblock1;
+			clone.Monsterblock2 = original.Monsterblock2;
+			clone.Monsterblock3 = original.Monsterblock3;
+			clone.Monsterblock4 = original.Monsterblock4;
+			clone.Monsterblock5 = original.Monsterblock5;
+			clone.Monsterblock6 = original.Monsterblock6;
+			clone.Monsterblock7 = original.Monsterblock7;
+			clone.Monsterblock8 = original.Monsterblock8;
+			clone.Monsterblock9 = original.Monsterblock9;
 			if (!event.isWasDeath()) {
 				clone.jumbvar = original.jumbvar;
 				clone.Gloxinia = original.Gloxinia;
@@ -392,6 +409,7 @@ public class CraftNoTaizaiModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "craft_no_taizai_mapvars";
+		public boolean chastiefol = false;
 		public boolean fairyking = false;
 		public double PlayerFacing = 0;
 		public double fairy_king = 0;
@@ -421,6 +439,8 @@ public class CraftNoTaizaiModVariables {
 		public boolean Love = false;
 		public boolean Piety = false;
 		public boolean LostVayneTrade = false;
+		public boolean lostvayne = false;
+		public boolean rhitta = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -429,6 +449,7 @@ public class CraftNoTaizaiModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
+			chastiefol = nbt.getBoolean("chastiefol");
 			fairyking = nbt.getBoolean("fairyking");
 			PlayerFacing = nbt.getDouble("PlayerFacing");
 			fairy_king = nbt.getDouble("fairy_king");
@@ -458,10 +479,13 @@ public class CraftNoTaizaiModVariables {
 			Love = nbt.getBoolean("Love");
 			Piety = nbt.getBoolean("Piety");
 			LostVayneTrade = nbt.getBoolean("LostVayneTrade");
+			lostvayne = nbt.getBoolean("lostvayne");
+			rhitta = nbt.getBoolean("rhitta");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
+			nbt.putBoolean("chastiefol", chastiefol);
 			nbt.putBoolean("fairyking", fairyking);
 			nbt.putDouble("PlayerFacing", PlayerFacing);
 			nbt.putDouble("fairy_king", fairy_king);
@@ -491,6 +515,8 @@ public class CraftNoTaizaiModVariables {
 			nbt.putBoolean("Love", Love);
 			nbt.putBoolean("Piety", Piety);
 			nbt.putBoolean("LostVayneTrade", LostVayneTrade);
+			nbt.putBoolean("lostvayne", lostvayne);
+			nbt.putBoolean("rhitta", rhitta);
 			return nbt;
 		}
 
@@ -613,7 +639,6 @@ public class CraftNoTaizaiModVariables {
 		public boolean FreezeShield = false;
 		public boolean Transparency_Use = false;
 		public boolean StatusPromotion = false;
-		public boolean chastiefol = false;
 		public String chastifol = "\"\"";
 		public boolean snatch = false;
 		public double PhysicalHunt = 0;
@@ -812,6 +837,24 @@ public class CraftNoTaizaiModVariables {
 		public double defeatRedDemon = 0;
 		public double DefeatGrayDemon = 0;
 		public double giantskills = 0;
+		public ItemStack monsterblock1 = ItemStack.EMPTY;
+		public ItemStack monsterblock2 = ItemStack.EMPTY;
+		public ItemStack monsterblock3 = ItemStack.EMPTY;
+		public ItemStack monsterblock4 = ItemStack.EMPTY;
+		public ItemStack monsterblock5 = ItemStack.EMPTY;
+		public ItemStack monsterblock6 = ItemStack.EMPTY;
+		public ItemStack monsterblock7 = ItemStack.EMPTY;
+		public ItemStack monsterblock8 = ItemStack.EMPTY;
+		public ItemStack monsterblock9 = ItemStack.EMPTY;
+		public double Monsterblock1 = 0;
+		public double Monsterblock2 = 0;
+		public double Monsterblock3 = 0;
+		public double Monsterblock4 = 0;
+		public double Monsterblock5 = 0;
+		public double Monsterblock6 = 0;
+		public double Monsterblock7 = 0;
+		public double Monsterblock8 = 0;
+		public double Monsterblock9 = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -850,7 +893,6 @@ public class CraftNoTaizaiModVariables {
 			nbt.putBoolean("FreezeShield", FreezeShield);
 			nbt.putBoolean("Transparency_Use", Transparency_Use);
 			nbt.putBoolean("StatusPromotion", StatusPromotion);
-			nbt.putBoolean("chastiefol", chastiefol);
 			nbt.putString("chastifol", chastifol);
 			nbt.putBoolean("snatch", snatch);
 			nbt.putDouble("PhysicalHunt", PhysicalHunt);
@@ -1049,6 +1091,24 @@ public class CraftNoTaizaiModVariables {
 			nbt.putDouble("defeatRedDemon", defeatRedDemon);
 			nbt.putDouble("DefeatGrayDemon", DefeatGrayDemon);
 			nbt.putDouble("giantskills", giantskills);
+			nbt.put("monsterblock1", monsterblock1.save(new CompoundTag()));
+			nbt.put("monsterblock2", monsterblock2.save(new CompoundTag()));
+			nbt.put("monsterblock3", monsterblock3.save(new CompoundTag()));
+			nbt.put("monsterblock4", monsterblock4.save(new CompoundTag()));
+			nbt.put("monsterblock5", monsterblock5.save(new CompoundTag()));
+			nbt.put("monsterblock6", monsterblock6.save(new CompoundTag()));
+			nbt.put("monsterblock7", monsterblock7.save(new CompoundTag()));
+			nbt.put("monsterblock8", monsterblock8.save(new CompoundTag()));
+			nbt.put("monsterblock9", monsterblock9.save(new CompoundTag()));
+			nbt.putDouble("Monsterblock1", Monsterblock1);
+			nbt.putDouble("Monsterblock2", Monsterblock2);
+			nbt.putDouble("Monsterblock3", Monsterblock3);
+			nbt.putDouble("Monsterblock4", Monsterblock4);
+			nbt.putDouble("Monsterblock5", Monsterblock5);
+			nbt.putDouble("Monsterblock6", Monsterblock6);
+			nbt.putDouble("Monsterblock7", Monsterblock7);
+			nbt.putDouble("Monsterblock8", Monsterblock8);
+			nbt.putDouble("Monsterblock9", Monsterblock9);
 			return nbt;
 		}
 
@@ -1084,7 +1144,6 @@ public class CraftNoTaizaiModVariables {
 			FreezeShield = nbt.getBoolean("FreezeShield");
 			Transparency_Use = nbt.getBoolean("Transparency_Use");
 			StatusPromotion = nbt.getBoolean("StatusPromotion");
-			chastiefol = nbt.getBoolean("chastiefol");
 			chastifol = nbt.getString("chastifol");
 			snatch = nbt.getBoolean("snatch");
 			PhysicalHunt = nbt.getDouble("PhysicalHunt");
@@ -1283,6 +1342,24 @@ public class CraftNoTaizaiModVariables {
 			defeatRedDemon = nbt.getDouble("defeatRedDemon");
 			DefeatGrayDemon = nbt.getDouble("DefeatGrayDemon");
 			giantskills = nbt.getDouble("giantskills");
+			monsterblock1 = ItemStack.of(nbt.getCompound("monsterblock1"));
+			monsterblock2 = ItemStack.of(nbt.getCompound("monsterblock2"));
+			monsterblock3 = ItemStack.of(nbt.getCompound("monsterblock3"));
+			monsterblock4 = ItemStack.of(nbt.getCompound("monsterblock4"));
+			monsterblock5 = ItemStack.of(nbt.getCompound("monsterblock5"));
+			monsterblock6 = ItemStack.of(nbt.getCompound("monsterblock6"));
+			monsterblock7 = ItemStack.of(nbt.getCompound("monsterblock7"));
+			monsterblock8 = ItemStack.of(nbt.getCompound("monsterblock8"));
+			monsterblock9 = ItemStack.of(nbt.getCompound("monsterblock9"));
+			Monsterblock1 = nbt.getDouble("Monsterblock1");
+			Monsterblock2 = nbt.getDouble("Monsterblock2");
+			Monsterblock3 = nbt.getDouble("Monsterblock3");
+			Monsterblock4 = nbt.getDouble("Monsterblock4");
+			Monsterblock5 = nbt.getDouble("Monsterblock5");
+			Monsterblock6 = nbt.getDouble("Monsterblock6");
+			Monsterblock7 = nbt.getDouble("Monsterblock7");
+			Monsterblock8 = nbt.getDouble("Monsterblock8");
+			Monsterblock9 = nbt.getDouble("Monsterblock9");
 		}
 	}
 
@@ -1346,7 +1423,6 @@ public class CraftNoTaizaiModVariables {
 					variables.FreezeShield = message.data.FreezeShield;
 					variables.Transparency_Use = message.data.Transparency_Use;
 					variables.StatusPromotion = message.data.StatusPromotion;
-					variables.chastiefol = message.data.chastiefol;
 					variables.chastifol = message.data.chastifol;
 					variables.snatch = message.data.snatch;
 					variables.PhysicalHunt = message.data.PhysicalHunt;
@@ -1545,6 +1621,24 @@ public class CraftNoTaizaiModVariables {
 					variables.defeatRedDemon = message.data.defeatRedDemon;
 					variables.DefeatGrayDemon = message.data.DefeatGrayDemon;
 					variables.giantskills = message.data.giantskills;
+					variables.monsterblock1 = message.data.monsterblock1;
+					variables.monsterblock2 = message.data.monsterblock2;
+					variables.monsterblock3 = message.data.monsterblock3;
+					variables.monsterblock4 = message.data.monsterblock4;
+					variables.monsterblock5 = message.data.monsterblock5;
+					variables.monsterblock6 = message.data.monsterblock6;
+					variables.monsterblock7 = message.data.monsterblock7;
+					variables.monsterblock8 = message.data.monsterblock8;
+					variables.monsterblock9 = message.data.monsterblock9;
+					variables.Monsterblock1 = message.data.Monsterblock1;
+					variables.Monsterblock2 = message.data.Monsterblock2;
+					variables.Monsterblock3 = message.data.Monsterblock3;
+					variables.Monsterblock4 = message.data.Monsterblock4;
+					variables.Monsterblock5 = message.data.Monsterblock5;
+					variables.Monsterblock6 = message.data.Monsterblock6;
+					variables.Monsterblock7 = message.data.Monsterblock7;
+					variables.Monsterblock8 = message.data.Monsterblock8;
+					variables.Monsterblock9 = message.data.Monsterblock9;
 				}
 			});
 			context.setPacketHandled(true);

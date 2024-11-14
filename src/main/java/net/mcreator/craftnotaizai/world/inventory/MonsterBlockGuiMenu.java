@@ -19,6 +19,8 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.craftnotaizai.procedures.MonsterBlockGuiThisGUIIsOpenedProcedure;
+import net.mcreator.craftnotaizai.procedures.MonsterBlockGuiThisGUIIsClosedProcedure;
 import net.mcreator.craftnotaizai.init.CraftNoTaizaiModMenus;
 
 import java.util.function.Supplier;
@@ -109,6 +111,7 @@ public class MonsterBlockGuiMenu extends AbstractContainerMenu implements Suppli
 				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 5 + 8 + sj * 18, 4 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
 			this.addSlot(new Slot(inv, si, 5 + 8 + si * 18, 4 + 142));
+		MonsterBlockGuiThisGUIIsOpenedProcedure.execute(world, entity);
 	}
 
 	@Override
@@ -235,6 +238,7 @@ public class MonsterBlockGuiMenu extends AbstractContainerMenu implements Suppli
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
+		MonsterBlockGuiThisGUIIsClosedProcedure.execute(entity);
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {

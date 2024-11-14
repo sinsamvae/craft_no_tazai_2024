@@ -12,7 +12,6 @@ import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.craftnotaizai.world.inventory.HornOfCernunosGuiMenu;
 import net.mcreator.craftnotaizai.procedures.ShowHornOfCernunnosProcedure;
-import net.mcreator.craftnotaizai.procedures.SetDialogsHornOfCernunnosProcedure;
 
 import java.util.HashMap;
 
@@ -70,9 +69,6 @@ public class HornOfCernunosGuiScreen extends AbstractContainerScreen<HornOfCernu
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font,
-
-				SetDialogsHornOfCernunnosProcedure.execute(entity), -57, -22, -1, false);
 	}
 
 	@Override

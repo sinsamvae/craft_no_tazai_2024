@@ -31,6 +31,9 @@
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "Chastiefol2Rightclicked2"
+    },
     "onEntitySwing": {
       "name": "Chastiefol2EntitySwingsItem"
     }

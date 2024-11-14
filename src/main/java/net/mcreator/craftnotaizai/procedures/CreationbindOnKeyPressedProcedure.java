@@ -14,7 +14,7 @@ import net.mcreator.craftnotaizai.entity.RockRushProjectileEntity;
 import net.mcreator.craftnotaizai.entity.JethammerProjectileEntity;
 
 public class CreationbindOnKeyPressedProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
+	public static void execute(LevelAccessor world, double y, Entity entity) {
 		if (entity == null)
 			return;
 		if (((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).magic).equals("Creation")) {
@@ -181,7 +181,7 @@ public class CreationbindOnKeyPressedProcedure {
 									capability.syncPlayerVariables(entity);
 								});
 							}
-							DiamondTowerSkillProcedure.execute(world, entity);
+							DiamondTowerSkillProcedure.execute(world, y, entity);
 							((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).AbilitySelect).getOrCreateTag().putDouble(
 									("cooldown" + new java.text.DecimalFormat("##").format((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).Move + 1)), 95);
 						} else {

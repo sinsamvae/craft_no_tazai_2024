@@ -56,9 +56,9 @@ public class MerlinBossEntityDiesProcedure {
 				}
 			}
 		}
-		if (CraftNoTaizaiModVariables.MapVariables.get(world).Aldan) {
+		if (!CraftNoTaizaiModVariables.MapVariables.get(world).Aldan) {
 			drop = Mth.nextInt(RandomSource.create(), 1, 100);
-			if (drop <= 5) {
+			if (drop <= 15) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(CraftNoTaizaiModItems.ALDAN.get()));
 					entityToSpawn.setPickUpDelay(10);

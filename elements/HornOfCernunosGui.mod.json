@@ -31,22 +31,6 @@
           "x": 55,
           "y": 125
         }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_set_dialogs_horn_of_cernunn",
-          "text": {
-            "fixedValue": "",
-            "name": "SetDialogsHornOfCernunnos"
-          },
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "x": 157,
-          "y": 98
-        }
       }
     ],
     "gridSettings": {

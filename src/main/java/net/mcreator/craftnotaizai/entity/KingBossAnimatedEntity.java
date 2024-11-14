@@ -128,7 +128,7 @@ public class KingBossAnimatedEntity extends PathfinderMob implements GeoEntity {
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		KingBossEntityDiesProcedure.execute(this.level(), this, source.getEntity());
+		KingBossEntityDiesProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this, source.getEntity());
 	}
 
 	@Override

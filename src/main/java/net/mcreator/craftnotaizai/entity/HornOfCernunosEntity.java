@@ -24,7 +24,6 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.craftnotaizai.procedures.HornofCernunnosRightClickedOnEntityProcedure;
-import net.mcreator.craftnotaizai.procedures.HornofCernunnosOnEntityTickUpdateProcedure;
 import net.mcreator.craftnotaizai.init.CraftNoTaizaiModEntities;
 
 public class HornOfCernunosEntity extends Monster {
@@ -76,14 +75,8 @@ public class HornOfCernunosEntity extends Monster {
 		Entity entity = this;
 		Level world = this.level();
 
-		HornofCernunnosRightClickedOnEntityProcedure.execute(world, x, y, z, entity, sourceentity);
+		HornofCernunnosRightClickedOnEntityProcedure.execute(world, x, y, z, sourceentity);
 		return retval;
-	}
-
-	@Override
-	public void baseTick() {
-		super.baseTick();
-		HornofCernunnosOnEntityTickUpdateProcedure.execute(this);
 	}
 
 	public static void init() {

@@ -18,8 +18,8 @@ import net.mcreator.craftnotaizai.world.inventory.HornOfCernunosGuiMenu;
 import io.netty.buffer.Unpooled;
 
 public class HornofCernunnosRightClickedOnEntityProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
-		if (entity == null || sourceentity == null)
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity sourceentity) {
+		if (sourceentity == null)
 			return;
 		boolean can_set = false;
 		if (sourceentity instanceof ServerPlayer _ent) {
@@ -36,6 +36,5 @@ public class HornofCernunnosRightClickedOnEntityProcedure {
 				}
 			}, _bpos);
 		}
-		entity.getPersistentData().putDouble("CharacterCount", 0);
 	}
 }

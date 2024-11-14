@@ -165,6 +165,7 @@ public class CraftNoTaizaiModTabs {
 				tabData.accept(CraftNoTaizaiModItems.TWIN_BOW_HERRITT.get());
 				tabData.accept(CraftNoTaizaiModItems.HEAT_FORK.get());
 				tabData.accept(CraftNoTaizaiModItems.HOLY_STAFF_COURE_CHOUSE.get());
+				tabData.accept(CraftNoTaizaiModItems.BASQUIAS.get());
 			})
 
 					.build());
@@ -221,7 +222,7 @@ public class CraftNoTaizaiModTabs {
 
 					.build());
 	public static final RegistryObject<CreativeModeTab> SDS_BLOCKS = REGISTRY.register("sds_blocks",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.craft_no_taizai.sds_blocks")).icon(() -> new ItemStack(CraftNoTaizaiModBlocks.QUICK_SAND.get())).displayItems((parameters, tabData) -> {
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.craft_no_taizai.sds_blocks")).icon(() -> new ItemStack(CraftNoTaizaiModBlocks.PERFECT_CUBE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(CraftNoTaizaiModBlocks.GLOW_BLOCK.get().asItem());
 				tabData.accept(CraftNoTaizaiModBlocks.CAPITALOFTHE_DEAD_BLOCK.get().asItem());
 				tabData.accept(CraftNoTaizaiModBlocks.PURPLEFIRE.get().asItem());
@@ -233,7 +234,6 @@ public class CraftNoTaizaiModTabs {
 				tabData.accept(CraftNoTaizaiModBlocks.AREAFENCE.get().asItem());
 				tabData.accept(CraftNoTaizaiModBlocks.AREA_SLAB.get().asItem());
 				tabData.accept(CraftNoTaizaiModBlocks.AREA_WOOD_SLAB.get().asItem());
-				tabData.accept(CraftNoTaizaiModBlocks.QUICK_SAND.get().asItem());
 				tabData.accept(CraftNoTaizaiModBlocks.BRICK.get().asItem());
 				tabData.accept(CraftNoTaizaiModBlocks.TALAVILLAGE_ROOF_1.get().asItem());
 				tabData.accept(CraftNoTaizaiModBlocks.TALAVILLAGE_STAIRES_1.get().asItem());
@@ -325,7 +325,6 @@ public class CraftNoTaizaiModTabs {
 				tabData.accept(CraftNoTaizaiModItems.ELAINE_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.INSECT_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.GRAY_DEMON_SPAWN_EGG.get());
-				tabData.accept(CraftNoTaizaiModItems.EARTHSPIKE_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.HIDE_AND_SEEK_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.VINE_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.WHALE_SPAWN_EGG.get());
@@ -397,6 +396,7 @@ public class CraftNoTaizaiModTabs {
 				tabData.accept(CraftNoTaizaiModItems.ALBION_TALL_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.GALAND_SPAWN_EGG.get());
 				tabData.accept(CraftNoTaizaiModItems.MATRONA_SPAWN_EGG.get());
+				tabData.accept(CraftNoTaizaiModItems.ESCANOR_BOSS_SPAWN_EGG.get());
 			})
 
 					.build());
@@ -413,7 +413,6 @@ public class CraftNoTaizaiModTabs {
 			tabData.accept(CraftNoTaizaiModItems.PEACE_AMULET_CHESTPLATE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(CraftNoTaizaiModItems.RISING_TORNADO_ENTITY_SPAWN_EGG.get());
-			tabData.accept(CraftNoTaizaiModItems.BLACK_SMITH_SPAWN_EGG.get());
 			tabData.accept(CraftNoTaizaiModItems.FIGHTING_AREA_SPAWN_EGG.get());
 			tabData.accept(CraftNoTaizaiModItems.GRAY_DEMON_ENTITY_SPAWN_EGG.get());
 			tabData.accept(CraftNoTaizaiModItems.MURAMO_ANIMATED_SPAWN_EGG.get());
@@ -431,6 +430,7 @@ public class CraftNoTaizaiModTabs {
 			tabData.accept(CraftNoTaizaiModItems.THEO_SPAWN_EGG.get());
 			tabData.accept(CraftNoTaizaiModItems.JENNA_SPAWN_EGG.get());
 			tabData.accept(CraftNoTaizaiModItems.ZANERI_SPAWN_EGG.get());
+			tabData.accept(CraftNoTaizaiModItems.CLOVER_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(CraftNoTaizaiModItems.JONAH_NO_JUNAN_SPAWN_EGG.get());
 			tabData.accept(CraftNoTaizaiModItems.WICKED_BITE_SPAWN_EGG.get());

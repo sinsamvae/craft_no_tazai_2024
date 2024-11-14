@@ -48,13 +48,7 @@ public class SideQuestGuiScreen extends AbstractContainerScreen<SideQuestGuiMenu
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/tab.png"), this.leftPos + 88, this.topPos + -64, 0, 0, 20, 20, 20, 20);
-
-		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/tab.png"), this.leftPos + 88, this.topPos + -42, 0, 0, 20, 20, 20, 20);
-
-		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/tab.png"), this.leftPos + 89, this.topPos + -21, 0, 0, 20, 20, 20, 20);
-
-		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/side_quest.png"), this.leftPos + -98, this.topPos + -92, 0, 0, 195, 175, 195, 175);
+		guiGraphics.blit(new ResourceLocation("craft_no_taizai:textures/screens/gui.png"), this.leftPos + -98, this.topPos + -92, 0, 0, 196, 186, 196, 186);
 
 		RenderSystem.disableBlend();
 	}
@@ -70,10 +64,10 @@ public class SideQuestGuiScreen extends AbstractContainerScreen<SideQuestGuiMenu
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.side_quest_gui.label_quest"), -16, -80, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.craft_no_taizai.side_quest_gui.label_quest"), -18, -104, -1, false);
 		guiGraphics.drawString(this.font,
 
-				SideQuestVarProcedure.execute(entity), -88, -65, -1, false);
+				SideQuestVarProcedure.execute(entity), -97, -89, -1, false);
 	}
 
 	@Override

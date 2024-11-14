@@ -16,6 +16,7 @@ import net.mcreator.craftnotaizai.client.gui.StoryBoardScreen;
 import net.mcreator.craftnotaizai.client.gui.SideQuestGuiScreen;
 import net.mcreator.craftnotaizai.client.gui.MonsterBlockGuiScreen;
 import net.mcreator.craftnotaizai.client.gui.MagicMenuScreen;
+import net.mcreator.craftnotaizai.client.gui.KingDisasterScreen;
 import net.mcreator.craftnotaizai.client.gui.KegGuiScreen;
 import net.mcreator.craftnotaizai.client.gui.HumanClanScreen;
 import net.mcreator.craftnotaizai.client.gui.HornOfCernunosGuiScreen;
@@ -24,6 +25,7 @@ import net.mcreator.craftnotaizai.client.gui.FairyClanScreen;
 import net.mcreator.craftnotaizai.client.gui.DemonStatScreen;
 import net.mcreator.craftnotaizai.client.gui.DemonKingGuiScreen;
 import net.mcreator.craftnotaizai.client.gui.DemonClanScreen;
+import net.mcreator.craftnotaizai.client.gui.CloverTradeingScreen;
 import net.mcreator.craftnotaizai.client.gui.ClonesGuiScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -45,6 +47,8 @@ public class CraftNoTaizaiModScreens {
 			MenuScreens.register(CraftNoTaizaiModMenus.CLONES_GUI.get(), ClonesGuiScreen::new);
 			MenuScreens.register(CraftNoTaizaiModMenus.MONSTER_BLOCK_GUI.get(), MonsterBlockGuiScreen::new);
 			MenuScreens.register(CraftNoTaizaiModMenus.DEMON_KING_GUI.get(), DemonKingGuiScreen::new);
+			MenuScreens.register(CraftNoTaizaiModMenus.KING_DISASTER.get(), KingDisasterScreen::new);
+			MenuScreens.register(CraftNoTaizaiModMenus.CLOVER_TRADEING.get(), CloverTradeingScreen::new);
 		});
 	}
 }

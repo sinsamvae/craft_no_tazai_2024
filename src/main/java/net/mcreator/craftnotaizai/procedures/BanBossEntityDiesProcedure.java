@@ -56,9 +56,9 @@ public class BanBossEntityDiesProcedure {
 				}
 			}
 		}
-		if (CraftNoTaizaiModVariables.MapVariables.get(world).courechouse) {
+		if (!CraftNoTaizaiModVariables.MapVariables.get(world).courechouse) {
 			drop = Mth.nextInt(RandomSource.create(), 1, 100);
-			if (drop <= 5) {
+			if (drop <= 15) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(CraftNoTaizaiModItems.HOLY_STAFF_COURE_CHOUSE.get()));
 					entityToSpawn.setPickUpDelay(10);

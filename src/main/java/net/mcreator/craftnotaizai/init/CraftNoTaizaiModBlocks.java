@@ -26,7 +26,6 @@ import net.mcreator.craftnotaizai.block.SleepingForestStairBlock;
 import net.mcreator.craftnotaizai.block.SleepingForestSlabBlock;
 import net.mcreator.craftnotaizai.block.SleepingForestDirtBlock;
 import net.mcreator.craftnotaizai.block.SideMountainBlock;
-import net.mcreator.craftnotaizai.block.QuickSandBlock;
 import net.mcreator.craftnotaizai.block.PurplefireBlock;
 import net.mcreator.craftnotaizai.block.PurgatoryStairBlock;
 import net.mcreator.craftnotaizai.block.PurgatorySpikeBlock;
@@ -91,7 +90,6 @@ public class CraftNoTaizaiModBlocks {
 	public static final RegistryObject<Block> AREAFENCE = REGISTRY.register("areafence", () -> new AreafenceBlock());
 	public static final RegistryObject<Block> AREA_SLAB = REGISTRY.register("area_slab", () -> new AreaSlabBlock());
 	public static final RegistryObject<Block> AREA_WOOD_SLAB = REGISTRY.register("area_wood_slab", () -> new AreaWoodSlabBlock());
-	public static final RegistryObject<Block> QUICK_SAND = REGISTRY.register("quick_sand", () -> new QuickSandBlock());
 	public static final RegistryObject<Block> BRICK = REGISTRY.register("brick", () -> new BrickBlock());
 	public static final RegistryObject<Block> TALAVILLAGE_ROOF_1 = REGISTRY.register("talavillage_roof_1", () -> new TalavillageRoof1Block());
 	public static final RegistryObject<Block> TALAVILLAGE_STAIRES_1 = REGISTRY.register("talavillage_staires_1", () -> new TalavillageStaires1Block());

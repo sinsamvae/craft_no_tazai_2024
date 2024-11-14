@@ -26,45 +26,12 @@ public class ChastiefolInHandSkillsProcedure {
 			return;
 		if ((((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).AbilitySelect).getOrCreateTag()
 				.getString(("skill" + (entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).Move))).equals("Chastiefol")) {
-			if ((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).mana >= 10
-					+ (entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).mana_amount) {
-				{
-					double _setval = (entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).mana
-							- (10 + (entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).mana_amount);
-					entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.mana = _setval;
-						capability.syncPlayerVariables(entity);
-					});
-				}
-				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CraftNoTaizaiModItems.PILLOW.get()) {
-					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(CraftNoTaizaiModItems.CHASTIEFOL_2.get()).copy();
-						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
-					}
-				} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CraftNoTaizaiModItems.CHASTIEFOL_2.get()) {
-					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(CraftNoTaizaiModItems.PILLOW.get()).copy();
-						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
-					}
-				}
-			} else {
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal(("\u00A7c" + "Not Enought Mana: "
-							+ new java.text.DecimalFormat("##").format(Math.ceil((10 + (entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).mana_amount)
-									- (entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).mana))
-							+ " More mana to perform this action ")), true);
-			}
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal("You need to be in True Spirt Form"), true);
 		}
 		if ((((entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).AbilitySelect).getOrCreateTag()
 				.getString(("skill" + (entity.getCapability(CraftNoTaizaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftNoTaizaiModVariables.PlayerVariables())).Move))).equals("Luminosity")) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CraftNoTaizaiModItems.PILLOW.get()
-					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CraftNoTaizaiModItems.CHASTIEFOL_2.get()) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CraftNoTaizaiModItems.CHASTIEFOL_2.get()) {
 				if (entity instanceof LivingEntity _entity) {
 					ItemStack _setstack = new ItemStack(CraftNoTaizaiModItems.LUMINOSITY.get()).copy();
 					_setstack.setCount(1);
@@ -74,7 +41,7 @@ public class ChastiefolInHandSkillsProcedure {
 				}
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CraftNoTaizaiModItems.LUMINOSITY.get()) {
 				if (entity instanceof LivingEntity _entity) {
-					ItemStack _setstack = new ItemStack(CraftNoTaizaiModItems.PILLOW.get()).copy();
+					ItemStack _setstack = new ItemStack(CraftNoTaizaiModItems.CHASTIEFOL_2.get()).copy();
 					_setstack.setCount(1);
 					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 					if (_entity instanceof Player _player)

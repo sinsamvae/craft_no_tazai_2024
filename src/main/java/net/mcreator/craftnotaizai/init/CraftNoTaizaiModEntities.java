@@ -42,7 +42,6 @@ import net.mcreator.craftnotaizai.entity.SpiralHailEntity;
 import net.mcreator.craftnotaizai.entity.SoyokazenoGekirinProjectileEntity;
 import net.mcreator.craftnotaizai.entity.SoldierAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.SnowflowerbeamProjectileEntity;
-import net.mcreator.craftnotaizai.entity.SmallTowerEntity;
 import net.mcreator.craftnotaizai.entity.SmallHawksEntity;
 import net.mcreator.craftnotaizai.entity.SladerAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.SimonAnimatedEntity;
@@ -71,7 +70,6 @@ import net.mcreator.craftnotaizai.entity.MuramoAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.MoonRoseEntity;
 import net.mcreator.craftnotaizai.entity.MerlinBossAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.MeliodasBossAnimatedEntity;
-import net.mcreator.craftnotaizai.entity.MediumTowerEntity;
 import net.mcreator.craftnotaizai.entity.MatronaEntity;
 import net.mcreator.craftnotaizai.entity.MarmasEntity;
 import net.mcreator.craftnotaizai.entity.MantaEntity;
@@ -79,7 +77,6 @@ import net.mcreator.craftnotaizai.entity.ManpuunoGekirinProjectileEntity;
 import net.mcreator.craftnotaizai.entity.LuigiEntity;
 import net.mcreator.craftnotaizai.entity.LightningbeastProjectileEntity;
 import net.mcreator.craftnotaizai.entity.LetThereBeLightEntity;
-import net.mcreator.craftnotaizai.entity.LargeTowerEntity;
 import net.mcreator.craftnotaizai.entity.KulumilEntity;
 import net.mcreator.craftnotaizai.entity.KingBossAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.KillerIcebergProjectileEntity;
@@ -144,10 +141,10 @@ import net.mcreator.craftnotaizai.entity.FakeBallProjectileEntity;
 import net.mcreator.craftnotaizai.entity.FairyHelbremAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.ExterminateRayProjectileEntity;
 import net.mcreator.craftnotaizai.entity.EvilhoundProjectileEntity;
+import net.mcreator.craftnotaizai.entity.EscanorBossEntity;
 import net.mcreator.craftnotaizai.entity.EnergyArrowEntity;
 import net.mcreator.craftnotaizai.entity.EmbraceoftheThunderGodProjectileEntity;
 import net.mcreator.craftnotaizai.entity.ElaineEntity;
-import net.mcreator.craftnotaizai.entity.EarthspikeEntity;
 import net.mcreator.craftnotaizai.entity.EarthGolemEntity;
 import net.mcreator.craftnotaizai.entity.EarthCrawlerEntity;
 import net.mcreator.craftnotaizai.entity.DuskBison1Entity;
@@ -158,6 +155,7 @@ import net.mcreator.craftnotaizai.entity.DogedoEntity;
 import net.mcreator.craftnotaizai.entity.DivineSlashEntity;
 import net.mcreator.craftnotaizai.entity.DianeBossAnimatedEntity;
 import net.mcreator.craftnotaizai.entity.DianeAnimatedEntity;
+import net.mcreator.craftnotaizai.entity.DiamondTowerEntity;
 import net.mcreator.craftnotaizai.entity.DespairVenomEntity;
 import net.mcreator.craftnotaizai.entity.DemonKingEntity;
 import net.mcreator.craftnotaizai.entity.DemonHendricksonAnimatedEntity;
@@ -167,11 +165,11 @@ import net.mcreator.craftnotaizai.entity.DeadEndEntity;
 import net.mcreator.craftnotaizai.entity.DalefinalEntity;
 import net.mcreator.craftnotaizai.entity.DaleSecEntity;
 import net.mcreator.craftnotaizai.entity.DaleArmoredEntity;
-import net.mcreator.craftnotaizai.entity.DaichiNoKibaEntity;
 import net.mcreator.craftnotaizai.entity.CruelSunProjectileEntity;
 import net.mcreator.craftnotaizai.entity.CrazyProminenceEntity;
 import net.mcreator.craftnotaizai.entity.CondensePowerProjectileEntity;
 import net.mcreator.craftnotaizai.entity.CocoonOfDarknessEntity;
+import net.mcreator.craftnotaizai.entity.CloverEntity;
 import net.mcreator.craftnotaizai.entity.ClayDragonEntity;
 import net.mcreator.craftnotaizai.entity.ChickenEntity;
 import net.mcreator.craftnotaizai.entity.ChatifolshotEntity;
@@ -184,7 +182,6 @@ import net.mcreator.craftnotaizai.entity.BulletSquallEntity;
 import net.mcreator.craftnotaizai.entity.BrilliantDetonationProjectileEntity;
 import net.mcreator.craftnotaizai.entity.BreakthroughProjectileEntity;
 import net.mcreator.craftnotaizai.entity.BlazeProjectileEntity;
-import net.mcreator.craftnotaizai.entity.BlackSmithEntity;
 import net.mcreator.craftnotaizai.entity.BlackOutProjectileEntity;
 import net.mcreator.craftnotaizai.entity.BlackOutEntity;
 import net.mcreator.craftnotaizai.entity.BlackHoundEntity;
@@ -264,10 +261,6 @@ public class CraftNoTaizaiModEntities {
 					.sized(1.2f, 5.5f));
 	public static final RegistryObject<EntityType<ElaineEntity>> ELAINE = register("elaine",
 			EntityType.Builder.<ElaineEntity>of(ElaineEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ElaineEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<BlackSmithEntity>> BLACK_SMITH = register("black_smith",
-			EntityType.Builder.<BlackSmithEntity>of(BlackSmithEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BlackSmithEntity::new)
-
-					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<InsectEntity>> INSECT = register("insect",
 			EntityType.Builder.<InsectEntity>of(InsectEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(InsectEntity::new)
 
@@ -346,10 +339,6 @@ public class CraftNoTaizaiModEntities {
 			EntityType.Builder.<GrayDemonEntity>of(GrayDemonEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GrayDemonEntity::new)
 
 					.sized(1.6f, 1.8f));
-	public static final RegistryObject<EntityType<EarthspikeEntity>> EARTHSPIKE = register("earthspike", EntityType.Builder.<EarthspikeEntity>of(EarthspikeEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-			.setUpdateInterval(3).setCustomClientFactory(EarthspikeEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<DaichiNoKibaEntity>> DAICHI_NO_KIBA = register("daichi_no_kiba",
-			EntityType.Builder.<DaichiNoKibaEntity>of(DaichiNoKibaEntity::new, MobCategory.MISC).setCustomClientFactory(DaichiNoKibaEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<HideAndSeekEntity>> HIDE_AND_SEEK = register("hide_and_seek",
 			EntityType.Builder.<HideAndSeekEntity>of(HideAndSeekEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HideAndSeekEntity::new)
 
@@ -368,14 +357,6 @@ public class CraftNoTaizaiModEntities {
 			EntityType.Builder.<NoroiNoKoeEntity>of(NoroiNoKoeEntity::new, MobCategory.MISC).setCustomClientFactory(NoroiNoKoeEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<DespairVenomEntity>> DESPAIR_VENOM = register("despair_venom",
 			EntityType.Builder.<DespairVenomEntity>of(DespairVenomEntity::new, MobCategory.MISC).setCustomClientFactory(DespairVenomEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<SmallTowerEntity>> SMALL_TOWER = register("small_tower", EntityType.Builder.<SmallTowerEntity>of(SmallTowerEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-			.setUpdateInterval(3).setCustomClientFactory(SmallTowerEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<MediumTowerEntity>> MEDIUM_TOWER = register("medium_tower", EntityType.Builder.<MediumTowerEntity>of(MediumTowerEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true)
-			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MediumTowerEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<LargeTowerEntity>> LARGE_TOWER = register("large_tower",
-			EntityType.Builder.<LargeTowerEntity>of(LargeTowerEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LargeTowerEntity::new)
-
-					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<InsectFEntity>> INSECT_F = register("insect_f",
 			EntityType.Builder.<InsectFEntity>of(InsectFEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(InsectFEntity::new)
 
@@ -795,6 +776,16 @@ public class CraftNoTaizaiModEntities {
 			EntityType.Builder.<JennaEntity>of(JennaEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JennaEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<ZaneriEntity>> ZANERI = register("zaneri",
 			EntityType.Builder.<ZaneriEntity>of(ZaneriEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ZaneriEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<CloverEntity>> CLOVER = register("clover",
+			EntityType.Builder.<CloverEntity>of(CloverEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CloverEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<EscanorBossEntity>> ESCANOR_BOSS = register("escanor_boss",
+			EntityType.Builder.<EscanorBossEntity>of(EscanorBossEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EscanorBossEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DiamondTowerEntity>> DIAMOND_TOWER = register("diamond_tower", EntityType.Builder.<DiamondTowerEntity>of(DiamondTowerEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DiamondTowerEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -819,16 +810,11 @@ public class CraftNoTaizaiModEntities {
 			DaleSecEntity.init();
 			DalefinalEntity.init();
 			ElaineEntity.init();
-			BlackSmithEntity.init();
 			InsectEntity.init();
 			GrayDemonEntity.init();
-			EarthspikeEntity.init();
 			HideAndSeekEntity.init();
 			VineEntity.init();
 			WhaleEntity.init();
-			SmallTowerEntity.init();
-			MediumTowerEntity.init();
-			LargeTowerEntity.init();
 			InsectFEntity.init();
 			FightingAreaEntity.init();
 			LuigiEntity.init();
@@ -928,6 +914,9 @@ public class CraftNoTaizaiModEntities {
 			TheoEntity.init();
 			JennaEntity.init();
 			ZaneriEntity.init();
+			CloverEntity.init();
+			EscanorBossEntity.init();
+			DiamondTowerEntity.init();
 		});
 	}
 
@@ -949,16 +938,11 @@ public class CraftNoTaizaiModEntities {
 		event.put(DALE_SEC.get(), DaleSecEntity.createAttributes().build());
 		event.put(DALEFINAL.get(), DalefinalEntity.createAttributes().build());
 		event.put(ELAINE.get(), ElaineEntity.createAttributes().build());
-		event.put(BLACK_SMITH.get(), BlackSmithEntity.createAttributes().build());
 		event.put(INSECT.get(), InsectEntity.createAttributes().build());
 		event.put(GRAY_DEMON.get(), GrayDemonEntity.createAttributes().build());
-		event.put(EARTHSPIKE.get(), EarthspikeEntity.createAttributes().build());
 		event.put(HIDE_AND_SEEK.get(), HideAndSeekEntity.createAttributes().build());
 		event.put(VINE.get(), VineEntity.createAttributes().build());
 		event.put(WHALE.get(), WhaleEntity.createAttributes().build());
-		event.put(SMALL_TOWER.get(), SmallTowerEntity.createAttributes().build());
-		event.put(MEDIUM_TOWER.get(), MediumTowerEntity.createAttributes().build());
-		event.put(LARGE_TOWER.get(), LargeTowerEntity.createAttributes().build());
 		event.put(INSECT_F.get(), InsectFEntity.createAttributes().build());
 		event.put(FIGHTING_AREA.get(), FightingAreaEntity.createAttributes().build());
 		event.put(LUIGI.get(), LuigiEntity.createAttributes().build());
@@ -1058,5 +1042,8 @@ public class CraftNoTaizaiModEntities {
 		event.put(THEO.get(), TheoEntity.createAttributes().build());
 		event.put(JENNA.get(), JennaEntity.createAttributes().build());
 		event.put(ZANERI.get(), ZaneriEntity.createAttributes().build());
+		event.put(CLOVER.get(), CloverEntity.createAttributes().build());
+		event.put(ESCANOR_BOSS.get(), EscanorBossEntity.createAttributes().build());
+		event.put(DIAMOND_TOWER.get(), DiamondTowerEntity.createAttributes().build());
 	}
 }

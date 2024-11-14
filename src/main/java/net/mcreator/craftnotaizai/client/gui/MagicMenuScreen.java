@@ -203,7 +203,7 @@ public class MagicMenuScreen extends AbstractContainerScreen<MagicMenuMenu> {
 		if (DisplaySlot2Procedure.execute(entity))
 			guiGraphics.drawString(this.font,
 
-					DisplayAbility11Procedure.execute(entity), -80, -17, -1, false);
+					DisplayAbility11Procedure.execute(), -80, -17, -1, false);
 		if (DisplaySlot2Procedure.execute(entity))
 			guiGraphics.drawString(this.font,
 
